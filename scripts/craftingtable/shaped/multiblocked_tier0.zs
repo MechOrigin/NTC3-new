@@ -1,0 +1,1 @@
+//craftingTable.addShaped("coke_oven_controller",<item:ntc3:coke_oven>, [[<item:secretly_complicated:copper_plate>,<item:minecraft:bricks>,<item:secretly_complicated:copper_plate>],[<item:minecraft:bricks>,<item:minecraft:redstone_block>,<item:minecraft:bricks>],[<item:secretly_complicated:copper_plate>,<item:minecraft:bricks>,<item:secretly_complicated:copper_plate>]]);

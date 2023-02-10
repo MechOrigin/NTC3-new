@@ -1,0 +1,22 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:stone",
+        "minecraft:andesite",
+        "minecraft:diorite",
+        "minecraft:granite",
+        "quark:jasper",
+        "quark:limestone",
+        "quark:shale",
+        "antimatter_shared:granite_red",
+        "antimatter_shared:granite_black",
+        "antimatter_shared:marble",
+        "antimatter_shared:basalt",
+        "antimatter_shared:komatiite",
+        "antimatter_shared:limestone",
+        "antimatter_shared:green_schist",
+        "antimatter_shared:blue_schist",
+        "antimatter_shared:kimberlite",
+        "antimatter_shared:quartzite"
+    ]
+}

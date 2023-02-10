@@ -1,0 +1,184 @@
+{
+  "entries": [
+    {
+      "item": "minecraft:stone",
+      "emc": 1
+    },
+    {
+      "item": "minecraft:diamond_horse_armor",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:bell",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:golden_horse_armor",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:trident",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:iron_horse_armor",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:filled_map",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:saddle",
+      "emc": 0
+    },
+    {
+      "item": "secretly_complicated:bronze_solid",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_cat",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_fire",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_ward",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_ocean",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_chirp",
+      "emc": 0
+    },
+    {
+      "item": "biomesoplenty:music_disc_wanderer",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_clock",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_far",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_11",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_mall",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_rain",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_drips",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_chatter",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_endermosh",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_blocks",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_wind",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_13",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_stal",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_otherside",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_mellohi",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_wait",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_pigstep",
+      "emc": 0
+    },
+    {
+      "item": "quark:music_disc_crickets",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:music_disc_strad",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:hdpe_pellet",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:salt",
+      "emc": 0
+    },
+    {
+      "item": "exnihilosequentia:aluminum_ingot",
+      "emc": 0
+    },
+    {
+      "item": "secretly_complicated:aluminium_solid",
+      "emc": 128
+    },
+    {
+      "item": "minecraft:melon_seeds",
+      "emc": 16
+    },
+    {
+      "item": "minecraft:pumpkin_seeds",
+      "emc": 16
+    },
+    {
+      "item": "pyromancer:pyrowood_sapling",
+      "emc": 32
+    },
+    {
+      "item": "pyromancer:pyrowood_log",
+      "emc": 32
+    },
+    {
+      "item": "pyromancer:brimstone",
+      "emc": 64
+    },
+    {
+      "item": "pyromancer:cinnabar_chunk",
+      "emc": 64
+    },
+    {
+      "item": "mysticalagriculture:inferium_essence",
+      "emc": 864
+    },
+    {
+      "item": "secretly_complicated:zinc_solid",
+      "emc": 512
+    }
+  ]
+}

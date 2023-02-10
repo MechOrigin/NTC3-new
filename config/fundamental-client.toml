@@ -1,0 +1,11 @@
+#Makes the moss on mossy cobblestone change color based on the biome.
+#This feature adds a resource pack to modify the Mossy Cobblestone models.
+#Due to a limitation in Forge, the game will reload resource packs the first time this mod is added (and if this config changes), leading to a longer initial loading time. Sorry.
+mossy_cobblestone_follows_biome_colors = true
+#Makes the moss on mossy stone bricks change color based on the biome.
+#This feature adds a resource pack to modify the vanilla Mossy Stone Bricks models.
+#Due to a limitation in Forge, the game will reload resource packs the first time this mod is added (and if this config changes), leading to a longer initial loading time. Sorry.
+mossy_stone_bricks_follows_biome_colors = true
+#Make items such as grass, leaves, etc... follow biome colors even when they are in the player's inventory.
+inventory_items_respect_biome_colors = true
+

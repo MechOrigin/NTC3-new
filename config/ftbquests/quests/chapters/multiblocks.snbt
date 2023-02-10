@@ -1,0 +1,91 @@
+{
+	id: "00BC6D98D7824817"
+	group: "442FD72D1627F87A"
+	order_index: 6
+	filename: "multiblocks"
+	title: "{ntc3.chapter.multiblockslvl0.title}"
+	icon: "ntc3:blast_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "{ntc3.chapter.multiblockslvl0.title}"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["288283E080C2E75E"]
+			id: "218745DD82D46B9A"
+			tasks: [{
+				id: "4B98803AB4245AC0"
+				type: "questsadditions:time"
+				elapsedTime: 1L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["218745DD82D46B9A"]
+			id: "61E58FB3E3990A1B"
+			tasks: [{
+				id: "04994A0BAD21CE57"
+				type: "item"
+				item: {
+					id: "ntc3:coke_oven"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["61E58FB3E3990A1B"]
+			id: "3BB22E7E8A7989F2"
+			tasks: [{
+				id: "35168FF74578D7A8"
+				type: "item"
+				item: {
+					id: "ntc3:blast_furnace"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "{ntc3.unlock.metaldude}"
+			x: 0.0d
+			y: -3.75d
+			shape: "circle"
+			dependencies: ["7B4E800D9FA67E4D"]
+			size: 1.5d
+			id: "21D17D2F3DCC10FA"
+			tasks: [{
+				id: "10F4A841FE661219"
+				type: "questsadditions:time"
+				elapsedTime: 1L
+			}]
+			rewards: [{
+				id: "4DA94E752CC19B13"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "metal_dude"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["218745DD82D46B9A"]
+			id: "7B4E800D9FA67E4D"
+			tasks: [{
+				id: "15F88B6A3DEBCF35"
+				type: "item"
+				item: {
+					id: "ntc3:alloy_kiln"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}

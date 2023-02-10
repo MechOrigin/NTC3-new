@@ -1,0 +1,102 @@
+{
+	id: "42B8912FCCDE8650"
+	group: "7B753B74DC83DB37"
+	order_index: 0
+	filename: "minecraft_tier_1"
+	title: "The Middle"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "circle"
+			id: "534BAB70CC431ABF"
+			tasks: [{
+				id: "4653F6C786B4E5A0"
+				type: "questsadditions:time"
+				elapsedTime: 1L
+			}]
+		}
+		{
+			title: "{ntc3.elytra.title}"
+			x: -2.0d
+			y: -0.5d
+			subtitle: "{ntc3.elytra.subtitle}"
+			description: ["{ntc3.elytra.desc0}"]
+			id: "75BF3EB0F3A47C71"
+			tasks: [{
+				id: "7EF9EEAAE104DA1D"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "{ntc3.endcrystal.title}"
+			x: -5.0d
+			y: -0.5d
+			description: [
+				"{ntc3.endcrystal.desc0}"
+				""
+				"{ntc3.endcrystal.desc1}"
+			]
+			id: "43026D43202132B6"
+			tasks: [{
+				id: "7375D30BFFA10662"
+				type: "item"
+				item: "minecraft:end_crystal"
+			}]
+		}
+		{
+			title: "{ntc3.beacon.title}"
+			x: -6.5d
+			y: -0.5d
+			description: ["{ntc3.beacon.desc0}"]
+			id: "07D5DA0EF7164CD4"
+			tasks: [{
+				id: "71EDBE7F8FFC8C08"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+		}
+		{
+			title: "{ntc3.shulkershell.title}"
+			x: -5.0d
+			y: 0.5d
+			description: ["{ntc3.shulkershell.desc0}"]
+			id: "02F3DCE182783F42"
+			tasks: [{
+				id: "1550676890B46D67"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			id: "0B2DB6BFA0263C9D"
+			tasks: [{
+				id: "6C463000771011F6"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "33B8E5A427ED45E4"
+			tasks: [{
+				id: "7F720C2EBFE15D3E"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

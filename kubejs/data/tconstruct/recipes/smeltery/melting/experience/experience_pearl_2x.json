@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "miniutilities:experience_pearl_2x"
+  },
+  "result": {
+    "fluid": "sophisticatedcore:xp_still",
+    "amount": 720
+  },
+  "temperature": 32,
+  "time": 171
+}

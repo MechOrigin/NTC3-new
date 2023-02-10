@@ -1,0 +1,101 @@
+{
+	id: "3A2D04B149AA65DA"
+	group: "442FD72D1627F87A"
+	order_index: 8
+	filename: "pyromancer"
+	title: "Pyromancer"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["2D57F4FFFB3FEF54"]
+			id: "7CEADB1CD8738CCB"
+			tasks: [{
+				id: "1BDEC1FC624AC1DB"
+				type: "item"
+				item: "pyromancer:pyrowood_log"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			dependencies: ["2D57F4FFFB3FEF54"]
+			id: "1478782779A642EA"
+			tasks: [{
+				id: "65A9D3AA5A0D47A1"
+				type: "item"
+				item: "pyromancer:pyrowood_sapling"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["2D57F4FFFB3FEF54"]
+			id: "0C4928A43E9E1428"
+			tasks: [{
+				id: "351FBED566547102"
+				type: "item"
+				item: "pyromancer:brimstone"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["2D57F4FFFB3FEF54"]
+			id: "79AC673AC14C75C9"
+			tasks: [{
+				id: "531597D5A75E1A43"
+				type: "item"
+				item: "pyromancer:cinnabar_chunk"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			dependencies: ["2D57F4FFFB3FEF54"]
+			id: "769B1461438145FE"
+			tasks: [{
+				id: "2E3252AE8BB3DD74"
+				type: "item"
+				item: "pyromancer:pyromancer_table"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			dependencies: ["2D57F4FFFB3FEF54"]
+			id: "419C456C12A4826C"
+			tasks: [{
+				id: "4C864419EE434FEC"
+				type: "item"
+				item: {
+					id: "pyromancer:blazing_journal"
+					Count: 1b
+					tag: {
+						CustomModelData: 0.0d
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			id: "2D57F4FFFB3FEF54"
+			tasks: [{
+				id: "62BA9B52414C42AA"
+				type: "gamestage"
+				stage: "pyromancer_unlock"
+			}]
+			rewards: [{
+				id: "325DEF6331748C7E"
+				type: "item"
+				item: "pyromancer:pyrowood_sapling"
+				count: 6
+			}]
+		}
+	]
+	quest_links: [ ]
+}

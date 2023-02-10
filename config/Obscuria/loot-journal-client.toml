@@ -1,0 +1,9 @@
+
+[LootNotifier]
+	Display = true
+	Style = true
+	#Range: 0 ~ 20
+	Lifetime = 5
+	#Range: 0 ~ 1080
+	Offset = 0
+

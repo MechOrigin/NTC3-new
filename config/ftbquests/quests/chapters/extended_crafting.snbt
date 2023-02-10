@@ -1,0 +1,77 @@
+{
+	id: "5FC20760DCB93344"
+	group: "7B753B74DC83DB37"
+	order_index: 3
+	filename: "extended_crafting"
+	title: "Extended Crafting"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "3AC5AFBCD6A87795"
+			tasks: [{
+				id: "151D4C6DBAEB9EC0"
+				type: "questsadditions:time"
+				elapsedTime: 1L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["3AC5AFBCD6A87795"]
+			id: "6146E0D39A4B5573"
+			tasks: [{
+				id: "270F3A959FA9DEB5"
+				type: "item"
+				item: "extendedcrafting:black_iron_slate"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: ["6146E0D39A4B5573"]
+			id: "13222C5F5F2AC2F4"
+			tasks: [{
+				id: "440C055B7888A6F8"
+				type: "item"
+				item: "extendedcrafting:basic_component"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			dependencies: ["6146E0D39A4B5573"]
+			id: "65069A72B1875DBB"
+			tasks: [{
+				id: "34320899639C4E4F"
+				type: "item"
+				item: "extendedcrafting:basic_catalyst"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			dependencies: ["6146E0D39A4B5573"]
+			id: "2C329A7BA4BC9437"
+			tasks: [{
+				id: "251467E3317C6332"
+				type: "item"
+				item: "extendedcrafting:basic_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["3AC5AFBCD6A87795"]
+			id: "418156DBF1E9CAAD"
+			tasks: [{
+				id: "6DDEF3C0D22B7E45"
+				type: "item"
+				item: "extendedcrafting:luminessence"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

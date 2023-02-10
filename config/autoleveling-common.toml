@@ -1,0 +1,20 @@
+
+[mobs]
+	show_level = true
+	blacklist = []
+	exp_bonus_per_level = 0.1
+	whitelist = []
+
+[attributes]
+	movement_speed_per_level = 0.001
+	flying_speed_per_level = 0.001
+	attack_damage_per_level = 0.1
+	armor_per_level = 0.1
+	health_per_level = 0.1
+
+[default_leveling_settings]
+	starting_level = 1
+	max_level = 1
+	levels_per_distance = 0.01
+	random_level_bonus = 0
+

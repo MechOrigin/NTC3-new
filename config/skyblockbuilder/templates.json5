@@ -1,0 +1,29 @@
+{
+  // The template which will be used for spawn only
+  // Example: 
+  // {
+  //     "name": "default",
+  //     "desc": "",
+  //     "file": "default.nbt",
+  //     "spawns": "default",
+  //     "direction": "south"
+  // }
+  "spawn": null,
+  
+  "spawns": {
+    "default": [
+      [ 6, 3, 5 ]
+    ]
+  },
+  
+  // The list of templates being available. The first entry is the default template.
+  "templates": [
+    {
+      "name": "Obsidian Tablet",
+      "desc": "Spawn on a 3x3 obsidian plate with a ProjectE tablet in the center.",
+      "file": "default.nbt",
+      "spawns": "default",
+      "direction": "south"
+    }
+  ]
+}

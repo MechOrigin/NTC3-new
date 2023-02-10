@@ -1,0 +1,62 @@
+{
+	id: "6ED26A6C31D137A0"
+	group: "5BCA4C8804B27813"
+	order_index: 4
+	filename: "charming_love"
+	title: "Charming :revolving_hearts:"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "12506D84263B4BD8"
+			tasks: [{
+				id: "582B016EBA503B09"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "415894347BE67ECA"
+			tasks: [{
+				id: "71E0480EE5AAF0E1"
+				type: "item"
+				item: "miniutilities:golden_lasso"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			id: "66EDA90A112451F5"
+			tasks: [{
+				id: "5D6E8916210D66FB"
+				type: "item"
+				item: "miniutilities:magical_egg"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "2DE1D3B6E144FF83"
+			tasks: [{
+				id: "61EDA104B345745C"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			id: "70A0E66C9EF49789"
+			tasks: [{
+				id: "57292AB1BC9DD40B"
+				type: "item"
+				item: "akashictome:tome"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

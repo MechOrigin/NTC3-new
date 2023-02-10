@@ -1,0 +1,83 @@
+{
+	id: "2C04E72F03165596"
+	group: "5BCA4C8804B27813"
+	order_index: 2
+	filename: "pipez"
+	title: "{ntc3.chapter.pipez.title}"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["1EF95DDBC2C861FB"]
+			id: "2988B27AE6B61248"
+			tasks: [{
+				id: "623F067BC71BA234"
+				type: "item"
+				item: "pipez:wrench"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["1EF95DDBC2C861FB"]
+			id: "2F44AE6DB8FDF202"
+			tasks: [{
+				id: "5D8C998F86C6A14E"
+				type: "item"
+				item: "pipez:item_pipe"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["1EF95DDBC2C861FB"]
+			id: "11B926988B8B2021"
+			tasks: [{
+				id: "2946166C54E1EB00"
+				type: "item"
+				item: "pipez:fluid_pipe"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["1EF95DDBC2C861FB"]
+			id: "316C51B55AC4C049"
+			tasks: [{
+				id: "55DC1B4C26D1F473"
+				type: "item"
+				item: "pipez:energy_pipe"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["1EF95DDBC2C861FB"]
+			id: "47EC1915091E6323"
+			tasks: [{
+				id: "57EBF529DB1F14EF"
+				type: "item"
+				item: "pipez:universal_pipe"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["09DFC42D6647423B"]
+			id: "1EF95DDBC2C861FB"
+			tasks: [{
+				id: "46F4F0A52CF2CA9E"
+				type: "questsadditions:time"
+				title: "A couple of hard pipe hittin n****s"
+				elapsedTime: 1L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

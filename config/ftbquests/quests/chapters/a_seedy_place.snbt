@@ -1,0 +1,261 @@
+{
+	id: "27DEEE8C68205650"
+	group: "5BCA4C8804B27813"
+	order_index: 1
+	filename: "a_seedy_place"
+	title: "{ntc3.chapter.aseedyplace.title}"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "5C220062C23C3EB1"
+			tasks: [{
+				id: "53FAF396E1EBB23D"
+				type: "item"
+				item: "thermal:flax_seeds"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: ["5C220062C23C3EB1"]
+			id: "19593DA911D80507"
+			tasks: [{
+				id: "68D89B14C2865E90"
+				type: "item"
+				item: "thermal:flax"
+			}]
+			rewards: [{
+				id: "265BD9E0EE4E1BD1"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "croptopia"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			id: "58A477477D92A07F"
+			tasks: [{
+				id: "651A4D46EA914E36"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			id: "46798B905AD26658"
+			tasks: [{
+				id: "21093A98B62B0654"
+				type: "item"
+				item: "minecraft:pumpkin_seeds"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			id: "7FBDFC5D3A807B14"
+			tasks: [{
+				id: "0BFD91174A50CA33"
+				type: "item"
+				item: "minecraft:beetroot_seeds"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			id: "1D8A331548D63842"
+			tasks: [{
+				id: "709DE3F97BBC276B"
+				type: "item"
+				item: "minecraft:melon_seeds"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			id: "2E50DE04538B7E97"
+			tasks: [{
+				id: "77267DD05002DBB8"
+				type: "item"
+				item: "thermal:bell_pepper_seeds"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "1384AEE0AAF9B8E6"
+			tasks: [{
+				id: "063A1E48318A4A76"
+				type: "item"
+				item: "alcocraft:hop_seeds"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			id: "263E977D5EA2E8F8"
+			tasks: [{
+				id: "292CBBF4B212194E"
+				type: "item"
+				item: "thermal:tomato_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			id: "5B675BD770BD885B"
+			tasks: [{
+				id: "7A9AFC2A61251CAD"
+				type: "item"
+				item: "thermal:peanut_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "194DE8362A3E7110"
+			tasks: [{
+				id: "26056A87CACB9556"
+				type: "item"
+				item: "thermal:sadiroot_seeds"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			id: "3B0E4AC24E57FE2B"
+			tasks: [{
+				id: "69EC5D17E04AF5EC"
+				type: "item"
+				item: "thermal:green_bean_seeds"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			id: "54249935CBF7D7E0"
+			tasks: [{
+				id: "4117B85BC8D18092"
+				type: "item"
+				item: "thermal:barley_seeds"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.0d
+			id: "4189C83524ACF8BB"
+			tasks: [{
+				id: "06E9571374FE4302"
+				type: "item"
+				item: "thermal:radish_seeds"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			id: "4B5129B0F2E10AF3"
+			tasks: [{
+				id: "645C21B505744439"
+				type: "item"
+				item: "thermal:eggplant_seeds"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			id: "6413D2D853CD83BF"
+			tasks: [{
+				id: "02BD6C027D9B8E13"
+				type: "item"
+				item: "thermal:onion_seeds"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 0.0d
+			id: "0405F9671DE70BD0"
+			tasks: [{
+				id: "2AA3F3EFC516E130"
+				type: "item"
+				item: "thermal:strawberry_seeds"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 0.0d
+			id: "766F1842D77765A4"
+			tasks: [{
+				id: "1F2A174348E06EF4"
+				type: "item"
+				item: "thermal:corn_seeds"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			id: "5D008F11458CA0AA"
+			tasks: [{
+				id: "12111F34886838E7"
+				type: "item"
+				item: "thermal:spinach_seeds"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 0.0d
+			id: "41617E89C44E1DA3"
+			tasks: [{
+				id: "33C5AA27DF7FF7B4"
+				type: "item"
+				item: "thermal:rice_seeds"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 0.0d
+			id: "6B6EF06FAB5DF97E"
+			tasks: [{
+				id: "43387380CF88B624"
+				type: "item"
+				item: "thermal:amaranth_seeds"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			id: "0A99C35243159205"
+			tasks: [{
+				id: "113CD3129BE1ADB3"
+				type: "item"
+				item: "farmersdelight:straw"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["1384AEE0AAF9B8E6"]
+			id: "3444860C8C73BD22"
+			tasks: [{
+				id: "752DEBD7497AC97E"
+				type: "item"
+				item: "alcocraft:hop"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			id: "7F733F97F986628D"
+			tasks: [{
+				id: "2793049CA62A5B00"
+				type: "item"
+				item: "exnihilosequentia:mycelium_spores"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

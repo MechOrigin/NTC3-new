@@ -1,0 +1,159 @@
+
+["Battery Bank"]
+	#Battery Bank Energy Capacity (default 1000000)
+	battery_capacity = 1000000
+
+[Pump]
+	#Pump Energy Capacity (default 10)
+	pump_energy_capacity = 200
+	#Pump Energy Consume Per Tick (default 10)
+	pump_rf_per_tick = 10
+	#Pump Radius (default 16)
+	pump_radius = 16
+	#Pump Infinite Water (default true)
+	pump_infinite_water = true
+	#Pump Replace Lava With Cobble (default true)
+	pump_replace_cobble = true
+
+["Industrial Battery Bank"]
+	#Industrial Battery Bank Energy Per Battery (default 6480000)
+	industrial_battery_bank_energy_per_battery = 6480000
+	#Industrial Battery Bank Energy Transfer Rate (default 102400)
+	industrial_battery_bank_transfer_rate = 102400
+
+["Fluid Tank"]
+	#Fluid tank capacity in mb (default 640000)
+	fluid_tank_capacity = 640000
+	#Fluid tank transfer rate in mb (default 128000)
+	fluid_tank_transfer_rate = 128000
+
+[Lathe]
+	#Lathe Energy Capacity (default 10240)
+	lathe_energy_capacity = 10240
+	#Lathe Energy Per Tick (default 128)
+	lathe_energy_per_tick = 128
+
+[Miner]
+	#Miner Water Capacity (default 32000)
+	miner_water_capacity = 32000
+	#Miner Max Heat (default 18000)
+	miner_max_heat = 18000
+	#Miner Water Per Tick (default 10)
+	miner_water_per_tick = 10
+	#Miner Energy Capacity (default 100000)
+	miner_energy_capacity = 100000
+	#Miner Energy Receive Rate (default 10240)
+	miner_energy_receive = 10240
+	#Miner Energy Per Tick (default 500)
+	miner_energy_per_tick = 500
+	#Miner Mining Speed In Ticks per Block (default 120)
+	miner_mining_speed = 120
+	#Miner Amount of Heat Until Extra Damage to Drill (default 13000)
+	miner_heat_damage_threshold = 13000
+	#Miner mining radius (default 1: 1x1 chunk, 2: 3x3, 3: 5x5 ...)
+	miner_radius = 1
+
+["Steam Boiler"]
+	#Steam Boiler Water Tank Capacity (default 32000)
+	steam_boiler_water_tank_capacity = 32000
+	#Steam Boiler Steam Tank Capacity (default 32000)
+	steam_boiler_steam_tank_capacity = 32000
+	#Steam Boiler Fuel Tank Capacity (default 32000)
+	steam_boiler_fuel_tank_capacity = 32000
+	#Steam Boiler Max Heat (default 32000)
+	steam_boiler_max_heat = 32000
+	#Steam Water Consume Per Tick (default 100)
+	steam_boiler_water_per_tick = 100
+	#Steam Boiler Sold Fuel Burn Time Consume Per Tick (default 2)
+	steam_boiler_solid_fuel_per_tick = 2
+	#Steam Boiler Liquid Fuel Burn Time onsume Per Tick (default 1)
+	steam_boiler_liquid_fuel_per_tick = 1
+	#Steam Boiler Water to Steam Conversion Ratio (1 water to x steam)(default 5.0f)
+	steam_boiler_water_steam_conversion = 5.0
+
+["Steam Turbine"]
+	#Steam Turbine Water Tank Capacity (default 32000)
+	steam_turbine_water_tank_capacity = 32000
+	#Steam Turbine Steam Tank Capacity (default 32000)
+	steam_turbine_steam_tank_capacity = 32000
+	#Steam Turbine Energy Capacity (default 100000)
+	steam_turbine_energy_capacity = 100000
+	#Steam Turbine Energy Extraction Speed (default 10240)
+	steam_turbine_energy_extract = 10240
+	#Steam Turbine Max Rotation (default 16000)
+	steam_turbine_max_rotation = 16000
+	#Steam Turbine Energy Generation Per Tick (default 512)
+	steam_turbine_energy_per_tick = 512
+	#Steam Turbine Steam Consume Per Tick (default 250)
+	steam_turbine_steam_per_tick = 250
+	#Steam Turbine Steam to Water Conversion Ratio (x steam to 1 water) (default 5f)
+	steam_turbine_steam_water_conversion = 5.0
+
+[Dam]
+	#Dam Intake Water Production (default 40000)
+	dam_intake_water_production = 40000
+	#Dam Outlet Water Consumption (default 200000)
+	dam_outlet_water_consumption = 200000
+	#Dam Turbine Water Tank Capacity (default 240000)
+	dam_turbine_water_tank_capacity = 240000
+	#Amount of water per tick required to reach max rotation
+	dam_turbine_max_efficiency = 200000
+	#Dam Generator Energy Capacity (default 1000000)
+	dam_generator_energy_capacity = 1000000
+	#Dam Generator Energy Per Tick (default 1024)
+	dam_generator_rf_per_tick = 1024
+	#Dam Generator Energy Transfer Rate (default 2048)
+	dam_generator_transfer_rate = 2048
+	#High Pressure Pipe Fluid Transfer Rate in mb (default 200000)
+	high_pressure_pipe_transfer_rate = 200000
+
+[Cables]
+	#LV Cable Transfer Rate (defaut 256)
+	lv_cable_transfer_tare = 256
+	#MV Cable Transfer Rate (defaut 1024)
+	mv_cable_transfer_tare = 1024
+	#HV Cable Transfer Rate (defaut 4096)
+	hv_cable_transfer_tare = 4096
+
+[Solar]
+	#Make Solar panels decorative (default false)
+	solar_decorative = false
+	#Force Solar to Generate (-1 let game decide, 0 no energy, 1 RF, 2 RF ,3 RF ... ALSO Changes Solar Frames)(default -1)
+	solar_force_generation = -1
+
+["Solar Frame"]
+	#Make Solar panel frames decorative (default false)
+	solar_frame_decorative = false
+	#How many time the energy generation of a normal solar panel (default 2f)
+	solar_frame_multiplier = 2.0
+	#Solar Frame Max Capacity (default 600)
+	solar_frame_capacity = 600
+	#Solar Frame Transfer Rate (default 1024)
+	solar_frame_transfer_rate = 1024
+
+["Portable Generator"]
+	#Portable Generator Energy Per Tick (default 32)
+	portable_generator_energy_per_tick = 32
+
+["Wind Turbine"]
+	#Wind Turbine Energy Capacity (default 32000)
+	wind_turbine_capacity = 32000
+	#Wind Turbine Energy Transfer Rate (default 1024)
+	wind_turbine_transfer_rate = 1024
+	#Wind Turbine Max Energy Generation Per Tick (default 128)
+	wind_turbine_energy_per_tick = 128
+	#HV Transformer Transfer Rate (default 1000000)
+	transformer_transfer_rate = 1000000
+
+[Misc]
+	#Catwalk speed factor (default 1.2f)
+	catwalk_speed = 1.2
+	#Enable Industrial Floor Collision (default false)
+	floor_collision = false
+
+["Miner Ore List"]
+	#Miner Ore Black list
+	miner_ore_blacklist = ["minecraft:ancient_debris"]
+	#Use Blacklist as Whitelist (default false)
+	blacklist_as_white = false
+

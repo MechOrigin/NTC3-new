@@ -1,0 +1,78 @@
+#Use an axe on a sticky piston face to turn it into a regular piston
+use_axe_on_sticky_piston = true
+#Use slime on a piston face to turn it into a sticky piston
+use_slime_on_piston = true
+#Add a crafting table for each vanilla wood variant
+crafting_tables = true
+#How many layers can be added to a banner. Survival vanilla is 6, command block vanilla is 16.
+#
+#Compatibility Note: Quark implements this too, but forgot to add support to the Banner Duplication recipe.
+#To remain compatible with Quark, we disable this feature if Quark is detected except for the Banner Duplication Recipe.
+#For this reason, we recommend using the same value for both mods.
+#
+#Range: 1 ~ 16
+banner_layer_limit = 16
+#Guardians turn into Elder Guardians when struck by lightning.
+renewable_elder_guardians = true
+#Changes how a bed reachability is determined so the bed is never considered too far if the player can interact with it.
+bed_never_too_far = false
+
+[lodestone]
+	#Adds a lodestone proxy that when used sets your compass to another lodestone.
+	bound_lodestone = true
+	#If a sign is placed on a lodestone (or bound lodestone), using a compass on that lodestone will rename the compass to the text on the sign (unless the compass was already named).
+	rename_compass_on_use = true
+
+[random_vine_height]
+	#At which distance from the floor will the vine stop growing (at a maximum).
+	#Range: > -2147483648
+	max_floor_Distance = 2
+	#At which distance from the floor will the vine stop growing (at a minimum).
+	#Range: > -2147483648
+	min_floor_distance = 0
+	#Maximum height of vines (in blocks). Vines will grow to at most this size.
+	#Range: > -2147483648
+	max = 7
+	#Minimum height of vines (in blocks). Vines will grow to at least this size.
+	#Range: > -2147483648
+	min = 4
+	#Randomizes the height of sugar canes.
+	enabled = true
+
+[random_sugar_cane_height]
+	#Maximum height of sugar canes (in blocks). Sugar canes will grow to at most this size.
+	#Range: > -2147483648
+	max = 4
+	#Minimum height of sugar canes (in blocks). Sugar canes will grow to at least this size.
+	#Range: > -2147483648
+	min = 2
+	#Randomizes the height of sugar canes.
+	enabled = true
+
+[random_cactus_height]
+	#Maximum height of a cactus (in blocks). Cacti will grow to at most this size.
+	#Range: > -2147483648
+	max = 4
+	#Minimum height of a cactus (in blocks). Cacti will grow to at least this size.
+	#Range: > -2147483648
+	min = 2
+	#Randomizes the height of cacti.
+	enabled = true
+
+[spread_grass_with_bonemeal]
+	#Adds the Nylium spread mechanic to other grass types. This is a mapping of which grass will spread on which blocks.
+	#One mapping per array entry.
+	#Each entry has 3 parts separated by a space:
+	#<dirt_block>(block ID) <source_grass_block>(block ID or block #tag) <generated_grass_block>(block ID)
+	#A <dirt_block> that is near a <source_grass_block> will turn into <generated_grass_block> when bonemealed.
+	#Empty the list to disable this feature.
+	mapping = ["minecraft:dirt #fundamental:grass_blocks minecraft:grass_block", "minecraft:dirt #fundamental:myceliums minecraft:mycelium", "minecraft:blackstone #fundamental:crimson_nylium byg:overgrown_crimson_blackstone", "minecraft:stone #fundamental:grass_blocks byg:overgrown_stone", "byg:dacite #fundamental:grass_blocks byg:overgrown_dacite", "byg:mewdow_dirt #fundamental:grass_blocks byg:meadow_grass_block", "minecraft:netherrack #fundamental:grass_blocks byg:overgrown_netherrack", "minecraft:netherrack #fundamental:myceliums byg:mycelium_netherrack", "minecraft:netherrack byg:sythian_nylium byg:sythian_nylium", "byg:blue_netherrack byg:embur_nylium byg:embur_nylium", "byg:ether_soil byg:ether_phylium byg:ether_phylium", "minecraft:soul_soil byg:wailing_nylium byg:wailing_nylium", "minecraft:end_stone byg:ivis_phylium byg:ivis_phylium", "minecraft:end_stone byg:shulkren_phylium byg:shulkren_phylium", "minecraft:end_stone byg:nightshade_phylium byg:nightshade_phylium", "minecraft:end_stone byg:bulbis_phycelium byg:bulbis_phycelium", "minecraft:dirt botania:dry_grass botania:dry_grass", "minecraft:dirt botania:golden_grass botania:golden_grass", "minecraft:dirt botania:vivid_grass botania:vivid_grass", "minecraft:dirt botania:scorched_grass botania:scorched_grass", "minecraft:dirt botania:infused_grass botania:infused_grass", "minecraft:dirt botania:mutated_grass botania:mutated_grass", "minecraft:dirt quark:glowcelium quark:glowcelium", "minecraft:dirt #fundamental:tconstruct/sky_x_slime_grasses tconstruct:sky_vanilla_slime_grass", "minecraft:dirt #fundamental:tconstruct/ender_x_slime_grasses tconstruct:ender_vanilla_slime_grass", "minecraft:dirt #fundamental:tconstruct/blood_x_slime_grasses tconstruct:blood_vanilla_slime_grass", "minecraft:dirt #fundamental:tconstruct/earth_x_slime_grasses tconstruct:earth_vanilla_slime_grass", "tconstruct:earth_slime_dirt #fundamental:tconstruct/sky_x_slime_grasses tconstruct:sky_earth_slime_grass", "tconstruct:earth_slime_dirt #fundamental:tconstruct/ender_x_slime_grasses tconstruct:ender_earth_slime_grass", "tconstruct:earth_slime_dirt #fundamental:tconstruct/blood_x_slime_grasses tconstruct:blood_earth_slime_grass", "tconstruct:earth_slime_dirt #fundamental:tconstruct/earth_x_slime_grasses tconstruct:earth_earth_slime_grass", "tconstruct:sky_slime_dirt #fundamental:tconstruct/sky_x_slime_grasses tconstruct:sky_sky_slime_grass", "tconstruct:sky_slime_dirt #fundamental:tconstruct/ender_x_slime_grasses tconstruct:ender_sky_slime_grass", "tconstruct:sky_slime_dirt #fundamental:tconstruct/blood_x_slime_grasses tconstruct:blood_sky_slime_grass", "tconstruct:sky_slime_dirt #fundamental:tconstruct/earth_x_slime_grasses tconstruct:earth_sky_slime_grass", "tconstruct:ender_slime_dirt #fundamental:tconstruct/sky_x_slime_grasses tconstruct:sky_ender_slime_grass", "tconstruct:ender_slime_dirt #fundamental:tconstruct/ender_x_slime_grasses tconstruct:ender_ender_slime_grass", "tconstruct:ender_slime_dirt #fundamental:tconstruct/blood_x_slime_grasses tconstruct:blood_ender_slime_grass", "tconstruct:ender_slime_dirt #fundamental:tconstruct/earth_x_slime_grasses tconstruct:earth_ender_slime_grass", "tconstruct:ichor_slime_dirt #fundamental:tconstruct/sky_x_slime_grasses tconstruct:sky_ichor_slime_grass", "tconstruct:ichor_slime_dirt #fundamental:tconstruct/ender_x_slime_grasses tconstruct:ender_ichor_slime_grass", "tconstruct:ichor_slime_dirt #fundamental:tconstruct/blood_x_slime_grasses tconstruct:blood_ichor_slime_grass", "tconstruct:ichor_slime_dirt #fundamental:tconstruct/earth_x_slime_grasses tconstruct:earth_ichor_slime_grass"]
+
+[bonemeal]
+	#Make sugar canes grow if bone meal is used on it.
+	sugarCane = true
+	#Make cactus grow if bone meal is used on it.
+	cactus = true
+	#Spawn a new lily pads nearby by using bone meal on one.
+	lilyPad = true
+

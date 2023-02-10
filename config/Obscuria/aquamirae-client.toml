@@ -1,0 +1,10 @@
+
+[IceMazeAmbient]
+	spawnParticles = true
+	playAmbientSounds = true
+	playBiomeMusic = true
+	playCorneliaMusic = true
+
+[General]
+	renderThreeBoltHelmetOverlay = true
+

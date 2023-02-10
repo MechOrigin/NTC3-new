@@ -1,0 +1,144 @@
+
+#################################################
+#Configuration:
+#################################################
+[witherutils]
+
+	#################################################
+	# Conduits
+	#################################################
+	[witherutils.conduit]
+		#How many the EnergyConduit can buffer.
+		#Range: 1 ~ 128000
+		energybuffer = 32000
+		#How many EnergyConduit can transfer.
+		#Range: 100 ~ 32000
+		energytransfer = 1000
+		#How many the FluidConduit can buffer.
+		#Range: 1 ~ 32
+		fluidbuffer = 16
+		#How many the FluidConduit can transfer.
+		#Range: 100 ~ 32000
+		fluidtransfer = 1000
+
+	#################################################
+	# SteelArmor
+	#################################################
+	[witherutils.armor]
+		#Controls how the Hud can display/overlay the Armor Informations.
+		armorhud = true
+		#How many Energy is coming in, by Solar Upgrades. multiply... and 0 means solar is disabled
+		energyin = 1
+		#How many XP Level costs Energy Upgrade Level One
+		energyuplvlonecost = 3
+		#How many XP Level costs Energy Upgrade Level Two
+		energyuplvltwocost = 6
+		#How many XP Level costs Energy Upgrade Level Three
+		energyuplvlthreecost = 12
+		#How many XP Level costs Solar Upgrade Level One
+		solaruplvlonecost = 3
+		#How many XP Level costs Solar Upgrade Level Two
+		solaruplvltwocost = 6
+		#How many XP Level costs Solar Upgrade Level Three
+		solaruplvlthreecost = 12
+		#How many Energy per Tick is consumed by Free Falling with FeatherFalling Upgrade
+		featherfallcost = 10
+		#How many Energy per extra Jump is consumed
+		jumpingcost = 99
+		#How many Energy per Tick is consumed by Walking with Sprinting Upgrade
+		sprintingcost = 10
+		#How many Energy per Tick is consumed by activated Night Vision Upgrade
+		nightvisioncost = 10
+
+	#################################################
+	# Fisher
+	#################################################
+	[witherutils.fisher]
+		#How many Ticks needed for one Fishing Fishes Fish.
+		timer = 100
+		#How many Ticks needed for one Fishing Fishes Fish Cooldown.
+		cooldown = 25
+
+	#################################################
+	# Fluids
+	#################################################
+	[witherutils.fluids]
+		#The Maximum Distance, the Blue Limbo Fluid can suck in.
+		range = 5
+
+	#################################################
+	# RottenSapling
+	#################################################
+	[witherutils.rottensapling]
+		#Enable/Disables generating the RottenSapling in Nether.
+		generateRottenSaplings = true
+
+	#################################################
+	# Magnet
+	#################################################
+	[witherutils.magnet]
+		#How many Energy is used, when the Magnet is ON.
+		energyUse = 1
+		#The Maximum Energy, the Magnet can have when fully loaded.
+		maxEnergy = 100000
+		#The Maximum Distance, the Magnet can find Items to suck on.
+		range = 5
+		#How many Items the Magnet can suck at the same time.
+		maxItems = 20
+
+	#################################################
+	# Collector
+	#################################################
+	[witherutils.collector]
+		#The Maximum Distance, the Collector can find Items to suck on.
+		range = 5
+		#How many Items the Collector can suck at the same time.
+		maxItems = 20
+
+	#################################################
+	# Block Effects
+	#################################################
+	[witherutils.effects]
+		#Showing some extra Effects when break or place Blocks from WitherUtils.
+		blockEffects = true
+
+	#################################################
+	# Fluid Tanks
+	#################################################
+	[witherutils.tank]
+		#The amount of Fluid the Tank can Hold in Bucket Size. 32 Buckets is Standard.
+		#Range: 0 ~ 128
+		tankBasicCapacity = 32
+
+	#################################################
+	# Drop Chance
+	#################################################
+	[witherutils.drops]
+		#The Chance to become Wither Skeleton Skulls.
+		#Range: 0.02 ~ 1.0
+		skulldropchance = 0.1
+
+	#################################################
+	# Hammer Tool
+	#################################################
+	[witherutils.hammer]
+		#Can Hammer uncraft Blocks by Smashing?
+		uncrafthammersmash = true
+		#Higher Value = Higher Chance for the Uncraft Hammer Smash.
+		#Range: 0.1 ~ 1.0
+		uncrafthammerchance = 0.5
+
+	#################################################
+	# Wither Anvil
+	#################################################
+	[witherutils.anvil]
+		#Controls how the WitherAnvil plays Effects, like Clonk or coming out Soul Particles.
+		anvileffects = true
+
+	#################################################
+	# Gui Overlay Effects
+	#################################################
+	[witherutils.GUI]
+		#Controls how the User Interface can display/overlay Colors and Effects.
+		guieffects = true
+

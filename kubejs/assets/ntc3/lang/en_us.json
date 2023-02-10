@@ -1,0 +1,748 @@
+{
+    "ntc3.packname": "&fNTC3 - &d1.18.2&r",
+
+    "ntc3.colors": "&4F &cF &6F &eF &2F &aF &bF &3F &1F &9F &dF &5F &fF &7F &8F &0F&r &oItalics&r &nUnderline&r &mStrike-through&r &lBold&r &kObfuscated&r",
+    "ntc3.emcable": "&eEMCable&r",
+
+    "ntc3.chapter.allisoneandoneisall.title": "&aAll is One, One is All&r",
+
+    "ntc3.chaptergroup.tier0": "&fTier 0&r",
+    "ntc3.chaptergroup.tier1": "&aTier 1&r",
+    "ntc3.chaptergroup.tier2": "&bTier 2&r",
+    "ntc3.chaptergroup.tier3": "&dTier 3&r",
+    "ntc3.chaptergroup.tier4": "&6Tier 4&r",
+    "ntc3.chaptergroup.neutral": "&4Neutral Quests&r",
+
+    "ntc3.chapter.thebeginning.title": "&aThe Beginning&r",
+    "ntc3.chapter.projectelvl0.title": "&aEquivalent Exchange &fTier 0&r",
+    "ntc3.chapter.integrateddyn.title": "&aIntegrated Dynamics&r",
+    "ntc3.chapter.tinkerslvl0.title": "&aTinkers &fTier 0&r",
+    "ntc3.chapter.exnihliolvl0.title": "&aEx Nihilio&r",
+    "ntc3.chapter.neuralnetworks.title": "&aNeural Networks&r",
+    "ntc3.chapter.notmyarselvl0.title": "&aNot My Ars &fTier 0&r",
+    "ntc3.chapter.multiblockslvl0.title": "&aMultiblocks &fTier 0&r",
+
+    "ntc3.chapter.metaldude.title": "&aMetal Dude&r :guitar:",
+    "ntc3.chapter.aseedyplace.title": "&aA Seedy Place&r",
+    "ntc3.chapter.pipez.title": "&aPipez&r",
+    "ntc3.chapter.components.title": "&aComponents&r",
+    
+    "ntc3.unlock.integrateddyn": "&fUnlocked &n&aIntegrated Dynamics&r &fChapter&r",
+    "ntc3.unlock.tinkerslvl0": "&fUnlocked &n&aTinkers Tier 0&r &fChapter&r",
+    "ntc3.unlock.multiblocks": "&fUnlocked &n&aMultiblocks&r &fChapter&r",
+    "ntc3.unlock.blastfurnace.quest": "&fUnlocked &n&aBlast Furnace&r &fQuest&r",
+    "ntc3.unlock.metaldude": "&fUnlocked &n&aMetal Dude&r &fChapter&r",
+    "ntc3.unlock.neuralnetworks": "&fUnlocked &n&aNeural Networks&r &fChapter&r",
+    "ntc3.unlock.exnihilio": "&fUnlocked &n&aEx Nihilio&r &fChapter&r",
+
+    "ntc3.allisoneandoneisall.title": "&bType This to Begin&r",
+    "ntc3.allisoneandoneisall.subtitle": "&cReadme&r",
+    "ntc3.allisoneandoneisall.desc0": "&cType&r &9/skyblock gui&r and dont forget to &9/sethome&r",
+    "ntc3.allisoneandoneisall.desc1": "&cThis allows you to create or join a team to begin on your island&r",
+    "ntc3.allisoneandoneisall.desc2": "&e&oA simple rock, red as blood. Which promised to turn pain into delight. War into victory. And death into life. It was a thinking person\u0027s dream - reason, conquering all. And that was in deference to this, that it was called the Philosopher\u0027s Stone.&r",
+    "ntc3.allisoneandoneisall.dirt.title": "&bDirty Deeds Done Dirt Cheap&r",
+    "ntc3.allisoneandoneisall.dirt.subtitle": "Dont forget to add it to your Transmutation Table",
+    "ntc3.allisoneandoneisall.dirt.desc0": "&cIn World Transmutation&r: &9Right-click&r the &bPhilosopher Stone&r on some &dDirt&r to yield some &6Sand&r",
+    "ntc3.allisoneandoneisall.sand.title": "&bEnter Sandman&r",
+    "ntc3.allisoneandoneisall.sand.subtitle": "Transmute this to that",
+    "ntc3.allisoneandoneisall.sand.desc0": "Simply Craft some &bSandstone&r with &d4&r &6Sand&r",
+    "ntc3.allisoneandoneisall.sandstone.title": "&bDarude Sandstone&r",
+    "ntc3.allisoneandoneisall.sandstone.subtitle": "Do a little 2x2 crafting",
+    "ntc3.allisoneandoneisall.sandstone.desc0": "&cIn World Transmutation&r: &9Right-click&r the &bPhilosopher Stone&r on some &dSandstone&r to yield some &6Gravel&r",
+    "ntc3.allisoneandoneisall.gravel.title": "&bTrue Love Travels on a Gravel Road&r",
+    "ntc3.allisoneandoneisall.gravel.subtitle": "Transmute a little more",
+    "ntc3.allisoneandoneisall.cobble.title": "&bOn a Cobblestone road, with a Heavy Load&r",
+    "ntc3.allisoneandoneisall.cobble.subtitle": "Cycle, recycle, and im next to nothing",
+    "ntc3.allisoneandoneisall.cobble.desc0": "&cIn World Transmutation&r: &9Shift-Right-click&r the &bPhilosopher Stone&r on some &dDirt/Sand&r to yield some &6Cobblestone&r",
+    "ntc3.allisoneandoneisall.cobble.desc1": "In order to &6mine it&r though, you need at least a &7Stone Pickaxe&r",
+
+    "ntc3.thebeginning.title": "&fWelcome to NTC3&r",
+    "ntc3.thebeginning.subtitle": "&oStay a while and listen&r",
+    "ntc3.thebeginning.desc0": "After &9NTC2&r there was much thought on whether or not to do a &6Skyblock&r again and after much deliberation, this time we're going to something a &blittle different&r.&r",
+    "ntc3.thebeginning.desc1": "Life is tough, I think it's time to rest your weary souls for a while in &fNot Too Complicated 3&r",
+    "ntc3.thebeginning.desc2": "As always, designed with love and care. &o-SecretAsain&r",
+
+    "ntc3.craftingtable.title": "The most &o&bcliche&r start",
+    "ntc3.craftingtable.subtitle": "But with a &6twist&r",
+    "ntc3.craftingtable.desc0": "You know what to do :eyes:",
+    "ntc3.craftingtable.desc1": "&cIf not,&r the recipe is &d2x&r &6Flint&r and &d2x&r &bPlanks&r",
+
+    "ntc3.furnace.title": "&7The Furnace&r",
+    "ntc3.furnace.subtitle": "Upgradable",
+    "ntc3.furnace.desc0": "Most &6smelting&r by the &dFurnace&r only grants &b0.35xp&r per process, while the &dBlast Furnace&r grants &b0.75xp&r per",
+
+    "ntc3.ironingot.title": "&fIron&r",
+    "ntc3.ironingot.desc0": "There are many sources of &6Iron&r in this pack besides the vanilla &bRaw Iron&r, some of the most notable are:",
+    "ntc3.ironingot.desc1": "Magnetite, Banded Iron, Brown Limonite, Yellow Limonite, and Pyrite",
+    "ntc3.ironingot.desc2": "&eEx Nihilio&r is your early game option, &bFlint Mesh+&r and &7Gravel&r sifted will yield some &6Impure Dusts&r",
+
+    "ntc3.ironblock.title": "&fIron Block&r",
+    "ntc3.ironblock.desc0": "Most &6Blocks&r of metals are &cNot&r hand craftable in a crafting table",
+    "ntc3.ironblock.desc1": "&eTinkers Construct&r is your early game option",
+
+    "ntc3.copperingot.title": "&6Copper&r",
+    "ntc3.copperingot.desc0": "Just like &fIron&r, there are many other sources of &6Copper&r in this pack besides just &6Raw Copper&r, like:",
+    "ntc3.copperingot.desc1": "Chalcopyrite, Malachite, and Tetrahedrite",
+    "ntc3.copperingot.desc2": "&eEx Nihilio&r is always an option, &bFlint Mesh+&r and &7Gravel&r sifted will yield some &6Impure Dusts&r",
+
+    "ntc3.flint.title": "&8Flint&r",
+    "ntc3.flint.subtitle": "That's a mighty pre-requisite for a &6Crafting Table&r...",
+    "ntc3.flint.desc0": "Besides getting &8Flint&r by chance from breaking &bGravel&r, once unlocking &eIntegrated Dynamics&r it can be more efficiently broken down with the &6Squeezer&r",
+    "ntc3.fint.desc1": "&eEx Nihilio&r is always an option, &bString Mesh+&r and &7Gravel&r sifted will yield some &6Flint&r",
+
+    
+    "ntc3.coal.title": "&8Coal&r",
+    "ntc3.coal.desc0": "&8Coal&r veins aren't the typical &6Coal Ore&r you'd find exploring. You will know once you see it",
+    "ntc3.coal.desc1": "&eEx Nihilio&r is always an option, &bFlint Mesh+&r and &7Gravel&r sifted will yield some &6Coal&r",
+    "ntc3.coal.desc2": "&eTransmutation&r is another option, &d4x&r &bCharcoal&r and the &fPhilosophers Stone&r crafted will yield some &6Coal&r",
+    
+    "ntc3.charcoal.title": "&8Charcoal&r",
+    "ntc3.charcoal.desc0": "Can be acquired from the &7Furnace&r but more efficiently via &eNot Too Complicated's&r &6Coke Oven&r as it has a secondary output of &bCreosote Oil&r",
+    "ntc3.charcoal.desc2": "&eTransmutation&r is another option, &d1x&r &bCoal&r and the &fPhilosophers Stone&r crafted will yield &d4x&r &6Charcoal&r",
+    
+    "ntc3.diamond.title": "Lucy in the sky with &bDiamonds&r",
+    "ntc3.diamond.desc0": "&bDiamonds&r are a particularly rare ore to find. They aren't your typical &bRaw Diamond Ores&r, instead you can find them in veins of:",
+    "ntc3.diamond.desc1": "Mixed Coal/Graphite/Diamond veins",
+    "ntc3.diamond.desc2": "However once you get to different planets pure ore vein variants exist",
+    "ntc3.diamond.desc3": "&eEx Nihilio&r is always an option, &bIron Mesh+&r and &7Gravel&r sifted will yield some &6Diamond&r",
+    "ntc3.diamond.desc4": "&eTransmutation&r is another option",
+
+
+    "ntc3.emerald.title": "&2Emerald&r",
+    "ntc3.emerald.desc0": "&2Emeralds&r are a exceptionally rare ore to find. They aren't your typical &2Raw Emerald Ores&r, instead you can find them in veins of:",
+    "ntc3.emerald.desc1": "Mixed Emerald/Thorium/Beryllium veins",
+    "ntc3.emerald.desc2": "Once you get to different planets pure ore vein variants exist",
+    "ntc3.emerald.desc3": "&eEx Nihilio&r is always an option, &bIron Mesh+&r and &7Gravel&r sifted will yield some &6Emerald&r",
+    "ntc3.emerald.desc4": "&eTransmutation&r is another option",
+
+    "ntc3.lapis.title": "&1Lapis&r",
+    "ntc3.lapis.desc0": "These can be found in mixed ore veins of Calcite/Lazurite/Sodalite/Lapis. Mainly in the &2Overworld&r",
+    "ntc3.lapis.desc1": "&eEx Nihilio&r is always an option, &bFlint Mesh+&r and &7Gravel&r sifted will yield some &6Lapis&r",
+
+    "ntc3.redstone.title": "&4Redstone&r",
+    "ntc3.redstone.desc0": "These can be found in mixed ore veins of Cinnabar/Ruby/Redstone. Mainly in the &2Overworld&r but can also be found in &2 The Nether&r",
+    "ntc3.redstone.desc1": "&eEx Nihilio&r is always an option, &bFlint Mesh+&r and &dDust&r sifted will yield some &6Redstone Dust&r",
+
+    "ntc3.amethyst.title": "&dAmethyst&r",
+    "ntc3.amethyst.desc0": "WIP",
+
+    "ntc3.goldingot.title": "&eGold&r",
+    "ntc3.goldingot.desc0": "Alchemists long sought to convert things to and from &eGold&r to feed the lust for riches",
+    "ntc3.goldingot.desc1": "&eGold&r is very unlikely to be found in a normal vein, although is extremely abundant in the Nether, you will often find it in a mixed vein of Vanadium-Magnetite/Magnetite/Gold ores. &d90%%&r of the time in &2The Nether&r",
+    "ntc3.goldingot.desc2": "&eEx Nihilio&r is always an option, &bIron Mesh+&r and &7Gravel&r sifted will yield some &6Impure Dust&r",
+    "ntc3.goldingot.desc3": "&eTransmutation&r is another option",
+
+    "ntc3.foodstuff.title": "An &c&kApple&r a day keeps the doctor away",
+    "ntc3.foodstuff.desc0": "Cook up or find each of these to contribute to the goal of completing &aTier 0 - Vanilla Minecraft&r",
+
+    "ntc3.clay.title": "&7Clay&r",
+    "ntc3.clay.desc0": "This little &o&dbalanced&r pile is a pre-requisite for many things leading to automation, such as &6Smelteries&r and &bCoke Ovens&r",
+    "ntc3.clay.desc1": "&eEx Nihilio&r is always an option, &bFluid Item Transformation&r with &1Water&r and &dDust&r mixed in a &bBarrel&r will yield a &6Clay Block&r which can be broken into balls",
+
+    "ntc3.brick.title": "I am &6Brick&r",
+    "ntc3.brick.subtitle": "&oAnother brick in the wall...&r",
+
+    "ntc3.cauldron.title": "&fCauldron&r",
+    "ntc3.cauldron.subtitle": "&oDouble, double, toil and trouble...&r",
+    "ntc3.cauldron.desc0": "The &fCauldron&r has an additional use of washing &6Impure Dusts&r",
+
+    "ntc3.dyes.title": "&fR&6e&da&3d&ei&an&cg&8 R&7a&bi&5n&1b&4o&2w&r :rainbow:",
+    "ntc3.dyes.desc0": "Dyes are an integral part of progression. Just kidding, this is a test of skill to see if you can collect them all!",
+
+    "ntc3.impuredust.title": "&6Impure Dust&r",
+    "ntc3.impuredust.desc0": "Acquired from ore veins, these can be smelted directly for some materials but it's much (&d56%%&r) more cost efficient to wash them in a cauldron first",
+    "ntc3.impuredust.desc3": "&eEx Nihilio&r is always an option, &bFlint Mesh+&r and &7Gravel&r sifted will yield some &6Impure Dust&r",
+
+    "ntc3.tinkerslvl0.prereq.title": "&6Planks&r and &bSticks&r",
+    "ntc3.tinkerslvl0.prereq.desc0": "Just a quest to point you in the direction of crafting a &6Pattern&r from &eTinkers&r",
+
+    "ntc3.blastfurnace.title": "&7The Vanilla Blast Furnace&r",
+    "ntc3.blastfurnace.desc0": "Most &6smelting&r by the &dBlast Furnace&r grants &b0.75xp&r per processing",
+
+    "ntc3.beacon.title": "&bBeacon&r",
+    "ntc3.beacon.desc0": "A &bBeacon&r is a block that projects a light beam skyward and can provide &6status effects&r such as &dSpeed, Jump Boost, Haste, Regeneration, Resistance, or Strength&r to nearby players",
+    
+    "ntc3.endcrystal.title": "&dEnd Crystal&r",
+    "ntc3.endcrystal.desc0": "Their &6primary&r purpose is to recharge the health of the &5Ender Dragon&r. As items, &dEnd Crystals&r may be placed on &7bedrock&r and &5Obsidian&r",
+    "ntc3.endcrystal.desc1": "&cEnd crystals explode when attacked or damaged&r",
+    
+    "ntc3.piston.title": "&6The Piston&r",
+    "ntc3.piston.desc0": "A &6Piston&r is a block capable of &dpushing blocks, players, and mobs&r when given a &4redstone&r pulse",
+    "ntc3.piston.desc1": "A &2Sticky Piston&r has the same function as a &6Piston&r but can also pull the block on its face back when it retracts, unlike the regular piston, which leaves the pushed block in place",
+    
+    "ntc3.elytra.title": "Flying Solo",
+    "ntc3.elytra.subtitle": "&oOr with friends...&r",
+    "ntc3.elytra.desc0": "&dElytra&r are &9rare&r wings found in &bEnd Ships&r, they are enchantable and equipable in a &eCurios&r slot instead of armor slot",
+    
+    "ntc3.flintandsteel.title": "&8Flint&r and Actually &7Steel&r",
+    "ntc3.flintandsteel.desc0": "A &6Flint and Steel&r is a tool used to light fires. Duh",
+    "ntc3.flintandsteel.desc1": "&cRead Me:&r",
+    "ntc3.flintandsteel.desc2": "&6Flint and Steel&r &dx2&r is a crafting ingredient for &bNether Painting&r, in order to go to &2The Nether&r however, it cannot be used to enter the &5Nether Portal&r until you've acquired the &fNether Star&r",
+
+    "ntc3.netheritescrap.title": "Scrap of Netherite",
+    "ntc3.netheritescrap.desc0": "&6Netherite Scrap&r is a material smelted from &bAncient Debris&r, which is found in the &2Nether&r",
+    
+    "ntc3.netheriteingot.title": "&dNetherite Alloy&r",
+    "ntc3.netheriteingot.desc0": "&6Netherite Ingots&r are obtained by crafting &dfour&r &bNetherite Scraps&r and &dfour&r &eGold Ingots&r",
+    
+    "ntc3.enderpearl.title": "&2Ender Pearl&r",
+    "ntc3.enderpearl.desc0": "An &2Ender Pearl&r is a item dropped by &5Enderman&r used to teleport and to make an eye of ender",
+    "ntc3.enderpearl.desc1": "It also has many other uses such as to create alloys and for special machines",
+    "ntc3.enderpearl.desc2": "&5Endermen&r have a &d50%%&r chance to drop &d1&r &2Ender Pearl&r when killed. The drop is increased by &d1&r per level of &bLooting&r, with a maximum of &d4&r with &bLooting III&r",
+    "ntc3.enderpearl.desc3": "&eTransmutation&r is another option",
+
+    "ntc3.blazerod.title": "&6Blaze Rod&r",
+    "ntc3.blazerod.desc0": "Can be crushed into &6Blaze Powder&r and used for many things",
+
+    "ntc3.ghasttear.title": "Tears of Polonium",
+    "ntc3.ghasttear.desc0": "WIP",
+
+    "ntc3.string.title": "Missing Strings",
+    "ntc3.string.desc0": "Can be acquired early game from &6Flax&r, the chapter is &2A Seedy Place&r and the &bSeeds&r are acquired from chopping grass or the first few &2Tinkers&r quests",
+
+    "ntc3.netherstar.title": "&bKill a Wither Get a Star&r",
+    "ntc3.netherstar.desc0": "The &fNether Star&r can be obtained by defeating the &8Wither&r, which is a boss mob. One &fNether Star&r is dropped each time; the drop chance or amount is not affected by the &bLooting&r enchantment",
+    "ntc3.netherstar.desc1": "This is the final stage in &fVanilla&r Minecraft which is basically &fTier 0&r",
+
+    "ntc3.magmacream.title": "Magma Cream",
+    "ntc3.magmacream.desc0": "WIP",
+
+    "ntc3.shulkershell.title": "Shulker Shell",
+    "ntc3.shulkershell.desc0": "WIP",
+
+    "ntc3.netherbrick.title": "&oA Nether Brick in the wall...&r",
+    "ntc3.netherbrick.desc0": "&6Nether Brick&r can be smelted from &4Netherrack&r",
+
+    "ntc3.prismarineshard.title": "Prismarine Shard",
+    "ntc3.prismarineshard.desc0": "&eEx Nihilio&r is always an option, &bIron Mesh+&r and &eSand&r sifted will yield some &3Prismarine Shard&r",
+
+    "ntc3.prismarinecrystal.title": "Prismarine Crystal",
+    "ntc3.prismarinecrystal.desc0": "&eEx Nihilio&r is always an option, &bDiamond Mesh+&r and &eSand&r sifted will yield some &3Prismarine Crystal&r",
+
+    "ntc3.chorusfruit.title": "Chorus Fruit",
+    "ntc3.chorusfruit.desc0": "WIP",
+
+    "ntc3.dragonbreath.title": "Dragon Breath",
+    "ntc3.dragonbreath.desc0": "WIP",
+
+    "ntc3.magmablock.title": "&4Magma Block&r",
+    "ntc3.magmablock.desc0": "&6Magma Blocks&r can be found in the &2Overworld&r in flooded caves and in the ocean like normal",
+    "ntc3.magmablock.desc1": "&6Magma Blocks&r can also be &echeesed&r by lighting a &4Nether Portal&r and letting it &5spread&r all over the place",
+    "ntc3.magmablock.desc2": "&6Magma Blocks&r can be &ecrafted&r by &d4x&r &4Magma Cream&r as well as in a &bMechanical Drying Basin&r from &4Lava&r",
+
+    "ntc3.glowstonedust.title": "&eGlowstone&r",
+    "ntc3.glowstonedust.desc0": "&eEx Nihilio&r is always an option, &bIron Mesh+&r and &eDust&r sifted will yield some &eGlowstone&r",
+
+    "ntc3.netherquartz.title": "Nether Quartz",
+    "ntc3.netherquartz.desc0": "Useful for Silicon production and alloys",
+    "ntc3.netherquartz.desc1": "Can be first acquired by crushing &6Granite, Diorite or Andesite&r in an &eIntegrated Dynamics&r &6Mechanical Squeezer&r",
+
+    "ntc3.netherwart.title": "&4Nether Wart&r",
+    "ntc3.netherwart.desc0": "The first one can be acquired by getting a &6Generalized Nether Prediction&r and combinging it with &bRed Mushroom&r",
+    "ntc3.netherwart.desc1": "&4Nether Wart&r can also be &echeesed&r by lighting a &4Nether Portal&r and letting it &5spread&r all over the place",
+    "ntc3.netherwart.desc2": "&eEx Nihilio&r is always an option, &bString Mesh+&r and &6Soul Sand&r sifted will yield some &4Nether Wart&r",
+
+    "ntc3.paper.title": "Paper",
+    "ntc3.paper.desc0": "Paper is an item crafted from sugar cane, its useful later on with circuit components",
+
+    "ntc3.leather.title": "&9Unr34l_L34th3rs&r",
+    "ntc3.leather.subtitle": "Cover me in L34th3rs'n ;o",
+    "ntc3.leather.desc0": "Upon death, &bcows, mooshrooms, horses, donkeys, mules, and llamas&r drop &d0–2&r &6leather&r, while &bhoglins&r drop &d0–1&r &6leather&r. The maximum amount is increased by &d1&r per level of &bLooting&r, for a maximum of &d5&r &6leather&r &c(4 leather from hoglins)&r with &bLooting III&r",
+    "ntc3.leather.desc1": "Or by drying Rotten Flesh with &eIntegrated Dynamics&r &6Drying Basin&r",
+
+    "ntc3.book.title": "The &bGood&r Book ✝",
+    "ntc3.book.subtitle": "&oWell, not actually a &eBible&r &obut it's still good to have...&r",
+    "ntc3.book.desc0": "Useful for crafting the &eAkashic Tome&r among other things",
+
+    "ntc3.growingstuff.title": "Dear &aWeed&r Man",
+    "ntc3.growingstuff.subtitle": ":watermelon: :carrot: :apple: :mushroom: :cactus: :ear_of_rice:",
+    "ntc3.growingstuff.desc0": "Prove that you're good at &6finding&r and &bgrowing&r stuff!",
+    "ntc3.growingstuff.desc1": "Gather &d64&r of each",
+
+    "ntc3.netherrack.title": "&4Netherrack&r",
+    "ntc3.netherack.desc0": "&4Netherrack&r can be found in the &2nether&r, obviously. However it can be made as well from drying out &cMagma Blocks&r with &eIntegrated Dynamics&r",
+    "ntc3.netherack.desc1": "&4Netherrack&r can also be &echeesed&r by lighting a &4Nether Portal&r and letting it &5spread&r all over the place",
+
+    "ntc3.dimension.thenether.title": "&fUnlocked &n&aThe Nether&r &fDimension&r",
+    "ntc3.dimension.thenether.desc0": "&aThe Nether&r can only be unlocked from acquiring &7Steel&r first",
+    "ntc3.dimension.thenether.desc1": "Many metals can only be acquired from the nether. Such as &6Zinc, Tin, Silver, Nickel, Lead, Vanadium, Cobalt and Aluminium&r",
+    "ntc3.dimension.thenether.desc2": "Once you have the &2Nether Portal Painting&r and reach the other side, you can light the portal with fire or whatever but you can't enter it without first completing &n&aKill a Wither Get a Star&r",
+    
+    "ntc3.netherpainting.title": "&4Nether Painting&r",
+    "ntc3.netherpainting.desc0": "&4Nether Painting&r can be crafted in order to enter &2The Nether&r",
+
+    "ntc3.dimension.overworld.title": "&fUnlocked &n&aOverworld&r &fDimension&r",
+    "ntc3.dimension.overworld.desc0": "&aOverworld&r can only be unlocked from acquiring a &7Nether Star&r first",
+
+
+
+    "ntc3.title.intdyn": "Integrated Dynamics",
+
+    "ntc2.stringetc.title": "Missingno",
+    "ntc2.stringetc.subtitle": "Learn what a string, integer, double, etc are",
+    "ntc2.stringetc.desc1": "A &bString&r is just &6any text&r, including letters, numbers, and punctuation.",
+    "ntc2.stringetc.desc2": "An &bInteger&r is a &6whole number&r, positive or negative. It can only handle numbers between -2,147,483,647 and 2,147,483,647",
+    "ntc2.stringetc.desc3": "A &bDouble&r is a &6number with a decimal point&r, like 5.0 instead of 5.",
+    "ntc2.stringetc.desc4": "A &bLong&r is a &6whole number&r; longs can handle much larger values than integers. Its highest possible value is 9,223,372,036,854,775,807.",
+    "ntc2.stringetc.desc5": "A &bBoolean&r is a simple &6true/false&r.",
+    "ntc2.stringetc.desc6": "A &bList&r is a &6group of values&r, which can be of any other type, though only one per list.",
+
+    "ntc2.intbook.subtitle": "Get \"On the Dynamics of Integration\"",
+    "ntc2.intbook.desc1": "&bOn the Dynamics of Integration&r is &eIntegrated Dynamics&r' guide book.",
+    "ntc2.intbook.desc2": "It has pages for pretty much everything in the mod, teaching concepts, walking through tutorials, and describing the mod on a block-by-block basis.",
+    "ntc2.intbook.desc3": "Seriously, &6give the tutorial section a read&r. It does a really good job of walking you through the mod.",
+
+    "ntc2.menrilchunk.title": "&3Menril&r",
+    "ntc2.menrilchunk.desc1": "&bMenril trees&r, which spawn rarely everywhere but very common in the &6Meneglin&r biome.",
+    "ntc2.menrilchunk.desc2": "When chopped, Menril trees drop &bMenril Wood&r, &bMenril Berries&r, and &bCrystalized Menril Chunks&r, all of which are important crafting components.",
+
+    "ntc2.idsqueezer.title": "&3Squeezer&r",
+    "ntc2.idsqueezer.subtitle": "Squeeze it, grab it, squeeze and tug on my integrated flap",
+    "ntc2.idsqueezer.desc1": "Right-click Menril Wood into a &bSqueezer&r to insert it, then jump up and down on top of it to squish it down, producing &6Menril Resin&r.",
+    "ntc2.idsqueezer.desc2": "The Menril Resin will automatically be output to a fluid container on &6two of its sides&r.",
+    "ntc2.idsqueezer.desc3": "Give the Squeezer a &6redstone signal&r to reset it.",
+
+    "ntc2.idwrench.subtitle": "Make a Wrench",
+    "ntc2.idwrench.desc1": "The &bWrench&r is a wrench. It does wrench things.",
+    "ntc2.idwrench.desc2": "Right-clicking a Logic Cable connection will disable that connection. Right-clicking while sneaking will break the part itself.",
+
+    "ntc2.labeller.subtitle": "Make a Labeller",
+    "ntc2.labeller.desc": "You can put any item into the &bLabeller&r's GUI, type something in the text box, then click &6Write&r to rename the item.",
+
+    "ntc2.mechanicalsqueezer.subtitle": "Make a Mechanical Squeezer",
+    "ntc2.mechanicalsqueezer.desc1": "The &bMechanical Squeezer&r &6uses FE&r to convert Menril Wood into Menril Resin, at the same time as producing Crystallized Menril Chunks.",
+    "ntc2.mechanicalsqueezer.desc2": "In its GUI, you can toggle whether or not it should auto-eject fluids to adjacent tanks.",
+    "ntc2.mechanicalsqueezer.desc3": "It's also efficient early game crushing. Getting resources more effectively such as flint and gravel.",
+
+    "ntc2.dryingbasin.subtitle": "Make a Drying Basin",
+    "ntc2.dryingbasin.desc1": "The &bDrying Basin&r will dry items/fluids inserted into it. Some recipes may require both items &oand&r fluids to work; see its uses in JEI.",
+    "ntc2.dryingbasin.desc2": "Its most important use is to &6convert Menril Resin into a Block of Crystallized Menril&r.",
+
+    "ntc2.idfacade.title": "Facades",
+    "ntc2.idfacade.subtitle": "Make a Facade",
+    "ntc2.idfacade.desc1": "&bFacades&r can hide your Logic Cables, making them look like a different block.",
+    "ntc2.idfacade.desc2": "Craft a Facade with any block, then right-click it on the Logic Cable to disguise it.",
+
+    "ntc2.mechdrybas.subtitle": "Make a Mechanical Drying Basin",
+    "ntc2.mechdrybas.desc1": "The &bMechanical Drying Basin&r works just like the Drying Basin, but uses FE.",
+    "ntc2.mechdrybas.desc2": "One of the most important uses in this pack is to get Netherrack early game.",
+
+    "ntc2.logiccable.subtitle": "Make Logic Cables",
+    "ntc2.logiccable.desc": "&bLogic Cables&r are the mod's pipes; they connect network components.",
+
+    "ntc2.monoconn.subtitle": "Make a Mono-Directional Connector",
+    "ntc2.monoconn.desc1": "&bMono-Directional Connectors&r allow you to &6connect sections of a network wirelessly&r.",
+    "ntc2.monoconn.desc2": "Place two MDCs facing each other (so a straight line from one reaches the other), 512 blocks or less away. They also even work if blocks are in the way.",
+
+    "ntc2.omnicon.subtitle": "Make Omni-Directional Connectors",
+    "ntc2.omnicon.desc1": "&bOmni-Directional Connectors&r, which are crafted in pairs, will connect the networks they are placed on wirelessly. This includes &6across dimensions&r.",
+    "ntc2.omnicon.desc2": "As the recipe for an ODC gives 2, those 2 are paired together.",
+
+    "ntc2.variablecard.subtitle": "Make a Variable Card",
+    "ntc2.variablecard.desc1": "&bVariable Cards&r are the primary mode of &6logic transport&r. They contain a reference to a certain value with a certain value type.",
+    "ntc2.variablecard.desc2": "Network components (like a Redstone Reader) have &6Aspects&r (Redstone, Comparator, etc) of specific &6Types&r (Boolean, Integer, etc).",
+    "ntc2.variablecard.desc3": "For components that read/set variables (like Readers), you can insert a Variable Card next to an Aspect to &6save a reference to that variable&r.",
+    "ntc2.variablecard.desc4": "Then, you would insert the set Variable Card into something that &ouses&r a variable (say, a Display Panel) and it will do some logic with it.",
+    "ntc2.variablecard.desc5": "&6An unset Variable Card functions as a Boolean: True variable.&r",
+
+    "ntc2.integratedids.title": "Reduce, &mReuse&r, Recycle",
+    "ntc2.integratedids.subtitle": "ID's little lag problem",
+    "ntc2.integratedids.desc1": "&eIntegrated Dynamics&r has a bit of a lag problem &6when the Variable ID count gets too high&r. When you reset a Variable or Part by crafting it by itself, it &cmakes a new ID every time&r, and keeps checking for the old one.",
+    "ntc2.integratedids.desc2": "And by \"a bit of lag,\" I mean &cpotentially world-breaking&r.",
+    "ntc2.integratedids.desc3": "The majority of users won't notice anything, but if you want to test some setups (creating dozens of new variables and parts), I suggest &6doing it in a creative test world first&r.",
+    "ntc2.integratedids.desc4": "Make sure your build &oworks&r before implementing it in your survival world. &6Minimize the the amount of Variable and Part IDs.&r",
+    "ntc2.integratedids.desc5": "As an example: if you take this card",
+    "ntc2.integratedids.desc6": "and craft it by itself to reset it, then make it into a new variable, it &6gets a new Variable ID&r!",
+    "ntc2.integratedids.desc7": "However, if you &odon't&r reset it, and just &6reprogram the existing variable&r, it keeps the old ID! The same is true for Parts.",
+
+    "ntc2.displaypanel.subtitle": "Make a Display Panel",
+    "ntc2.displaypanel.desc1": "The &bDisplay Panel&r takes a Variable Card and will display its value.",
+    "ntc2.displaypanel.desc2": "For instance, if given a Card for the integer value of a redstone signal, the Panel will display the numerical strength of the signal.",
+
+    "ntc2.redstoneio.title": "Redstone Signal Transfer",
+    "ntc2.redstoneio.subtitle": "Learn how a simple Reader/Writer combo works",
+    "ntc2.redstoneio.desc1": "One of the most simple things you can do with Integrated Dynamics is to &btransfer a redstone signal&r.",
+    "ntc2.redstoneio.desc2": "At the location you want to input the signal, place a &bRedstone Reader&r.",
+    "ntc2.redstoneio.desc3": "In the Reader's GUI, find the variable we want (in this situation, &6Aspect: Redstone&r, &6Type: Integer&r), and &6use a Variable Card to get a reference to it&r.",
+    "ntc2.redstoneio.desc4": "If this Variable Card is inserted into anything on the same network that can accept it, it will try to &6match the variable as it changes&r in the Reader.",
+    "ntc2.redstoneio.desc5": "Insert the Variable Card into the &6Aspect: Redstone&r, &6Type: Integer&r slot of a &bRedstone Writer&r, and it will output a signal that matches the signal given to the Reader.",
+
+    "ntc2.readers.title": "Readers",
+    "ntc2.readers.subtitle": "Make any Reader",
+    "ntc2.readers.desc1": "&bReaders&r take information from the world and &6expose them as variables&r.",
+    "ntc2.readers.desc2": "Different Readers take different information; their &6tooltips&r give short explanations for each.",
+    "ntc2.readers.desc3": "Each also have some pages in &nOn the Dynamics of Integration&r, if the tooltips aren't informative enough.",
+    "ntc2.readers.desc4": "&c&nVery important&r: at the top right of every component, you can &6change its settings&r. Most importantly is &6Ticks/Operation&r, aka how many ticks it waits before trying to work.",
+    "ntc2.readers.desc5": "The mod defaults to 1 (so it checks every tick, aka 20 times a second), but we've changed it to 5 (so it checks 4 times a second). You may want to increase this further to decrease the &clag&r it may cause.",
+
+    "ntc2.writers.title": "Writers",
+    "ntc2.writers.subtitle": "Make any Writer",
+    "ntc2.writers.desc1": "&bWriters&r take a variable from a &6Variable Card&r and do something with them. There are actually some very things you can do with Writers, like &6say things with the narrator&r, ",
+    "ntc2.writers.desc2": "There are actually fairly few functional Writers. See their tooltips or the book for information on each.",
+    "ntc2.writers.desc3": "You may expect them to work like Refined Storage's Reader/Writers, but you &ccannot move items, fluids, or energy&r with Integrated Dynamics alone.",
+    "ntc2.writers.desc4": "That's not to say you can't move items etc at all; the addon &eIntegrated Tunnels&r adds components that do this. We'll go over those later.",
+
+    "ntc2.logprogram.title": "Logic Operations",
+    "ntc2.logprogram.subtitle": "Make a Logic Programmer",
+    "ntc2.logprogram.desc1": "The &bLogic Programmer&r allows you to take a variable, do some math on it, and turn that into another variable.",
+    "ntc2.logprogram.desc2": "This can also be used to &6make variables that can't be made with Readers&r, like arbitrary strings or integers.",
+    "ntc2.logprogram.desc3": "On the left is a list of variable types and operators. Choose one (for now, let's make a string), set what you want it to be, then &6insert a Variable Card&r into the bottom right slot. This will set the Card to the variable you just made.",
+    "ntc2.logprogram.desc4": "&6Operators&r take existing variables to make new ones. For instance, a &6+&r operator takes two integer variables and adds them, making a third variable.",
+    "ntc2.logprogram.desc5": "Not all operators are strictly math. The &6name&r operator takes any named object (like an item or integer) and converts it into a string variable.",
+    "ntc2.logprogram.desc6": "This could be used with the &6contains&r operator to give a positive boolean value if, for example, the item \"minecraft:iron_ingot\" is turned into the string \"Iron Ingot,\" which is then checked to see if it contains the phrase \"Ingot.\"",
+    "ntc2.logprogram.desc7": "Operators that depend on variables require that those variables exist in the network. You can put the base variables in the &bVariable Store&r block, which does nothing with the Variable Cards except expose them to the network.",
+    "ntc2.logprogram.task": "Logic Programmers",
+
+    "ntc2.proxies.subtitle": "Make a Proxy",
+    "ntc2.proxies.desc1": "The &bProxy&r can have a Variable Card stored in it, and then can have additional Cards bound to it.",
+    "ntc2.proxies.desc2": "Variable Cards bound to a Proxy will &6always match the output of the Proxie's Card&r, even if it changes. The Proxy must have a Card stored in the top slot to work.",
+    "ntc2.proxies.desc3": "This can also be used to effectively &6copy Variable Cards&r.",
+
+    "ntc2.delayer.subtitle": "Make a Delayer",
+    "ntc2.delayer.desc1": "The &bDelayer&r can have a Variable Card stored in it, and then can have additional Cards bound to it.",
+    "ntc2.delayer.desc2": "Variable Cards bound to a Delayer will &6store a List of the previous outputs of the main Variable&r. The Delayer must have a Card stored in the top slot to work.",
+    "ntc2.delayer.desc3": "In the Delayer's GUI allows you to set how often it checks, as well as how large the list is.",
+    "ntc2.delayer.desc4": "An &6example&r use-case for this would be to get the average or difference over the most recent values of a variable.",
+
+    "ntc2.materializer.title": "Constants",
+    "ntc2.materializer.subtitle": "Make a Materializer",
+    "ntc2.materializer.desc1": "The &bMaterializer&r accepts a variable, and then if you insert a second Variable Card, it will turn it into a &6constant of the variable's current value&r.",
+    "ntc2.materializer.desc2": "For instance, if you put a Block variable in the top, make it so that variable is set to Cobblestone, then insert a Variable Card into the bottom right, it creates a &6Block variable that is always equal to Cobblestone&r.",
+    "ntc2.materializer.desc3": "This is very useful for comparing values. Instead of doing:",
+    "ntc2.materializer.desc4": "&cname(&7Block:[variable]&c)&9==&cString:\"Cobblestone\"&r",
+    "ntc2.materializer.desc5": "you would instead do:",
+    "ntc2.materializer.desc6": "&7Block:[variable]&9==&7Block:\"minecraft:cobblestone\"&r",
+
+    "ntc2.integratedtunnels.title": "Item Transfer",
+    "ntc2.integratedtunnels.subtitle": "Make an item transfer system with Integrated Tunnels",
+    "ntc2.integratedtunnels.desc1": "&eIntegrated Tunnels&r is an addon for Integrated Dynamics that gives it the ability to &6import, store, and export items/fluids/energy within a network&r. You &ccannot just move an item from one place to another&r, it has to go into storage at least temporarily.",
+    "ntc2.integratedtunnels.desc2": "To begin with, make the &bItem Interface&r. Place this on an inventory, like a Chest, and imported items will be stored here.",
+    "ntc2.integratedtunnels.desc3": "Next, place an &bItem Importer&r on an inventory that you want to pull from. In it, there are slots for variables that control if it should import all items, import specific items, import only from a specific slot, etc.",
+    "ntc2.integratedtunnels.desc4": "Now, items placed in this inventory should &6extremely quickly&r be moved to the inventory with an Item Interface.",
+    "ntc2.integratedtunnels.desc5": "Place an &bItem Exporter&r on an inventory that you want to push into. Like the importer, it has variables that can control what gets exported.",
+    "ntc2.integratedtunnels.desc6": "Congrats! You have now automated item transfer! These skills will very easily transfer to fluids and energy, as they all work in the same &6insert, store, export&r method.",
+
+    "ntc2.itwhitelist.title": "Whitelists",
+    "ntc2.itwhitelist.subtitle": "Learn how to whitelist what is moved",
+    "ntc2.itwhitelist.desc1": "The \"Import/Export All Items\" booleans are fairly obvious in what they do, but you &oprobably&r won't always want to move &oeverything&r.",
+    "ntc2.itwhitelist.desc2": "Importers and Exporters have the various variables that allow you to &bspecify what is moved&r.",
+    "ntc2.itwhitelist.desc3": "For instance, you can put a Variable Card set to Menril Wood (set using the &7Type: Item&r function of a &6Logic Programmer&r) into the &7Export Item&r slot of an Item Exporter, and it will only export Menril Wood.",
+    "ntc2.itwhitelist.desc4": "Or, you could make a &6List&r of items, or even &6predicate&r (math, basically).",
+    "ntc2.itwhitelist.desc5": "You could also have an &6Inventory Reader&r point at a Chest, get the &cList: Items&r to get its entire contents and use that, so it will use the items in the Chest as a whitelist.",
+
+    "ntc2.worldints.title": "Placing and Breaking",
+    "ntc2.worldints.subtitle": "Make any World Importer/Exporter",
+    "ntc2.worldints.desc1": "&bWorld Importers/Exporters&r, as the names suggest, interact with the world instead of inventories.",
+    "ntc2.worldints.desc2": "World Item, Fluid, Energy, and Block Yada-yadas, in order, &6pick up and drop items&r, &6place and pick up fluids&r, &6discharge and charge dropped items&r, and &6place and mine blocks&r.",
+    "ntc2.worldints.desc3": "These can have whitelists, so you could automate placing Stone next to a Pure Daisy, then only allow it to break Livingrock.",
+    "ntc2.worldints.task1": "Any World Importer",
+    "ntc2.worldints.task2": "Any World Exporter",
+
+    "ntc2.playersim.subtitle": "Make a Player Simulator",
+    "ntc2.playersim.desc1": "The &bPlayer Simulator&r will &6simulate clicking&r, as if it were a player.",
+    "ntc2.playersim.desc2": "It has variables for clicking with no item or clicking with a random or specific item in the network (via Item Interfaces)",
+    "ntc2.playersim.desc3": "Every variable have aspects. The most important one here, in my opinion, would be a &9Boolean: Right Click&r. If true, it simulates a right-click. If false, it simlates a left-click, which can punch mobs and break blocks (if &9Continuous Click&r is set to true).",
+
+    "ntc2.itnonitems.title": "Non-item tunnels",
+    "ntc2.itnonitems.subtitle": "Make any non-item tunnel",
+    "ntc2.itnonitems.desc": "There are also &bInterfaces&r, &bImporters&r, and &bExporters&r for fluid and energy!",
+    "ntc2.itnonitems.task": "Non-item tunnels",
+
+    "ntc2.energybattery.subtitle": "Make an Energy Battery",
+    "ntc2.energybattery.desc1": "If FE is imported into the network, but it doesn't have any valid Energy Interface to store it in, it will be stored in any &bEnergy Battery&r connected to the network.",
+    "ntc2.energybattery.desc2": "Energy Batteries do not have to be connected with an Interface, they &6automatically connect to adjacent Logic Cables&r.",
+    "ntc2.energybattery.desc3": "Sneak right-clicking an Energy Battery in your inventory will make it charge your items.",
+
+    "ntc2.storageterminal.subtitle": "Make a Storage Terminal",
+    "ntc2.storageterminal.desc1": "The &bStorage Terminal&r allows access to all stored items and fluids in the network (&6connected by Interfaces&r).",
+    "ntc2.storageterminal.desc2": "You can use the Storage Terminal like a chest, removing and adding items is almost exactly identical.",
+    "ntc2.storageterminal.desc3": "For fluids and energy, pick them up like you would an item, then click them on a container in your inventory.",
+    "ntc2.storageterminal.desc4": "Additionally, there is a tab that has a &63x3 crafting grid&r, allowing you to craft using items in storage.",
+    "ntc2.storageterminal.desc5": "The Storage Terminal is added by the addon &eIntegrated Terminals&r; it is not there by default.",
+
+    "ntc2.intcrafting.subtitle": "Make a Crafting Interface",
+    "ntc2.intcrafting.desc1": "The &bCrafting Interface&r is the first step to auto-crafting using your network.",
+    "ntc2.intcrafting.desc2": "Attach the Crafting Interface &6to the machine you want to craft with&r. For regular 3x3 crafting recipes, attach it to a Crafting Table; for smelting recipes, attach it to a Furnace; etc.",
+    "ntc2.intcrafting.desc3": "Using a &6Logic Programmer&r, click &9Recipe&r and set the crafting recipe you want. For instance, place 8 Oak Planks in the left slots, then place a Chest in the right slots.",
+    "ntc2.intcrafting.desc4": "Insert this Variable Card into one of the slots in the Crafting Interface, and the network will now have access to that recipe.",
+
+    "ntc2.ictips.title": "Crafting Tips",
+    "ntc2.ictips.subtitle": "Learn some tips for recipe-making",
+    "ntc2.ictips.desc1": "You can also &6shift-click&r the input slots to change what they accept (so you can set it to use a tag, or if it requires the specific NBT).",
+    "ntc2.ictips.desc2": "&6Right-click&r a filled slot to increase the amount by 1; &6left-click&r to decrease by 1.",
+
+    "ntc2.craftwriter.subtitle": "Make a Crafting Writer",
+    "ntc2.craftwriter.desc1": "The &bCrafting Writer&r will &6automatically craft things when it isn't available in the system&r.",
+    "ntc2.craftwriter.desc2": "It can be anywhere in the network, it doesn't have to face any block. There must be a valid recipe in a Crafting Interface for it to work. Each Writer can only make a single thing.",
+    "ntc2.craftwriter.desc3": "It has 4 options:",
+    "ntc2.craftwriter.desc4": "• Craft using a specific recipe, which takes a recipe variable",
+    "ntc2.craftwriter.desc5": "• Craft a specific item using any recipe, which takes an item variable",
+    "ntc2.craftwriter.desc6": "• Craft a fluid using any recipe, which takes a fluid variable",
+    "ntc2.craftwriter.desc7": "• Craft energy using any recipe, which takes an integer variable",
+    "ntc2.craftwriter.desc8": "By default, it &6crafts only the item is not in the network&r at all. So, it'll craft once, then stop. Enabling &9Ignore Storage Contents&r will make it craft forever.",
+
+    "ntc2.craftjob.subtitle": "Make a Crafting Job Terminal",
+    "ntc2.craftjob.desc1": "The &bCrafting Job Terminal&r has a list of all current crafting jobs in its network.",
+    "ntc2.craftjob.desc2": "You can click on any crafting job to cancel it.",
+
+
+
+
+
+    
+    "university.arsnouveau.chapter":"Ars Nouveau",
+
+    "university.wornnotebook.subtitle":"Make the Worn Notebook",
+    "university.wornnotebook.desc1":"The &bWorn Notebook&r is &eArs Nouveau&r's guidebook.",
+    "university.wornnotebook.desc2":"It has very good documentation on everything the mod adds. It also has a very nice &6Getting Started&r chapter!",
+
+    "university.wardstone.subtitle":"Make Warding Stone",
+    "university.wardstone.desc":"Monsters will &6refuse to walk over &bWarding Stone&r",
+
+    "university.worldmana.title":"Source",
+    "university.worldmana.subtitle":"Learn about Source",
+    "university.worldmana.desc1":"&bSource&r is basically the mod's power system.",
+    "university.worldmana.desc2":"Some devices collect it, some devices use it. Source is &l&nnot&r Mana, it is only used by devices.",
+
+    "university.crystallizer.subtitle":"Make a Crystallizer",
+    "university.crystallizer.desc1":"The &bCrystallizer&r slowly &6produces Source Gems&r by condensing Source.",
+    "university.crystallizer.desc2":"You can speed it up using Mana from adjacent Source Jars.",
+
+    "university.mancondenser.subtitle":"Make a Agronomic Sourcelink",
+    "university.mancondenser.desc1":"The &bAgronomic Sourcelink&r &6generates Source from nearby crop and tree growth&r. Magic plants produce more Source when grown.",
+    "university.mancondenser.desc2":"They will put the collected Source into any &6Source Jar&r within 5 blocks.",
+
+    "university.volcanicaccumulator.subtitle":"Make a Volcanic Sourcelink",
+    "university.volcanicaccumulator.desc1":"The &bVolcanic Sourcelink&r will &6generate Source using nearby burnable items&r dropped on the ground. &6Blazing Archwood&r is particularly effective.",
+    "university.volcanicaccumulator.desc2":"As it produces Mana, it also produces heat. Heat will convert Stone under it into Magma Blocks, and Magma into Lava.",
+    "university.volcanicaccumulator.desc3":"Source will be sent to any nearby Source Jars.",
+
+    "university.vitalicsourcelink.subtitle":"Make a Vitalic Sourcelink",
+    "university.vitalicsourcelink.desc1":"The &bVitalic Sourcelink&r will &6generate Source when mobs are bred or killed nearby&r.",
+    "university.vitalicsourcelink.desc2":"It will also passively generates Source from nearby child mobs, and accelerates their aging.",
+
+    "university.alchemicalsourcelink.subtitle":"Make an Alchemical Sourcelink",
+    "university.alchemicalsourcelink.desc1":"The &bAlchemical Sourcelink&r will &6generate Source by draining adjacnet Potion Jars&r.",
+    "university.alchemicalsourcelink.desc2":"More Source is generated by complex potions.",
+
+    "university.mycelialsourcelink.subtitle":"Make a Mycelial Sourcelink",
+    "university.mycelialsourcelink.desc1":"The &bMycelial Sourcelink&r will &6generate Source from nearby dropped food&r. Source Berry provides more Source.",
+    "university.mycelialsourcelink.desc2":"It will also passively convert Dirt and Grass beneath it into Mycelium.",
+
+    "university.manajar.subtitle":"Make a Source Jar",
+    "university.manajar.desc1":"&bSource Jars&r &6store Source&r. You can also collect and move it as a fluid with Buckets.",
+    "university.manajar.desc2":"Devices will wirelessly pull Source from nearby Source Jars.",
+
+    "university.sourcerelay.title":"Source Transport",
+    "university.sourcerelay.subtitle":"Make a Source Relay",
+    "university.sourcerelay.desc1":"&bSource Relays&r allow you to &6transport Source&r automatically, with a range of 30 blocks.",
+    "university.sourcerelay.desc2":"Using a &bDominion Wand&r, click the Jar and then the Relay to connect them. Then, click the Relay and then the Jar or Relay you want to send Source to.",
+
+    "university.sourcedeposit.subtitle":"Make a Source Relay: Depositor",
+    "university.sourcedeposit.desc":"The &bSource Relay: Depositor&r will &6deposit to all jars within 5 blocks&r, so long as it isn't linked to them.",
+
+    "university.sourcesplit.subtitle":"Make a Source Relay: Splitter",
+    "university.sourcesplit.desc1":"The &bSource Relay: Splitter&r acts like a Source Relay, but &6can have multiple sources and destinations&r.",
+    "university.sourcesplit.desc2":"It transfers more Source at a time, and splits the amount equally through its connections.",
+
+    "university.sourcewarp.subtitle":"Make a Source Relay: Warper",
+    "university.sourcewarp.desc1":"The &bSource Relay: Warper&r will &6teleport Source to its bound Warp Relay&r, no matter the distance.",
+    "university.sourcewarp.desc2":"If the destination is over 30 blocks, there is a chance that some Source will be lost.",
+
+    "university.novicespellbook.title":"Spells",
+    "university.novicespellbook.subtitle":"Make the Novice Spell Book",
+    "university.novicespellbook.desc1":"The &bNovice Spell Book&r is the first tier, and &6allows you to create, store, and cast spells&r.",
+    "university.novicespellbook.desc2":"Spells are, essentially, a string of &6spell Glyphs&r. Along the top of the Spell Book's GUI, you can see all the Glyphs you have unlocked. Clicking a Glyph will add it to the spell, at the bottom.",
+    "university.novicespellbook.desc3":"First, you have to choose the &6Form&r the spell will take. Form Glyphs always must be the first Glyph in a spell recipe.",
+    "university.novicespellbook.desc4":"After the Form, you can add a list of &6Effects&r. These decide what the spell will actually do. They are cast in the order they are placed.",
+    "university.novicespellbook.desc5":"&6Augments&r are basically Glyph modifiers. They only effect the Glyph directly to its left, and can modify both Forms and Effects. If there are multiple Augments in a row, all will be applied to the Glyph.",
+    "university.novicespellbook.desc6":"Once you are done making your spell, you can &6name it&r and then click &6Create&r.",
+    "university.novicespellbook.desc7":"You can have &6up to 10 spells&r. Choose which spell slot you are writing in on the right.",
+
+    "university.spellmana.title":"Spell Mana",
+    "university.spellmana.subtitle":"Learn about Spell Mana",
+    "university.spellmana.desc1":"&bSpell Mana&r is used when you &6cast spells&r using the Spell Book, and &6regenerates over time&r.",
+    "university.spellmana.desc2":"You can increase your max Spell Mana and its regen speed by wearing certain armor, or using certain armor enchantments.",
+    "university.spellmana.desc3":"Your base Spell Mana will also be improved for each Glyph you unlock in your Spell Book, and by using a higher tier.",
+
+    "university.magespellbook.subtitle":"Make the Mage's Spell Book",
+    "university.magespellbook.desc1":"Higher tier Spell Books &6increase your max Spell Mana and regen&r, and &6provides access to higher-tier spell Glyphs&r.",
+    "university.magespellbook.desc2":"The &bMage's Spell Book&r is the second tier, providing access to Tier 2 Glyphs.",
+
+    "university.archmagespellbook.subtitle":"Make the Archmage's Spell Book",
+    "university.archmagespellbook.desc":"The &bArchmage's Spell Book&r is the third and final tier, providing access to Tier 3 Glyphs.",
+
+    "university.glyphpress.title":"New Spells",
+    "university.glyphpress.subtitle":"Make a Glyph Press",
+    "university.glyphpress.desc1":"The &bGlyph Press&r allows you to &6craft Glyphs&r, unlocking them for use in spells.",
+    "university.glyphpress.desc2":"To make a new Glyph, look at its recipe in JEI. Right-click the &bmagic Clay&r in, then the &6Reagent&r (the second item).",
+    "university.glyphpress.desc3":"If there is a supply of &6Source&r nearby, it will begin crafting the Glyph.",
+    "university.glyphpress.desc4":"If the Press is adjacent to an inventory, it will put the Glyph there. Otherwise, it will be dropped into the world.",
+    "university.glyphpress.task":"Magic Clays",
+
+    "university.tier1glyphs.task":"Tier 1 Glyphs",
+    "university.tier1glyphs.subtitle":"Craft a Tier 1 Glyph",
+    "university.tier1glyphs.desc1":"&bTier 1 Glyphs&r are the only Glyphs that can be used in a Novice Spell Book. They can obviously also be used in higher-tier Spell Books.",
+    "university.tier1glyphs.desc2":"To unlock the Glyph for use, &6right-click it while a Spell Book is in your inventory&r.",
+
+    "university.tier2glyphs.task":"Tier 2 Glyphs",
+    "university.tier2glyphs.subtitle":"Craft a Tier 2 Glyph",
+    "university.tier2glyphs.desc":"&bTier 2 Glyphs&r need a Mage's or Archmage's Spell Book to be cast.",
+
+    "university.tier3glyphs.task":"Tier 3 Glyphs",
+    "university.tier3glyphs.subtitle":"Craft a Tier 3 Glyph",
+    "university.tier3glyphs.desc":"&bTier 3 Glyphs&r need an Archmage's Spell Book to be cast.",
+
+    "university.scribestable.subtitle":"Make the Scribe's Table",
+    "university.scribestable.desc1":"The &bScribe's Table&r allows you to &6copy your spells to another book&r.",
+    "university.scribestable.desc2":"Place your original Book into the Table, then sneak right-click it with another to copy the contents over.",
+    "university.scribestable.desc3":"You can also copy a single spell using &bSpell Parchment&r. This is used to allow non-players to cast spells.",
+    "university.scribestable.desc4":"Place the Parchment on the Table, select the spell you want to copy over in the Spell Book, then use the Book on the Parchment while sneaking.",
+
+    "university.runicchalk.subtitle":"Make Runic Chalk",
+    "university.runicchalk.desc1":"&bRunic Chalk&r can be used to create &6permanent Runes that cast spells&r on entities that walk over them.",
+    "university.runicchalk.desc2":"Give the Chalk a Spell the same way you would Spell Parchment.",
+    "university.runicchalk.desc3":"Once the Rune has cast the spell, it becomes unpowered. It will &6recharge itself from nearby Source Jars&r.",
+
+    "university.enchantappar.subtitle":"Make an Enchanting Apparatus",
+    "university.enchantappar.desc1":"The &bEnchanting Apparatus&r is part of a multiblock that is used to &6make certain items&r (including enchantments).",
+    "university.enchantappar.desc2":"Place the Apparatus, and place an &bArcane Core&r directly beneath it. Place a number of &bArcane Pedestals&r nearby.",
+    "university.enchantappar.desc3":"Place the outer items on the Pedestals, and then place the central item in the Apparatus. It will begin crafting the item immediately.",
+
+    "university.ritualbrazier.subtitle":"Make a Ritual Brazier and Tablet",
+    "university.ritualbrazier.desc1":"&6Rituals&r perform a variety of functions, like changing the time and weather, killing monsters, growing crops, and more.",
+    "university.ritualbrazier.desc2":"To perform a ritual, insert a &bTablet&r into the &bRitual Brazier&r. Some rituals can be &6augmented&r by throwing items on top before it is activated.",
+    "university.ritualbrazier.desc3":"Right-click the Brazier to activate the ritual. If the ritual requires Source, it will pull it from a nearby Source Jar.",
+    "university.ritualbrazier.task":"Tablets",
+
+    "university.magicalarmor.title":"Magical Armor",
+    "university.magicalarmor.subtitle":"Make a set of magical armor",
+    "university.magicalarmor.desc1":"&bMagical armor&r increase your max Spell Mana, and increases the rate it regenerates.",
+    "university.magicalarmor.desc2":"Each tier is more effective than the previous.",
+    "university.magicalarmor.task1":"Hoods",
+    "university.magicalarmor.task2":"Robes",
+    "university.magicalarmor.task3":"Leggings",
+    "university.magicalarmor.task4":"Boots",
+
+    "university.potionflask.subtitle":"Make a Potion Flask",
+    "university.potionflask.desc1":"The &bPotion Flask&r stores &68 uses of any potion&r. To set the potion, simply &6craft the Flask with the potion&r.",
+    "university.potionflask.desc2":"There are two upgrades that can either increase the power or duration of potions.",
+    "university.potionflask.task":"Potion Flasks",
+
+    "university.discountrings.subtitle":"Make a Ring of Discount",
+    "university.discountrings.desc":"The &bRings of Lesser/Greater Discount&r &6reduce the Mana cost of spells&r while worn. The Greater one discounts more.",
+    "university.discountrings.task":"Rings of Discount",
+
+    "university.manaamulets.subtitle":"Make an Amulet of Mana Boost/Regen",
+    "university.manaamulets.desc1":"The &bAmulet of Mana Boost&r increases your max Magic Mana.",
+    "university.manaamulets.desc2":"The &bAmulet of Mana Regen&r increases your Magic Mana regen.",
+    "university.manaamulets.task":"Magic Amulets",
+
+    "university.jars.subtitle":"Make a Jar of Light/Voiding",
+    "university.jars.desc1":"The &bJar of Light&r, when active, will &6create a light source that follows you&r.",
+    "university.jars.desc2":"The &bJar of Voiding&r, when active, will &6destroy certain items on pickup and convert them into experience&r.",
+    "university.jars.desc3":"To set what items it destroys, hold the item in your offhand and sneak right-click the Jar. You can also use the item on a &6Scribe's Table&r that has the Jar in it.",
+    "university.jars.desc4":"Sneak right-click a Jar to toggle it.",
+    "university.jars.task":"Magic Jars",
+
+    "university.enchantersitems.task":"Enchanter's Weapons",
+    "university.enchantersitems.subtitle":"Make an Encanter's weapon",
+    "university.enchantersitems.desc1":"The &bEnchanter's Sword&r will &6cast a spell on the mob it's used on&r. Apply the spell with the Scribe's Table. Do not include a Form in the spell.",
+    "university.enchantersitems.desc2":"The &bEnchanter's Shield&r will &6give the user Regeneration&r when it blocks damage.",
+    "university.enchantersitems.desc3":"The &bEnchanter's Mirror&r will &6apply a self-spell&r when used that is &6discounted, with bonus duration&r given to all glyphs.",
+    "university.enchantersitems.desc4":"The &bEnchanter's Bow&r, when you have enough Mana, will &6cast a spell on the mob it's used on&r. If there are no arrows in your inventory, it will cast the spell but deal no damage.",
+    "university.enchantersitems.desc5":"There are three &bAugment Arrows&r you can use to add Augments to the spell.",
+
+    "university.spellturret.title":"Spell Turrets",
+    "university.spellturret.subtitle":"Make a Spell Turret",
+    "university.spellturret.desc1":"&bSpell Turrets&r will &6fire a spell when given a redstone signal&r.",
+    "university.spellturret.desc2":"They can only use &6Touch or Projectile&r spells. Set the spell by giving the Turret &6Spell Parchment&r.",
+    "university.spellturret.desc3":"The Turret will use &6Source&r from nearby Source Jars. If the spell would pick up or place something, it will use an &6adjacent inventory&r.",
+    "university.spellturret.desc4":"Turrets will fire in the direction they are facing, and are placed like Pistons.",
+    "university.spellturret.desc5":"You can upgrade a Basic Turret into either the &bEnchanted Spell Turret&r, which uses half the Source per spell, or the &bTimer Spell Turret&r, which shoot on an interval you can change by punching it.",
+
+    "university.warpscroll.subtitle":"Make a Warp Scroll",
+    "university.warpscroll.desc1":"The &bWarp Scroll&r is a single-use item that teleports you to a bound location, within a dimension.",
+    "university.warpscroll.desc2":"Use it while sneaking to set the location, then use again to teleport to it.",
+    "university.warpscroll.desc3":"If you use the &6Blink&r spell on a mob while holding a bound Warp Scroll in your &6offhand&r, it will &6teleport that mob&r instead.",
+
+    "university.warpportal.title":"Warp Portal",
+    "university.warpportal.subtitle":"Make a Warp Portal",
+    "university.warpportal.desc1":"The &bWarp Portal&r is a multiblock like the Nether Portal, but teleports you to the location bound by a Warp Scroll.",
+    "university.warpportal.desc2":"Place &bArcane Bricks&r (or any of its variants) in the shape of a Nether Portal, and throw a bound Warp Scroll into it.",
+    "university.warpportal.desc3":"It will use up an &6entire Source Jar&r, and create a portal.",
+
+    "university.enchantenchants.title":"Yes, the Enchanting Apparatus Can Enchant",
+    "university.enchantenchants.subtitle":"Learn how to enchant",
+    "university.enchantenchants.desc1":"The &6Enchanting Apparatus&r can &benchant items&r using Source and items.",
+    "university.enchantenchants.desc2":"The &6Worn Notebook&r has a list of recipes for each enchantment and level.",
+
+    "university.summoningcrystal.title":"The Cutest Automation",
+    "university.summoningcrystal.subtitle":"Make a Summoning Crystal",
+    "university.summoningcrystal.desc1":"The &bSummoning Crystal&r is the central piece of the mod's &6automation&r, which is done using &6cute mobs&r!",
+    "university.summoningcrystal.desc2":"Placing an inventory adjacent to the Crystal will allow summoned creatures to insert their items into it.",
+    "university.summoningcrystal.desc3":"Creatures that need Source will use it from Source Jars in its working area.",
+    "university.summoningcrystal.desc4":"Right-click the Crystal to change the size of its working area.",
+
+    "university.carbuncle.title":"The Carbuncle Ate Itself",
+    "university.carbuncle.subtitle":"Make a Carbuncle Charm",
+    "university.carbuncle.desc1":"&6Carbuncles&r are a rare mob that appear in forests. Normally they run away from you, but are friendly if you &6hold a Gold Nugget&r.",
+    "university.carbuncle.desc2":"Giving a Carbuncle a Gold Nugget will make it vanish, dropping &6Carbuncle Shards&r. These can be crafted into the &bCarbuncle Charm&r.",
+    "university.carbuncle.desc3":"Use the Charm on the ground to &6summon a Carbuncle&r. Summoned Carbuncles are used to &6pick up items&r and &6move items between inventories&r.",
+    "university.carbuncle.desc4":"You can bind it to inventories with the &bDominion Wand&r. To set it to &6take from&r an inventory, use the Wand on the inventory then the Carbuncle. To &6insert&r into an inventory, use it on the Carbuncle then the inventory.",
+    "university.carbuncle.desc5":"A Carbuncle can be bound to as many inventories as you want. Look at the Carbuncle to see how many it is bound to. Use the Wand on it while sneaking to reset it.",
+    "university.carbuncle.desc6":"They can also be dyed!",
+
+    "university.itemscrolls.title":"Carbuncle Filtering",
+    "university.itemscrolls.subtitle":"Learn how to filter a Carbuncle",
+    "university.itemscrolls.desc1":"You can filter what a Carbuncle will insert or extract using &6Item Frames&r and/or &bItem Scrolls&r.",
+    "university.itemscrolls.desc2":"There are two types of Scroll: &6Allow&r (whitelist) and &bDeny&r (blacklist).",
+    "university.itemscrolls.desc3":"Place the Item Scroll in the &6Scribe's Table&r and use an item on it to add it to the list.",
+    "university.itemscrolls.desc4":"You can give this Scroll to the Carbuncle, and it will &6only move the items according to the list&r.",
+    "university.itemscrolls.desc5":"Additionally, you can put an Item Frame on an inventory, and it will only insert/extract either the item in the Frame, or the items in the list of the Frame's Item Scroll.",
+
+    "university.sylphcharm.subtitle":"Make a Sylph Charm",
+    "university.sylphcharm.desc1":"&6Sylphs&r are adorable little plant people that appear in forests. Unlike Carbuncles, they love players!",
+    "university.sylphcharm.desc2":"You can befriend a Sylph by &6growing trees near them&r. A befriended Sylph will drop &6Sylph Shards&r, which are used to craft the &bSylph Charm&r.",
+    "university.sylphcharm.desc3":"Summoned Sylphs will &6generate natural materials&r like woods, crops, seeds, and flowers, based on their surroundings. They need Source nearby to operate.",
+    "university.sylphcharm.desc4":"A &6happy&r Sylph generates more. The more natural materials in their home, and the more diverse they are, the happier. You can use a block on them to see if they would like it; using an empty hand will show more info.",
+    "university.sylphcharm.desc5":"You can also dye them some colors!",
+
+    "university.whelpcharm.subtitle":"Make a Bookwyrm Charm",
+    "university.whelpcharm.desc1":"&6Bookwyrms&r are artificial creatures that can &6cast spells&r. They use Source from a Source Jar to do so.",
+    "university.whelpcharm.desc2":"Summon them with the &bBookworm Charm&r on a Lectern.",
+    "university.whelpcharm.desc3":"Bookwyrms will only cast &6Touch or Projectile&r spells, chosen by giving them &6Spell Parchment&r.",
+    "university.whelpcharm.desc4":"They will only cast a spell if every single Effect will do something. You can disable this with the &6Dominion Wand&r, but it is suggested to have multiple specialized Bookwyrms instead.",
+    "university.whelpcharm.desc5":"Items picked up and blocks placed will use an inventory adjacent to the Summoning Crystal.",
+
+    "university.wixiecharm.subtitle":"Make a Wixie Charm",
+    "university.wixiecharm.desc1":"To obtain &6Wixie Shards&r, cast &6Dispel on a Witch&r that is at half health or less. To summon a Wixie, use the &bWixie Charm&r on a &6Cauldron&r.",
+    "university.wixiecharm.desc2":"Wixies are used to &6automatically craft items or potions&r. To choose what item it crafts, &6use it on the Cauldron&r.",
+    "university.wixiecharm.desc3":"The Wixie will search for the ingredients in nearby inventories and craft the item, granted that it has Source available nearby. A redstone signal on the Cauldron will disable it.",
+
+    "university.drygmycharm.subtitle":"Make a Drygmy Charm",
+    "university.drygmycharm.desc1":"&bDrygmys&r can be befriended by giving them a &6Wilden Horn&r. They will &6make nearby mobs drop their drops without harming them&r.",
+    "university.drygmycharm.desc2":"To summon the Drygmy, use the &bDrygmy Charm&r on some Mossy Cobblestone. After some time, it will turn into a &6Drygmy Henge&r and spawn a Drygmy. You can use more Drygmy Charms on the Henge to spawn more!",
+    "university.drygmycharm.desc3":"The Drygmy works in a &6ten block radius&r around its Henge. It works more when it's &6happy&r; the &6more mob types&r, the happier it is.",
+    "university.drygmycharm.desc4":"Drops will enter an inventory &6adjacent to the Henge&r. After producing the drops, the Drygmy &6needs Source to recharge&r, provided by a Source Jar that is also adjacent to the Henge.",
+
+    "university.arsfamiliar.title":"Cute Companions",
+    "university.arsfamiliar.subtitle":"Obtain a Familiar",
+    "university.arsfamiliar.desc1":"&6Familiars&r provide buffs and help in combat. They take the form of any of the five summonable mobs, each with their own benefits.",
+    "university.arsfamiliar.desc2":"Use the &6Ritual of Binding&r (using the &bTablet of Binding&r) near the mob you want to turn into a familiar, and it will drop a &bBound Script&r of it. Use it to learn how to summon them as Familiars.",
+    "university.arsfamiliar.desc3":"To summon a Familiar, use the Familiars tab of the &6Spell Book&r. While Familiars are summon, it will occupy a portion of your Mana. You can only have one Familiar summoned at a time. Use the &6Dispel&r spell to dismiss Familars.",
+    "university.arsfamiliar.task":"Bound Scripts",
+
+    "university.potionjar.subtitle":"Make a Potion Jar",
+    "university.potionjar.desc1":"&bPotion Jars&r can store up to 100 of a potion inside them.",
+    "university.potionjar.desc2":"&6Wixies&r can use these Jars when crafting potions. Crafted potions will be stored in Jars, and ingredient potions will be taken from Jars.",
+    "university.potionjar.desc3":"You can &6lock a Jar&r to a specific potion by sneak right-clicking it with the &6Dominion Wand&r.",
+    "university.potionjar.desc4":"To fully automate a potion, you will want a Wixie and Jar for each step.",
+
+    "university.potionmelder.subtitle":"Make a Potion Melder",
+    "university.potionmelder.desc1":"The &bPotion Melder&r will take 3 doses each from 2 adjacent Potion Jars, and &6combines them into one&r.",
+    "university.potionmelder.desc2":"The combined potion will be output to the Potion Jar below. This potion can be removed with Glass Bottles and will have the effects of both potions.",
+    "university.potionmelder.desc3":"This can be done more than once, to get a single potion with potentially dozens of effects."
+
+
+}

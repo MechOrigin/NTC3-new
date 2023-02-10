@@ -1,0 +1,14 @@
+
+[betterflight]
+	#Loudness of the flap sound on takeoff.
+	#Range: 0.0 ~ 1.0
+	TakeOffVolume = 1.0
+	#Loudness of the flap sound when flapping wings.
+	#Range: 0.0 ~ 1.0
+	FlapVolume = 0.5
+	#Stores preferred position of elytra widget on HUD.
+	#Options: BAR_CENTER, BAR_LEFT, BAR_RIGHT,
+	#CURSOR_BELOW, CURSOR_ABOVE, CURSOR_RIGHT, CURSOR_LEFT.
+	#Allowed Values: BAR_CENTER, BAR_LEFT, BAR_RIGHT, CURSOR_ABOVE, CURSOR_RIGHT, CURSOR_BELOW, CURSOR_LEFT
+	HudLocation = "BAR_CENTER"
+

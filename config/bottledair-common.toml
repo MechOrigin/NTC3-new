@@ -1,0 +1,11 @@
+
+[General]
+	#Whether the creation of water bottles should be prevented (evaporated) when holding a fire type block in the offhand.
+	holdFireTypeItemInOffhandToPreventWaterBottleCreation = true
+	#The chance a glass bottle breaks when the item in the offhand evaporates the water, giving back an empty (air) bottle.
+	#Range: 0.0 ~ 1.0
+	chanceGlassBottleBreaksWithFireTypeInOffhand = 0.5
+	#The amount of air an empty bottle contains. In vanilla Minecraft, 300 is the maximum air supply.
+	#Range: 0 ~ 1000
+	amountOfAirInBottles = 150
+

@@ -1,0 +1,9 @@
+{
+  "Config Version": 1,
+  "Cooldown Usage": "Cooldown time in seconds between uses for the portable versions of the machines",
+  "cooldownSeconds": 5,
+  "XP Cost Usage": "XP Level cost for each use",
+  "xpCost": 10,
+  "Broadcast Usage": "If using the machines will broadcast server wide to each player",
+  "broadcastGlobally": false
+}

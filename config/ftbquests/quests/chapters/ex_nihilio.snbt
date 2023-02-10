@@ -1,0 +1,289 @@
+{
+	id: "4598AA3EDFF6BD5F"
+	group: "442FD72D1627F87A"
+	order_index: 4
+	filename: "ex_nihilio"
+	title: "{ntc3.chapter.exnihliolvl0.title}"
+	icon: "exnihilosequentia:crimson_sieve"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "265E13291DAE7955"
+			tasks: [{
+				id: "7189689CB141D978"
+				type: "gamestage"
+				stage: "exnihilo_lvl0"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			dependencies: ["265E13291DAE7955"]
+			id: "393D4D3D520FC6A9"
+			tasks: [{
+				id: "53E8A4118D48B1CE"
+				type: "item"
+				item: {
+					id: "exnihilosequentia:oak_sieve"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			dependencies: ["265E13291DAE7955"]
+			id: "09E6F64D3B18E73B"
+			tasks: [{
+				id: "6FADAA6AB8782936"
+				type: "item"
+				item: "exnihilosequentia:string_mesh"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["265E13291DAE7955"]
+			id: "5DB32D52EF8DB96D"
+			tasks: [{
+				id: "1340D8DEE689B315"
+				type: "item"
+				item: "exnihilosequentia:oak_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["265E13291DAE7955"]
+			id: "4AB0FDA6152C88FD"
+			tasks: [{
+				id: "6FBA57A29C135BA7"
+				type: "item"
+				item: "exnihilosequentia:dust"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["265E13291DAE7955"]
+			id: "7AA3DB194AC1D4DC"
+			tasks: [{
+				id: "22E048AA1CB51827"
+				type: "item"
+				item: "excompressum:oak_crucible"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["28B5915F13D5A3D5"]
+			id: "225D1A6B4469458C"
+			tasks: [{
+				id: "49111C0FD3BBE6DF"
+				type: "item"
+				item: "exnihilosequentia:unfired_crucible"
+			}]
+			rewards: [{
+				id: "62D780225DEE4DF4"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["265E13291DAE7955"]
+			id: "28B5915F13D5A3D5"
+			tasks: [{
+				id: "0E68CF65F6218BA0"
+				type: "item"
+				item: "exnihilosequentia:porcelain_clay"
+			}]
+			rewards: [{
+				id: "7D462C65A3AF92E3"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["225D1A6B4469458C"]
+			id: "0564301AC7F807DE"
+			tasks: [{
+				id: "7B70ADC8B7DF3B27"
+				type: "item"
+				item: "exnihilosequentia:fired_crucible"
+			}]
+			rewards: [{
+				id: "3F1AEB0EAD2353DE"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 32
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["0564301AC7F807DE"]
+			id: "41F3112F4B345A43"
+			tasks: [{
+				id: "5F62F2EAB3924B9C"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+			rewards: [{
+				id: "4AC8BAB7F28E0230"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["265E13291DAE7955"]
+			id: "424F1FA124214614"
+			tasks: [{
+				id: "30D7F3296F88DA75"
+				type: "item"
+				item: "exnihilosequentia:stone_barrel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			dependencies: ["424F1FA124214614"]
+			id: "5F88EE2C465AE14D"
+			tasks: [{
+				id: "458ACACA35089759"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			dependencies: ["09E6F64D3B18E73B"]
+			id: "746411A91E08E1ED"
+			tasks: [
+				{
+					id: "5BCAA83C495B6DC4"
+					type: "item"
+					item: "exnihilosequentia:flint_mesh"
+				}
+				{
+					id: "2A8348E67C62D32E"
+					type: "item"
+					item: "exnihilosequentia:iron_mesh"
+				}
+				{
+					id: "54072304326535E4"
+					type: "item"
+					item: "exnihilosequentia:diamond_mesh"
+				}
+				{
+					id: "63EEF02672DB6BB8"
+					type: "item"
+					item: "exnihilosequentia:emerald_mesh"
+				}
+				{
+					id: "069B7D643F634E4A"
+					type: "item"
+					item: "exnihilosequentia:netherite_mesh"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			dependencies: ["7AA3DB194AC1D4DC"]
+			id: "72D42EB3384CB2BF"
+			tasks: [{
+				id: "576473A885B6C7CD"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			id: "79FDF4D83DAF5D3E"
+			tasks: [{
+				id: "3C18A5C89B454615"
+				type: "item"
+				title: "Any #excompressum:baits"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "excompressum:baits"
+					}
+				}
+			}]
+		}
+		{
+			title: "Look at Mycelium"
+			icon: "minecraft:mycelium"
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["265E13291DAE7955"]
+			id: "70F5119852738A23"
+			tasks: [{
+				id: "69B4F7CC95EC8A6E"
+				type: "observation"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:mycelium"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			id: "400440770A2AABF0"
+			tasks: [{
+				id: "6B1C0321B7E0A70B"
+				type: "item"
+				item: "exnihilosequentia:crafting_doll"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			id: "3743D8AF05FE1EAA"
+			tasks: [
+				{
+					id: "0F26B5BEA010F139"
+					type: "item"
+					item: "exnihilosequentia:enderman_doll"
+				}
+				{
+					id: "7A1F638241BDB01F"
+					type: "item"
+					item: "exnihilosequentia:shulker_doll"
+				}
+				{
+					id: "0F3FCF269A4E286E"
+					type: "item"
+					item: "exnihilosequentia:guardian_doll"
+				}
+				{
+					id: "6031BEBEB14B4E6A"
+					type: "item"
+					item: "exnihilosequentia:bee_doll"
+				}
+				{
+					id: "2C8B61966F855DD8"
+					type: "item"
+					item: "exnihilosequentia:blaze_doll"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
