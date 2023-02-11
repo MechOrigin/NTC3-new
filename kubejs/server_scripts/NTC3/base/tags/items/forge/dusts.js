@@ -8,12 +8,10 @@ onEvent('tags.items', event => {
     elementsToUnify.forEach((material) => {
 
         let dustThermal = getPreferredItemInTag(Ingredient.of(`thermal:${material}_dust`)).id;
-        //let dustImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:dust_${material}`)).id;
         let dustMekanism = getPreferredItemInTag(Ingredient.of(`mekanism:dust_${material}`)).id;
-        let dustBiggerReactor = getPreferredItemInTag(Ingredient.of(`biggerreactors:${material}_dust`)).id;
+        //let dustBiggerReactor = getPreferredItemInTag(Ingredient.of(`biggerreactors:${material}_dust`)).id;
 
         let plateThermal = getPreferredItemInTag(Ingredient.of(`thermal:${material}_plate`)).id;
-        //let plateImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:plate_${material}`)).id;
         let plateBeyondEarth = getPreferredItemInTag(Ingredient.of(`beyond_earth:${material}_plate`)).id;
         
         let gearThermal = getPreferredItemInTag(Ingredient.of(`thermal:${material}_gear`)).id;
@@ -21,7 +19,7 @@ onEvent('tags.items', event => {
         let rodBeyondEarth = getPreferredItemInTag(Ingredient.of(`beyond_earth:${material}_stick`)).id;
         
         let nuggetThermal = getPreferredItemInTag(Ingredient.of(`thermal:${material}_nugget`)).id;
-        //let nuggetImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:nugget_${material}`)).id;
+        
         let nuggetMekanism = getPreferredItemInTag(Ingredient.of(`mekanism:nugget_${material}`)).id;
         let nuggetTconstruct = getPreferredItemInTag(Ingredient.of(`tconstruct:${material}_nugget`)).id;
         let nuggetMinecraft = getPreferredItemInTag(Ingredient.of(`minecraft:${material}_nugget`)).id;
@@ -29,7 +27,7 @@ onEvent('tags.items', event => {
         let nuggetExNihilio = getPreferredItemInTag(Ingredient.of(`exnihilosequentia:${material}_nugget`)).id;
 
         let ingotThermal = getPreferredItemInTag(Ingredient.of(`thermal:${material}_ingot`)).id;
-        //let ingotImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:ingot_${material}`)).id;
+        
         let ingotMekanism = getPreferredItemInTag(Ingredient.of(`mekanism:ingot_${material}`)).id;
         let ingotBiggerReactor = getPreferredItemInTag(Ingredient.of(`biggerreactors:${material}_ingot`)).id;
         let ingotBeyondEarth = getPreferredItemInTag(Ingredient.of(`beyond_earth:${material}_ingot`)).id;
@@ -37,10 +35,18 @@ onEvent('tags.items', event => {
         let ingotExNihilio = getPreferredItemInTag(Ingredient.of(`exnihilosequentia:${material}_ingot`)).id;
 
         let rawThermal = getPreferredItemInTag(Ingredient.of(`thermal:raw_${material}`)).id;
-        //let rawImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:raw_${material}`)).id;
+        
         let rawMekanism = getPreferredItemInTag(Ingredient.of(`mekanism:raw_${material}`)).id;
 
         //let rodImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:stick_${material}`)).id;
+        //let dustImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:dust_${material}`)).id;
+        //let rawImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:raw_${material}`)).id;
+        //let ingotImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:ingot_${material}`)).id;
+        //let nuggetImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:nugget_${material}`)).id;
+        //let plateImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:plate_${material}`)).id;
+
+
+
 
         if (material == air) {return;}
 
@@ -56,12 +62,12 @@ onEvent('tags.items', event => {
             // 'thermal:' + material + '_block',
             dustThermal,
             //dustImmersive,
-            dustMekanism,
+            // dustMekanism,
             plateThermal,
             gearThermal,
             nuggetThermal,
             ingotThermal,
-            // rawThermal,
+            rawThermal,
             // plateImmersive,
             // nuggetImmersive,
             // ingotImmersive,
@@ -70,8 +76,8 @@ onEvent('tags.items', event => {
             ingotMekanism,
             rawMekanism,
             //rodImmersive,
-            dustBiggerReactor,
-            ingotBiggerReactor,
+            // dustBiggerReactor,
+            // ingotBiggerReactor,
             nuggetTconstruct,
             ingotBeyondEarth,
             nuggetMinecraft,
@@ -114,13 +120,13 @@ onEvent('tags.items', event => {
         if (material == air) {return;}
 
         itemsToRemove.push(
-            dustThermal,
+            // dustThermal,
             // dustImmersive,
             dustMekanism,
-            plateThermal,
-            gearThermal,
-            nuggetThermal,
-            ingotThermal,
+            // plateThermal,
+            // gearThermal,
+            // nuggetThermal,
+            // ingotThermal,
             // plateImmersive,
             // nuggetImmersive,
             // ingotImmersive,
@@ -202,8 +208,8 @@ onEvent('tags.items', event => {
     event.removeAllTagsFrom('mekanism:dust_osmium');
     event.removeAllTagsFrom('mekanism:dust_uranium');
 
-    event.removeAllTagsFrom('biggerreactors:uranium_dust');
-    event.removeAllTagsFrom('biggerreactors:uranium_ingot');
+    // event.removeAllTagsFrom('biggerreactors:uranium_dust');
+    // event.removeAllTagsFrom('biggerreactors:uranium_ingot');
 
     event.removeAllTagsFrom('tconstruct:soulsteel_ingot');
     event.remove('forge:ingots', 'tconstruct:soulsteel_ingot');

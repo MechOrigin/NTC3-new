@@ -44,9 +44,12 @@ onEvent('recipes', event => {
 		// fix_block_from_ingot(event, material, ingot, block);
 
 		thermal_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
-		thermal_metal_ore_pulverizing(event, material, raw_ore, crushed_ore, dust);
+		thermal_metal_ore_pulverizing(event, material, raw_ore, crushed_ore, ingot, dust);
         thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate, wire, dust_impure);
-
+		thermal_metal_induction_smelter(event, material, ingot);
+		thermal_metal_centrifuge(event, material, dust)
+		thermal_press(event, material, block, ingot, nugget, gear, plate, denseplate)
+		
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
 		tconstruct_metal_melting(event, material, block, dust_impure, dust_pure);
 
@@ -87,19 +90,19 @@ onEvent('recipes', event => {
 		let dust_impure = getPreferredItemInTag(Ingredient.of(`#forge:impure_dust/${material}`)).id;
 		let dust_pure = getPreferredItemInTag(Ingredient.of(`#forge:pure_dust/${material}`)).id;
 
-		thermal_metal_induction_smelter(event, material, ingot);
-		thermal_metal_centrifuge(event, material, dust);
-		thermal_press(event, material, gear);
-		thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate, wire, dust_impure);
-		thermal_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
+		// thermal_metal_induction_smelter(event, material, ingot);
+		// thermal_metal_centrifuge(event, material, dust);
+		// thermal_press(event, material, gear);
+		// thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate, wire, dust_impure);
+		// thermal_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
 
-		fix_ingot_from_nugget(event, material, ingot, nugget);
-		fix_block_from_ingot(event, material, ingot, block);
+		// fix_ingot_from_nugget(event, material, ingot, nugget);
+		// fix_block_from_ingot(event, material, ingot, block);
 
-		minecraft_dust_to_ingot_smelting_alloys(event, material, ingot, dust);
+		// minecraft_dust_to_ingot_smelting_alloys(event, material, ingot, dust);
 
-		tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
-		tconstruct_metal_melting(event, material, block, dust_impure, dust_pure);
+		// tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
+		// tconstruct_metal_melting(event, material, block, dust_impure, dust_pure);
 
 	});
 
@@ -128,6 +131,12 @@ onEvent('recipes', event => {
 
         var output = Item.of(nugget, 10), 
             input = `#forge:crushed/${material}`;
+
+		// silicon
+		if (`${material}` == 'silicon') {
+			input = Item.of('#forge:dusts/certus_quartz', 1)
+			output = Item.of('#forge:nuggets/silicon', 1)
+		}
 
         event.smelting(output, input).xp(0.35);
         event.blasting(output, input).xp(0.7);
@@ -486,7 +495,7 @@ onEvent('recipes', event => {
             input.push(`#forge:gems/${material}`);
         }
 
-        event.shapeless(output, [input, hammer]).id(`ntc3:base/hammering/${material}_plates`);
+        event.shapeless(output, [input, hammer]).id(`ntc3:base/hammering/${material}_dense_plates`);
     }
 
 	function greg_rod_assembly(event, material, ingot, rod) {
@@ -698,7 +707,7 @@ onEvent('recipes', event => {
             return;
         }
 
-        const recipes = [
+        var recipes = [
             { cast: 'tconstruct:ingot_cast', type: 'ingot', amount: 90, output: ingot, energy: 50 }
         ];
         if (nugget != air) {
@@ -716,7 +725,7 @@ onEvent('recipes', event => {
         if (wire != air /*&& (`${material}` == 'copper') || (`${material}` == 'electrum') || (`${material}` == 'aluminium') || (`${material}` == 'steel') || (`${material}` == 'lead')*/) {
             recipes.push({ cast: 'tconstruct:wire_cast', type: 'wire', amount: 45, output: wire, energy: 50 });
         }
-		const blockrecipes = [
+		var blockrecipes = [
             { type: 'block', amount: 810, output: block, energy: 50 }
         ];
 
@@ -813,27 +822,28 @@ onEvent('recipes', event => {
 		}
     }
 
-    function thermal_metal_ore_pulverizing(event, material, raw_ore, crushed_ore, dust) {
-        if (raw_ore == air || crushed_ore == air) {
+    function thermal_metal_ore_pulverizing(event, material, raw_ore, crushed_ore, ingot, dust) {
+        if (material == air || crushed_ore == air) {
             return;
         }
 
-		const recipes = [
+		var recipes = [
            // { primaryOutput: dust, stoneOutput: 'minecraft:gravel', secondaryOutput: dust, primaryCount: 2, input: raw_ore, experience: 0.2 }
 			{ primaryOutput: dust, stoneOutput: 'minecraft:gravel', secondaryOutput: dust, primaryCount: 2, input: crushed_ore, experience: 0.2 }
         ];
 
-        // if (raw_ore == 'antimatter_shared:raw_ore_redstone') {
-        //     //recipes.push({ primaryOutput: 'minecraft:redstone', stoneOutput: 'minecraft:gravel', secondaryOutput: 'antimatter_shared:dust_cinnabar', primaryCount: 10, input: raw_ore, experience: 0.2 });
-		// 	recipes.push({ primaryOutput: 'minecraft:redstone', stoneOutput: 'minecraft:gravel', secondaryOutput: 'secretly_complicated:cinnabar_gem', primaryCount: 10, input: raw_ore, experience: 0.2 });
-		// }
+        if (ingot != air) {
+            
+			recipes.push({ primaryOutput: dust, stoneOutput: dust, secondaryOutput: dust, primaryCount: 1, input: ingot, experience: 0.2 });
+		
+		}
 
-		event.remove({ id: /thermal:machines\/pulverizer\// })
-		event.remove({ id: /thermal:machines\/pulverizer/ })
+		event.remove({ id: /thermal:machines\/pulverizer/})
+		event.remove({ id: /thermal:machines\/pulverizer\/pulverizer_.*/ })
 		//event.remove({ id: /thermal:machines\/biggerreactors/ })
 		//event.remove({ id: /thermal:compat\/immersiveengineering/ })
-		event.remove({ id: `thermal:parts/${material}_gear` })
-		event.remove({ type: 'thermal:pulverizer' });
+		// event.remove({ id: `thermal:parts/${material}_gear` })
+		// event.remove({ type: 'thermal:pulverizer' });
 
 		recipes.forEach((recipe) => {
 			//console.log(`Created new ${recipe.primaryOutput}, ${recipe.secondaryOutput}, ${recipe.stoneOutput} as ${recipe.input} and ${recipe.experience}`);
@@ -883,7 +893,7 @@ onEvent('recipes', event => {
             return;
         }
 
-        const recipes = [
+        var recipes = [
             { type: 'ingot', amount: 90, input: ingot, energy: 50 }
         ];
         if (nugget != air) {
@@ -946,7 +956,7 @@ onEvent('recipes', event => {
             return;
         }
 
-        const recipes = [
+        var recipes = [
             { type: 'ingot', amount: 90, cooling: 57, output: ingot }
         ];
         if (nugget != air) {
@@ -965,7 +975,7 @@ onEvent('recipes', event => {
             recipes.push({ type: 'wire', amount: 45, cooling: 57, output: wire });
         }
 
-		const basinrecipes = [];
+		var basinrecipes = [];
 		if (block != air) {
             basinrecipes.push({ type: 'block', amount: 810, cooling: 171, output: block });
         }
@@ -1059,9 +1069,9 @@ onEvent('recipes', event => {
         }
 
 
-		const id_prefix = 'ntc3:unify/tconstruct/melting/';
+		var id_prefix = 'ntc3:unify/tconstruct/melting/';
 		
-			const recipes = [
+		var recipes = [
 				{
 					ingredient: {
 						item: dust_pure
@@ -1110,11 +1120,11 @@ onEvent('recipes', event => {
 
 
     function thermal_metal_induction_smelter(event, material, ingot) {
-        if (ingot == air) {
+        if (material == air) {
             return;
         }
 
-		const recipes = [
+		var recipes = [
 			// {
             // primaryIngotInput: air, secondaryIngotInput: air, thirdIngotInput: air,
 			// primaryDustInput: air, secondaryDustInput: air, thirdDustInput: air,
@@ -1125,8 +1135,8 @@ onEvent('recipes', event => {
 
         // Steel
         if (`${material}` == 'steel') {
-			recipes.push({ primaryIngotInput: 'forge:gems/coal', primaryDustInput: 'forge:dusts/coal', count1: 1,
-						secondaryIngotInput: 'forge:ingots/iron', secondaryDustInput: 'forge:dusts/iron', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', count1: 1,
+						secondaryIngotInput: 'forge:gems/coal_coke', secondaryDustInput: 'forge:dusts/coal_coke', count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 1, energy: 800 });
 		}
@@ -1184,12 +1194,12 @@ onEvent('recipes', event => {
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
-		if (`${material}` == 'fireclay') {
-			recipes.push({ primaryDustInput: 'forge:dusts/brick', count1: 1,
-						secondaryDustInput: 'forge:dusts/sand', count2: 2,
-						thirdIngotInput: air, thirdDustInput: air, count3: 1,
-						primaryOutput: output, count4: 1, energy: 800 });
-        }
+		// if (`${material}` == 'fireclay') {
+		// 	recipes.push({ primaryDustInput: 'forge:dusts/brick', count1: 1,
+		// 				secondaryDustInput: 'forge:dusts/sand', count2: 2,
+		// 				thirdIngotInput: air, thirdDustInput: air, count3: 1,
+		// 				primaryOutput: output, count4: 1, energy: 800 });
+        // }
 		if (`${material}` == 'brass') {
 			recipes.push({ primaryIngotInput: 'forge:ingots/zinc', primaryDustInput: 'forge:dusts/zinc', count1: 1,
 						secondaryIngotInput: 'forge:ingots/copper', secondaryDustInput: 'forge:dusts/copper', count2: 3,
@@ -1208,12 +1218,12 @@ onEvent('recipes', event => {
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 800 });
         }
-		if (`${material}` == 'amethyst_bronze') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', count1: 1,
-						secondaryIngotInput: 'forge:gems/amethyst', count2: 1,
-						thirdIngotInput: air, thirdDustInput: air, count3: 1,
-						primaryOutput: output, count4: 1, energy: 800 });
-        }
+		// if (`${material}` == 'amethyst_bronze') {
+		// 	recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', count1: 1,
+		// 				secondaryIngotInput: 'forge:gems/amethyst', count2: 1,
+		// 				thirdIngotInput: air, thirdDustInput: air, count3: 1,
+		// 				primaryOutput: output, count4: 1, energy: 800 });
+        // }
 		if (`${material}` == 'enderium') {
 			recipes.push({ primaryIngotInput: 'forge:ingots/lead', primaryDustInput: 'forge:dusts/lead', count1: 3,
 						secondaryIngotInput: 'forge:gems/diamond', secondaryDustInput: 'forge:dusts/diamond', count2: 1,
@@ -1232,36 +1242,36 @@ onEvent('recipes', event => {
 						thirdIngotInput: 'forge:dusts/redstone', count3: 4,
 						primaryOutput: output, count4: 4, energy: 14000 });
         }
-		if (`${material}` == 'hepatizon') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', count1: 2,
-						secondaryIngotInput: 'forge:ingots/cobalt', secondaryDustInput: 'forge:dusts/cobalt', count2: 1,
-						thirdIngotInput: 'forge:obsidian', count3: 1,
-						primaryOutput: output, count4: 2, energy: 800 });
-        }
-		if (`${material}` == 'manyullyn') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/cobalt', primaryDustInput: 'forge:dusts/cobalt', count1: 3,
-						secondaryIngotInput: 'forge:ingots/netherite_scrap', secondaryDustInput: 'forge:dusts/netherite_scrap', count2: 1,
-						thirdIngotInput: air, thirdDustInput: air, count3: 1,
-						primaryOutput: output, count4: 4, energy: 800 });
-        }
-		if (`${material}` == 'pig_iron') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', count1: 1,
-						secondaryIngotInput: 'forge:slimeball/blood', count2: 1,
-						thirdIngotInput: 'forge:honeybottle', count3: 1,
-						primaryOutput: output, count4: 2, energy: 800 });
-        }
-		if (`${material}` == 'queens_slime') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/cobalt', primaryDustInput: 'forge:dusts/cobalt', count1: 1,
-						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', count2: 1,
-						thirdIngotInput: 'forge:slimeball/magma_cream', count3: 1,
-						primaryOutput: output, count4: 2, energy: 800 });
-        }
-		if (`${material}` == 'slimesteel') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', count1: 1,
-						secondaryIngotInput: 'forge:ingots/seared_brick', count2: 1,
-						thirdIngotInput: 'forge:slimeball/sky', count3: 1,
-						primaryOutput: output, count4: 2, energy: 800 });
-        }
+		// if (`${material}` == 'hepatizon') {
+		// 	recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', count1: 2,
+		// 				secondaryIngotInput: 'forge:ingots/cobalt', secondaryDustInput: 'forge:dusts/cobalt', count2: 1,
+		// 				thirdIngotInput: 'forge:obsidian', count3: 1,
+		// 				primaryOutput: output, count4: 2, energy: 800 });
+        // }
+		// if (`${material}` == 'manyullyn') {
+		// 	recipes.push({ primaryIngotInput: 'forge:ingots/cobalt', primaryDustInput: 'forge:dusts/cobalt', count1: 3,
+		// 				secondaryIngotInput: 'forge:ingots/netherite_scrap', secondaryDustInput: 'forge:dusts/netherite_scrap', count2: 1,
+		// 				thirdIngotInput: air, thirdDustInput: air, count3: 1,
+		// 				primaryOutput: output, count4: 4, energy: 800 });
+        // }
+		// if (`${material}` == 'pig_iron') {
+		// 	recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', count1: 1,
+		// 				secondaryIngotInput: 'forge:slimeball/blood', count2: 1,
+		// 				thirdIngotInput: 'forge:honeybottle', count3: 1,
+		// 				primaryOutput: output, count4: 2, energy: 800 });
+        // }
+		// if (`${material}` == 'queens_slime') {
+		// 	recipes.push({ primaryIngotInput: 'forge:ingots/cobalt', primaryDustInput: 'forge:dusts/cobalt', count1: 1,
+		// 				secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', count2: 1,
+		// 				thirdIngotInput: 'forge:slimeball/magma_cream', count3: 1,
+		// 				primaryOutput: output, count4: 2, energy: 800 });
+        // }
+		// if (`${material}` == 'slimesteel') {
+		// 	recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', count1: 1,
+		// 				secondaryIngotInput: 'forge:ingots/seared_brick', count2: 1,
+		// 				thirdIngotInput: 'forge:slimeball/sky', count3: 1,
+		// 				primaryOutput: output, count4: 2, energy: 800 });
+        // }
 		if (`${material}` == 'black_bronze') {
 			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', count1: 3,
 						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', count2: 1,
@@ -1323,71 +1333,110 @@ onEvent('recipes', event => {
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'electrical_steel') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', count1: 1,
-						secondaryIngotInput: 'forge:gems/coal', secondaryDustInput: 'forge:dusts/coal', count2: 1,
-						thirdIngotInput: 'forge:ingots/silicon', thirdDustInput: 'forge:dusts/silicon', count3: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/silicon', primaryDustInput: 'forge:dusts/silicon', count1: 1,
+						secondaryIngotInput: 'forge:ingots/steel', secondaryDustInput: 'forge:dusts/steel', count2: 1,
+						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 10000 });
         }
 
 		event.remove({ id: /thermal:machines\/smelter/ })
-
-		recipes.forEach((recipe) => {
-			//console.log(`Created new ${recipe.primaryIngotInput}, ${recipe.secondaryIngotInput}, ${recipe.thirdIngotInput}, ${recipe.primaryOutput}`);
-			event.custom({
-				type: 'thermal:smelter',
-				ingredients: [
-					{
-					  value: [
-						{
-						  tag: `${recipe.primaryIngotInput}`
-						},
-						{
-						  tag: `${recipe.primaryDustInput}`
-						}
-					  ],
-					  count: `${recipe.count1}`
-					},
-					{
-					  value: [
-						{
-						  tag: `${recipe.secondaryIngotInput}`
-						},
-						{
-						  tag: `${recipe.secondaryDustInput}`
-						}
-					  ],
-					  count: `${recipe.count2}`
-					},
-					{
-					  value: [
-						{
-						  tag: `${recipe.thirdIngotInput}`
-						},
-						{
-						  tag: `${recipe.thirdDustInput}`
-						}
-					  ],
-					  count: `${recipe.count3}`
-					}
-				  ],
-				  result: [
-					{
-					  tag: `${recipe.primaryOutput}`,
-					  count: `${recipe.count4}`
-					}
-				  ],
-				  energy: `${recipe.energy}`
-			})
-			.id(`ntc3:smeltery/alloys/metal/${material}/block`);
-		});
-    }
+		
+			recipes.forEach((recipe) => {
+				if (`${recipe.thirdIngotInput}` == air) {
+					//console.log(`Created new ${recipe.primaryIngotInput}, ${recipe.secondaryIngotInput}, ${recipe.thirdIngotInput}, ${recipe.primaryOutput}`);
+					event.custom({
+						type: 'thermal:smelter',
+						ingredients: [
+							{
+							value: [
+								{
+								tag: `${recipe.primaryIngotInput}`
+								},
+								{
+								tag: `${recipe.primaryDustInput}`
+								}
+							],
+							count: `${recipe.count1}`
+							},
+							{
+							value: [
+								{
+								tag: `${recipe.secondaryIngotInput}`
+								},
+								{
+								tag: `${recipe.secondaryDustInput}`
+								}
+							],
+							count: `${recipe.count2}`
+							}
+						],
+						result: [
+							{
+							tag: `${recipe.primaryOutput}`,
+							count: `${recipe.count4}`
+							}
+						],
+						energy: `${recipe.energy}`
+					})
+					.id(`ntc3:smeltery/alloys/metal/${material}_2_material_alloys`);
+				} else {
+					//console.log(`Created new ${recipe.primaryIngotInput}, ${recipe.secondaryIngotInput}, ${recipe.thirdIngotInput}, ${recipe.primaryOutput}`);
+					event.custom({
+						type: 'thermal:smelter',
+						ingredients: [
+							{
+							value: [
+								{
+								tag: `${recipe.primaryIngotInput}`
+								},
+								{
+								tag: `${recipe.primaryDustInput}`
+								}
+							],
+							count: `${recipe.count1}`
+							},
+							{
+							value: [
+								{
+								tag: `${recipe.secondaryIngotInput}`
+								},
+								{
+								tag: `${recipe.secondaryDustInput}`
+								}
+							],
+							count: `${recipe.count2}`
+							},
+							{
+							value: [
+								{
+								tag: `${recipe.thirdIngotInput}`
+								},
+								{
+								tag: `${recipe.thirdDustInput}`
+								}
+							],
+							count: `${recipe.count3}`
+							}
+						],
+						result: [
+							{
+							tag: `${recipe.primaryOutput}`,
+							count: `${recipe.count4}`
+							}
+						],
+						energy: `${recipe.energy}`
+					})
+					.id(`ntc3:smeltery/alloys/metal/${material}_3_material_alloys`);
+				}}
+				);
+		}
 
 	function thermal_metal_centrifuge(event, material, dust) {
 		if (dust == air) {
             return;
         }
 
-		const recipes = [
+		var recipes = [
 			// {
             // primaryOutput: air, secondaryOutput: air, thirdOutput: air,
 			// fourthOutput: air, fluidOutput: air, primaryInput: air,
@@ -1409,7 +1458,7 @@ onEvent('recipes', event => {
 		event.remove({ id: /thermal:machines\/centrifuge\/centrifuge_\w*_dust/ })
 
 		recipes.forEach((recipe) => {
-			console.log(`Created new ${recipe.primaryInput}, ${recipe.primaryOutput}, ${recipe.secondaryOutput}`);
+			//console.log(`Created new ${recipe.primaryInput}, ${recipe.primaryOutput}, ${recipe.secondaryOutput}`);
 			event.custom({
 				type: 'thermal:centrifuge',
 				ingredient:
@@ -1432,12 +1481,103 @@ onEvent('recipes', event => {
 		});
 	}
 
-	function thermal_press(event, material, gear) {
-		if (material == air || gear == air) {
+	function thermal_press(event, material, block, ingot, nugget, gear, plate, denseplate) {
+		if (material == air || block == air || ingot == air) {
             return;
         }
 
+		event.remove({ id: /thermal:machines\/press/ })
 		event.remove({ id: `thermal:parts/${material}_gear`})
+
+		const id_prefix = 'ntc3:base/thermal/press/';
+		const recipes = [
+			// {
+			//     inputs: [Item.of('atmospheric:red_arid_sandstone', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
+			//     outputs: [Item.of('atmospheric:red_arid_sand', 4)],
+			//     energy: 2400,
+			//     id: `${id_prefix}red_arid_sand`
+			// }
+		];
+
+		// var output = Item.of(nugget, 10), 
+		// input = `#forge:crushed/${material}`;
+
+		// // silicon
+		// if (`${material}` == 'silicon') {
+		// 	input = Item.of('#forge:dusts/certus_quartz', 1)
+		// 	output = Item.of('#forge:nuggets/silicon', 1)
+		// }
+	
+		// ['osmium', 'aluminum', 'uranium'].forEach((metal) => {
+			recipes.push(
+				{
+				inputs: [
+					Item.of(ingot, 9),
+					Item.of('thermal:press_packing_3x3_die')
+				],
+				outputs: [Item.of(block)],
+				energy: 2400,
+				id: `${id_prefix}${material}_block`
+				},
+				{
+				inputs: [
+					Item.of(nugget, 9),
+					Item.of('thermal:press_packing_3x3_die')
+				],
+				outputs: [Item.of(ingot)],
+				energy: 2400,
+				id: `${id_prefix}${material}_ingot`
+				},
+				{
+				inputs: [
+					Item.of(block, 1),
+					Item.of('thermal:press_unpacking_die')
+				],
+				outputs: [Item.of(ingot, 9)],
+				energy: 2400,
+				id: `${id_prefix}${material}_ingot_unpacking`
+				},
+				{
+				inputs: [
+					Item.of(ingot, 1),
+					Item.of('thermal:press_unpacking_die')
+				],
+				outputs: [Item.of(nugget, 9)],
+				energy: 2400,
+				id: `${id_prefix}${material}_nugget_unpacking`
+				},
+				{
+				inputs: [
+					Item.of(ingot, 2)
+				],
+				outputs: [Item.of(plate, 2)],
+				energy: 2400,
+				id: `${id_prefix}${material}_plate`
+				},
+				{
+				inputs: [
+					Item.of(ingot, 4),
+					Item.of('thermal:press_gear_die')
+				],
+				outputs: [Item.of(gear, 2)],
+				energy: 2400,
+				id: `${id_prefix}${material}_gear`
+				},
+				{
+				inputs: [
+					Item.of(plate, 4)
+				],
+				outputs: [Item.of(denseplate, 2)],
+				energy: 2400,
+				id: `${id_prefix}${material}_denseplate`
+				}
+				
+			);
+		// });
+	
+		recipes.forEach((recipe) => {
+			event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id);
+		});
 	}
 
 	function minecraft_dust_to_ingot_smelting_alloys(event, material, ingot, dust) {
@@ -1492,7 +1632,7 @@ onEvent('recipes', event => {
             return;
         }
 
-		const recipes = [
+		var recipes = [
            // { primaryOutput: dust, stoneOutput: 'minecraft:gravel', secondaryOutput: dust, primaryCount: 2, input: raw_ore, experience: 0.2 }
 			{ primaryOutput: dust, secondaryOutput: dust, primaryCount: 2, input: gem, experience: 0.2 }
         ];

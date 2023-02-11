@@ -7,7 +7,7 @@ global["INVENTORY_UNIFY"] = false
 // Whether or not to unify items in world
 global["ITEM_UNIFY"] = false
 // Whether or not to unify recipes
-global["RECIPE_UNIFY"] = false
+global["RECIPE_UNIFY"] = true
 // Whether or not to hide not-first materials in jei (requires secondary script)
 global["HIDE_UNIFIED_ITEMS"] = false
 // Whether or not to disable non-priority ore-gen
@@ -16,17 +16,16 @@ global["UNIFY_ORE_GEN"] = false
 // Mod priorities
 global["unifypriorities"] = [
     'secretly_complicated',
-    'minecraft',
-    'kubejs',
-    'quark',
-    'tconstruct',
-    'appliedenergistics2',
-    //'immersiveengineering',
     'thermal',
-    'mekanism',
-    'mysticalagriculture',
-    'biomesoplenty',
-    'integrateddynamics'
+    // 'minecraft',
+    // 'kubejs',
+    // 'quark',
+    // 'tconstruct',
+    // 'appliedenergistics2',
+    // 'mekanism',
+    // 'mysticalagriculture',
+    // 'biomesoplenty',
+    // 'integrateddynamics'
 ]
 // Items to exclude (will not be unified)
 global["unifyexclude"] = new Set([
@@ -67,6 +66,7 @@ var tagGen = [
     "zinc=blocks,ingots,nuggets,ores,raw_ores,dusts,gears,plates,rods",
     "bronze=blocks,ingots,nuggets,ores,raw_ores,dusts,gears,plates,rods",
     "steel=blocks,ingots,nuggets,ores,raw_ores,dusts,gears,plates,rods",
+    "rose_gold=blocks,ingots,nuggets,ores,raw_ores,dusts,gears,plates,rods",
     // "coal=storage_blocks,gems,dusts,clump,crystal,dirty_dust,shard,fragment,chunks",
     // "iron=storage_blocks,ingots,nuggets,dusts,gears,plates,rods,clump,crystal,dirty_dust,shard,fragment,chunks",
     // "gold=storage_blocks,ingots,nuggets,dusts,gears,plates,rods,clump,crystal,dirty_dust,shard,fragment,chunks",

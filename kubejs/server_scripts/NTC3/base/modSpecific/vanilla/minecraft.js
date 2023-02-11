@@ -50,4 +50,12 @@ onEvent('recipes', (event) => {
     D: '#forge:ingots/red_alloy'
     })
 
+    modifyShapeless(event, 'minecraft:oak_planks', 1, ['#minecraft:oak_logs'])
+    modifyShapeless(event, 'minecraft:spruce_planks', 1, ['#minecraft:spruce_logs'])
+    modifyShapeless(event, 'minecraft:birch_planks', 1, ['#minecraft:birch_logs'])
+    modifyShapeless(event, 'minecraft:jungle_planks', 1, ['#minecraft:jungle_logs'])
+    modifyShapeless(event, 'minecraft:acacia_planks', 1, ['#minecraft:acacia_logs'])
+    modifyShapeless(event, 'minecraft:dark_oak_planks', 1, ['#minecraft:dark_oak_logs'])
+
+
 });

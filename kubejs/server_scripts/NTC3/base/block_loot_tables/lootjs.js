@@ -198,33 +198,67 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:zinc_crushed"),
     ]);
 
+    //(CoAsS): cobalt, arsenic, sulfur
     event
     .addBlockLootModifier("secretly_complicated:cobaltite_netherrack_ore")
     .addWeightedLoot([1, 3], [
         Item.of("secretly_complicated:cobalt_impure_dust"),
     ])
-    .addWeightedLoot([0, 1], [
+    .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:cobalt_crushed"),
-    ]);
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:arsenic_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:arsenic_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:sulfur_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:sulfur_crushed"),
+    ])
+    ;
 
+    //((TiO2)2Al16H10O11): aluminium (Al), rutile, grossular (Ca3Al2Si3O12)
     event
     .addBlockLootModifier("secretly_complicated:bauxite_netherrack_ore")
     .addWeightedLoot([1, 3], [
         Item.of("secretly_complicated:aluminium_impure_dust"),
     ])
-    .addWeightedLoot([0, 1], [
+    .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:aluminium_crushed"),
-    ]);
-
-    event
-    .addBlockLootModifier("secretly_complicated:ilmenite_netherrack_ore")
+    ])
     .addWeightedLoot([1, 3], [
-        Item.of("secretly_complicated:aluminium_impure_dust"),
+        Item.of("secretly_complicated:titanium_impure_dust"),
     ])
     .addWeightedLoot([0, 1], [
-        Item.of("secretly_complicated:aluminium_crushed"),
+        Item.of("secretly_complicated:titanium_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:calcium_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:calcium_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:silicon_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:silicon_crushed"),
     ]);
 
+    // event
+    // .addBlockLootModifier("secretly_complicated:ilmenite_netherrack_ore")
+    // .addWeightedLoot([1, 3], [
+    //     Item.of("secretly_complicated:aluminium_impure_dust"),
+    // ])
+    // .addWeightedLoot([0, 1], [
+    //     Item.of("secretly_complicated:aluminium_crushed"),
+    // ]);
+
+    //NiO: nickel
     event
     .addBlockLootModifier("secretly_complicated:garnierite_netherrack_ore")
     .addWeightedLoot([1, 3], [
@@ -234,8 +268,15 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:nickel_crushed"),
     ]);
 
+    //(FeTiO3): iron (Fe), rutile (TiO2)
     event
     .addBlockLootModifier("secretly_complicated:ilmenite_netherrack_ore")
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:iron_impure_dust"),
+    ])
+    .addWeightedLoot([0, 3], [
+        Item.of("secretly_complicated:iron_crushed"),
+    ])
     .addWeightedLoot([1, 3], [
         Item.of("secretly_complicated:titanium_impure_dust"),
     ])
@@ -261,24 +302,45 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:vanadium_crushed"),
     ]);
 
+    //Pb3Ag3S2: lead, silver, sulfur, massicot (PbO)
     event
     .addBlockLootModifier("secretly_complicated:galena_netherrack_ore")
     .addWeightedLoot([1, 3], [
         Item.of("secretly_complicated:lead_impure_dust"),
     ])
-    .addWeightedLoot([0, 1], [
+    .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:lead_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:silver_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:silver_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:sulfur_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:sulfur_crushed"),
     ]);
 
+    //Ni9S8: Nickel, Sulfur
     event
     .addBlockLootModifier("secretly_complicated:pentlandite_netherrack_ore")
     .addWeightedLoot([1, 3], [
         Item.of("secretly_complicated:nickel_impure_dust"),
     ])
-    .addWeightedLoot([0, 1], [
+    .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:nickel_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:sulfur_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:sulfur_crushed"),
     ]);
 
+    //SnOs: Tin
     event
     .addBlockLootModifier("secretly_complicated:cassiterite_netherrack_ore")
     .addWeightedLoot([1, 3], [
@@ -288,6 +350,7 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:tin_crushed"),
     ]);
 
+    //FeS2: Iron, sulfur
     event
     .addBlockLootModifier("secretly_complicated:pyrite_netherrack_ore")
     .addWeightedLoot([1, 3], [
@@ -295,8 +358,15 @@ onEvent("lootjs", (event) => {
     ])
     .addWeightedLoot([0, 1], [
         Item.of("secretly_complicated:iron_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:sulfur_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:sulfur_crushed"),
     ]);
 
+    //ZnS: Zinc, sulfur
     event
     .addBlockLootModifier("secretly_complicated:sphalerite_netherrack_ore")
     .addWeightedLoot([1, 3], [
@@ -304,6 +374,12 @@ onEvent("lootjs", (event) => {
     ])
     .addWeightedLoot([0, 1], [
         Item.of("secretly_complicated:zinc_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:sulfur_impure_dust"),
+    ])
+    .addWeightedLoot([0, 1], [
+        Item.of("secretly_complicated:sulfur_crushed"),
     ]);
 
     event

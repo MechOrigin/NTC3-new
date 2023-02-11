@@ -5,13 +5,12 @@ const air = 'minecraft:air';
 // priority of which mod output should come from, if applicable
 const modPriorities = [
     'secretly_complicated',
+    'thermal',
     'minecraft',
     'kubejs',
     'quark',
     'tconstruct',
     'ae2',
-    //'immersiveengineering',
-    'thermal',
     'mekanism',
     'mysticalagriculture',
     'biomesoplenty',

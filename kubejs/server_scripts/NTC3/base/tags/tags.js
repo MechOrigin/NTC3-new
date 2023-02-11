@@ -11,18 +11,20 @@ onEvent('tags.items', e => {
     e.add('thermal:crafting/casts', 'tconstruct:gear_cast')
     e.add('thermal:crafting/casts', 'tconstruct:wire_cast')
 
-    e.add('forge:nuggets/slimesteel', 'tconstruct:slimesteel_nugget');
-    e.add('forge:ingots/slimesteel', 'tconstruct:slimesteel_ingot');
-    e.add('forge:storage_blocks/slimesteel', 'tconstruct:slimesteel_block');
+    // e.add('forge:nuggets/slimesteel', 'tconstruct:slimesteel_nugget');
+    // e.add('forge:ingots/slimesteel', 'tconstruct:slimesteel_ingot');
+    // e.add('forge:storage_blocks/slimesteel', 'tconstruct:slimesteel_block');
     e.add('forge:ingots/seared_brick', 'tconstruct:seared_brick');
-    e.add('forge:nuggets/queens_slime', 'tconstruct:queens_slime_nugget');
-    e.add('forge:ingots/queens_slime', 'tconstruct:queens_slime_ingot');
-    e.add('forge:storage_blocks/queens_slime', 'tconstruct:queens_slime_block');
+    // e.add('forge:nuggets/queens_slime', 'tconstruct:queens_slime_nugget');
+    // e.add('forge:ingots/queens_slime', 'tconstruct:queens_slime_ingot');
+    // e.add('forge:storage_blocks/queens_slime', 'tconstruct:queens_slime_block');
     e.add('forge:slimeball/magma_cream', 'minecraft:magma_cream');
     e.add('forge:honeybottle', 'minecraft:honey_bottle');
-    e.add('forge:nuggets/amethyst_bronze', 'tconstruct:amethyst_bronze_nugget');
-    e.add('forge:ingots/amethyst_bronze', 'tconstruct:amethyst_bronze_ingot');
-    e.add('forge:storage_blocks/amethyst_bronze', 'tconstruct:amethyst_bronze_block');
+    e.add('forge:silicon', 'secretly_complicated:silicon_nugget');
+    // e.add('forge:nuggets/amethyst_bronze', 'tconstruct:amethyst_bronze_nugget');
+    // e.add('forge:ingots/amethyst_bronze', 'tconstruct:amethyst_bronze_ingot');
+    // e.add('forge:ingots', 'tconstruct:amethyst_bronze_ingot');
+    // e.add('forge:storage_blocks/amethyst_bronze', 'tconstruct:amethyst_bronze_block');
     // e.add('forge:nuggets/signalum', 'thermal:signalum_nugget');
     // e.add('forge:ingots/signalum', 'thermal:signalum_ingot');
     // e.add('forge:storage_blocks/signalum', 'thermal:signalum_block');
@@ -32,18 +34,18 @@ onEvent('tags.items', e => {
     // e.add('forge:nuggets/enderium', 'thermal:enderium_nugget');
     // e.add('forge:ingots/enderium', 'thermal:enderium_ingot');
     // e.add('forge:storage_blocks/enderium', 'thermal:enderium_block');
-    e.add('forge:nuggets/pig_iron', 'tconstruct:pig_iron_nugget');
-    e.add('forge:ingots/pig_iron', 'tconstruct:pig_iron_ingot');
-    e.add('forge:storage_blocks/pig_iron', 'tconstruct:pig_iron_block');
-    e.add('forge:nuggets/netherite', 'tconstruct:netherite_nugget');
-    e.add('forge:ingots/netherite', 'minecraft:netherite_ingot');
-    e.add('forge:storage_blocks/netherite', 'minecraft:netherite_block');
-    e.add('forge:nuggets/hepatizon', 'tconstruct:hepatizon_nugget');
-    e.add('forge:ingots/hepatizon', 'tconstruct:hepatizon_ingot');
-    e.add('forge:storage_blocks/hepatizon', 'tconstruct:hepatizon_block');
-    e.add('forge:nuggets/manyullyn', 'tconstruct:manyullyn_nugget');
-    e.add('forge:ingots/manyullyn', 'tconstruct:manyullyn_ingot');
-    e.add('forge:storage_blocks/manyullyn', 'tconstruct:manyullyn_block');
+    // e.add('forge:nuggets/pig_iron', 'tconstruct:pig_iron_nugget');
+    // e.add('forge:ingots/pig_iron', 'tconstruct:pig_iron_ingot');
+    // e.add('forge:storage_blocks/pig_iron', 'tconstruct:pig_iron_block');
+    // e.add('forge:nuggets/netherite', 'tconstruct:netherite_nugget');
+    // e.add('forge:ingots/netherite', 'minecraft:netherite_ingot');
+    // e.add('forge:storage_blocks/netherite', 'minecraft:netherite_block');
+    // e.add('forge:nuggets/hepatizon', 'tconstruct:hepatizon_nugget');
+    // e.add('forge:ingots/hepatizon', 'tconstruct:hepatizon_ingot');
+    // e.add('forge:storage_blocks/hepatizon', 'tconstruct:hepatizon_block');
+    // e.add('forge:nuggets/manyullyn', 'tconstruct:manyullyn_nugget');
+    // e.add('forge:ingots/manyullyn', 'tconstruct:manyullyn_ingot');
+    // e.add('forge:storage_blocks/manyullyn', 'tconstruct:manyullyn_block');
 
     e.add('forge:nuggets/redstone_iron', 'extendedcrafting:redstone_nugget');
     e.add('forge:ingots/redstone_iron', 'extendedcrafting:redstone_ingot');

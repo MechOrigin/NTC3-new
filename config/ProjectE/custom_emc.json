@@ -179,6 +179,10 @@
     {
       "item": "secretly_complicated:zinc_solid",
       "emc": 512
+    },
+    {
+      "item": "minecraft:blaze_rod",
+      "emc": 0
     }
   ]
 }

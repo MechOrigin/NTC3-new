@@ -31,6 +31,8 @@ onEvent('recipes', (event) => {
       event.remove({output: 'exnihilosequentia:gold_pieces'})
       event.remove({output: 'exnihilosequentia:copper_pieces'})
 
+      event.remove({type: 'exnihilosequentia:sieve', output: 'minecraft:coal'})
+
       modifyShaped(event, 'exnihilosequentia:wooden_hammer', 1, [' A ', ' BA', 'B  '], {
         A: '#minecraft:planks',
         B: '#forge:rods'

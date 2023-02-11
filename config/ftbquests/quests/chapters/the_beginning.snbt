@@ -1447,7 +1447,6 @@
 			title: "{ntc3.blazerod.title}"
 			x: 7.0d
 			y: -9.5d
-			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.blazerod.desc0}"]
 			hide_dependency_lines: true
 			dependency_requirement: "all_started"
@@ -1572,6 +1571,19 @@
 				id: "0D923F0D3BC96DD4"
 				type: "item"
 				item: "minecraft:slime_block"
+			}]
+		}
+		{
+			title: "{ntc3.beacon.title}"
+			x: -4.5d
+			y: -13.5d
+			description: ["{ntc3.beacon.desc0}"]
+			dependencies: ["216BB6462EB91D81"]
+			id: "07D5DA0EF7164CD4"
+			tasks: [{
+				id: "71EDBE7F8FFC8C08"
+				type: "item"
+				item: "minecraft:beacon"
 			}]
 		}
 	]

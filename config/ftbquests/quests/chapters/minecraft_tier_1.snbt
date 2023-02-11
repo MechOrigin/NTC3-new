@@ -54,18 +54,6 @@
 			}]
 		}
 		{
-			title: "{ntc3.beacon.title}"
-			x: -6.5d
-			y: -0.5d
-			description: ["{ntc3.beacon.desc0}"]
-			id: "07D5DA0EF7164CD4"
-			tasks: [{
-				id: "71EDBE7F8FFC8C08"
-				type: "item"
-				item: "minecraft:beacon"
-			}]
-		}
-		{
 			title: "{ntc3.shulkershell.title}"
 			x: -5.0d
 			y: 0.5d
