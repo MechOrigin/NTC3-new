@@ -1,4 +1,11 @@
 onEvent('recipes', (event) => {
+
+    removeRecipeByID(event, [
+        'thermal:machines/pyrolyzer/pyrolyzer_coal',
+        'thermal:machines/pyrolyzer/pyrolyzer_bitumen',
+        'thermal:machines/pyrolyzer/pyrolyzer_logs'
+    ])
+
     const recipes = [
         // {
         //     input: '#minecraft:logs',
@@ -35,7 +42,7 @@ onEvent('recipes', (event) => {
                 Item.of('projecte:alchemical_coal').toJson()
             ],
             experience: 0.15,
-            energy: 3200,
+            energy: 900,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_alchemical_coal'
         },
         {
@@ -44,7 +51,7 @@ onEvent('recipes', (event) => {
                 Item.of('projecte:alchemical_coal_block').toJson()
             ],
             experience: 0.15,
-            energy: 3200,
+            energy: 8000,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_alchemical_coal_block'
         },
         {
@@ -53,7 +60,7 @@ onEvent('recipes', (event) => {
                 Item.of('projecte:mobius_fuel').toJson()
             ],
             experience: 0.15,
-            energy: 3200,
+            energy: 1300,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_mobius_fuel'
         },
         {
@@ -62,7 +69,7 @@ onEvent('recipes', (event) => {
                 Item.of('projecte:mobius_fuel_block').toJson()
             ],
             experience: 0.15,
-            energy: 3200,
+            energy: 12000,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_mobius_coal_block'
         },
         {
@@ -71,7 +78,7 @@ onEvent('recipes', (event) => {
                 Item.of('projecte:aeternalis_fuel').toJson()
             ],
             experience: 0.15,
-            energy: 3200,
+            energy: 1800,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_aeternalis_fuel'
         },
         {
@@ -80,9 +87,41 @@ onEvent('recipes', (event) => {
                 Item.of('projecte:aeternalis_fuel_block').toJson()
             ],
             experience: 0.15,
-            energy: 3200,
+            energy: 16000,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_aeternalis_coal_block'
         },
+        {
+            input: '#forge:gems/coal',
+            outputs: [
+                Item.of('secretly_complicated:coal_coke_gem').toJson(),
+                Item.of('thermal:tar').withChance(0.25).toJson(),
+                Fluid.of('secretly_complicated:creosote_fluid_still', 250).toJson()
+            ],
+            experience: 0.15,
+            energy: 2000,
+            id: 'thermal:machine/pyrolyzer/pyrolyzer_creosote_fluid_coal'
+        },
+        {
+            input: '#forge:gems/bitumen',
+            outputs: [
+                Item.of('secretly_complicated:coal_coke_gem').toJson(),
+                Item.of('thermal:tar').withChance(0.50).toJson(),
+                Fluid.of('secretly_complicated:sulfuric_heavy_diesel_fluid_still', 50).toJson()
+            ],
+            experience: 0.15,
+            energy: 4000,
+            id: 'thermal:machine/pyrolyzer/pyrolyzer_sulfuric_heavy_diesel_bitumen'
+        },
+        {
+            input: '#minecraft:logs',
+            outputs: [
+                Item.of('minecraft:charcoal').toJson(),
+                Fluid.of('secretly_complicated:creosote_fluid_still', 125).toJson()
+            ],
+            experience: 0.15,
+            energy: 2000,
+            id: 'thermal:machine/pyrolyzer/pyrolyzer_creosote_fluid_logs'
+        }
     ];
     recipes.forEach((recipe) => {
         const re = event.custom({

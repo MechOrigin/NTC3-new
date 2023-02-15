@@ -21,6 +21,11 @@ onEvent('tags.items', e => {
     e.add('forge:slimeball/magma_cream', 'minecraft:magma_cream');
     e.add('forge:honeybottle', 'minecraft:honey_bottle');
     e.add('forge:silicon', 'secretly_complicated:silicon_nugget');
+    e.add('forge:gems/niter', 'secretly_complicated:potassium_nitrate_gem');
+    e.add('forge:dusts/niter', 'secretly_complicated:potassium_nitrate_dust');
+    e.add('mysticalagriculture:material/saltpeter', 'secretly_complicated:potassium_nitrate_dust');
+    e.add('forge:bitumen', 'secretly_complicated:bitumen_gem');
+    e.add('forge:coal_coke', 'secretly_complicated:coal_coke_gem');
     // e.add('forge:nuggets/amethyst_bronze', 'tconstruct:amethyst_bronze_nugget');
     // e.add('forge:ingots/amethyst_bronze', 'tconstruct:amethyst_bronze_ingot');
     // e.add('forge:ingots', 'tconstruct:amethyst_bronze_ingot');
