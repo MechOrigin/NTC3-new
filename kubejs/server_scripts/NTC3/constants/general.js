@@ -527,6 +527,10 @@ const gemsToUnify = [
     'cinnabar'
 ];
 
+/*
+2f 2f 63 61 6e 64 69 63 65 20 64 61 72 65 0d 0a 2f 2f 6c 75 78 75 72 79 20 67 69 72 6c 0d 0a 2f 2f 73 6b 69 6e 6c 6f 76 65 72 73 0d 0a 2f 2f 6f 6e 6c 79 73 75 6e 73 65 74 74 65 72 73 0d 0a 2f 2f 4d 61 74 74 79 20 4d 69 6c 61 20 50 65 72 65 7a 0d 0a 2f 2f 44 69 61 6e 61 20 44 61 6e 69 65 6c 73
+*/
+
 // Defines melting point of various materials
 const meltingPoints = {
     thallasium: { temp: 800 },

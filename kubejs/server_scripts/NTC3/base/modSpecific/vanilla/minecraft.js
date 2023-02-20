@@ -15,7 +15,8 @@ onEvent('recipes', (event) => {
         'fundamental:dark_oak_crafting_table',
         'fundamental:jungle_crafting_table',
         'fundamental:spruce_crafting_table',
-        'minecraft:furnace'
+        'minecraft:furnace',
+        'minecraft:ens_ancient_debris'
       ])
 
     modifyShaped(event, 'minecraft:crafting_table', 1, ['BB ', 'AA ', '   '], {

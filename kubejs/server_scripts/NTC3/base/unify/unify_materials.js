@@ -491,7 +491,7 @@ onEvent('recipes', event => {
         }
 
         let output = denseplate,
-            input = Item.of(`#forge:plates/${material}`, 4),
+            input = Item.of(`#forge:plates/${material}`, 8),
             hammer = '#forge:tools/hammer';
 
         if (gem != air) {
@@ -1208,7 +1208,7 @@ onEvent('recipes', event => {
 						primaryOutput: output, count4: 3, energy: 800 });
         }
 		if (`${material}` == 'netherite') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/netherite_scrap', primaryDustInput: 'forge:dusts/netherite_scrap', primaryBlockInput: 'forge:blocks/netherite_scrap', count1: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/netherite_scrap', primaryDustInput: 'forge:dusts/netherite_scrap', primaryBlockInput: 'forge:ores/netherite_scrap', count1: 4,
 						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', secondaryBlockInput: 'forge:blocks/gold', count2: 4,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 1, energy: 800 });
@@ -1625,7 +1625,7 @@ onEvent('recipes', event => {
 				inputs: [
 					Item.of(plate, 4)
 				],
-				outputs: [Item.of(denseplate, 2)],
+				outputs: [Item.of(denseplate, 1)],
 				energy: 2400,
 				id: `${id_prefix}${material}_denseplate`
 				}

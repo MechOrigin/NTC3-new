@@ -20,6 +20,11 @@ onEvent('tags.items', e => {
     // e.add('forge:storage_blocks/queens_slime', 'tconstruct:queens_slime_block');
     e.add('forge:slimeball/magma_cream', 'minecraft:magma_cream');
     e.add('forge:honeybottle', 'minecraft:honey_bottle');
+    e.add('forge:blocks/glowstone', 'minecraft:glowstone');
+    e.add('forge:blocks/redstone', 'minecraft:redstone_block');
+    e.add('forge:blocks/enderpearl', 'miniutilities:ender_pearl_block');
+    
+
     e.add('forge:silicon', 'secretly_complicated:silicon_nugget');
     e.add('forge:gems/niter', 'secretly_complicated:potassium_nitrate_gem');
     e.add('forge:dusts/niter', 'secretly_complicated:potassium_nitrate_dust');

@@ -29,14 +29,17 @@ onEvent('tags.items', event => {
         let ingotThermal = getPreferredItemInTag(Ingredient.of(`thermal:${material}_ingot`)).id;
         
         let ingotMekanism = getPreferredItemInTag(Ingredient.of(`mekanism:ingot_${material}`)).id;
-        let ingotBiggerReactor = getPreferredItemInTag(Ingredient.of(`biggerreactors:${material}_ingot`)).id;
+        //let ingotBiggerReactor = getPreferredItemInTag(Ingredient.of(`biggerreactors:${material}_ingot`)).id;
         let ingotBeyondEarth = getPreferredItemInTag(Ingredient.of(`beyond_earth:${material}_ingot`)).id;
         //let ingotMinecraft = getPreferredItemInTag(Ingredient.of(`minecraft:${material}_ingot`)).id;
         let ingotExNihilio = getPreferredItemInTag(Ingredient.of(`exnihilosequentia:${material}_ingot`)).id;
+        let ingotTconstruct = getPreferredItemInTag(Ingredient.of(`tconstruct:${material}_ingot`)).id;
 
         let rawThermal = getPreferredItemInTag(Ingredient.of(`thermal:raw_${material}`)).id;
         
         let rawMekanism = getPreferredItemInTag(Ingredient.of(`mekanism:raw_${material}`)).id;
+
+        let blockTconstruct = getPreferredItemInTag(Ingredient.of(`tconstruct:${material}_block`)).id;
 
         //let rodImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:stick_${material}`)).id;
         //let dustImmersive = getPreferredItemInTag(Ingredient.of(`immersiveengineering:dust_${material}`)).id;
@@ -62,7 +65,7 @@ onEvent('tags.items', event => {
             // 'thermal:' + material + '_block',
             dustThermal,
             //dustImmersive,
-            // dustMekanism,
+            dustMekanism,
             plateThermal,
             gearThermal,
             nuggetThermal,
@@ -85,7 +88,9 @@ onEvent('tags.items', event => {
             plateBeyondEarth,
             rodBeyondEarth,
             nuggetExNihilio,
-            ingotExNihilio
+            ingotExNihilio,
+            blockTconstruct,
+            ingotTconstruct
             //ingotMinecraft,
         );
     });

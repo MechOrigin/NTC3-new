@@ -882,6 +882,9 @@ onEvent("lootjs", (event) => {
     .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:olivine_dust"),
     ])
+    .addWeightedLoot([0, 3], [
+        Item.of("secretly_complicated:red_garnet_gem"),
+    ])
     .addWeightedLoot([1, 1], [
         Item.of("secretly_complicated:rock_salt_chunk"),
     ])
@@ -896,28 +899,6 @@ onEvent("lootjs", (event) => {
     ])
     .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:magnesium_crushed"),
-    ]);
-
-    //Al2Fe3Si3O12
-    event
-    .addBlockLootModifier("secretly_complicated:pyrope_netherrack_ore")
-    .addWeightedLoot([0, 3], [
-        Item.of("secretly_complicated:red_garnet_gem"),
-    ])
-    .addWeightedLoot([1, 1], [
-        Item.of("secretly_complicated:rock_salt_chunk"),
-    ])
-    .addWeightedLoot([1, 3], [
-        Item.of("secretly_complicated:aluminium_impure_dust"),
-    ])
-    .addWeightedLoot([0, 1], [
-        Item.of("secretly_complicated:aluminium_crushed"),
-    ])
-    .addWeightedLoot([1, 6], [
-        Item.of("secretly_complicated:iron_impure_dust"),
-    ])
-    .addWeightedLoot([0, 3], [
-        Item.of("secretly_complicated:iron_crushed"),
     ]);
 
     //WCa2O4
@@ -984,4 +965,28 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:lead_crushed"),
     ]);
   
+    //Al2Fe3Si3O12
+    event
+    .addBlockLootModifier("secretly_complicated:almandine_netherrack_ore")
+    .addWeightedLoot([0, 3], [
+        Item.of("secretly_complicated:olivine_dust"),
+    ])
+    .addWeightedLoot([0, 3], [
+        Item.of("secretly_complicated:red_garnet_gem"),
+    ])
+    .addWeightedLoot([1, 1], [
+        Item.of("secretly_complicated:rock_salt_chunk"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:aluminium_impure_dust"),
+    ])
+    .addWeightedLoot([0, 3], [
+        Item.of("secretly_complicated:aluminium_crushed"),
+    ])
+    .addWeightedLoot([1, 3], [
+        Item.of("secretly_complicated:iron_impure_dust"),
+    ])
+    .addWeightedLoot([0, 3], [
+        Item.of("secretly_complicated:iron_crushed"),
+    ]);
 });
