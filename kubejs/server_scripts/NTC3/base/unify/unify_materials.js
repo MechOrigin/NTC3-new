@@ -1163,7 +1163,7 @@ onEvent('recipes', event => {
 
 
     function thermal_metal_induction_smelter(event, material, block, ingot) {
-        if (material == air) {
+        if (material == air || block == air) {
             return;
         }
 
@@ -1174,66 +1174,67 @@ onEvent('recipes', event => {
             // count1: 1, count2: 1, count3: 1, count4: 1, output: air, energy: 50  }
         ];
 
-        var output = `forge:ingots/${material}`;
+		var output = `forge:ingots/${material}`;
+		
 
         // Steel
         if (`${material}` == 'steel') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', primaryBlockInput: 'forge:blocks/iron', count1: 1,
-						secondaryIngotInput: 'forge:gems/coal_coke', secondaryDustInput: 'forge:dusts/coal_coke', secondaryBlockInput: 'forge:blocks/coal_coke', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', /*primaryBlockInput: 'forge:blocks/iron',*/ count1: 1,
+						secondaryIngotInput: 'forge:gems/coal_coke', secondaryDustInput: 'forge:dusts/coal_coke', /*secondaryBlockInput: 'forge:blocks/coal_coke',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 1, energy: 800 });
 		}
 		if (`${material}` == 'rose_gold') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', primaryBlockInput: 'forge:blocks/copper', count1: 1,
-						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', secondaryBlockInput: 'forge:blocks/gold', count2: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/copper',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', /*secondaryBlockInput: 'forge:blocks/gold',*/ count2: 4,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'bronze') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', primaryBlockInput: 'forge:blocks/tin', count1: 1,
-						secondaryIngotInput: 'forge:ingots/copper', secondaryDustInput: 'forge:dusts/copper', secondaryBlockInput: 'forge:blocks/copper', count2: 3,
+			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', /*primaryBlockInput: 'forge:blocks/tin',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/copper', secondaryDustInput: 'forge:dusts/copper', /*secondaryBlockInput: 'forge:blocks/copper',*/ count2: 3,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 4, energy: 800 });
         }
 		if (`${material}` == 'electrum') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/gold', primaryDustInput: 'forge:dusts/gold', primaryBlockInput: 'forge:blocks/gold', count1: 1,
-						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', secondaryBlockInput: 'forge:blocks/silver', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/gold', primaryDustInput: 'forge:dusts/gold', /*primaryBlockInput: 'forge:blocks/gold',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', /*secondaryBlockInput: 'forge:blocks/silver',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 800 });
         }
 		if (`${material}` == 'invar') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', primaryBlockInput: 'forge:blocks/iron', count1: 1,
-						secondaryIngotInput: 'forge:ingots/nickel', secondaryDustInput: 'forge:dusts/nickel', secondaryBlockInput: 'forge:blocks/nickel', count2: 2,
+			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', /*primaryBlockInput: 'forge:blocks/iron',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/nickel', secondaryDustInput: 'forge:dusts/nickel', /*secondaryBlockInput: 'forge:blocks/nickel',*/ count2: 2,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 3, energy: 800 });
         }
 		if (`${material}` == 'netherite') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/netherite_scrap', primaryDustInput: 'forge:dusts/netherite_scrap', primaryBlockInput: 'forge:ores/netherite_scrap', count1: 4,
-						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', secondaryBlockInput: 'forge:blocks/gold', count2: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/netherite_scrap', primaryDustInput: 'forge:dusts/netherite_scrap', /*primaryBlockInput: 'forge:ores/netherite_scrap',*/ count1: 4,
+						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', /*secondaryBlockInput: 'forge:blocks/gold',*/ count2: 4,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 1, energy: 800 });
         }
 		if (`${material}` == 'tin_alloy') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', primaryBlockInput: 'forge:blocks/tin', count1: 1,
-						secondaryIngotInput: 'forge:ingots/iron', secondaryDustInput: 'forge:dusts/iron', secondaryBlockInput: 'forge:blocks/iron', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', /*primaryBlockInput: 'forge:blocks/tin',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/iron', secondaryDustInput: 'forge:dusts/iron', /*secondaryBlockInput: 'forge:blocks/iron',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 800 });
         }
 		if (`${material}` == 'battery_alloy') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/lead', primaryDustInput: 'forge:dusts/lead', primaryBlockInput: 'forge:blocks/lead', count1: 4,
-						secondaryIngotInput: 'forge:ingots/antimony', secondaryDustInput: 'forge:dusts/antimony', secondaryBlockInput: 'forge:blocks/antimony', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/lead', primaryDustInput: 'forge:dusts/lead', /*primaryBlockInput: 'forge:blocks/lead',*/ count1: 4,
+						secondaryIngotInput: 'forge:ingots/antimony', secondaryDustInput: 'forge:dusts/antimony', /*secondaryBlockInput: 'forge:blocks/antimony',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'soldering_alloy') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', primaryBlockInput: 'forge:blocks/tin', count1: 9,
-						secondaryIngotInput: 'forge:ingots/antimony', secondaryDustInput: 'forge:dusts/antimony', secondaryBlockInput: 'forge:blocks/antimony', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', /*primaryBlockInput: 'forge:blocks/tin',*/ count1: 9,
+						secondaryIngotInput: 'forge:ingots/antimony', secondaryDustInput: 'forge:dusts/antimony', /*secondaryBlockInput: 'forge:blocks/antimony',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 10, energy: 800 });
         }
 		if (`${material}` == 'red_alloy') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', primaryBlockInput: 'forge:blocks/copper', count1: 1,
-						secondaryDustInput: 'forge:dusts/redstone', secondaryBlockInput: 'forge:blocks/redstone', count2: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/copper',*/ count1: 1,
+						secondaryDustInput: 'forge:dusts/redstone', /*secondaryBlockInput: 'forge:blocks/redstone',*/ count2: 4,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
@@ -1244,20 +1245,20 @@ onEvent('recipes', event => {
 		// 				primaryOutput: output, count4: 1, energy: 800 });
         // }
 		if (`${material}` == 'brass') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/zinc', primaryDustInput: 'forge:dusts/zinc', primaryBlockInput: 'forge:blocks/zinc', count1: 1,
-						secondaryIngotInput: 'forge:ingots/copper', secondaryDustInput: 'forge:dusts/copper', secondaryBlockInput: 'forge:blocks/copper', count2: 3,
+			recipes.push({ primaryIngotInput: 'forge:ingots/zinc', primaryDustInput: 'forge:dusts/zinc', /*primaryBlockInput: 'forge:blocks/zinc',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/copper', secondaryDustInput: 'forge:dusts/copper', /*secondaryBlockInput: 'forge:blocks/copper',*/ count2: 3,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 4, energy: 800 });
         }
 		if (`${material}` == 'magnalium') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/magnesium', primaryDustInput: 'forge:dusts/magnesium', primaryBlockInput: 'forge:blocks/magnesium', count1: 1,
-						secondaryIngotInput: 'forge:ingots/aluminium', secondaryDustInput: 'forge:dusts/aluminium', secondaryBlockInput: 'forge:blocks/aluminium', count2: 2,
+			recipes.push({ primaryIngotInput: 'forge:ingots/magnesium', primaryDustInput: 'forge:dusts/magnesium', /*primaryBlockInput: 'forge:blocks/magnesium',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/aluminium', secondaryDustInput: 'forge:dusts/aluminium', /*secondaryBlockInput: 'forge:blocks/aluminium',*/ count2: 2,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 3, energy: 800 });
         }
 		if (`${material}` == 'cupronickel') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', primaryBlockInput: 'forge:blocks/copper', count1: 1,
-						secondaryIngotInput: 'forge:ingots/nickel', secondaryDustInput: 'forge:dusts/nickel', secondaryBlockInput: 'forge:blocks/nickel', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/copper',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/nickel', secondaryDustInput: 'forge:dusts/nickel', /*secondaryBlockInput: 'forge:blocks/nickel',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 800 });
         }
@@ -1268,21 +1269,21 @@ onEvent('recipes', event => {
 		// 				primaryOutput: output, count4: 1, energy: 800 });
         // }
 		if (`${material}` == 'enderium') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/lead', primaryDustInput: 'forge:dusts/lead', primaryBlockInput: 'forge:blocks/lead', count1: 3,
-						secondaryIngotInput: 'forge:gems/diamond', secondaryDustInput: 'forge:dusts/diamond', secondaryBlockInput: 'forge:blocks/diamond', count2: 1,
-						thirdIngotInput: 'forge:gems/enderpearl', thirdDustInput: 'forge:dusts/enderpearl', thirdBlockInput: 'forge:blocks/enderpearl', count3: 2,
+			recipes.push({ primaryIngotInput: 'forge:ingots/lead', primaryDustInput: 'forge:dusts/lead', /*primaryBlockInput: 'forge:blocks/lead',*/ count1: 3,
+						secondaryIngotInput: 'forge:gems/diamond', secondaryDustInput: 'forge:dusts/diamond', /*secondaryBlockInput: 'forge:blocks/diamond',*/ count2: 1,
+						thirdIngotInput: 'forge:gems/enderpearl', thirdDustInput: 'forge:dusts/enderpearl', /*secondaryBlockInput: 'forge:blocks/enderpearl',*/ count3: 2,
 						primaryOutput: output, count4: 2, energy: 16000 });
         }
 		if (`${material}` == 'lumium') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', primaryBlockInput: 'forge:blocks/tin', count1: 3,
-						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', secondaryBlockInput: 'forge:blocks/silver', count2: 1,
-						thirdIngotInput: 'forge:dusts/glowstone', thirdBlockInput: 'forge:blocks/glowstone', count3: 2,
+			recipes.push({ primaryIngotInput: 'forge:ingots/tin', primaryDustInput: 'forge:dusts/tin', /*primaryBlockInput: 'forge:blocks/tin',*/ count1: 3,
+						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', /*secondaryBlockInput: 'forge:blocks/silver',*/ count2: 1,
+						thirdIngotInput: 'forge:dusts/glowstone', /*secondaryBlockInput: 'forge:blocks/glowstone',*/ count3: 2,
 						primaryOutput: output, count4: 4, energy: 12000 });
         }
 		if (`${material}` == 'signalum') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', primaryBlockInput: 'forge:blocks/copper', count1: 3,
-						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', secondaryBlockInput: 'forge:blocks/silver', count2: 1,
-						thirdIngotInput: 'forge:dusts/redstone', thirdBlockInput: 'forge:blocks/redstone', count3: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/copper',*/ count1: 3,
+						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', /*secondaryBlockInput: 'forge:blocks/silver',*/ count2: 1,
+						thirdIngotInput: 'forge:dusts/redstone', /*secondaryBlockInput: 'forge:blocks/redstone',*/ count3: 4,
 						primaryOutput: output, count4: 4, energy: 14000 });
         }
 		// if (`${material}` == 'hepatizon') {
@@ -1316,70 +1317,76 @@ onEvent('recipes', event => {
 		// 				primaryOutput: output, count4: 2, energy: 800 });
         // }
 		if (`${material}` == 'black_bronze') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', primaryBlockInput: 'forge:blocks/copper', count1: 3,
-						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', secondaryBlockInput: 'forge:blocks/gold', count2: 1,
-						thirdIngotInput: 'forge:ingots/silver', thirdDustInput: 'forge:dusts/silver', thirdBlockInput: 'forge:blocks/silver', count3: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/copper',*/ count1: 3,
+						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', /*secondaryBlockInput: 'forge:blocks/gold',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/silver', thirdDustInput: 'forge:dusts/silver', /*secondaryBlockInput: 'forge:blocks/silver',*/ count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'black_steel') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/nickel', primaryDustInput: 'forge:dusts/nickel', primaryBlockInput: 'forge:blocks/nickel', count1: 1,
-						secondaryIngotInput: 'forge:ingots/black_bronze', secondaryDustInput: 'forge:dusts/black_bronze', secondaryBlockInput: 'forge:blocks/black_bronze', count2: 1,
-						thirdIngotInput: 'forge:ingots/steel', thirdDustInput: 'forge:dusts/steel', thirdBlockInput: 'forge:blocks/steel', count3: 3,
+			recipes.push({ primaryIngotInput: 'forge:ingots/nickel', primaryDustInput: 'forge:dusts/nickel', /*primaryBlockInput: 'forge:blocks/nickel',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/black_bronze', secondaryDustInput: 'forge:dusts/black_bronze', /*secondaryBlockInput: 'forge:blocks/black_bronze',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/steel', thirdDustInput: 'forge:dusts/steel', /*secondaryBlockInput: 'forge:blocks/steel',*/ count3: 3,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'ferrite_mixture') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/nickel', primaryDustInput: 'forge:dusts/nickel', primaryBlockInput: 'forge:blocks/nickel', count1: 1,
-						secondaryIngotInput: 'forge:ingots/zinc', secondaryDustInput: 'forge:dusts/zinc', secondaryBlockInput: 'forge:blocks/zinc', count2: 1,
-						thirdIngotInput: 'forge:ingots/iron', thirdDustInput: 'forge:dusts/iron', thirdBlockInput: 'forge:blocks/iron', count3: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/nickel', primaryDustInput: 'forge:dusts/nickel', /*primaryBlockInput: 'forge:blocks/nickel',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/zinc', secondaryDustInput: 'forge:dusts/zinc', /*secondaryBlockInput: 'forge:blocks/zinc',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/iron', thirdDustInput: 'forge:dusts/iron', /*secondaryBlockInput: 'forge:blocks/iron',*/ count3: 4,
 						primaryOutput: output, count4: 6, energy: 800 });
         }
 		if (`${material}` == 'nichrome') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/nickel', primaryDustInput: 'forge:dusts/nickel', primaryBlockInput: 'forge:blocks/nickel', count1: 4,
-						secondaryIngotInput: 'forge:ingots/chromium', secondaryDustInput: 'forge:dusts/chromium', secondaryBlockInput: 'forge:blocks/chromium', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/nickel', primaryDustInput: 'forge:dusts/nickel', /*primaryBlockInput: 'forge:blocks/nickel',*/ count1: 4,
+						secondaryIngotInput: 'forge:ingots/chromium', secondaryDustInput: 'forge:dusts/chromium', /*secondaryBlockInput: 'forge:blocks/chromium',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'osmiridium') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iridium', primaryDustInput: 'forge:dusts/iridium', primaryBlockInput: 'forge:blocks/iridium', count1: 3,
-						secondaryIngotInput: 'forge:ingots/osmium', secondaryDustInput: 'forge:dusts/osmium', secondaryBlockInput: 'forge:blocks/osmium', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/iridium', primaryDustInput: 'forge:dusts/iridium', /*primaryBlockInput: 'forge:blocks/iridium',*/ count1: 3,
+						secondaryIngotInput: 'forge:ingots/osmium', secondaryDustInput: 'forge:dusts/osmium', /*secondaryBlockInput: 'forge:blocks/osmium',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 4, energy: 800 });
         }
 		if (`${material}` == 'gallium_arsenide') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/arsenic', primaryDustInput: 'forge:dusts/arsenic', primaryBlockInput: 'forge:blocks/arsenic', count1: 1,
-						secondaryIngotInput: 'forge:ingots/gallium', secondaryDustInput: 'forge:dusts/gallium', secondaryBlockInput: 'forge:blocks/gallium', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/arsenic', primaryDustInput: 'forge:dusts/arsenic', /*primaryBlockInput: 'forge:blocks/arsenic',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/gallium', secondaryDustInput: 'forge:dusts/gallium', /*secondaryBlockInput: 'forge:blocks/gallium',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 800 });
         }
 		if (`${material}` == 'kanthal') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', primaryBlockInput: 'forge:blocks/iron', count1: 1,
-						secondaryIngotInput: 'forge:ingots/aluminium', secondaryDustInput: 'forge:dusts/aluminium', secondaryBlockInput: 'forge:blocks/aluminium', count2: 1,
-						thirdIngotInput: 'forge:ingots/chromium', thirdDustInput: 'forge:dusts/chromium', thirdBlockInput: 'forge:blocks/chromium', count3: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/iron', primaryDustInput: 'forge:dusts/iron', /*primaryBlockInput: 'forge:blocks/iron',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/aluminium', secondaryDustInput: 'forge:dusts/aluminium', /*secondaryBlockInput: 'forge:blocks/aluminium',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/chromium', thirdDustInput: 'forge:dusts/chromium', /*secondaryBlockInput: 'forge:blocks/chromium',*/ count3: 1,
 						primaryOutput: output, count4: 3, energy: 800 });
         }
 		if (`${material}` == 'cobalt_brass') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/brass', primaryDustInput: 'forge:dusts/brass', primaryBlockInput: 'forge:blocks/brass', count1: 7,
-						secondaryIngotInput: 'forge:ingots/aluminium', secondaryDustInput: 'forge:dusts/aluminium', secondaryBlockInput: 'forge:blocks/aluminium', count2: 1,
-						thirdIngotInput: 'forge:ingots/cobalt', thirdDustInput: 'forge:dusts/cobalt', thirdBlockInput: 'forge:blocks/cobalt', count3: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/brass', primaryDustInput: 'forge:dusts/brass', /*primaryBlockInput: 'forge:blocks/brass',*/ count1: 7,
+						secondaryIngotInput: 'forge:ingots/aluminium', secondaryDustInput: 'forge:dusts/aluminium', /*secondaryBlockInput: 'forge:blocks/aluminium',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/cobalt', thirdDustInput: 'forge:dusts/cobalt', /*secondaryBlockInput: 'forge:blocks/cobalt',*/ count3: 1,
 						primaryOutput: output, count4: 9, energy: 800 });
         }
 		if (`${material}` == 'bismuth_bronze') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/bismuth', primaryDustInput: 'forge:dusts/bismuth', primaryBlockInput: 'forge:blocks/bismuth', count1: 1,
-						secondaryIngotInput: 'forge:ingots/zinc', secondaryDustInput: 'forge:dusts/zinc', secondaryBlockInput: 'forge:blocks/zinc', count2: 1,
-						thirdIngotInput: 'forge:ingots/copper', thirdDustInput: 'forge:dusts/copper', thirdBlockInput: 'forge:blocks/copper', count3: 3,
+			recipes.push({ primaryIngotInput: 'forge:ingots/bismuth', primaryDustInput: 'forge:dusts/bismuth', /*primaryBlockInput: 'forge:blocks/bismuth',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/zinc', secondaryDustInput: 'forge:dusts/zinc', /*secondaryBlockInput: 'forge:blocks/zinc',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/copper', thirdDustInput: 'forge:dusts/copper', /*secondaryBlockInput: 'forge:blocks/copper',*/ count3: 3,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'sterling_silver') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', primaryBlockInput: 'forge:blocks/copper', count1: 1,
-						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', secondaryBlockInput: 'forge:blocks/silver', count2: 4,
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/copper',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/silver', secondaryDustInput: 'forge:dusts/silver', /*secondaryBlockInput: 'forge:blocks/silver',*/ count2: 4,
 						thirdIngotInput: air, thirdDustInput: air, count3: 3,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 		if (`${material}` == 'electrical_steel') {
-			recipes.push({ primaryIngotInput: 'forge:ingots/silicon', primaryDustInput: 'forge:dusts/silicon', primaryBlockInput: 'forge:blocks/silicon', count1: 1,
-						secondaryIngotInput: 'forge:ingots/steel', secondaryDustInput: 'forge:dusts/steel', secondaryBlockInput: 'forge:blocks/steel', count2: 1,
+			recipes.push({ primaryIngotInput: 'forge:ingots/silicon', primaryDustInput: 'forge:dusts/silicon', /*primaryBlockInput: 'forge:blocks/silicon',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/steel', secondaryDustInput: 'forge:dusts/steel', /*secondaryBlockInput: 'forge:blocks/steel',*/ count2: 1,
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 2, energy: 10000 });
+        }
+		if (`${material}` == 'stainless_steel') {
+			recipes.push({ primaryIngotInput: 'forge:ingots/invar', primaryDustInput: 'forge:dusts/invar', /*primaryBlockInput: 'forge:blocks/silicon',*/ count1: 3,
+						secondaryIngotInput: 'forge:ingots/manganese', secondaryDustInput: 'forge:dusts/manganese', /*secondaryBlockInput: 'forge:blocks/steel',*/ count2: 1,
+						thirdIngotInput: 'forge:ingots/chrome', thirdDustInput: 'forge:dusts/chrome', count3: 1,
+						primaryOutput: output, count4: 5, energy: 800 });
         }
 
 		event.remove({ id: /thermal:machines\/smelter/ })
@@ -1397,9 +1404,6 @@ onEvent('recipes', event => {
 								},
 								{
 								tag: `${recipe.primaryDustInput}`
-								},
-								{
-								tag: `${recipe.primaryBlockInput}`
 								}
 							],
 							count: `${recipe.count1}`
@@ -1411,9 +1415,6 @@ onEvent('recipes', event => {
 								},
 								{
 								tag: `${recipe.secondaryDustInput}`
-								},
-								{
-								tag: `${recipe.secondaryBlockInput}`
 								}
 							],
 							count: `${recipe.count2}`
@@ -1440,9 +1441,6 @@ onEvent('recipes', event => {
 								},
 								{
 								tag: `${recipe.primaryDustInput}`
-								},
-								{
-								tag: `${recipe.primaryBlockInput}`
 								}
 							],
 							count: `${recipe.count1}`
@@ -1454,9 +1452,6 @@ onEvent('recipes', event => {
 								},
 								{
 								tag: `${recipe.secondaryDustInput}`
-								},
-								{
-								tag: `${recipe.secondaryBlockInput}`
 								}
 							],
 							count: `${recipe.count2}`
@@ -1468,9 +1463,6 @@ onEvent('recipes', event => {
 								},
 								{
 								tag: `${recipe.thirdDustInput}`
-								},
-								{
-								tag: `${recipe.thirdBlockInput}`
 								}
 							],
 							count: `${recipe.count3}`
@@ -1542,6 +1534,16 @@ onEvent('recipes', event => {
 	function thermal_press(event, material, block, ingot, nugget, gear, plate, denseplate) {
 		if (material == air || block == air || ingot == air) {
             return;
+        }
+
+		var blacklistedMaterials = [
+			'netherite'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
         }
 
 		event.remove({ id: /thermal:machines\/press/ })
@@ -1634,6 +1636,7 @@ onEvent('recipes', event => {
 		// });
 	
 		recipes.forEach((recipe) => {
+			//console.log(`Created new ${recipe.outputs}, ${recipe.inputs}`);
 			event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id);
 		});
 	}

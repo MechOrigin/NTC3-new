@@ -919,7 +919,7 @@ onEvent("lootjs", (event) => {
 
     //WLi2O4
     event
-    .addBlockLootModifier("secretly_complicated:scheelite_netherrack_ore")
+    .addBlockLootModifier("secretly_complicated:tungstate_netherrack_ore")
     .addWeightedLoot([1, 3], [
         Item.of("secretly_complicated:tungsten_impure_dust"),
     ])

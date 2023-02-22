@@ -31,7 +31,7 @@
 	#Rarity, 1 in every.
 	#Range: > 0
 	beehive_common_rarity = 16
-	#Number of place tries.
+	#Min spawn height.
 	#Range: -127 ~ 255
 	beehive_dugout_min_height = 0
 	#Rarity, 1 in every.
@@ -40,7 +40,7 @@
 	#Number of place tries.
 	#Range: > 0
 	beehive_tropical_tries = 4
-	#Rarity, 1 in every.
+	#Max spawn height.
 	#Range: -127 ~ 255
 	beehive_dugout_max_height = 64
 	#Rarity, 1 in every.
@@ -58,7 +58,7 @@
 	#Rarity, 1 in every.
 	#Range: > 0
 	beehive_tropical_rarity = 10
-	#Rarity, 1 in every.
+	#Max spawn height.
 	#Range: -127 ~ 255
 	beehive_scorched_max_height = 127
 	#Number of place tries.
@@ -93,7 +93,7 @@
 	beehive_dune_rarity = 12
 	#Enabled beehive world generation
 	beehive_generation_enabled = true
-	#Number of place tries.
+	#Min spawn height.
 	#Range: -127 ~ 255
 	beehive_scorched_min_height = 0
 

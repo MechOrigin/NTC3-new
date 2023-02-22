@@ -61,6 +61,12 @@
     "minecraft:warped_nylium",
     "minecraft:soul_sand",
     "minecraft:smooth_basalt",
-    "minecraft:blackstone"
+    "minecraft:blackstone",
+    "minecraft:soul_soil",
+    "byg:blue_netherrack",
+    "byg:embur_nylium",
+    "byg:quartzite_sand",
+    "byg:scoria_stone",
+    "minecraft:basalt"
   ]
 }

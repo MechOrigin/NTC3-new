@@ -23,7 +23,8 @@ onEvent('tags.items', e => {
     e.add('forge:blocks/glowstone', 'minecraft:glowstone');
     e.add('forge:blocks/redstone', 'minecraft:redstone_block');
     e.add('forge:blocks/enderpearl', 'miniutilities:ender_pearl_block');
-    
+    e.add('forge:blocks/netherite', 'minecraft:netherite_block');
+    e.add('forge:blocks', 'minecraft:netherite_block');
 
     e.add('forge:silicon', 'secretly_complicated:silicon_nugget');
     e.add('forge:gems/niter', 'secretly_complicated:potassium_nitrate_gem');

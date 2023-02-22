@@ -50,6 +50,8 @@ ItemStages.createModRestriction("integratedtunnels", "tier0_integrated_dynamics"
 
 ItemStages.createModRestriction("ironfurnaces", "ironfurnaces_unlock");
 
+ItemStages.createModRestriction("industrialforegoing", "industrialforegoing_unlock");
+
 ItemStages.createModRestriction("laserio", "one");
 ItemStages.createModRestriction("mininggadgets", "one");
 
@@ -61,6 +63,7 @@ ItemStages.createModRestriction("packagedauto", "one");
 ItemStages.createModRestriction("tconstruct", "tier0_tinkers_lvl0");
 
 ItemStages.createModRestriction("croptopia", "croptopia_unlock");
+ItemStages.createModRestriction("corndelight", "corndelight_unlock");
 
 ItemStages.createModRestriction("cacao", "culturaldelights_unlock");
 ItemStages.createModRestriction("shrink", "one");
@@ -88,6 +91,8 @@ ItemStages.createModRestriction("spirit", "spirit_unlock");
 ItemStages.createModRestriction("fluxnetworks", "one");
 ItemStages.createModRestriction("materialis", "one");
 ItemStages.createModRestriction("naturalist", "one");
+
+ItemStages.createModRestriction("quarryplus", "one");
 
 ItemStages.createModRestriction("exnihilosequentia", "exnihilo_lvl0").preventInventory(false).preventPickup(false);
 ItemStages.createModRestriction("excompressum", "exnihilo_lvl0");

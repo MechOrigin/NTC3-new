@@ -318,7 +318,7 @@ const elementsToUnify = [
     'lawrencium',
     /*alloys*/
     'netherite', 
-    'fireclay', 
+    // 'fireclay', 
     'amethyst_bronze', 
     'enderium', 
     'lumium', 
@@ -371,7 +371,8 @@ const elementsToUnify = [
     'dark_steel',
     'pulsating_iron',
     'energetic_alloy',
-    'end_steel'
+    'end_steel',
+    'stainless_steel'
 ];
 
 const oresToUnify = [
@@ -433,7 +434,23 @@ const oresToUnify = [
     'nickel',
     'tin',
     'zinc',
-    'sulfur'
+    'sulfur',
+    'beryllium',
+    'thorium',
+    'blue_topaz',
+    'charcoal',
+    'coal_coke',
+    'lignite_coke',
+    'green_sapphire',
+    'ruby',
+    'blue_sapphire',
+    'sodalite',
+    'tanzanite',
+    'topaz',
+    'olivine',
+    'red_garnet',
+    'yellow_garnet',
+    'monazite'
 ];
 
 const planksToUnify = [
