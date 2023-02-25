@@ -18,7 +18,7 @@ onEvent('recipes', (event) => {
 
     modifyShaped(event, 'ntc3:alloy_kiln', 1, ['ABA', 'BCB', 'ABA'], {
       A: '#forge:plates/copper',
-      B: 'minecraft:bricks',
+      B: 'minecraft:nether_bricks',
       C: 'minecraft:blast_furnace'
       })
 
@@ -38,5 +38,32 @@ onEvent('recipes', (event) => {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
       C: 'pipez:fluid_pipe'
+      })
+    modifyShaped(event, 'mbd:fluid_hatch_in', 1, ['BAB', 'ACA', 'BAB'], {
+      A: '#forge:plates/iron',
+      B: '#forge:plates/copper',
+      C: 'pipez:fluid_pipe'
+      })
+
+    modifyShaped(event, 'mbd:mek_gas_hatch_out', 1, ['ABA', 'BCB', 'ABA'], {
+      A: '#forge:plates/steel',
+      B: '#forge:plates/rubber',
+      C: 'pipez:gas_pipe'
+      })
+    modifyShaped(event, 'mbd:mek_gas_hatch_in', 1, ['BAB', 'ACA', 'BAB'], {
+      A: '#forge:plates/steel',
+      B: '#forge:plates/rubber',
+      C: 'pipez:gas_pipe'
+      })
+
+    modifyShaped(event, 'mbd:energy_output', 1, ['ABA', 'BCB', 'ABA'], {
+      A: '#forge:plates/iron',
+      B: '#forge:plates/copper',
+      C: 'pipez:energy_pipe'
+      })
+    modifyShaped(event, 'mbd:energy_input', 1, ['BAB', 'ACA', 'BAB'], {
+      A: '#forge:plates/iron',
+      B: '#forge:plates/copper',
+      C: 'pipez:energy_pipe'
       })
 });

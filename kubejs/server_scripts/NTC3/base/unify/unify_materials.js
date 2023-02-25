@@ -719,6 +719,16 @@ onEvent('recipes', event => {
             return;
         }
 
+		var blacklistedMaterials = [
+			'rubber'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
         let modId;
 		let stateId;
         if (Fluid.exists(`tconstruct:molten_${material}`)) {

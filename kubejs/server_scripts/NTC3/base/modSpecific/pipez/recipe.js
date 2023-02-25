@@ -9,4 +9,10 @@ onEvent('recipes', (event) => {
         B: '#forge:plates/iron'
       })
 
+    modifyShaped(event, 'pipez:gas_pipe', 1, ['AAA', 'CBC', 'AAA'], {
+        A: '#forge:ingots/iron',
+        B: '#forge:dusts/redstone',
+        C: '#forge:gears/steel'
+      })
+
 });

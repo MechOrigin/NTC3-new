@@ -13,9 +13,9 @@ onEvent('block.modification', event => {
     // if (material == air) {
     //   return;
     // }
-    console.log(`regular: ${material}` + ' ' + oreSecret);
-    console.log(`nether: ${material}` + ' ' + oreNetherSecret);
-    console.log(`end: ${material}` + ' ' + oreEndSecret);
+    // console.log(`regular: ${material}` + ' ' + oreSecret);
+    // console.log(`nether: ${material}` + ' ' + oreNetherSecret);
+    // console.log(`end: ${material}` + ' ' + oreEndSecret);
 
       event.modify(oreSecret, block => {
         block.destroySpeed = 2.0

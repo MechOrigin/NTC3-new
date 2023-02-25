@@ -58,6 +58,15 @@ onEvent('recipes', (event) => {
             ],
             energy: 6000,
             id: `${id_prefix}refinery_heavy_diesel`
+        },
+        {
+            input: Fluid.of('thermal:latex', 90),
+            outputs: [
+                Fluid.of('secretly_complicated:rubber_fluid_still', 90),
+                Item.of('secretly_complicated:small_rubber_dust').withChance(0.10),
+            ],
+            energy: 6000,
+            id: `${id_prefix}raw_latex_to_rubber_fluid`
         }
     ];
 
