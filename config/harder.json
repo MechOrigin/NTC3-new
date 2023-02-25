@@ -1,4 +1,4 @@
 [
-  {"damage": 1.25, "health": 1.2, "exp": 1.5, "dimensions": ["minecraftoverworld"], "items": ["minecraft:amethyst_shard"], "message": "§6Expert mode entered!"},
+  {"damage": 1.25, "health": 1.2, "exp": 1.5, "dimensions": ["minecraftoverworld"], "items": ["projecte:aeternalis_fuel"], "message": "§6Expert mode entered!"},
   {"damage": 1.5, "health": 1.4, "exp": 2.0, "dimensions": ["minecraft:ender_dragon"], "mobs": ["minecraft:wither"], "message": "§cMaster mode entered!"}
 ]

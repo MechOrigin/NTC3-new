@@ -40,10 +40,10 @@ onEvent('recipes', event => {
 		greg_hammer_wire(event, material, ingot, wire, gem);
 		greg_hammer_dense_plating(event, material, plate, denseplate, gem);
 
-		// fix_ingot_from_nugget(event, material, ingot, nugget);
-		// fix_nugget_from_ingot(event, material, ingot, nugget);
-		// fix_ingot_from_block(event, material, ingot, block);
-		// fix_block_from_ingot(event, material, ingot, block);
+		fix_ingot_from_nugget(event, material, ingot, nugget);
+		fix_nugget_from_ingot(event, material, ingot, nugget);
+		fix_ingot_from_block(event, material, ingot, block);
+		fix_block_from_ingot(event, material, ingot, block);
 		small_dust_to_dust_crafting(event, material, small_dust, dust);
 
 		thermal_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
@@ -597,9 +597,9 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-			// 'iron',
-			// 'gold',
-			// 'copper'
+			'iron',
+			'gold',
+			'copper'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
@@ -627,9 +627,9 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-			// 'iron',
-			// 'gold',
-			// 'copper'
+			'iron',
+			'gold',
+			'copper'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
