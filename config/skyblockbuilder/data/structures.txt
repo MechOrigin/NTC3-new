@@ -20,6 +20,7 @@ betterdungeons:small_dungeon
 betterdungeons:spider_dungeon
 betterdungeons:skeleton_dungeon
 betterdungeons:zombie_dungeon
+betterfortresses:fortress
 betteroceanmonuments:ocean_monument
 paraglider:underground_horned_statue
 paraglider:nether_horned_statue
