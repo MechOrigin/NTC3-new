@@ -7,58 +7,82 @@ onEvent('recipes', (event) => {
     ])
 
             // {
-            //     outputs: [Item.of('minecraft:sugar', 2)],
-            //     input: fluid.of('thermal:syrup', 25)
+            //     outputs: [Item.of('minecraft:sugar_genibra', 2)],
+            //     input: fluid.of('thermal:syrup_belucci', 25)
             // }
 
     const id_prefix = 'ntc3:base/thermal/refinery/';
     const recipes = [
         {
-            input: Fluid.of('secretly_complicated:raw_oil_fluid_still', 100),
+            input: Fluid.of('secretly_complicated:crude_oil_fluid_still', 100),
             outputs: [
                 Item.of('secretly_complicated:bitumen_gem').withChance(0.10),
-                Fluid.of('secretly_complicated:heavy_oil_fluid_still', 40),
-                Fluid.of('secretly_complicated:light_oil_fluid_still', 60)
+                Fluid.of('secretly_complicated:sulfuric_heavy_distillates_fluid_still', 25),
+                Fluid.of('secretly_complicated:sulfuric_residual_fuel_oils_fluid_still', 50)
             ],
             energy: 6000,
             id: `${id_prefix}refinery_crude_oil`
         },
         {
-            input: Fluid.of('secretly_complicated:heavy_oil_fluid_still', 100),
+            input: Fluid.of('secretly_complicated:sulfuric_heavy_distillates_fluid_still', 100),
             outputs: [
-                Fluid.of('secretly_complicated:sulfuric_heavy_diesel_fluid_still', 75),
-                Item.of('thermal:tar').withChance(0.10),
+                Fluid.of('secretly_complicated:sulfuric_kerosene_fluid_still', 25),
+                Fluid.of('secretly_complicated:sulfuric_light_distillates_fluid_still', 50),
+                Item.of('secretly_complicated:tar_chunk').withChance(0.10),
             ],
             energy: 6000,
-            id: `${id_prefix}refinery_sulfuric_heavy_oil`
+            id: `${id_prefix}refinery_sulfuric_heavy_distillates`
         },
         {
-            input: Fluid.of('secretly_complicated:light_oil_fluid_still', 100),
+            input: Fluid.of('secretly_complicated:sulfuric_residual_fuel_oils_fluid_still', 100),
             outputs: [
-                Fluid.of('secretly_complicated:sulfuric_light_diesel_fluid_still', 100),
+                Fluid.of('secretly_complicated:sulfuric_light_distillates_fluid_still', 25),
+                Fluid.of('secretly_complicated:sulfuric_heavy_distillates_fluid_still', 50),
+                Item.of('secretly_complicated:coal_coke_gem').withChance(0.10),
+            ],
+            energy: 6000,
+            id: `${id_prefix}refinery_sulfuric_residual_fuel_oils`
+        },
+        {
+            input: Fluid.of('secretly_complicated:sulfuric_kerosene_fluid_still', 100),
+            outputs: [
+                Fluid.of('secretly_complicated:sulfuric_gasoline_blending_components_fluid_still', 25),
+                Fluid.of('secretly_complicated:sulfuric_naphtha_fluid_still', 50),
+                Item.of('secretly_complicated:carbon_dust').withChance(0.20),
+            ],
+            energy: 6000,
+            id: `${id_prefix}refinery_sulfuric_kerosene`
+        },
+        {
+            input: Fluid.of('secretly_complicated:sulfuric_light_distillates_fluid_still', 100),
+            outputs: [
+                Fluid.of('secretly_complicated:sulfuric_kerosene_fluid_still', 25),
+                Fluid.of('secretly_complicated:sulfuric_naphtha_fluid_still', 50),
+                Item.of('secretly_complicated:carbon_dust').withChance(0.20),
+            ],
+            energy: 6000,
+            id: `${id_prefix}refinery_sulfuric_light_distillates`
+        },
+        {
+            input: Fluid.of('secretly_complicated:sulfuric_gasoline_blending_components_fluid_still', 100),
+            outputs: [
+                Fluid.of('secretly_complicated:sulfuric_refinery_gases_fluid_still', 75),
                 Item.of('secretly_complicated:sulfur_dust').withChance(0.20),
             ],
             energy: 6000,
-            id: `${id_prefix}refinery_sulfuric_light_oil`
+            id: `${id_prefix}refinery_sulfuric_gasoline_blending_components`
         },
         {
-            input: Fluid.of('secretly_complicated:sulfuric_light_diesel_fluid_still', 100),
+            input: Fluid.of('secretly_complicated:sulfuric_naphtha_fluid_still', 100),
             outputs: [
-                Fluid.of('secretly_complicated:light_diesel_fluid_still', 75),
+                Fluid.of('secretly_complicated:sulfuric_refinery_gases_fluid_still', 25),
+                Fluid.of('secretly_complicated:sulfuric_gasoline_blending_components_fluid_still', 50),
                 Item.of('secretly_complicated:sulfur_dust').withChance(0.20),
             ],
             energy: 6000,
-            id: `${id_prefix}refinery_light_diesel`
+            id: `${id_prefix}refinery_sulfuric_naphtha`
         },
-        {
-            input: Fluid.of('secretly_complicated:sulfuric_heavy_diesel_fluid_still', 100),
-            outputs: [
-                Fluid.of('secretly_complicated:heavy_diesel_fluid_still', 75),
-                Item.of('thermal:tar').withChance(0.10),
-            ],
-            energy: 6000,
-            id: `${id_prefix}refinery_heavy_diesel`
-        },
+        
         {
             input: Fluid.of('thermal:latex', 90),
             outputs: [

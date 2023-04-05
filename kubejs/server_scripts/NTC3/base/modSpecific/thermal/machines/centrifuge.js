@@ -12,8 +12,8 @@ onEvent('recipes', (event) => {
             outputs: [
                 Item.of('minecraft:netherrack').withChance(0.75),
                 Item.of('secretly_complicated:bitumen_gem').withChance(2.5),
-                Item.of('thermal:tar').withCount(2),
-                Fluid.of('secretly_complicated:raw_oil_fluid_still', 50)
+                Item.of('secretly_complicated:tar_chunk').withCount(2),
+                Fluid.of('secretly_complicated:crude_oil_fluid_still', 50)
             ],
             id: `${id_prefix}oilsands_netherrack`
         },
@@ -22,8 +22,8 @@ onEvent('recipes', (event) => {
             outputs: [
                 Item.of('minecraft:netherrack').withChance(0.75),
                 Item.of('secretly_complicated:bitumen_gem').withChance(1.5),
-                Item.of('thermal:tar').withCount(1),
-                Fluid.of('secretly_complicated:raw_oil_fluid_still', 100)
+                Item.of('secretly_complicated:tar_chunk').withCount(1),
+                Fluid.of('secretly_complicated:crude_oil_fluid_still', 100)
             ],
             id: `${id_prefix}oil_shale_netherrack`
         }

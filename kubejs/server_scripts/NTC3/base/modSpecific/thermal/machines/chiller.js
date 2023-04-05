@@ -36,13 +36,13 @@ onEvent('recipes', (event) => {
             inputs: [Fluid.of('tconstruct:molten_glass', 1000)],
             output: Item.of('tconstruct:clear_glass', 1),
             energy: 555,
-            id: 'ntc2:compat/tconstruct/clear_glass'
+            id: `${id_prefix}clear_glass`
         },
         {
-            inputs: [Fluid.of('secretly_complicated:rubber_fluid_still', 360)],
-            output: Item.of('secretly_complicated:rubber_solid', 4),
+            inputs: [Fluid.of('secretly_complicated:rubber_fluid_still', 90), 'tconstruct:ingot_cast'],
+            output: Item.of('secretly_complicated:rubber_solid', 1),
             energy: 555,
-            id: 'ntc2:compat/secretly_complicated/rubber_solid'
+            id: `${id_prefix}rubber_solid`
         }
     ];
 

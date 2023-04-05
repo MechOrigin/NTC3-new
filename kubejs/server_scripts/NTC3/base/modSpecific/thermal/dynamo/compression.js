@@ -5,10 +5,11 @@ onEvent('recipes', (event) => {
         recipes: [
             { input: 'thermal:tree_oil', energy: 100000 },
             { input: 'secretly_complicated:creosote_fluid_still', energy: 20000 },
-            { input: 'secretly_complicated:light_diesel_fluid_still', energy: 1500000 },
-            { input: 'secretly_complicated:heavy_diesel_fluid_still', energy: 1000000 },
-            { input: 'secretly_complicated:sulfuric_light_diesel_fluid_still', energy: 800000 },
-            { input: 'secretly_complicated:sulfuric_heavy_diesel_fluid_still', energy: 400000 },
+            { input: 'secretly_complicated:sulfuric_naphtha_fluid_still', energy: 1500000 },
+            { input: 'secretly_complicated:sulfuric_kerosene_fluid_still', energy: 1000000 },
+            { input: 'secretly_complicated:sulfuric_light_distillates_fluid_still', energy: 800000 },
+            { input: 'secretly_complicated:sulfuric_heavy_distillates_fluid_still', energy: 400000 },
+            // need to add the rest of them
             
 
             // { input: 'immersivepetroleum:diesel', energy: 1000000 },

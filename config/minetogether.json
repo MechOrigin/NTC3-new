@@ -27,4 +27,6 @@
 	"firstConnect": "ABAED4452D6DB7807767782ED34C79E8A8CEAD2DA6FFFBBB127D52A13CC74280",
 	// If not null, replaces the Bug Reports button on the pause screen to open this link.
 	"issueTrackerUrl": "https://pste.ch/",
+	// Stores the currently selected chat TAB, Ether VANILLA or PUBLIC
+	"selectedTab": "VANILLA",
 }

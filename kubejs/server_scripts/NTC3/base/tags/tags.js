@@ -32,6 +32,7 @@ onEvent('tags.items', e => {
     e.add('mysticalagriculture:material/saltpeter', 'secretly_complicated:potassium_nitrate_dust');
     e.add('forge:bitumen', 'secretly_complicated:bitumen_gem');
     e.add('forge:coal_coke', 'secretly_complicated:coal_coke_gem');
+    e.add('forge:tar', 'secretly_complicated:tar_chunk');
     // e.add('forge:nuggets/amethyst_bronze', 'tconstruct:amethyst_bronze_nugget');
     // e.add('forge:ingots/amethyst_bronze', 'tconstruct:amethyst_bronze_ingot');
     // e.add('forge:ingots', 'tconstruct:amethyst_bronze_ingot');

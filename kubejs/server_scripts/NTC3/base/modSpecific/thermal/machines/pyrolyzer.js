@@ -94,7 +94,7 @@ onEvent('recipes', (event) => {
             input: '#forge:gems/coal',
             outputs: [
                 Item.of('secretly_complicated:coal_coke_gem').toJson(),
-                Item.of('thermal:tar').withChance(0.25).toJson(),
+                Item.of('secretly_complicated:tar_chunk').withChance(0.25).toJson(),
                 Fluid.of('secretly_complicated:creosote_fluid_still', 250).toJson()
             ],
             experience: 0.15,
@@ -105,12 +105,12 @@ onEvent('recipes', (event) => {
             input: '#forge:gems/bitumen',
             outputs: [
                 Item.of('secretly_complicated:coal_coke_gem').toJson(),
-                Item.of('thermal:tar').withChance(0.50).toJson(),
-                Fluid.of('secretly_complicated:sulfuric_heavy_diesel_fluid_still', 50).toJson()
+                Item.of('secretly_complicated:tar_chunk').withChance(0.50).toJson(),
+                Fluid.of('secretly_complicated:sulfuric_heavy_distillates_fluid_still', 50).toJson()
             ],
             experience: 0.15,
             energy: 4000,
-            id: 'thermal:machine/pyrolyzer/pyrolyzer_sulfuric_heavy_diesel_bitumen'
+            id: 'thermal:machine/pyrolyzer/pyrolyzer_sulfuric_heavy_distillates_bitumen'
         },
         {
             input: '#minecraft:logs',
