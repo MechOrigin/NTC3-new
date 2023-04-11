@@ -1395,7 +1395,7 @@ onEvent('recipes', event => {
 		if (`${material}` == 'stainless_steel') {
 			recipes.push({ primaryIngotInput: 'forge:ingots/invar', primaryDustInput: 'forge:dusts/invar', /*primaryBlockInput: 'forge:blocks/silicon',*/ count1: 3,
 						secondaryIngotInput: 'forge:ingots/manganese', secondaryDustInput: 'forge:dusts/manganese', /*secondaryBlockInput: 'forge:blocks/steel',*/ count2: 1,
-						thirdIngotInput: 'forge:ingots/chrome', thirdDustInput: 'forge:dusts/chrome', count3: 1,
+						thirdIngotInput: 'forge:ingots/chromium', thirdDustInput: 'forge:dusts/chromium', count3: 1,
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 

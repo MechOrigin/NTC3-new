@@ -3,12 +3,6 @@ onEvent('player.logged_in', event => {
         event.server.scheduleInTicks(0, event.server, function (callback) {
             callback.data.runCommand('/clear')
         })
-        event.server.scheduleInTicks(20, event.server, function (callback) {
-            callback.data.runCommand('/clear')
-        })
-        event.server.scheduleInTicks(40, event.server, function (callback) {
-            callback.data.runCommand('/clear')
-        })
 
         event.addGameStage('philosophers_stone_unlock');
         event.player.give(Item.of('ftbquests:book'));
