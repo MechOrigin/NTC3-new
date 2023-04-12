@@ -6,8 +6,15 @@ onEvent(`jei.information`, e => {
     // e.add(`allthemodium:vibranium_ore`, [`Vibranium can be found in warped forests in the Nether.`, `(Y 80-127)`])
     // e.add(`allthemodium:unobtainium_ore`, [`Unobtainium can be obtained from the Highland biomes in the End.`])
 
+
+    e.add(`secretly_complicated:ruby_netherrack_ore`, [`Chromium can be found in Ruby/Cinnabar Veins in the Nether.`, `(Y 5-40)`])
     e.add(`secretly_complicated:chromium_solid`, [`Chromium can be found in Ruby/Cinnabar Veins in the Nether.`, `(Y 5-40)`])
     e.add(`secretly_complicated:chromium_dust`, [`Chromium can be found in Ruby/Cinnabar Veins in the Nether.`, `(Y 5-40)`])
+
+    e.add(`secretly_complicated:bentonite_netherrack_ore`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
+    e.add(`secretly_complicated:zeolite_gem`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
+    e.add(`secretly_complicated:zeolite_dust`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
+  
   })
 
 onEvent(`jei.hide.items`, e => {

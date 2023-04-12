@@ -696,6 +696,9 @@ onEvent("lootjs", (event) => {
     ])
     .addWeightedLoot([0, 3], [
         Item.of("secretly_complicated:silicon_crushed"),
+    ])
+    .addWeightedLoot([1, 8], [
+        Item.of("secretly_complicated:zeolite_gem"),
     ]);
 
     //Mg2Fe(SiO2)2
@@ -745,7 +748,7 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:aluminium_crushed"),
     ]);
 
-    //"sheldonite" Pt3NiSPd
+    //"sheldonite isnt real" Pt3NiSPd
     event
     .addBlockLootModifier("secretly_complicated:cooperite_netherrack_ore")
     .addWeightedLoot([1, 3], [
