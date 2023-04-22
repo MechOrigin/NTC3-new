@@ -7,4 +7,6 @@ integratedServerPriority = 4
 enable_debug_reloader = false
 #Rebuild blockstate cache asynchronously. Should work with most mods, but can be disabled.
 rebuild_blockstate_cache_async = true
+#Automatically output a thread dump if the integrated server spends too long on one tick
+integrated_server_watchdog = true
 
