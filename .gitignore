@@ -9,7 +9,6 @@
 /local
 /logs
 /mods
-/multiblocked
 /options.txt
 /o_prof
 /patchouli_books
@@ -22,3 +21,6 @@
 /skyblock_exports
 /usercache.json
 /usernamecache.json
+/lightspeed-cache
+/screenshots
+/tconplanner

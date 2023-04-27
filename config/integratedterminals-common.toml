@@ -46,6 +46,8 @@
 		analytics = true
 		#If the version checker should be enabled.
 		versionChecker = true
+		#The maximum number of terminal storage crafting recipes that can be sent in a single packet. Reduce this when you have packet overflows.
+		terminalStoragePacketMaxRecipes = 128
 
 [machine]
 

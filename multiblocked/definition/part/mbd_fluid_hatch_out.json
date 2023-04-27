@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "location": "mbd:fluid_hatch_out",
+  "traits": {
+    "background": "multiblocked:textures/gui/fluid_hatch_gui.png",
+    "fluid": [
+      {
+        "cIO": 1,
+        "gIO": 2,
+        "x": 79,
+        "y": 71,
+        "tC": 64000,
+        "autoIO": true
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_fluid_out",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "canShared": true
+}

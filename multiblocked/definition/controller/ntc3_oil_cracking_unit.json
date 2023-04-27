@@ -1,0 +1,174 @@
+{
+  "version": 3,
+  "location": "ntc3:oil_cracking_unit",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "oil_cracking_unit",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "A@B",
+        "CCC",
+        "BBB"
+      ],
+      [
+        "DBE",
+        "CCC",
+        "BBB"
+      ],
+      [
+        "FBG",
+        "CCC",
+        "BBB"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "mbd:fluid_hatch_out"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "ntc3:oil_cracking_unit",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "secretly_complicated:stainless_steel_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "secretly_complicated:nichrome_block"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "mbd:energy_input"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "mbd:item_bus_out"
+          }
+        ],
+        "type": "blocks"
+      },
+      "F": {
+        "blocks": [
+          {
+            "id": "mbd:fluid_hatch_in"
+          }
+        ],
+        "type": "blocks"
+      },
+      "G": {
+        "blocks": [
+          {
+            "id": "mbd:item_bus_in"
+          }
+        ],
+        "type": "blocks"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "F": [
+        "F"
+      ],
+      "G": [
+        "G"
+      ]
+    }
+  }
+}

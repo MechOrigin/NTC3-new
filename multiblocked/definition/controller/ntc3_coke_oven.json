@@ -1,0 +1,141 @@
+{
+  "version": 3,
+  "location": "ntc3:coke_oven",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 5.0,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 1,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/bricks",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/bricks",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech",
+        "postRenderer": false
+      },
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "coke_oven",
+  "basePattern": {
+    "structureDir": [
+      "FRONT",
+      "LEFT",
+      "UP"
+    ],
+    "pattern": [
+      [
+        "AAA",
+        "AA@",
+        "AAA"
+      ],
+      [
+        "BBB",
+        "BBB",
+        "BBB"
+      ],
+      [
+        "AAA",
+        "AAA",
+        "AAA"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "casing": {
+        "blocks": [
+          {
+            "id": "minecraft:bricks"
+          }
+        ],
+        "type": "blocks"
+      },
+      "coil": {
+        "blocks": [
+          {
+            "id": "minecraft:terracotta"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "ntc3:coke_oven",
+        "type": "component"
+      },
+      "item_in": {
+        "location": "mbd:item_bus_in",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 2,
+        "previewCount": 1
+      },
+      "item_out": {
+        "location": "mbd:item_bus_out",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 2,
+        "previewCount": 1
+      },
+      "fluid_out": {
+        "location": "mbd:fluid_hatch_out",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "casing",
+        "item_in",
+        "item_out",
+        "fluid_out"
+      ],
+      "B": [
+        "coil"
+      ]
+    }
+  }
+}

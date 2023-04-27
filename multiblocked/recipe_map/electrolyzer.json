@@ -1,0 +1,69 @@
+{
+  "name": "electrolyzer",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "aa748e0a-b08a-41d4-81e3-6e44085cb88f",
+      "duration": 20,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "ae2:logic_processor"
+              }
+            },
+            "chance": 0.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 500
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:oxygen_gas",
+              "amount": 250
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "secretly_complicated:hydrogen_gas",
+              "amount": 500
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 500,
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

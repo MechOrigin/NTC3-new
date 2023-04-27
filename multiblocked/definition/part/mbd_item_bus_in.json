@@ -1,0 +1,73 @@
+{
+  "version": 3,
+  "location": "mbd:item_bus_in",
+  "traits": {
+    "background": "multiblocked:textures/gui/item_bus_gui.png",
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 70,
+        "y": 62,
+        "autoIO": true
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 88,
+        "y": 62,
+        "autoIO": true
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 70,
+        "y": 80,
+        "autoIO": true
+      },
+      {
+        "cIO": 0,
+        "gIO": 2,
+        "x": 88,
+        "y": 80,
+        "autoIO": true
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_item_in",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "canShared": true
+}
