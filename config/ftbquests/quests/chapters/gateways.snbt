@@ -1,17 +1,14 @@
 {
-	id: "6E8A6ED605CAAFB6"
+	quest_links: [ ]
 	group: "442FD72D1627F87A"
-	order_index: 10
+	id: "6E8A6ED605CAAFB6"
 	filename: "gateways"
-	title: "Gateways"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	title: "Gateways"
+	order_index: 10
 	quests: [
 		{
-			x: -0.5d
-			y: 0.0d
-			dependencies: ["0386423518D1D912"]
-			id: "6EC051B6FD814392"
 			tasks: [{
 				id: "23FE48224C897CF9"
 				type: "item"
@@ -24,12 +21,12 @@
 				}
 				match_nbt: true
 			}]
+			dependencies: ["0386423518D1D912"]
+			id: "6EC051B6FD814392"
+			y: 0.0d
+			x: -0.5d
 		}
 		{
-			x: -0.5d
-			y: -1.0d
-			dependencies: ["0386423518D1D912"]
-			id: "45DAF2D9D2BBEF72"
 			tasks: [{
 				id: "1C1185B190C4E10A"
 				type: "item"
@@ -42,12 +39,12 @@
 				}
 				match_nbt: true
 			}]
+			dependencies: ["0386423518D1D912"]
+			id: "45DAF2D9D2BBEF72"
+			y: -1.0d
+			x: -0.5d
 		}
 		{
-			x: -0.5d
-			y: -2.0d
-			dependencies: ["0386423518D1D912"]
-			id: "799C5F7E5B09E67A"
 			tasks: [{
 				id: "36C610ED286D2950"
 				type: "item"
@@ -60,12 +57,12 @@
 				}
 				match_nbt: true
 			}]
+			dependencies: ["0386423518D1D912"]
+			id: "799C5F7E5B09E67A"
+			y: -2.0d
+			x: -0.5d
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			dependencies: ["0386423518D1D912"]
-			id: "7C029FC40D73948D"
 			tasks: [{
 				id: "7F43D0346A01AAE4"
 				type: "item"
@@ -78,12 +75,12 @@
 				}
 				match_nbt: true
 			}]
+			dependencies: ["0386423518D1D912"]
+			id: "7C029FC40D73948D"
+			y: 0.0d
+			x: 1.5d
 		}
 		{
-			x: 1.5d
-			y: -1.0d
-			dependencies: ["0386423518D1D912"]
-			id: "525E101A2B0D19B2"
 			tasks: [{
 				id: "5B0129F6A6512900"
 				type: "item"
@@ -96,12 +93,12 @@
 				}
 				match_nbt: true
 			}]
+			dependencies: ["0386423518D1D912"]
+			id: "525E101A2B0D19B2"
+			y: -1.0d
+			x: 1.5d
 		}
 		{
-			x: 1.5d
-			y: -2.0d
-			dependencies: ["0386423518D1D912"]
-			id: "5FA040830EB7FA8D"
 			tasks: [{
 				id: "42E6E11322806DF2"
 				type: "item"
@@ -114,6 +111,10 @@
 				}
 				match_nbt: true
 			}]
+			dependencies: ["0386423518D1D912"]
+			id: "5FA040830EB7FA8D"
+			y: -2.0d
+			x: 1.5d
 		}
 		{
 			x: 0.5d
@@ -177,5 +178,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

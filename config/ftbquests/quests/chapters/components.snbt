@@ -1,21 +1,22 @@
 {
-	id: "3CC0EF818E8D332B"
+	quest_links: [ ]
 	group: "5BCA4C8804B27813"
-	order_index: 3
+	id: "3CC0EF818E8D332B"
 	filename: "components"
-	title: "{ntc3.chapter.components.title}"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	title: "{ntc3.chapter.components.title}"
+	order_index: 3
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			id: "69DECDB31ACB3543"
 			tasks: [{
 				id: "68E9CDDCA7A147C8"
 				type: "item"
 				item: "secretly_complicated:copper_plate"
 			}]
+			id: "69DECDB31ACB3543"
+			y: 0.0d
+			x: 0.0d
 			rewards: [{
 				id: "52039ED9024F7F5D"
 				type: "item"
@@ -24,14 +25,14 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 0.0d
-			id: "12D3FDB9FBBF6AC9"
 			tasks: [{
 				id: "5220B61A43EFDE3D"
 				type: "item"
 				item: "secretly_complicated:iron_plate"
 			}]
+			id: "12D3FDB9FBBF6AC9"
+			y: 0.0d
+			x: 1.0d
 			rewards: [{
 				id: "30309992D896CC7B"
 				type: "item"
@@ -40,14 +41,14 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.0d
-			id: "3C489B8C7C703513"
 			tasks: [{
 				id: "6A341BF4BFF15C6B"
 				type: "item"
 				item: "secretly_complicated:iron_rod"
 			}]
+			id: "3C489B8C7C703513"
+			y: -1.0d
+			x: 1.0d
 			rewards: [{
 				id: "39E0C5E6B89C7663"
 				type: "item"
@@ -136,5 +137,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

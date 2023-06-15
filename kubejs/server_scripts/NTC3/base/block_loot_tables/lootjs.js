@@ -447,21 +447,21 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:tantalum_crushed"),
     ]);
 
-    //MoS2
-    event
-    .addBlockLootModifier("secretly_complicated:tantalite_netherrack_ore")
-    .addWeightedLoot([1, 3], [
-        Item.of("secretly_complicated:manganese_impure_dust"),
-    ])
-    .addWeightedLoot([0, 1], [
-        Item.of("secretly_complicated:manganese_crushed"),
-    ])
-    .addWeightedLoot([1, 3], [
-        Item.of("secretly_complicated:tantalum_impure_dust"),
-    ])
-    .addWeightedLoot([0, 1], [
-        Item.of("secretly_complicated:tantalum_crushed"),
-    ]);
+    // //MoS2
+    // event
+    // .addBlockLootModifier("secretly_complicated:tantalite_netherrack_ore")
+    // .addWeightedLoot([1, 3], [
+    //     Item.of("secretly_complicated:manganese_impure_dust"),
+    // ])
+    // .addWeightedLoot([0, 1], [
+    //     Item.of("secretly_complicated:manganese_crushed"),
+    // ])
+    // .addWeightedLoot([1, 3], [
+    //     Item.of("secretly_complicated:tantalum_impure_dust"),
+    // ])
+    // .addWeightedLoot([0, 1], [
+    //     Item.of("secretly_complicated:tantalum_crushed"),
+    // ]);
 
     //MoS2
     event

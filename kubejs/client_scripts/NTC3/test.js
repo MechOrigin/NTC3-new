@@ -14,7 +14,30 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:bentonite_netherrack_ore`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
     e.add(`secretly_complicated:zeolite_gem`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
     e.add(`secretly_complicated:zeolite_dust`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
-  
+    
+    e.add(`secretly_complicated:nickel_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:garnierite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:pentlandite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:cooperite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:nickel_solid`, [`Nickel can be found in Garnierite/Pentlandite/Cooperite Veins in the Nether.`, `(Y 1-255)`])
+    
+    e.add(`secretly_complicated:zinc_netherrack_ore`, [`Zinc can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sphalerite_netherrack_ore`, [`Zinc can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:zinc_solid`, [`Zinc can be found in Sphalerite Veins in the Nether.`, `(Y 1-255)`])
+    
+    e.add(`secretly_complicated:silver_netherrack_ore`, [`Silver can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:galena_netherrack_ore`, [`Silver can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:silver_solid`, [`Silver can be found in Galena Veins in the Nether.`, `(Y 1-255)`])
+        
+    e.add(`secretly_complicated:tin_netherrack_ore`, [`Tin can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:cassiterite_netherrack_ore`, [`Tin can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:tin_solid`, [`Tin can be found in Cassiterite Veins in the Nether.`, `(Y 1-255)`])
+            
+    e.add(`secretly_complicated:spessartine_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:pyrolusite_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:tantalite_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:manganese_solid`, [`Tin can be found in Spessartine/Pyrolusite/Tantalite Veins in the Nether.`, `(Y 1-255)`])
+    
   })
 
 onEvent(`jei.hide.items`, e => {

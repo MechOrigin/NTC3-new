@@ -74,10 +74,10 @@ dungeons_enhanced:tree_house
 dungeons_enhanced:tower_of_the_undead
 dungeons_enhanced:watch_tower
 dungeons_enhanced:witch_tower
+ae2:meteorite
 tconstruct:earth_slime_island
 tconstruct:sky_slime_island
 tconstruct:clay_island
 tconstruct:blood_island
 tconstruct:end_slime_island
-ae2:meteorite
 quark:mega_dungeon

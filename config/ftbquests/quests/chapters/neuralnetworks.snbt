@@ -1,30 +1,27 @@
 {
-	id: "1DC46E8F8753C9C1"
-	group: "442FD72D1627F87A"
-	order_index: 5
-	filename: "neuralnetworks"
-	title: "{ntc3.chapter.neuralnetworks.title}"
-	icon: "hostilenetworks:sim_chamber"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: "442FD72D1627F87A"
+	id: "1DC46E8F8753C9C1"
+	filename: "neuralnetworks"
+	default_quest_shape: ""
+	icon: "hostilenetworks:sim_chamber"
+	title: "{ntc3.chapter.neuralnetworks.title}"
+	order_index: 5
 	quests: [
 		{
-			title: "{ntc3.chaper.neuralnetworks.title}"
-			x: 0.0d
-			y: 0.0d
-			dependencies: ["3171BA03635A71CB"]
-			id: "0D28075357CB6FB7"
 			tasks: [{
 				id: "4400DE1887EC408D"
 				type: "questsadditions:time"
 				elapsedTime: 1L
 			}]
+			dependencies: ["3171BA03635A71CB"]
+			id: "0D28075357CB6FB7"
+			y: 0.0d
+			x: 0.0d
+			title: "{ntc3.chaper.neuralnetworks.title}"
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			dependencies: ["0D28075357CB6FB7"]
-			id: "5A683295542D5D91"
 			tasks: [{
 				id: "4A87B80FB5DC99DA"
 				type: "item"
@@ -34,12 +31,12 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["0D28075357CB6FB7"]
+			id: "5A683295542D5D91"
+			y: 0.0d
+			x: 1.5d
 		}
 		{
-			x: 3.0d
-			y: 0.0d
-			dependencies: ["0D28075357CB6FB7"]
-			id: "0E9C22A14C800490"
 			tasks: [{
 				id: "635FCDF3A805D5AB"
 				type: "item"
@@ -49,13 +46,12 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["0D28075357CB6FB7"]
+			id: "0E9C22A14C800490"
+			y: 0.0d
+			x: 3.0d
 		}
 		{
-			x: 4.5d
-			y: 1.0d
-			hide_dependency_lines: true
-			dependencies: ["0D28075357CB6FB7"]
-			id: "3F36183A3E2C9564"
 			tasks: [{
 				id: "262C1F3CF4E29F44"
 				type: "item"
@@ -65,13 +61,13 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["0D28075357CB6FB7"]
+			id: "3F36183A3E2C9564"
+			hide_dependency_lines: true
+			y: 1.0d
+			x: 4.5d
 		}
 		{
-			x: 6.0d
-			y: -1.0d
-			hide_dependency_lines: true
-			dependencies: ["5A683295542D5D91"]
-			id: "780D04A60B25A1A0"
 			tasks: [{
 				id: "7460CDD9A85CD2FF"
 				type: "item"
@@ -81,13 +77,13 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["5A683295542D5D91"]
+			id: "780D04A60B25A1A0"
+			hide_dependency_lines: true
+			y: -1.0d
+			x: 6.0d
 		}
 		{
-			x: 6.0d
-			y: 0.0d
-			hide_dependency_lines: true
-			dependencies: ["5A683295542D5D91"]
-			id: "18A7588AAFBD606C"
 			tasks: [{
 				id: "309D8E4AB677A7C9"
 				type: "item"
@@ -97,13 +93,13 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["5A683295542D5D91"]
+			id: "18A7588AAFBD606C"
+			hide_dependency_lines: true
+			y: 0.0d
+			x: 6.0d
 		}
 		{
-			x: 4.5d
-			y: -1.0d
-			hide_dependency_lines: true
-			dependencies: ["0D28075357CB6FB7"]
-			id: "5B918F7E2ED2BD9E"
 			tasks: [{
 				id: "51E818FFEEB6AEBB"
 				type: "item"
@@ -113,13 +109,13 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["0D28075357CB6FB7"]
+			id: "5B918F7E2ED2BD9E"
+			hide_dependency_lines: true
+			y: -1.0d
+			x: 4.5d
 		}
 		{
-			x: 6.0d
-			y: 1.0d
-			hide_dependency_lines: true
-			dependencies: ["5A683295542D5D91"]
-			id: "710150622F29E1C9"
 			tasks: [{
 				id: "2BFC896F154D18C1"
 				type: "item"
@@ -129,6 +125,11 @@
 					tag: { }
 				}
 			}]
+			dependencies: ["5A683295542D5D91"]
+			id: "710150622F29E1C9"
+			hide_dependency_lines: true
+			y: 1.0d
+			x: 6.0d
 		}
 		{
 			x: 7.0d
@@ -141,5 +142,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

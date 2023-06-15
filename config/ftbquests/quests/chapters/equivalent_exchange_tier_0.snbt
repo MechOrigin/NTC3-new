@@ -1,38 +1,28 @@
 {
-	id: "23F91FBEBFF7D3D7"
-	group: "442FD72D1627F87A"
-	order_index: 1
-	filename: "equivalent_exchange_tier_0"
-	title: "{ntc3.chapter.projectelvl0.title}"
-	icon: "projecte:transmutation_table"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: "442FD72D1627F87A"
+	id: "23F91FBEBFF7D3D7"
+	filename: "equivalent_exchange_tier_0"
+	default_quest_shape: ""
+	icon: "projecte:transmutation_table"
+	title: "{ntc3.chapter.projectelvl0.title}"
+	order_index: 1
 	quests: [
 		{
-			disable_toast: true
-			x: 0.0d
-			y: 0.0d
-			shape: "circle"
-			invisible: true
-			id: "3B00566574CC8C93"
 			tasks: [{
 				id: "246EDDD1A8FA06B8"
 				type: "questsadditions:time"
 				elapsedTime: 1L
 			}]
+			x: 0.0d
+			disable_toast: true
+			id: "3B00566574CC8C93"
+			y: 0.0d
+			shape: "circle"
+			invisible: true
 		}
 		{
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "projecte:textures/item/philosophers_stone.png"
-				}
-			}
-			x: 0.0d
-			y: -1.5d
-			dependencies: ["3B00566574CC8C93"]
-			id: "330CC7FB7E20939F"
 			tasks: [{
 				id: "37900EACBC132AB2"
 				type: "item"
@@ -45,19 +35,26 @@
 					}
 				}
 			}]
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "projecte:textures/item/philosophers_stone.png"
+				}
+			}
+			id: "330CC7FB7E20939F"
+			x: 0.0d
+			y: -1.5d
 			rewards: [{
-				id: "546B57FE73CDA40B"
 				type: "gamestage"
+				stage: "projecte_lvl0"
+				id: "546B57FE73CDA40B"
 				auto: "invisible"
 				ignore_reward_blocking: true
-				stage: "projecte_lvl0"
 			}]
+			dependencies: ["3B00566574CC8C93"]
 		}
 		{
-			x: 1.5d
-			y: -1.5d
-			description: ["{ntc2.projecte.repairtal.desc1}"]
-			id: "07C5A76961BF4A11"
 			tasks: [{
 				id: "1DDF183BE6D20EEB"
 				type: "item"
@@ -69,20 +66,35 @@
 					}
 				}
 			}]
+			description: ["{ntc2.projecte.repairtal.desc1}"]
+			id: "07C5A76961BF4A11"
+			y: -1.5d
+			x: 1.5d
 		}
 		{
-			x: 2.5d
-			y: -1.5d
-			description: ["{ntc2.projecte.intertorch.desc1}"]
-			id: "45DBA5806ED0FEA9"
 			tasks: [{
 				id: "2FD76958A54D27D4"
 				type: "item"
 				item: "projecte:interdiction_torch"
 			}]
+			description: ["{ntc2.projecte.intertorch.desc1}"]
+			id: "45DBA5806ED0FEA9"
+			y: -1.5d
+			x: 2.5d
 		}
 		{
-			title: "Philosopher's Stone Power 1"
+			tasks: [{
+				id: "4C2B91740A1945AC"
+				type: "kill"
+				entity: "minecraft:blaze"
+				value: 1L
+			}]
+			description: [
+				"{ntc2.projecte.power1.desc1}"
+				""
+				"{image:ntc2:textures/quests/stonerandomizer.png width:200 height:150 align:1}"
+			]
+			id: "18C784CC447836E8"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -92,27 +104,12 @@
 			}
 			x: 1.5d
 			y: 0.0d
+			title: "Philosopher's Stone Power 1"
 			subtitle: "{ntc2.projecte.power1.subtitle}"
-			description: [
-				"{ntc2.projecte.power1.desc1}"
-				""
-				"{image:ntc2:textures/quests/stonerandomizer.png width:200 height:150 align:1}"
-			]
 			optional: true
-			id: "18C784CC447836E8"
-			tasks: [{
-				id: "4C2B91740A1945AC"
-				type: "kill"
-				entity: "minecraft:blaze"
-				value: 1L
-			}]
 		}
 		{
-			title: "Hostile Mobs List"
-			icon: "minecraft:spider_spawn_egg"
-			x: 2.25d
-			y: -0.25d
-			shape: "square"
+			size: 0.5d
 			description: [
 				"zombie"
 				"skeleton"
@@ -146,22 +143,22 @@
 				"phantom"
 				"pillager"
 			]
-			hide_dependency_lines: true
-			dependencies: ["18C784CC447836E8"]
-			size: 0.5d
-			optional: true
 			id: "33C63F4C8108FCE5"
+			icon: "minecraft:spider_spawn_egg"
+			x: 2.25d
+			y: -0.25d
+			shape: "square"
+			title: "Hostile Mobs List"
+			dependencies: ["18C784CC447836E8"]
+			hide_dependency_lines: true
 			tasks: [{
 				id: "2816B708B3E4EE34"
 				type: "checkmark"
 			}]
+			optional: true
 		}
 		{
-			title: "Passive Mobs List"
-			icon: "minecraft:turtle_egg"
-			x: 2.25d
-			y: 0.25d
-			shape: "square"
+			size: 0.5d
 			description: [
 				"sheep"
 				"pig"
@@ -193,31 +190,34 @@
 				"wandering_trader"
 				"strider"
 			]
-			hide_dependency_lines: true
-			dependencies: ["18C784CC447836E8"]
-			size: 0.5d
-			optional: true
 			id: "7C607F351A87E5D2"
+			icon: "minecraft:turtle_egg"
+			x: 2.25d
+			y: 0.25d
+			shape: "square"
+			title: "Passive Mobs List"
+			dependencies: ["18C784CC447836E8"]
+			hide_dependency_lines: true
 			tasks: [{
 				id: "281006108037EDB0"
 				type: "checkmark"
 			}]
+			optional: true
 		}
 		{
-			title: "Look at your Transmution Table"
-			icon: "projecte:transmutation_table"
-			x: -1.5d
-			y: 0.0d
-			dependencies: ["3B00566574CC8C93"]
-			id: "5EB98258D1169AAF"
 			tasks: [{
-				id: "44C537116B34BA32"
 				type: "observation"
 				timer: 0L
 				observe_type: 0
+				id: "44C537116B34BA32"
 				to_observe: "projecte:transmutation_table"
 			}]
+			icon: "projecte:transmutation_table"
+			id: "5EB98258D1169AAF"
+			x: -1.5d
+			y: 0.0d
+			title: "Look at your Transmution Table"
+			dependencies: ["3B00566574CC8C93"]
 		}
 	]
-	quest_links: [ ]
 }

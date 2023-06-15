@@ -1,27 +1,25 @@
 {
-	id: "0AAB32021601D4A4"
+	quest_links: [ ]
 	group: "7B753B74DC83DB37"
-	order_index: 1
+	id: "0AAB32021601D4A4"
 	filename: "compact_crafting"
-	title: "Compact Crafting"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	title: "Compact Crafting"
+	order_index: 1
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			shape: "circle"
-			id: "4D37DB58D7F4E63D"
 			tasks: [{
 				id: "1AE2A63F7F227796"
 				type: "questsadditions:time"
 				elapsedTime: 1L
 			}]
+			id: "4D37DB58D7F4E63D"
+			shape: "circle"
+			y: 0.0d
+			x: 0.0d
 		}
 		{
-			x: 0.0d
-			y: -1.5d
-			id: "31A19986E8CCC786"
 			tasks: [{
 				id: "05419D5477E2B615"
 				type: "item"
@@ -31,6 +29,9 @@
 					tag: { }
 				}
 			}]
+			id: "31A19986E8CCC786"
+			y: -1.5d
+			x: 0.0d
 			rewards: [{
 				id: "12F68DAFAEB5441B"
 				type: "item"
@@ -49,5 +50,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

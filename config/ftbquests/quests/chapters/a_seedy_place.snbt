@@ -1,11 +1,12 @@
 {
-	id: "27DEEE8C68205650"
+	quest_links: [ ]
 	group: "5BCA4C8804B27813"
-	order_index: 1
+	id: "27DEEE8C68205650"
 	filename: "a_seedy_place"
-	title: "{ntc3.chapter.aseedyplace.title}"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	title: "{ntc3.chapter.aseedyplace.title}"
+	order_index: 1
 	quests: [
 		{
 			x: 0.0d
@@ -18,21 +19,21 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
-			dependencies: ["5C220062C23C3EB1"]
-			id: "19593DA911D80507"
 			tasks: [{
 				id: "68D89B14C2865E90"
 				type: "item"
 				item: "thermal:flax"
 			}]
+			dependencies: ["5C220062C23C3EB1"]
+			id: "19593DA911D80507"
+			y: -1.0d
+			x: 0.0d
 			rewards: [{
-				id: "265BD9E0EE4E1BD1"
 				type: "gamestage"
+				stage: "croptopia"
+				id: "265BD9E0EE4E1BD1"
 				auto: "invisible"
 				ignore_reward_blocking: true
-				stage: "croptopia"
 			}]
 		}
 		{
@@ -236,15 +237,15 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.0d
-			dependencies: ["1384AEE0AAF9B8E6"]
-			id: "3444860C8C73BD22"
 			tasks: [{
 				id: "752DEBD7497AC97E"
 				type: "item"
 				item: "alcocraft:hop"
 			}]
+			dependencies: ["1384AEE0AAF9B8E6"]
+			id: "3444860C8C73BD22"
+			y: -1.0d
+			x: 1.0d
 		}
 		{
 			x: 1.0d
@@ -257,5 +258,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

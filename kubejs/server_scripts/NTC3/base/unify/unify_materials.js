@@ -45,6 +45,9 @@ onEvent('recipes', event => {
 		fix_ingot_from_block(event, material, ingot, block);
 		fix_block_from_ingot(event, material, ingot, block);
 		small_dust_to_dust_crafting(event, material, small_dust, dust);
+		tiny_dust_to_small_dust_crafting(event, material, tiny_dust, small_dust);
+
+		removeAllById(event, material);
 
 		thermal_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire);
 		thermal_metal_ore_pulverizing(event, material, raw_ore, crushed_ore, ingot, small_dust, dust);
@@ -76,8 +79,11 @@ onEvent('recipes', event => {
 	gemsToUnify.forEach((material) => {
 		let gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
 		let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
+		let block = getPreferredItemInTag(Ingredient.of(`#forge:blocks/${material}`)).id;
 
 		thermal_metal_gem_pulverizing(event, material, gem, dust);
+		fix_gem_from_block(event, material, gem, block);
+		fix_block_from_gem(event, material, gem, block);
 	});
 
 	alloysToUnify.forEach((material) => {
@@ -266,30 +272,7 @@ onEvent('recipes', event => {
 		}
 
 		//console.log(`regular: ${material}` + ' ' + output + ' ' + input);
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_smelting`});
-		//event.remove({ id: `minecraft:${material}_ingot`});
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_blasting`});
-		//event.remove({ id: `antimatter_shared:ingot_${material}` })
-		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust`})
-		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust_from_blasting`})
-		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_smelting`})
-		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_blasting`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mercury_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mars_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_moon_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_glacio_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_venus_ore`})
-		event.remove({ id: `beyond_earth:${material}_ingot`})
-		event.remove({ id: `beyond_earth:${material}_ingot_2`})
-		event.remove({ id: `beyond_earth:${material}_ingot_3`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mercury_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mars_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_moon_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_glacio_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_venus_ore`})
-		event.remove({ id: `thermal:storage/raw_${material}_block`})
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_raw_smelting`});
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_raw_blasting`});
+		//Moved to RemoveAllById
 		
 
         event.smelting(output, input).xp(0.35);
@@ -342,11 +325,7 @@ onEvent('recipes', event => {
 
 		//console.log(`other: ${material}` + ' ' + output + ' ' + input);
 
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_smelting` });
-		//event.remove({ id: `minecraft:${material}_ingot` });
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_blasting` });
-		//event.remove({ id: `antimatter_shared:ingot_${material}` })
-		//console.log(`mekanism:processing/${material}/ingot/from_dust_smelting`);
+		//Moved to RemoveAllById
 
         event.smelting(output, input).xp(0.35);
         event.blasting(output, input).xp(0.7);
@@ -468,9 +447,7 @@ onEvent('recipes', event => {
             input.push(`#forge:gems/${material}`);
         }
 
-		//event.remove({ id: `immersiveengineering:crafting/plate_${material}_hammering` })
-		//event.remove({ id: `antimatter:plate` })
-		event.remove({ id: `beyond_earth:${material}_plate` })
+		// Moved to RemoveAllById
 
         event.shapeless(output, [input, hammer]).id(`ntc3:base/hammering/${material}_plates`);
     }
@@ -549,9 +526,7 @@ onEvent('recipes', event => {
 				return;
 			}
 	
-			//event.remove({ id: `immersiveengineering:crafting/plate_${material}_hammering` })
-			//event.remove({ id: `antimatter:plate` })
-			//event.remove({ id: `beyond_earth:${material}_plate` })
+			// Moved to RemoveAllById
 	
 			event.shapeless(output, [input, hammer]).id(`ntc3:base/hammering/${material}_wires`);
 		}
@@ -591,15 +566,16 @@ onEvent('recipes', event => {
 		event.shapeless(output, [input]).id(`ntc3:base/${material}_small_dust_to_dust`);
 	}
 
-	function fix_ingot_from_nugget(event, material, ingot, nugget) {
-		if (material == air || ingot == air) {
+	
+	function tiny_dust_to_small_dust_crafting(event, material, tiny_dust, small_dust) {
+		if (material == air || tiny_dust == air) {
             return;
         }
 
 		var blacklistedMaterials = [
-			'iron',
-			'gold',
-			'copper'
+			// 'iron',
+			// 'gold',
+			// 'copper'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
@@ -608,9 +584,58 @@ onEvent('recipes', event => {
             }
         }
 		
-        // let output = ingot,
-        // input = Item.of(`#forge:nuggets/${material}`, 9);
+        let output = small_dust,
+        input = Item.of(`#forge:tiny_dusts/${material}`, 9);
 
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_tiny_dust_to_small_dust`);
+	}
+
+	function removeAllById(event, material) {
+
+		//minecraft_dusts_to_ingots_smelting
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_smelting`});
+		//event.remove({ id: `minecraft:${material}_ingot`});
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_blasting`});
+		//event.remove({ id: `antimatter_shared:ingot_${material}` })
+		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust`})
+		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust_from_blasting`})
+		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_smelting`})
+		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_blasting`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mercury_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mars_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_moon_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_glacio_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_venus_ore`})
+		event.remove({ id: `beyond_earth:${material}_ingot`})
+		event.remove({ id: `beyond_earth:${material}_ingot_2`})
+		event.remove({ id: `beyond_earth:${material}_ingot_3`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mercury_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mars_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_moon_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_glacio_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_venus_ore`})
+		event.remove({ id: `thermal:storage/raw_${material}_block`})
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_raw_smelting`});
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_raw_blasting`});
+
+		//minecraft_dust_to_ingot_smelting_other
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_smelting` });
+		//event.remove({ id: `minecraft:${material}_ingot` });
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_blasting` });
+		//event.remove({ id: `antimatter_shared:ingot_${material}` })
+		//console.log(`mekanism:processing/${material}/ingot/from_dust_smelting`);
+
+		//greg_plates
+		//event.remove({ id: `immersiveengineering:crafting/plate_${material}_hammering` })
+		//event.remove({ id: `antimatter:plate` })
+		event.remove({ id: `beyond_earth:${material}_plate` })
+
+		//greg_wires
+		//event.remove({ id: `immersiveengineering:crafting/plate_${material}_hammering` })
+		//event.remove({ id: `antimatter:plate` })
+		//event.remove({ id: `beyond_earth:${material}_plate` })
+
+		//fix_ingot_from_nugget
 		event.remove({ id: `tconstruct:common/materials/${material}_ingot_from_nuggets` })
 		//event.remove({ id: `immersiveengineering:crafting/nugget_${material}_to_${material}_ingot` })
 		event.remove({ id: `thermal:storage/${material}_ingot_from_nuggets` })
@@ -618,7 +643,95 @@ onEvent('recipes', event => {
 		event.remove({ id: `mekanism:nuggets/${material}` })
 		event.remove({ id: `beyond_earth:${material}_ingot_from_nugget` })
 
-		// event.shapeless(output, [input]).id(`ntc3:base/${material}_ingot_from_nuggets`);
+		//fix_nugget_from_ingot
+		event.remove({ id: `minecraft:${material}_nugget` })
+		event.remove({ id: `tconstruct:common/materials/${material}_nugget_from_ingot` })
+		event.remove({ id: `thermal:storage/${material}_nugget_from_ingot` })
+		event.remove({ id: `beyond_earth:${material}_nugget_from_ingot` })
+		event.remove({ id: `exnihiliosequentia:ens_${material}_nugget` })
+
+		//fix_ingot_from_block
+		event.remove({ id: `thermal:storage/${material}_block` })
+		event.remove({ id: `tconstruct:common/materials/${material}_block_from_ingots` })
+		event.remove({ id: `minecraft:${material}_ingot_from_${material}_block` })
+
+		//fix_block_from_ingot
+		event.remove({ id: `thermal:storage/${material}_ingot_from_block` })
+		event.remove({ id: `tconstruct:common/materials/${material}_block_from_ingots` })
+		event.remove({ id: `minecraft:${material}_block` })
+		event.remove({ id: `mekanism:storage_blocks/${material}` })
+		event.remove({ id: `beyond_earth:${material}_block` })
+
+		//thermal_metal_ore_pulverizing
+		event.remove({ id: /thermal:machines\/pulverizer/})
+		event.remove({ id: /thermal:machines\/pulverizer\/pulverizer_.*/ })
+		//event.remove({ id: /thermal:machines\/biggerreactors/ })
+		//event.remove({ id: /thermal:compat\/immersiveengineering/ })
+		// event.remove({ id: `thermal:parts/${material}_gear` })
+		// event.remove({ type: 'thermal:pulverizer' });
+
+		//tconstruct_metal_casting
+		event.remove({ id: /tconstruct:smeltery\/casting/ })
+
+		//thermal_metal_induction_smelter
+		event.remove({ id: /thermal:machines\/smelter/ })
+
+		//thermal_press
+		event.remove({ id: /thermal:machines\/press/ })
+		event.remove({ id: `thermal:parts/${material}_gear`})
+
+		//thermal_metal_casting
+		event.remove({ id: /thermal:compat\/tconstruct/ })
+
+		//thermal_metal_centrifuge
+		event.remove({ id: /thermal:machines\/centrifuge\/centrifuge_\w*_dust/ })
+
+		//minecraft_dust_to_ingot_smelting_alloys
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_smelting` });
+		//event.remove({ id: `minecraft:${material}_ingot` });
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_blasting` });
+		//event.remove({ id: `antimatter_shared:ingot_${material}` })
+		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust`})
+		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust_from_blasting`})
+		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_smelting`})
+		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_blasting`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mercury_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mars_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_moon_ore`})
+		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_glacio_ore`})
+		event.remove({ id: `beyond_earth:${material}_ingot`})
+		event.remove({ id: `beyond_earth:${material}_ingot_2`})
+		event.remove({ id: `beyond_earth:${material}_ingot_3`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mercury_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mars_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_moon_ore`})
+		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_glacio_ore`})
+		//console.log(`mekanism:processing/${material}/ingot/from_dust_smelting`);
+	}
+
+	function fix_ingot_from_nugget(event, material, ingot, nugget) {
+		if (material == air || nugget == air || ingot == air) {
+            return;
+        }
+
+		var blacklistedMaterials = [
+			//'iron',
+			//'gold',
+			//'copper'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+		
+        let output = ingot,
+        input = Item.of(`#forge:nuggets/${material}`, 9);
+
+		//Removals moved to removeAllById function
+
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_ingot_from_nuggets`);
 	}
 
 	function fix_nugget_from_ingot(event, material, ingot, nugget) {
@@ -627,9 +740,9 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-			'iron',
-			'gold',
-			'copper'
+			//'iron',
+			//'gold',
+			//'copper'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
@@ -639,15 +752,12 @@ onEvent('recipes', event => {
         }
 		
 		// ingot to nugget again
-		// let output = Item.of(`#forge:nuggets/${material}`, 9),
-		// input = ingot;
+		let output = Item.of(`#forge:nuggets/${material}`, 9),
+		input = ingot;
 
-		event.remove({ id: `minecraft:${material}_nugget` })
-		event.remove({ id: `tconstruct:common/materials/${material}_nugget_from_ingot` })
-		event.remove({ id: `thermal:storage/${material}_nugget_from_ingot` })
-		event.remove({ id: `beyond_earth:${material}_nugget_from_ingot` })
+		//Removals moved to removeAllById function
 
-		// event.shapeless(output, [input]).id(`ntc3:base/${material}_nuggets_from_ingot`);
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_nuggets_from_ingot`);
 	}
 
 	function fix_ingot_from_block(event, material, ingot, block) {
@@ -671,10 +781,6 @@ onEvent('recipes', event => {
 		// let output = Item.of(`#forge:ingots/${material}`, 9),
 		// input = block;
 
-		event.remove({ id: `thermal:storage/${material}_block` })
-		event.remove({ id: `tconstruct:common/materials/${material}_block_from_ingots` })
-		event.remove({ id: `minecraft:${material}_ingot_from_${material}_block` })
-
 		// event.shapeless(output, [input]).id(`ntc3:base/${material}_ingots_from_block`);
 	}
 
@@ -692,7 +798,7 @@ onEvent('recipes', event => {
                 return;
             }
         }
-		
+
 		/*
         let output = block,
             input = Item.of(`#forge:ingots/${material}`, 9);
@@ -707,11 +813,7 @@ onEvent('recipes', event => {
 		event.remove({ id: `thermal:storage/${material}_block` })
 				*/
 		//expert mode remove block recipes
-		event.remove({ id: `thermal:storage/${material}_ingot_from_block` })
-		event.remove({ id: `tconstruct:common/materials/${material}_block_from_ingots` })
-		event.remove({ id: `minecraft:${material}_block` })
-		event.remove({ id: `mekanism:storage_blocks/${material}` })
-		event.remove({ id: `beyond_earth:${material}_block` })
+
 	}
 
     function thermal_metal_casting(event, material, block, ingot, nugget, gear, rod, plate, wire) {
@@ -765,7 +867,7 @@ onEvent('recipes', event => {
             { type: 'block', amount: 810, output: block, energy: 50 }
         ];
 
-		event.remove({ id: /thermal:compat\/tconstruct/ })
+		// Moved to RemoveAllById
 
 		if (stateId == 'fluid_still') {
 			recipes.forEach((recipe) => {
@@ -872,12 +974,7 @@ onEvent('recipes', event => {
 			recipes.push({ primaryOutput: small_dust, primaryCount: 9, input: ingot, experience: 0.2 });
 		}
 
-		event.remove({ id: /thermal:machines\/pulverizer/})
-		event.remove({ id: /thermal:machines\/pulverizer\/pulverizer_.*/ })
-		//event.remove({ id: /thermal:machines\/biggerreactors/ })
-		//event.remove({ id: /thermal:compat\/immersiveengineering/ })
-		// event.remove({ id: `thermal:parts/${material}_gear` })
-		// event.remove({ type: 'thermal:pulverizer' });
+		//Remove events moved to RemoveAllbyId
 
 		recipes.forEach((recipe) => {
 			//console.log(`Created new ${recipe.primaryOutput}, ${recipe.secondaryOutput}, ${recipe.stoneOutput} as ${recipe.input} and ${recipe.experience}`);
@@ -1033,7 +1130,7 @@ onEvent('recipes', event => {
             basinrecipes.push({ type: 'block', amount: 810, cooling: 171, output: block });
         }
 
-		event.remove({ id: /tconstruct:smeltery\/casting/ })
+		//Moved to RemoveAllById
 
         let casts = ['gold', 'sand'];
         casts.forEach((cast) => {
@@ -1218,6 +1315,12 @@ onEvent('recipes', event => {
 						thirdIngotInput: air, thirdDustInput: air, count3: 1,
 						primaryOutput: output, count4: 3, energy: 800 });
         }
+		if (`${material}` == 'constantan') {
+			recipes.push({ primaryIngotInput: 'forge:ingots/copper', primaryDustInput: 'forge:dusts/copper', /*primaryBlockInput: 'forge:blocks/iron',*/ count1: 1,
+						secondaryIngotInput: 'forge:ingots/nickel', secondaryDustInput: 'forge:dusts/nickel', /*secondaryBlockInput: 'forge:blocks/nickel',*/ count2: 1,
+						thirdIngotInput: air, thirdDustInput: air, count3: 1,
+						primaryOutput: output, count4: 2, energy: 800 });
+        }
 		if (`${material}` == 'netherite') {
 			recipes.push({ primaryIngotInput: 'forge:ingots/netherite_scrap', primaryDustInput: 'forge:dusts/netherite_scrap', /*primaryBlockInput: 'forge:ores/netherite_scrap',*/ count1: 4,
 						secondaryIngotInput: 'forge:ingots/gold', secondaryDustInput: 'forge:dusts/gold', /*secondaryBlockInput: 'forge:blocks/gold',*/ count2: 4,
@@ -1399,7 +1502,7 @@ onEvent('recipes', event => {
 						primaryOutput: output, count4: 5, energy: 800 });
         }
 
-		event.remove({ id: /thermal:machines\/smelter/ })
+		// Moved to RemoveAllById
 		
 			recipes.forEach((recipe) => {
 				if (`${recipe.thirdIngotInput}` == air) {
@@ -1515,7 +1618,7 @@ onEvent('recipes', event => {
 			return;
 		}
 
-		event.remove({ id: /thermal:machines\/centrifuge\/centrifuge_\w*_dust/ })
+		// Moved to RemoveAllById
 
 		recipes.forEach((recipe) => {
 			//console.log(`Created new ${recipe.primaryInput}, ${recipe.primaryOutput}, ${recipe.secondaryOutput}`);
@@ -1556,8 +1659,7 @@ onEvent('recipes', event => {
             }
         }
 
-		event.remove({ id: /thermal:machines\/press/ })
-		event.remove({ id: `thermal:parts/${material}_gear`})
+		// Moved to RemoveAllById
 
 		const id_prefix = 'ntc3:base/thermal/press/';
 		const recipes = [
@@ -1672,27 +1774,7 @@ onEvent('recipes', event => {
             input = `#forge:dusts/${material}`;
 
 		//console.log(`other: ${material}` + ' ' + output + ' ' + input);
-
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_smelting` });
-		//event.remove({ id: `minecraft:${material}_ingot` });
-		event.remove({ id: `mekanism:processing/${material}/ingot/from_dust_blasting` });
-		//event.remove({ id: `antimatter_shared:ingot_${material}` })
-		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust`})
-		//event.remove({ id: `immersiveengineering:smelting/${material}_ingot_from_dust_from_blasting`})
-		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_smelting`})
-		event.remove({ id: `thermal:smelting/${material}_ingot_from_dust_blasting`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mercury_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_mars_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_moon_ore`})
-		event.remove({ id: `beyond_earth:blasting/${material}_ingot_from_glacio_ore`})
-		event.remove({ id: `beyond_earth:${material}_ingot`})
-		event.remove({ id: `beyond_earth:${material}_ingot_2`})
-		event.remove({ id: `beyond_earth:${material}_ingot_3`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mercury_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_mars_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_moon_ore`})
-		event.remove({ id: `beyond_earth:smelting/${material}_ingot_from_glacio_ore`})
-		//console.log(`mekanism:processing/${material}/ingot/from_dust_smelting`);
+		// Removals moved to RemoveAllbyID function
 
         event.smelting(output, input).xp(0.35);
         event.blasting(output, input).xp(0.7);
@@ -1732,5 +1814,51 @@ onEvent('recipes', event => {
 			.id(`ntc3:machine/pulverizer/pulverizer_${material}_gem`);
 		});
     }
+
+	function fix_gem_from_block(event, material, gem, block) {
+		if (material == air || gem == air || block == air) {
+            return;
+        }
+
+		var blacklistedMaterials = [
+			// 'iron',
+			// 'gold',
+			// 'copper'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+		//gems
+		let output = Item.of(`#forge:gems/${material}`, 9),
+		input = block;
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_gems_from_block`);
+	}
+
+	function fix_block_from_gem(event, material, gem, block) {
+		if (material == air || gem == air || block == air) {
+            return;
+        }
+
+		var blacklistedMaterials = [
+
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+		//gems
+		let output = block,
+        input = Item.of(`#forge:gems/${material}`, 9);
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_blocks_from_gems`);
+		//expert mode remove block recipes?
+
+	}
 
 })

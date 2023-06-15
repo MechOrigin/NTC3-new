@@ -137,3 +137,7 @@
 		#Range: > 1000
 		chatMessageCooldown = 1000
 
+	[Peripherals.Pocket_Peripherals]
+		#If true, pockets will have infinite fuel
+		disablePocketFuelConsumption = true
+

@@ -15,6 +15,7 @@ onEvent('recipes', (event) => {
       'exnihilosequentia:ens_raw_gold',
       'exnihilosequentia:ens_raw_copper',
       'minecraft:ens_copper_ingot',
+      'exnihilosequentia:ens_copper_nugget',
       'exnihilosequentia:fluid_item/ens_end_stone'
       ])
 
@@ -30,6 +31,8 @@ onEvent('recipes', (event) => {
       event.remove({output: 'exnihilosequentia:iron_pieces'})
       event.remove({output: 'exnihilosequentia:gold_pieces'})
       event.remove({output: 'exnihilosequentia:copper_pieces'})
+
+      event.remove({output: 'exnihilosequentia:copper_nugget'})
 
       event.remove({type: 'exnihilosequentia:sieve', output: 'minecraft:coal'})
 
