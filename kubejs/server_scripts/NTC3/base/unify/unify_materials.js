@@ -130,7 +130,7 @@ onEvent('recipes', event => {
             return;
         }
 
-        var blacklistedMaterials = ['ender'];
+        var blacklistedMaterials = ['ender', 'sulfur'];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {
@@ -142,10 +142,10 @@ onEvent('recipes', event => {
             input = `#forge:crushed/${material}`;
 
 		// silicon
-		if (`${material}` == 'silicon') {
-			input = Item.of('#forge:dusts/certus_quartz', 1)
-			output = Item.of('#forge:nuggets/silicon', 1)
-		}
+		// if (`${material}` == 'silicon') {
+		// 	input = Item.of('#forge:dusts/certus_quartz', 1)
+		// 	output = Item.of('#forge:nuggets/silicon', 1)
+		// }
 
         event.smelting(output, input).xp(0.35);
         event.blasting(output, input).xp(0.7);
@@ -642,6 +642,7 @@ onEvent('recipes', event => {
 		event.remove({ id: `minecraft:${material}_ingot_from_nuggets` })
 		event.remove({ id: `mekanism:nuggets/${material}` })
 		event.remove({ id: `beyond_earth:${material}_ingot_from_nugget` })
+		event.remove({ id: `mekanism:processing/${material}/ingot/from_nuggets` })
 
 		//fix_nugget_from_ingot
 		event.remove({ id: `minecraft:${material}_nugget` })
@@ -649,9 +650,11 @@ onEvent('recipes', event => {
 		event.remove({ id: `thermal:storage/${material}_nugget_from_ingot` })
 		event.remove({ id: `beyond_earth:${material}_nugget_from_ingot` })
 		event.remove({ id: `exnihiliosequentia:ens_${material}_nugget` })
+		event.remove({ id: `mekanism:processing/${material}/nugget/from_ingot` })
 
 		//fix_ingot_from_block
 		event.remove({ id: `thermal:storage/${material}_block` })
+		event.remove({ id: `thermal:storage/${material}_from_block` })
 		event.remove({ id: `tconstruct:common/materials/${material}_block_from_ingots` })
 		event.remove({ id: `minecraft:${material}_ingot_from_${material}_block` })
 
@@ -660,6 +663,7 @@ onEvent('recipes', event => {
 		event.remove({ id: `tconstruct:common/materials/${material}_block_from_ingots` })
 		event.remove({ id: `minecraft:${material}_block` })
 		event.remove({ id: `mekanism:storage_blocks/${material}` })
+		event.remove({ id: `mekanism:processing/${material}/storage_blocks/from_ingots` })
 		event.remove({ id: `beyond_earth:${material}_block` })
 
 		//thermal_metal_ore_pulverizing
@@ -994,7 +998,7 @@ onEvent('recipes', event => {
 					],
 					experience: `${recipe.experience}`,
 				})
-				.id(`ntc3:machine/pulverizer/pulverizer_${material}_ore`);
+				.id(`ntc3:machine/pulverizer/pulverizer_${material}_ingot`);
 			} else {
 				event.custom({
 					type: 'thermal:pulverizer',

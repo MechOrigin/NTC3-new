@@ -75,7 +75,7 @@
 - Zinc: Sulfur, Pyrite, Sphalerite
 
 - Ilmenite (FeTiO3): iron (Fe), rutile (TiO2)
-- Bauxite ((TiO2)2Al16H10O11): aluminium (Al), rutile, grossular (Ca3Al2Si3O12)
+- Bauxite ((TiO2)2Al16H10O11): aluminium (Al), rutile (Ti), grossular (Ca3Al2Si3O12)
 - Galena Pb3Ag3S2: lead, silver, sulfur, massicot (PbO)
 - Garnierite NiO: nickel
 - Cobaltite (CoAsS): cobalt, arsenic, sulfur
@@ -83,3 +83,11 @@
 - Cassiterite SnOs: Tin
 - Pyrite FeS2: Iron, sulfur
 - Sphalerite ZnS: Zinc, sulfur
+
+- After gathering materials in the Nether, you will have the resources needed to farm the Wither, which will grant access to machines and the Overworld.
+- When you unlock the Nether the goal is to get materials to unlock Thermal Machines (Alloy Smelter, Pyrolizer, Compactor to name a few important ones), Multiblock Machines (such as Chemical Reactor), beginning of AE2 and early EMC farms. Some of these Thermal Machines will unlock Oil processing, latex and rubber processing, polyethylene production, and TNT.
+- TNT production unlocks cool things like the destruction catalyst from ProjectE. While Pyrolyzer unlocks ProjectE fuels such as Mobius/Aeternalis.
+- While in the Nether it is recommended to get a really good Steel production going as entry into Thermal mods requires a lot of Steel. Thermal isn't necessarily required right away but it speeds production a lot.
+- With the exception of Gems. Blocks aren't "craftable" but rather instead require Casting Basin from Tinkers, later they are craftable with Thermal Compacter.
+- With the removal of Immersive Engineering, getting the AE2 presses has to be reworked. Opting for tier 0 extended crafting table recipe, Cobalt plates around silicon, gold, diamond.
+- Finding MysticalAgriculture essence should be easy. It also has EMC. Locked to level 0 seeds until Overworld.

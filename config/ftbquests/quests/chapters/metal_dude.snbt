@@ -170,15 +170,5 @@
 				item: "secretly_complicated:stainless_steel_solid"
 			}]
 		}
-		{
-			x: -4.0d
-			y: 2.0d
-			id: "73140BAD0064F055"
-			tasks: [{
-				id: "06B311192096B2E4"
-				type: "item"
-				item: "secretly_complicated:platinum_solid"
-			}]
-		}
 	]
 }
