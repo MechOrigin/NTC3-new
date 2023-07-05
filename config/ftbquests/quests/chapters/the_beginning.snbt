@@ -333,7 +333,7 @@
 				"{ntc3.diamond.desc4}"
 			]
 			id: "527F7E55E9752525"
-			x: 6.0d
+			x: 12.0d
 			y: -3.5d
 			title: "{ntc3.diamond.title}"
 			rewards: [{
@@ -376,7 +376,7 @@
 				"{ntc3.emerald.desc4}"
 			]
 			id: "39A7D597927066D6"
-			x: 7.0d
+			x: 13.0d
 			y: -3.5d
 			title: "{ntc3.emerald.title}"
 			subtitle: "{ntc3.emcable}"
@@ -395,7 +395,7 @@
 				"{ntc3.lapis.desc1}"
 			]
 			id: "4CF679AD2CD9D8F4"
-			x: 6.0d
+			x: 12.0d
 			y: -2.5d
 			title: "{ntc3.lapis.title}"
 			subtitle: "{ntc3.emcable}"
@@ -414,7 +414,7 @@
 				"{ntc3.redstone.desc1}"
 			]
 			id: "336251529422401D"
-			x: 7.0d
+			x: 13.0d
 			y: -2.5d
 			title: "{ntc3.redstone.title}"
 			subtitle: "{ntc3.emcable}"
@@ -429,7 +429,7 @@
 			}]
 			description: ["{ntc3.amethyst.desc0}"]
 			id: "1319590CCDB4D753"
-			x: 7.0d
+			x: 13.0d
 			y: -1.5d
 			title: "{ntc3.amethyst.title}"
 			subtitle: "{ntc3.emcable}"
@@ -452,7 +452,7 @@
 				"{ntc3.goldingot.desc3}"
 			]
 			id: "1CC354EE2FB08517"
-			x: 6.0d
+			x: 12.0d
 			y: -1.5d
 			title: "{ntc3.goldingot.title}"
 			subtitle: "{ntc3.emcable}"
@@ -886,7 +886,7 @@
 				"{ntc3.enderpearl.desc2}"
 			]
 			id: "2C6314FC12F3EBCF"
-			x: 6.0d
+			x: 12.0d
 			y: -4.5d
 			title: "{ntc3.enderpearl.title}"
 			subtitle: "{ntc3.emcable}"
@@ -901,7 +901,7 @@
 			}]
 			description: ["{ntc3.ghasttear.desc0}"]
 			id: "34A9E956891E8F4A"
-			x: 7.0d
+			x: 13.0d
 			y: -6.5d
 			title: "{ntc3.ghasttear.title}"
 			subtitle: "{ntc3.emcable}"
@@ -922,7 +922,7 @@
 				"{ntc3.netherwart.desc2}"
 			]
 			id: "395B89BBDE511162"
-			x: 7.0d
+			x: 13.0d
 			y: -5.5d
 			title: "{ntc3.netherwart.title}"
 			subtitle: "{ntc3.emcable}"
@@ -962,7 +962,7 @@
 				item: "minecraft:prismarine_shard"
 			}]
 			id: "5AE309E4BB8DB799"
-			x: 7.0d
+			x: 13.0d
 			y: -0.5d
 			subtitle: "{ntc3.emcable}"
 			dependencies: ["120222ECE1D830E3"]
@@ -975,7 +975,7 @@
 				item: "minecraft:prismarine_crystals"
 			}]
 			id: "5597AA7369BD20A3"
-			x: 6.0d
+			x: 12.0d
 			y: -0.5d
 			subtitle: "{ntc3.emcable}"
 			dependencies: ["120222ECE1D830E3"]
@@ -1030,7 +1030,7 @@
 			}]
 			description: ["{ntc3.glowstonedust.desc0}"]
 			id: "16854C8AA2F41157"
-			x: 7.0d
+			x: 13.0d
 			y: -4.5d
 			title: "{ntc3.glowstonedust.title}"
 			subtitle: "{ntc3.emcable}"
@@ -1049,7 +1049,7 @@
 				"{ntc3.netherquartz.desc1}"
 			]
 			id: "0CF8056507AAB376"
-			x: 6.0d
+			x: 12.0d
 			y: -5.5d
 			title: "{ntc3.netherquartz.title}"
 			subtitle: "{ntc3.emcable}"
@@ -1064,7 +1064,7 @@
 			}]
 			description: ["{ntc3.paper.desc0}"]
 			id: "427C588CA60F7435"
-			x: 6.0d
+			x: 12.0d
 			y: -6.5d
 			title: "{ntc3.paper.title}"
 			dependencies: ["120222ECE1D830E3"]
@@ -1082,7 +1082,7 @@
 				"{ntc3.leather.desc1}"
 			]
 			id: "1EC705E5874DCA9D"
-			x: 7.0d
+			x: 13.0d
 			y: -7.5d
 			title: "{ntc3.leather.title}"
 			subtitle: "{ntc3.leather.subtitle}"
@@ -1097,7 +1097,7 @@
 			}]
 			description: ["{ntc3.book.desc0}"]
 			id: "4DEA424A3CF25070"
-			x: 6.0d
+			x: 12.0d
 			y: -7.5d
 			title: "{ntc3.book.title}"
 			subtitle: "{ntc3.book.subtitle}"
@@ -1316,7 +1316,7 @@
 				item: "minecraft:gunpowder"
 			}]
 			id: "5E48066B74E1F10A"
-			x: 6.0d
+			x: 12.0d
 			y: 0.5d
 			subtitle: "{ntc3.emcable}"
 			dependencies: ["120222ECE1D830E3"]
@@ -1332,7 +1332,7 @@
 			id: "6173D265C2D6EAF1"
 			hide_dependency_lines: true
 			y: 0.5d
-			x: 7.0d
+			x: 13.0d
 		}
 		{
 			tasks: [{
@@ -1431,7 +1431,7 @@
 			}]
 			description: ["{ntc3.netheriteingot.desc0}"]
 			id: "659DC30C7929A90E"
-			x: 7.0d
+			x: 13.0d
 			y: -8.5d
 			title: "{ntc3.netheriteingot.title}"
 			dependencies: ["7E05F724102A8CFE"]
@@ -1445,7 +1445,7 @@
 			}]
 			description: ["{ntc3.netheritescrap.desc0}"]
 			id: "282BBBF0EC9F71D6"
-			x: 6.0d
+			x: 12.0d
 			y: -8.5d
 			title: "{ntc3.netheritescrap.title}"
 			subtitle: "{ntc3.emcable}"
@@ -1460,7 +1460,7 @@
 			}]
 			description: ["{ntc3.blazerod.desc0}"]
 			id: "414D9F3E8D30EEDD"
-			x: 7.0d
+			x: 13.0d
 			y: -9.5d
 			title: "{ntc3.blazerod.title}"
 			dependency_requirement: "all_started"
@@ -1484,7 +1484,7 @@
 				item: "minecraft:snowball"
 			}]
 			id: "674A8FACEB7A9A15"
-			x: 7.0d
+			x: 13.0d
 			y: 1.5d
 			subtitle: "{ntc3.emcable}"
 			dependencies: ["120222ECE1D830E3"]
@@ -1497,7 +1497,7 @@
 				item: "minecraft:ice"
 			}]
 			id: "309EE8A5A3F65FB9"
-			x: 6.0d
+			x: 12.0d
 			y: 1.5d
 			rewards: [{
 				id: "5ACE894D5CD38048"
@@ -1517,7 +1517,7 @@
 			}]
 			description: ["{ntc3.string.desc0}"]
 			id: "1DF969D7F62C0F43"
-			x: 6.0d
+			x: 12.0d
 			y: -9.5d
 			title: "{ntc3.string.title}"
 			subtitle: "{ntc3.emcable}"
@@ -1553,7 +1553,7 @@
 			}]
 			id: "704E7711D5E1B133"
 			y: -10.5d
-			x: 6.0d
+			x: 12.0d
 			rewards: [{
 				type: "gamestage"
 				stage: "spirit_unlock"
@@ -1573,7 +1573,7 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: 13.0d
 			y: -10.5d
 			id: "2453D70DA16C29E8"
 			tasks: [{
@@ -1605,7 +1605,7 @@
 			subtitle: "{ntc3.emcable}"
 			id: "3D1A419C1B8F70C3"
 			y: 2.5d
-			x: 6.0d
+			x: 12.0d
 		}
 		{
 			tasks: [{
@@ -1627,6 +1627,35 @@
 			subtitle: "Make a bag or something"
 			dependencies: ["17D4B2616E251D91"]
 			optional: true
+		}
+		{
+			tasks: [{
+				id: "38F77F765F34BDB9"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							data: { }
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+						}
+						energy: 500000.0d
+					}
+				}
+			}]
+			subtitle: "&nGet ready to build platforms!&r"
+			id: "2C9BF519033B5D8F"
+			y: 0.0d
+			x: 3.0d
+			rewards: [{
+				id: "00A19CF739881E95"
+				type: "item"
+				item: "miniutilities:experience_pearl"
+			}]
 		}
 	]
 }

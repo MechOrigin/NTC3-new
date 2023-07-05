@@ -6,7 +6,9 @@ onEvent('recipes', (event) => {
         'thermal:rubber_from_vine',
         'thermal:rubber_3',
         'thermal:rubber_from_dandelion',
-        'thermal:smelting/cured_rubber_from_smelting'
+        'thermal:smelting/cured_rubber_from_smelting',
+        'thermal:storage/charcoal_block',
+        'thermal:storage/charcoal_from_block'
       ])
 
     modifyShaped(event, 'thermal:redstone_servo', 1, [' B ', ' A ', ' B '], {

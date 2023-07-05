@@ -1789,6 +1789,16 @@ onEvent('recipes', event => {
             return;
         }
 
+		var blacklistedMaterials = [
+			//'charcoal'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
 		var recipes = [
            // { primaryOutput: dust, stoneOutput: 'minecraft:gravel', secondaryOutput: dust, primaryCount: 2, input: raw_ore, experience: 0.2 }
 			{ primaryOutput: dust, secondaryOutput: dust, primaryCount: 2, input: gem, experience: 0.2 }
@@ -1825,9 +1835,7 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-			// 'iron',
-			// 'gold',
-			// 'copper'
+			//'charcoal'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
@@ -1848,7 +1856,7 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-
+			//'charcoal'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {

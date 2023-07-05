@@ -91,3 +91,14 @@
 - With the exception of Gems. Blocks aren't "craftable" but rather instead require Casting Basin from Tinkers, later they are craftable with Thermal Compacter.
 - With the removal of Immersive Engineering, getting the AE2 presses has to be reworked. Opting for tier 0 extended crafting table recipe, Cobalt plates around silicon, gold, diamond.
 - Finding MysticalAgriculture essence should be easy. It also has EMC. Locked to level 0 seeds until Overworld.
+
+- After experimenting with Project Rankine, loving the mod, making some changes to NTC3:
+    - Burning logs creates Ash, which can be used with bucket of water, 2 ash, 1 sulfur gem to make bonemeal x4
+    - Coal x3 = 2 bituminous coal gems, coal x2 = 3x lignite gems, 1x anthracite coal = 2 coal, 1x subbituminous coal = 1 coal
+    - 1 charcoal = 4 carbon nugget
+    - 1 graphite gem = 3 carbon nugget, 1 coke gem = 1 carbon
+    - 1 bituminous coal + oven = 1 coke, 1 coal + oven = 1 bituminous coal, 1 subbituminous coal + oven = 1 bituminous coal
+    - stonecutting + wood = 4 sawdust
+    - water, sawdust x4, clayball = pulp
+- Cool concepts Foraging, Panning (sluicing), Evaporation
+    - Clay, Kaolinite, Halloysite, Fire Clay

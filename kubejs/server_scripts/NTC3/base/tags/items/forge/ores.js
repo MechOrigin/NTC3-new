@@ -121,9 +121,12 @@ onEvent('tags.items', event => {
 
     event.removeAllTagsFrom('mekanism:block_osmium');
     event.removeAllTagsFrom('mekanism:block_uranium');
-    event.removeAllTagsFrom('mekanism:charcoal_uranium');
+    event.removeAllTagsFrom('mekanism:block_charcoal');
+    event.removeAllTagsFrom('mekanism:dust_charcoal');
     event.removeAllTagsFrom('mekanism:osmium_ore');
     event.removeAllTagsFrom('mekanism:uranium_ore');
 
     event.removeAllTagsFrom('biggerreactors:uranium_block');
+
+    event.removeAllTagsFrom('thermal:charcoal_block');
   })

@@ -72,6 +72,11 @@
 			x: 0.0d
 			y: 1.5d
 			title: "{ntc3.allisoneandoneisall.dirt.title}"
+			rewards: [{
+				id: "6DDC3F8B725DF3FB"
+				type: "item"
+				item: "miniutilities:experience_pearl"
+			}]
 			subtitle: "{ntc3.allisoneandoneisall.dirt.subtitle}"
 			dependencies: ["1377E15BE179084D"]
 		}
@@ -94,6 +99,11 @@
 			x: 0.0d
 			y: 3.0d
 			title: "{ntc3.allisoneandoneisall.sand.title}"
+			rewards: [{
+				id: "5AC72579A7B0E7FA"
+				type: "item"
+				item: "miniutilities:experience_pearl"
+			}]
 			subtitle: "{ntc3.allisoneandoneisall.sand.subtitle}"
 			dependencies: ["00C02A59541A1E29"]
 		}
@@ -116,6 +126,11 @@
 			x: 0.0d
 			y: 4.5d
 			title: "{ntc3.allisoneandoneisall.sandstone.title}"
+			rewards: [{
+				id: "2B5379A872931EAC"
+				type: "item"
+				item: "miniutilities:experience_pearl"
+			}]
 			subtitle: "{ntc3.allisoneandoneisall.sandstone.subtitle}"
 			dependencies: ["0F6AE22E898BC55C"]
 		}
@@ -163,6 +178,11 @@
 			x: 1.5d
 			y: 3.0d
 			title: "{ntc3.allisoneandoneisall.cobble.title}"
+			rewards: [{
+				id: "3CC68B0C160CA55A"
+				type: "item"
+				item: "miniutilities:experience_pearl"
+			}]
 			subtitle: "{ntc3.allisoneandoneisall.cobble.subtitle}"
 			dependencies: ["0F6AE22E898BC55C"]
 		}
