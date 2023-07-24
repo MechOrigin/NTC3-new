@@ -1,0 +1,68 @@
+
+["What to plant"]
+	#Items with this tag will be automatically planted when possible
+	itemTagsForPlantableItems = ["treeplant:auto_plantables", "dynamictrees:seeds"]
+
+#Set chanceOfPlanting = 0.0 to disable
+["When to plant"]
+
+	["When to plant"."Saplings that fall naturally (e.g. when leaves decay or when using tree felling mods)"]
+		#The number of seconds to wait before planting saplings
+		#Range: 0.0 ~ 100000.0
+		numSecondsBeforePlanting = 1.0
+		#A random number of seconds to add to the wait time
+		#Range: 0.0 ~ 100000.0
+		wiggle = 3.0
+		#Chance that a dropped sapling will be planted if possible
+		#Range: 0.0 ~ 1.0
+		chanceOfPlanting = 1.0
+		#The minimum allowed distance between saplings of the same type
+		#Range: 1 ~ 16
+		minDistanceBetweenSaplings = 2
+
+	["When to plant"."Saplings that drop when a player breaks a block"]
+		#The number of seconds to wait before planting saplings
+		#Range: 0.0 ~ 100000.0
+		numSecondsBeforePlanting = 10.0
+		#A random number of seconds to add to the wait time
+		#Range: 0.0 ~ 100000.0
+		wiggle = 3.0
+		#Chance that a dropped sapling will be planted if possible
+		#Range: 0.0 ~ 1.0
+		chanceOfPlanting = 1.0
+		#The minimum allowed distance between saplings of the same type
+		#Range: 1 ~ 16
+		minDistanceBetweenSaplings = 1
+
+	["When to plant"."Saplings tossed by players"]
+		#The number of seconds to wait before planting saplings
+		#Range: 0.0 ~ 100000.0
+		numSecondsBeforePlanting = 5.0
+		#A random number of seconds to add to the wait time
+		#Range: 0.0 ~ 100000.0
+		wiggle = 3.0
+		#Chance that a dropped sapling will be planted if possible
+		#Range: 0.0 ~ 1.0
+		chanceOfPlanting = 0.0
+		#The minimum allowed distance between saplings of the same type
+		#Range: 1 ~ 16
+		minDistanceBetweenSaplings = 1
+
+	["When to plant"."Saplings that are about to despawn, no matter where they came from"]
+		#Chance that a dropped sapling will be planted if possible
+		#Range: 0.0 ~ 1.0
+		chanceOfPlanting = 1.0
+		#The minimum allowed distance between saplings of the same type
+		#Range: 1 ~ 16
+		minDistanceBetweenSaplings = 2
+
+[Miscellaneous]
+	#The number of seconds to keep trying to plant a sapling after the first attempt
+	#Range: 0.0 ~ 100000.0
+	numSecondsToRetryPlanting = 120.0
+	#The number of seconds to wait before trying to plant after a failed attempt
+	#Range: 0.0 ~ 100000.0
+	numSecondsBetweenTries = 1.0
+	#Whether to allow players to plant saplings by right-clicking on dirt
+	allowRightClickPlanting = true
+

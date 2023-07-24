@@ -1,28 +1,27 @@
 {
-	quest_links: [ ]
-	group: "5BCA4C8804B27813"
 	id: "35F17E4A83CF5AF1"
-	filename: "metal_dude"
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	title: "{ntc3.chapter.metaldude.title}"
+	group: "5BCA4C8804B27813"
 	order_index: 0
+	filename: "metal_dude"
+	title: "{ntc3.chapter.metaldude.title}"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			x: 0.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "3F1145BE6A8C4769"
 			tasks: [{
 				id: "356C6FADCEA43D44"
 				type: "item"
 				item: {
 					id: "secretly_complicated:steel_solid"
-					Count: 1b
+					Count: 1
 					tag: { }
 				}
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "3F1145BE6A8C4769"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 0.0d
 		}
 		{
 			x: 0.0d
@@ -35,80 +34,80 @@
 			}]
 		}
 		{
+			x: 1.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "0A28530C64C93A23"
 			tasks: [{
 				id: "28C3C0859CA74EBF"
 				type: "item"
 				item: {
 					id: "secretly_complicated:red_alloy_solid"
-					Count: 1b
+					Count: 1
 					tag: { }
 				}
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "0A28530C64C93A23"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 1.0d
 		}
 		{
+			x: 4.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "7E571DE604471AE6"
 			tasks: [{
 				id: "5AB651B9481D3310"
 				type: "item"
 				item: "secretly_complicated:invar_solid"
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "7E571DE604471AE6"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 4.0d
 		}
 		{
+			x: 5.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "09729B0D8D2DF9A7"
 			tasks: [{
 				id: "3FFAE467A2D55431"
 				type: "item"
 				item: "secretly_complicated:constantan_solid"
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "09729B0D8D2DF9A7"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 5.0d
 		}
 		{
+			x: 6.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "0B4AEADE97711394"
 			tasks: [{
 				id: "22E51B34A0E6DCD1"
 				type: "item"
 				item: "secretly_complicated:brass_solid"
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "0B4AEADE97711394"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 6.0d
 		}
 		{
+			x: 3.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "753E8A46CDE71BB7"
 			tasks: [{
 				id: "1DFA517E84C534CB"
 				type: "item"
 				item: "secretly_complicated:rose_gold_solid"
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "753E8A46CDE71BB7"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 3.0d
 		}
 		{
+			x: 7.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
+			id: "168DD058DAFDAB19"
 			tasks: [{
 				id: "6A47C566DF8A674E"
 				type: "item"
 				item: "secretly_complicated:electrum_solid"
 			}]
-			dependencies: ["76081533F2E6D38E"]
-			id: "168DD058DAFDAB19"
-			hide_dependency_lines: true
-			y: -2.0d
-			x: 7.0d
 		}
 		{
 			x: 8.0d
@@ -171,4 +170,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

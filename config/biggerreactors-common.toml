@@ -79,6 +79,28 @@
     #
     MaxHeight = 192.0
 
+    [Turbine.GUI]
+        #
+        # Default: 10
+        #
+        DeltaMB = 10.0
+
+        #
+        # Default: 100
+        #
+        DeltaMBShift = 100.0
+
+        #
+        # Default: 500
+        #
+        DeltaMBCtrl = 500.0
+
+        #
+        # Default: 1000
+        #
+        DeltaMBHCtrlShift = 1000.0
+   
+
 [HeatExchanger]
     #
     # Valid range: [3,)

@@ -16,9 +16,6 @@ minecraft:buried_treasure
 minecraft:village
 minecraft:nether_fossil
 minecraft:bastion_remnant
-paraglider:underground_horned_statue
-paraglider:nether_horned_statue
-paraglider:tarrey_town_goddess_statue
 repurposed_structures:generic_jigsaw_structure
 repurposed_structures:generic_underground_jigsaw_structure
 repurposed_structures:generic_nether_jigsaw_structure
@@ -74,10 +71,10 @@ dungeons_enhanced:tree_house
 dungeons_enhanced:tower_of_the_undead
 dungeons_enhanced:watch_tower
 dungeons_enhanced:witch_tower
-ae2:meteorite
 tconstruct:earth_slime_island
 tconstruct:sky_slime_island
 tconstruct:clay_island
 tconstruct:blood_island
 tconstruct:end_slime_island
+ae2:meteorite
 quark:mega_dungeon

@@ -1,0 +1,92 @@
+
+[general]
+	#Puts all the added items into a new Every Compat tab instead of their own mod tabs. Be warned that if disabled it could cause some issue with some mods that have custom tabs
+	creative_tab = true
+	#Allows the mod to try to remap and convert other blocks and items from other compat mods that have been uninstalled from one world. This was made so one can uninstall such mods seamlessly having their blocks converted into Evety Compat counterparts
+	remap_other_mods = false
+	#Clears out and remaps all blocks registered by this mod belonging to uninstalled wood types to air or oak wood
+	remap_self = true
+	#Makes dynamic assets that are generated depend on loaded resource packs. Turn off to make them just use vanilla assets
+	assets_depend_on_loaded_packs = true
+
+[wood_type]
+
+	[wood_type.minecraft]
+		oak = true
+		spruce = true
+		birch = true
+		jungle = true
+		acacia = true
+		dark_oak = true
+		crimson = true
+		warped = true
+
+	[wood_type.nethers_exoticism]
+		ramboutan = true
+
+	[wood_type.pyromancer]
+		pyrowood = true
+		rotten = true
+
+	[wood_type.integrateddynamics]
+		menril = true
+
+	[wood_type.tconstruct]
+		greenheart = true
+		skyroot = true
+		bloodshroom = true
+
+	[wood_type.quark]
+		azalea = true
+		blossom = true
+
+[leaves_type]
+
+	[leaves_type.minecraft]
+		oak = true
+		spruce = true
+		birch = true
+		jungle = true
+		acacia = true
+		dark_oak = true
+		azalea = true
+		flowering_azalea = true
+
+	[leaves_type.nethers_exoticism]
+		ramboutan = true
+		jaboticaba = true
+
+	[leaves_type.pyromancer]
+		pyrowood = true
+
+	[leaves_type.integrateddynamics]
+		menril = true
+
+	[leaves_type.croptopia]
+		cinnamon = true
+
+	[leaves_type.tconstruct]
+		earth_slime = true
+		sky_slime = true
+		ender_slime = true
+
+	[leaves_type.ars_nouveau]
+		blue_archwood = true
+		red_archwood = true
+		green_archwood = true
+		purple_archwood = true
+
+	[leaves_type.quark]
+		blue_blossom = true
+		lavender_blossom = true
+		orange_blossom = true
+		pink_blossom = true
+		yellow_blossom = true
+		red_blossom = true
+
+	[leaves_type.ars_elemental]
+		yellow_archwood = true
+
+	[leaves_type.culturaldelights]
+		avocado = true
+

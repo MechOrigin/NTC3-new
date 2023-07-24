@@ -13,6 +13,7 @@ toms_storage = true
 sophisticatedcore = true
 refinedstorage = true
 prettypipes = true
+fastsuite = true
 fastbench = true
 cyclic = true
 

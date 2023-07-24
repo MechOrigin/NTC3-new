@@ -1,0 +1,11 @@
+
+#Options that affect the added Brick Hopper.
+["Brick Hopper Settings"]
+	#Time (ticks) that passes between two brick hopper operations. (default: 12 ticks) (vanilla hopper: 8 ticks)
+	#Range: 1 ~ 1000
+	brickHopperCooldown = 12
+	#Whether or not the brick hopper can pull item entities lying above it. (default: enabled)
+	brickHopperPullItemsFromWorldEnabled = true
+	#Whether or not the brick hopper can pull items from inventories above it. (default: enabled)
+	brickHopperPullItemsFromInventoriesEnabled = true
+

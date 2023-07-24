@@ -1,34 +1,25 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: ""
 	id: "7418E941CC3F6389"
+	group: ""
+	order_index: 0
 	filename: "all_is_one_one_is_all"
-	default_quest_shape: ""
+	title: "{ntc3.chapter.allisoneandoneisall.title}"
 	icon: {
 		id: "ftbquests:custom_icon"
-		Count: 1b
+		Count: 1
 		tag: {
 			Icon: "projecte:textures/item/philosophers_stone.png"
 		}
 	}
-	title: "{ntc3.chapter.allisoneandoneisall.title}"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	progression_mode: "linear"
-	order_index: 0
 	quests: [
 		{
-			size: 1.5d
-			description: [
-				"{ntc3.allisoneandoneisall.desc0}"
-				""
-				"{ntc3.allisoneandoneisall.desc1}"
-				""
-				"{ntc3.allisoneandoneisall.desc2}"
-			]
-			id: "1377E15BE179084D"
+			title: "{ntc3.allisoneandoneisall.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
-				Count: 1b
+				Count: 1
 				tag: {
 					Icon: "projecte:textures/item/philosophers_stone.png"
 				}
@@ -36,137 +27,163 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "circle"
-			title: "{ntc3.allisoneandoneisall.title}"
+			subtitle: "{ntc3.allisoneandoneisall.subtitle}"
+			description: [
+				"{ntc3.allisoneandoneisall.desc0}"
+				""
+				"{ntc3.allisoneandoneisall.desc1}"
+				""
+				"{ntc3.allisoneandoneisall.desc2}"
+			]
+			size: 1.5d
+			id: "1377E15BE179084D"
+			tasks: [{
+				id: "51C89EA50962439D"
+				type: "checkmark"
+			}]
 			rewards: [{
 				id: "7F0F58B824DA3028"
 				type: "item"
 				item: {
 					id: "minecraft:dirt"
-					Count: 1b
+					Count: 1
 					tag: { }
 				}
 				count: 64
 			}]
-			subtitle: "{ntc3.allisoneandoneisall.subtitle}"
-			tasks: [{
-				id: "51C89EA50962439D"
-				type: "checkmark"
-			}]
 		}
 		{
-			tasks: [{
-				id: "424EBB517B165265"
-				type: "item"
-				item: {
-					id: "minecraft:dirt"
-					Count: 1b
-					tag: { }
-				}
-			}]
+			title: "{ntc3.allisoneandoneisall.dirt.title}"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "{ntc3.allisoneandoneisall.dirt.subtitle}"
 			description: [
 				"{ntc3.emcable}"
 				""
 				"{ntc3.allisoneandoneisall.dirt.desc0}"
 			]
-			id: "00C02A59541A1E29"
-			x: 0.0d
-			y: 1.5d
-			title: "{ntc3.allisoneandoneisall.dirt.title}"
-			rewards: [{
-				id: "6DDC3F8B725DF3FB"
-				type: "item"
-				item: "miniutilities:experience_pearl"
-			}]
-			subtitle: "{ntc3.allisoneandoneisall.dirt.subtitle}"
 			dependencies: ["1377E15BE179084D"]
-		}
-		{
+			hide: true
+			id: "00C02A59541A1E29"
 			tasks: [{
-				id: "1F1983027FF41BD1"
+				id: "424EBB517B165265"
 				type: "item"
 				item: {
-					id: "minecraft:sand"
-					Count: 1b
+					id: "minecraft:dirt"
+					Count: 1
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "10889F060AF69737"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "{ntc3.allisoneandoneisall.sand.title}"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "{ntc3.allisoneandoneisall.sand.subtitle}"
 			description: [
 				"{ntc3.emcable}"
 				""
 				"{ntc3.allisoneandoneisall.sand.desc0}"
 			]
-			id: "0F6AE22E898BC55C"
-			x: 0.0d
-			y: 3.0d
-			title: "{ntc3.allisoneandoneisall.sand.title}"
-			rewards: [{
-				id: "5AC72579A7B0E7FA"
-				type: "item"
-				item: "miniutilities:experience_pearl"
-			}]
-			subtitle: "{ntc3.allisoneandoneisall.sand.subtitle}"
 			dependencies: ["00C02A59541A1E29"]
-		}
-		{
+			hide: true
+			id: "0F6AE22E898BC55C"
 			tasks: [{
-				id: "4450FF9605A4D375"
+				id: "1F1983027FF41BD1"
 				type: "item"
 				item: {
-					id: "minecraft:sandstone"
-					Count: 1b
+					id: "minecraft:sand"
+					Count: 1
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "55E80A476D500764"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "{ntc3.allisoneandoneisall.sandstone.title}"
+			x: 0.0d
+			y: 4.5d
+			subtitle: "{ntc3.allisoneandoneisall.sandstone.subtitle}"
 			description: [
 				"{ntc3.emcable}"
 				""
 				"{ntc3.allisoneandoneisall.sandstone.desc0}"
 			]
-			id: "474EFEF9C48E5448"
-			x: 0.0d
-			y: 4.5d
-			title: "{ntc3.allisoneandoneisall.sandstone.title}"
-			rewards: [{
-				id: "2B5379A872931EAC"
-				type: "item"
-				item: "miniutilities:experience_pearl"
-			}]
-			subtitle: "{ntc3.allisoneandoneisall.sandstone.subtitle}"
 			dependencies: ["0F6AE22E898BC55C"]
+			hide: true
+			id: "474EFEF9C48E5448"
+			tasks: [{
+				id: "4450FF9605A4D375"
+				type: "item"
+				item: {
+					id: "minecraft:sandstone"
+					Count: 1
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1B79F28E023C4F32"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
+			title: "{ntc3.allisoneandoneisall.gravel.title}"
+			x: 0.0d
+			y: 6.0d
+			subtitle: "{ntc3.allisoneandoneisall.gravel.subtitle}"
+			description: ["{ntc3.emcable}"]
+			dependencies: ["474EFEF9C48E5448"]
+			hide: true
+			id: "4B957CE10B1B21AB"
 			tasks: [{
 				id: "42753B5B2DA90482"
 				type: "item"
 				item: {
 					id: "minecraft:gravel"
-					Count: 1b
+					Count: 1
 					tag: { }
 				}
 			}]
-			description: ["{ntc3.emcable}"]
-			id: "4B957CE10B1B21AB"
-			x: 0.0d
-			y: 6.0d
-			title: "{ntc3.allisoneandoneisall.gravel.title}"
 			rewards: [{
 				id: "2162B04FA44E2B63"
 				type: "item"
 				item: {
 					id: "minecraft:flint"
-					Count: 1b
+					Count: 1
 					tag: { }
 				}
 			}]
-			subtitle: "{ntc3.allisoneandoneisall.gravel.subtitle}"
-			dependencies: ["474EFEF9C48E5448"]
 		}
 		{
-			tasks: [{
-				id: "5313C14CC55CF7AA"
-				type: "item"
-				item: "minecraft:cobblestone"
-			}]
+			title: "{ntc3.allisoneandoneisall.cobble.title}"
+			x: 1.5d
+			y: 3.0d
+			subtitle: "{ntc3.allisoneandoneisall.cobble.subtitle}"
 			description: [
 				"{ntc3.emcable}"
 				""
@@ -174,17 +191,53 @@
 				""
 				"{ntc3.allisoneandoneisall.cobble.desc1}"
 			]
+			dependencies: ["0F6AE22E898BC55C"]
+			hide: true
 			id: "38EABCC82DD22B6C"
-			x: 1.5d
-			y: 3.0d
-			title: "{ntc3.allisoneandoneisall.cobble.title}"
+			tasks: [{
+				id: "5313C14CC55CF7AA"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
 			rewards: [{
-				id: "3CC68B0C160CA55A"
+				id: "47E4CF1683754457"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "Go To Echelon 0"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1
+				tag: {
+					Icon: "ftbquests:textures/gui/alert.png"
+				}
+			}
+			x: 0.0d
+			y: 7.5d
+			shape: "circle"
+			dependencies: ["4B957CE10B1B21AB"]
+			hide: true
+			size: 1.5d
+			id: "37AD88739F300D2D"
+			tasks: [{
+				id: "616323BFBF4F4A0E"
+				type: "questsadditions:time"
+				disable_toast: true
+				elapsedTime: 1L
+			}]
+			rewards: [{
+				id: "0055F51C95E7347C"
 				type: "item"
 				item: "miniutilities:experience_pearl"
 			}]
-			subtitle: "{ntc3.allisoneandoneisall.cobble.subtitle}"
-			dependencies: ["0F6AE22E898BC55C"]
 		}
 	]
+	quest_links: [ ]
 }

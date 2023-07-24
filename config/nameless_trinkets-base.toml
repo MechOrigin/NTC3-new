@@ -16,3 +16,6 @@
 ["Speed Force Particles"]
 	"Show particles?" = true
 
+["Disable FOV disable"]
+	"Disable FOV disable?" = false
+

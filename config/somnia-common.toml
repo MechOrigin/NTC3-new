@@ -1,0 +1,56 @@
+
+[fatigue]
+	#Fatigue is incremented by this number every tick
+	fatigueRate = 0.0
+	#Fatigue is decreased by this number every tick while you sleep
+	fatigueReplenishRate = 0.0
+	#Enables fatigue side effects
+	fatigueSideEffects = false
+	#The required amount of fatigue to sleep
+	minimumFatigueToSleep = 20
+	#Definitions of each side effect stage in order: min fatigue (int), max fatigue (int), effect name (resource location), duration (int), amplifier (int). For a permanent effect, set the duration to -1.
+	sideEffectStages = [[70, 80, "minecraft:nausea", 150, 0], [80, 90, "minecraft:slowness", 300, 2], [90, 95, "minecraft:poison", 200, 1], [95, 100, "minecraft:nausea", -1, 3]]
+	#Definitions of fatigue replenishing items. Each list consist of an item registry name, the amount of fatigue it replenishes, and optionally a fatigue rate modifier
+	replenishingItems = [["coffeespawner:coffee", 10], ["coffeespawner:coffee_milk", 10], ["coffeespawner:coffee_sugar", 15], ["coffeespawner:coffee_milk_sugar", 15]]
+
+[logic]
+	#If the time difference (mc) between multiplied ticking is greater than this, the simulation multiplier is lowered. Otherwise, it's increased. Lowering this number might slow down simulation and improve performance. Don't mess around with it if you don't know what you're doing.
+	#Range: 1.0 ~ 50.0
+	delta = 50.0
+	#Minimum tick speed multiplier, activated during sleep
+	minMultiplier = 1.0
+	#Maximum tick speed multiplier, activated during sleep
+	maxMultiplier = 100.0
+
+[options]
+	#Slightly slower sleep start/end
+	fading = true
+	#Let the player sleep even when there are monsters nearby
+	ignoreMonsters = false
+	#Deafens you while you're asleep. Mob sounds are confusing with the world sped up
+	muteSoundWhenSleeping = false
+	#Allows you to sleep with armor equipped
+	sleepWithArmor = false
+	#The item used to select wake time
+	wakeTimeSelectItem = "minecraft:clock"
+	#Force the player to wake up when fatigue reaches 0
+	forceWakeUp = false
+
+[performance]
+	#Disables mob spawning while you sleep
+	disableCreatureSpawning = false
+
+[timings]
+	#Specifies the start of the period in which the player can enter sleep
+	#Range: 0 ~ 24000
+	enterSleepStart = 0
+	#Specifies the end of the period in which the player can enter sleep
+	#Range: 0 ~ 24000
+	enterSleepEnd = 24000
+	#Specifies the start of the valid sleep period
+	#Range: 0 ~ 24000
+	validSleepStart = 0
+	#Specifies the end of the valid sleep period
+	#Range: 0 ~ 24000
+	validSleepEnd = 24000
+

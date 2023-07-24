@@ -1,29 +1,28 @@
 {
-	quest_links: [ ]
-	group: "7B753B74DC83DB37"
 	id: "7D03A2F2B37CBAB9"
-	filename: "thermal"
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	title: "Thermal"
+	group: "7B753B74DC83DB37"
 	order_index: 2
+	filename: "thermal"
+	title: "Thermal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			x: 0.0d
+			y: 0.0d
+			shape: "circle"
+			id: "1CA95C53FC86D80F"
 			tasks: [{
 				id: "4714081C019406B5"
 				type: "questsadditions:time"
 				elapsedTime: 1L
 			}]
-			id: "1CA95C53FC86D80F"
-			shape: "circle"
-			y: 0.0d
-			x: 0.0d
 			rewards: [{
 				id: "5CB042F7ACE39447"
 				type: "item"
 				item: {
 					id: "patchouli:guide_book"
-					Count: 1b
+					Count: 1
 					tag: {
 						"patchouli:book": "thermal:guidebook"
 					}
@@ -31,19 +30,19 @@
 			}]
 		}
 		{
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["1CA95C53FC86D80F"]
+			id: "594F367D49C6A3AA"
 			tasks: [{
 				id: "72FC0BCADFDA3043"
 				type: "item"
 				item: {
 					id: "thermal:machine_frame"
-					Count: 1b
+					Count: 1
 					tag: { }
 				}
 			}]
-			dependencies: ["1CA95C53FC86D80F"]
-			id: "594F367D49C6A3AA"
-			y: -2.0d
-			x: 0.0d
 			rewards: [{
 				id: "407DED318D1CA7E4"
 				type: "item"
@@ -52,15 +51,15 @@
 			}]
 		}
 		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["1CA95C53FC86D80F"]
+			id: "07A4205BFB88D66D"
 			tasks: [{
 				id: "6889592459C52183"
 				type: "item"
 				item: "thermal:device_rock_gen"
 			}]
-			dependencies: ["1CA95C53FC86D80F"]
-			id: "07A4205BFB88D66D"
-			y: 2.0d
-			x: 0.0d
 		}
 		{
 			x: -6.0d
@@ -171,7 +170,7 @@
 				type: "item"
 				item: {
 					id: "thermal:energy_cell"
-					Count: 1b
+					Count: 1
 					tag: {
 						BlockEntityTag: {
 							EnergyMax: 1000000
@@ -192,7 +191,7 @@
 				type: "item"
 				item: {
 					id: "thermal:fluid_cell"
-					Count: 1b
+					Count: 1
 					tag: {
 						BlockEntityTag: {
 							TankInv: [{
@@ -444,4 +443,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

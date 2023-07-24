@@ -532,7 +532,7 @@ onEvent('recipes', event => {
 		}
 
 	function greg_saw_plating(event, woodTypes, planks) {
-        if (planks == air) {
+        if (planks == air || woodTypes == air) {
             return;
         }
 

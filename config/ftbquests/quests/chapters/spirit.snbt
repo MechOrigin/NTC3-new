@@ -1,141 +1,140 @@
 {
-	quest_links: [ ]
-	group: "442FD72D1627F87A"
 	id: "14F6E001335D9C75"
-	filename: "spirit"
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	title: "Spirit"
+	group: "442FD72D1627F87A"
 	order_index: 9
+	filename: "spirit"
+	title: "Spirit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "243F8FD4C5920935"
 			tasks: [{
 				id: "495FDB8A519A03F2"
 				type: "item"
 				item: "spirit:soul_powder"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "243F8FD4C5920935"
-			y: 0.0d
-			x: -1.5d
 		}
 		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "769D9B2A13B732A3"
 			tasks: [{
 				id: "51D0AADAAFD77B77"
 				type: "item"
 				item: "spirit:soul_powder_block"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "769D9B2A13B732A3"
-			y: -1.0d
-			x: -1.5d
 		}
 		{
+			x: -1.5d
+			y: -2.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "443E5F71A5430FCC"
 			tasks: [{
 				id: "436DAFFFAB9D7981"
 				type: "item"
 				item: "spirit:soul_steel_ingot"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "443E5F71A5430FCC"
-			y: -2.0d
-			x: -1.5d
 		}
 		{
+			x: -1.5d
+			y: -3.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "6905003AED3683E8"
 			tasks: [{
 				id: "22E3FAB2FE785CD3"
 				type: "item"
 				item: "spirit:soul_steel_block"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "6905003AED3683E8"
-			y: -3.0d
-			x: -1.5d
 		}
 		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "7085266C11162A20"
 			tasks: [{
 				id: "57389CDF597DA641"
 				type: "item"
 				item: "spirit:broken_spawner"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "7085266C11162A20"
-			y: 0.0d
-			x: 0.5d
 		}
 		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "3D61A36140DE48A0"
 			tasks: [{
 				id: "04170B018EF67FAD"
 				type: "item"
 				item: "spirit:soul_cage"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "3D61A36140DE48A0"
-			y: -1.0d
-			x: 0.5d
 		}
 		{
+			x: 0.5d
+			y: -2.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "2802E4116E6EC6BC"
 			tasks: [{
 				id: "6F114D2D92E0CB97"
 				type: "item"
 				item: "spirit:soul_crystal_shard"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "2802E4116E6EC6BC"
-			y: -2.0d
-			x: 0.5d
 		}
 		{
-			tasks: [{
-				id: "596C59F4FD61007C"
-				type: "item"
-				item: "spirit:crude_soul_crystal"
-			}]
+			x: 0.5d
+			y: -3.0d
 			dependencies: [
 				"2802E4116E6EC6BC"
 				"2070988AA83BF827"
 				"408D20951EB1D86D"
 			]
 			id: "00F2C5BB80BFBB36"
-			y: -3.0d
-			x: 0.5d
+			tasks: [{
+				id: "596C59F4FD61007C"
+				type: "item"
+				item: "spirit:crude_soul_crystal"
+			}]
 		}
 		{
-			tasks: [{
-				id: "0A4728EEBBDDA411"
-				type: "item"
-				item: "spirit:soul_crystal"
-			}]
+			x: 0.5d
+			y: -4.0d
 			dependencies: [
 				"00F2C5BB80BFBB36"
 				"64A40BFABC2D9A1E"
 				"408D20951EB1D86D"
 			]
 			id: "46C6E73324156536"
-			y: -4.0d
-			x: 0.5d
+			tasks: [{
+				id: "0A4728EEBBDDA411"
+				type: "item"
+				item: "spirit:soul_crystal"
+			}]
 		}
 		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "2070988AA83BF827"
 			tasks: [{
 				id: "2DFE049BBA5A8AB9"
 				type: "item"
 				item: "spirit:soul_slate"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "2070988AA83BF827"
-			y: -3.0d
-			x: 1.5d
 		}
 		{
+			x: 1.5d
+			y: -4.0d
+			dependencies: ["408D20951EB1D86D"]
+			id: "64A40BFABC2D9A1E"
 			tasks: [{
 				id: "1F9B08792172E465"
 				type: "item"
 				item: "spirit:soul_glass"
 			}]
-			dependencies: ["408D20951EB1D86D"]
-			id: "64A40BFABC2D9A1E"
-			y: -4.0d
-			x: 1.5d
 		}
 		{
 			x: -0.5d
@@ -148,4 +147,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

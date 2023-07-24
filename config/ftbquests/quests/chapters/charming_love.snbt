@@ -1,12 +1,11 @@
 {
-	quest_links: [ ]
-	group: "5BCA4C8804B27813"
 	id: "6ED26A6C31D137A0"
-	filename: "charming_love"
-	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	title: "Charming :revolving_hearts:"
+	group: "5BCA4C8804B27813"
 	order_index: 4
+	filename: "charming_love"
+	title: "Charming :revolving_hearts:"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: 0.0d
@@ -59,4 +58,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

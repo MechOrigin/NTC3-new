@@ -1,0 +1,10 @@
+{
+  "dimension": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "travelerstitles:dimension"
+      }
+    ]
+  }
+}
