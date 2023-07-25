@@ -16,7 +16,14 @@ onEvent('recipes', (event) => {
         'fundamental:jungle_crafting_table',
         'fundamental:spruce_crafting_table',
         'minecraft:furnace',
-        'minecraft:ens_ancient_debris'
+        'minecraft:ens_ancient_debris',
+        'culturaldelights:jungle_planks',
+        'minecraft:oak_planks',
+        'minecraft:spruce_planks',
+        'minecraft:birch_planks',
+        'minecraft:jungle_planks',
+        'minecraft:acacia_planks',
+        'minecraft:dark_oak_planks',
       ])
 
     modifyShaped(event, 'minecraft:crafting_table', 1, ['BB ', 'AA ', '   '], {
@@ -51,12 +58,56 @@ onEvent('recipes', (event) => {
     D: '#forge:ingots/red_alloy'
     })
 
-    modifyShapeless(event, 'minecraft:oak_planks', 1, ['#minecraft:oak_logs'])
-    modifyShapeless(event, 'minecraft:spruce_planks', 1, ['#minecraft:spruce_logs'])
-    modifyShapeless(event, 'minecraft:birch_planks', 1, ['#minecraft:birch_logs'])
-    modifyShapeless(event, 'minecraft:jungle_planks', 1, ['#minecraft:jungle_logs'])
-    modifyShapeless(event, 'minecraft:acacia_planks', 1, ['#minecraft:acacia_logs'])
-    modifyShapeless(event, 'minecraft:dark_oak_planks', 1, ['#minecraft:dark_oak_logs'])
+    modifyShaped(event, 'kubejs:tool_saw_handle', 1, [' BB', 'AB ', 'A  '], {
+      A: '#minecraft:planks',
+      B: '#forge:rods/wooden'
+    })
+
+    modifyShaped(event, 'kubejs:tool_file_handle', 1, [' B ', ' B ', ' A '], {
+      A: '#minecraft:planks',
+      B: '#forge:rods/wooden'
+    })
+
+    modifyShaped(event, 'kubejs:tool_saw_blade', 1, [' AA', ' BB', 'A  '], {
+      A: 'minecraft:stone',
+      B: '#forge:gems/flint'
+    })
+
+    modifyShaped(event, 'kubejs:tool_file_blade', 1, [' A ', ' A ', ' B '], {
+      A: 'minecraft:stone',
+      B: '#forge:gems/flint'
+    })
+
+    
+    // modifyShapeless(event, '#forge:tools/file', 1, ['kubejs:tool_file_blade', 'kubejs:tool_file_handle']).id(`ntc3:crafting_shaped_tool_file_handle`)
+
+    // modifyShapeless(event, '#forge:tools/saw', 1, ['kubejs:tool_saw_blade', 'kubejs:tool_saw_handle']).id(`ntc3:crafting_shaped_tool_saw_handle`)
+    
+    event.shapeless(`#forge:tools/saw`, ['kubejs:tool_saw_blade', 'kubejs:tool_saw_handle']).id(`ntc3:crafting_shaped_tool_saw_handle`)
+
+    event.shapeless('#forge:tools/file', ['kubejs:tool_file_blade', 'kubejs:tool_file_handle']).id(`ntc3:base/hammering/crafting_shaped_tool_file_handle`);
+    // modifyShapeless(event, 'minecraft:oak_planks', 1, ['#minecraft:oak_logs'])
+    // modifyShapeless(event, 'minecraft:spruce_planks', 1, ['#minecraft:spruce_logs']).
+    // modifyShapeless(event, 'minecraft:birch_planks', 1, ['#minecraft:birch_logs'])
+    // modifyShapeless(event, 'minecraft:jungle_planks', 1, ['#minecraft:jungle_logs'])
+    // modifyShapeless(event, 'minecraft:acacia_planks', 1, ['#minecraft:acacia_logs'])
+    // modifyShapeless(event, 'minecraft:dark_oak_planks', 1, ['#minecraft:dark_oak_logs'])
+
+    event.shapeless('minecraft:oak_planks', ['#minecraft:oak_logs']).id(`ntc3:crafting_shaped_oak_logs`)
+    event.shapeless('minecraft:spruce_planks', ['#minecraft:spruce_logs']).id(`ntc3:crafting_shaped_spruce_logs`)
+    event.shapeless('minecraft:birch_planks', ['#minecraft:birch_logs']).id(`ntc3:crafting_shaped_birch_logs`)
+    event.shapeless('minecraft:jungle_planks', ['#minecraft:jungle_logs']).id(`ntc3:crafting_shaped_jungle_logs`)
+    event.shapeless('minecraft:acacia_planks', ['#minecraft:acacia_logs']).id(`ntc3:crafting_shaped_acacia_logs`)
+    event.shapeless('minecraft:dark_oak_planks', ['#minecraft:dark_oak_logs']).id(`ntc3:crafting_shaped_dark_oak_logs`)
+
+
+    event.shapeless('2x minecraft:oak_planks', ['#minecraft:oak_logs', '#forge:tools/saw'])
+    event.shapeless('2x minecraft:spruce_planks', ['#minecraft:spruce_logs', '#forge:tools/saw'])
+    event.shapeless('2x minecraft:birch_planks', ['#minecraft:birch_logs', '#forge:tools/saw'])
+    event.shapeless('2x minecraft:jungle_planks', ['#minecraft:jungle_logs', '#forge:tools/saw'])
+    event.shapeless('2x minecraft:acacia_planks', ['#minecraft:acacia_logs', '#forge:tools/saw'])
+    event.shapeless('2x minecraft:dark_oak_planks', ['#minecraft:dark_oak_logs', '#forge:tools/saw'])
+
 
 
 });

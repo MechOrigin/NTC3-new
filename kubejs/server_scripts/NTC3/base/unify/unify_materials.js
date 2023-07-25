@@ -71,9 +71,10 @@ onEvent('recipes', event => {
 
 	planksToUnify.forEach((woodTypes) => {
 		let planks = getPreferredItemInTag(Ingredient.of(`#forge:planks/${woodTypes}`)).id;
+		let logs = getPreferredItemInTag(Ingredient.of(`#forge:${woodTypes}_logs`)).id;
 		let sawdust = getPreferredItemInTag(Ingredient.of(`#forge:sawdust`)).id;
 
-		greg_saw_plating(event, woodTypes, planks);
+		greg_saw_plating(event, woodTypes, planks, logs);
 	});
 
 	gemsToUnify.forEach((material) => {
@@ -531,13 +532,13 @@ onEvent('recipes', event => {
 			event.shapeless(output, [input, hammer]).id(`ntc3:base/hammering/${material}_wires`);
 		}
 
-	function greg_saw_plating(event, woodTypes, planks) {
-        if (planks == air || woodTypes == air) {
+	function greg_saw_plating(event, woodTypes, planks, logs) {
+        if (woodTypes == air || logs == air) {
             return;
         }
 
-        let output = Item.of(`#forge:plates/wood`),
-            input = planks,
+        let output = Item.of(`minecraft:planks/${woodTypes}`, 4),
+            input = logs,
             saw = '#forge:tools/saw';
 
         event.shapeless(output, [input, saw]).id(`ntc3:base/sawing/${woodTypes}_plates`);

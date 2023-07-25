@@ -2,6 +2,8 @@ onEvent('tags.items', e => {
     // e.add('forge:tools/hammer', 'immersiveengineering:hammer')
     // e.add('forge:tools/wire_cutter', 'immersiveengineering:wirecutter')
     e.add('forge:tools/hammer', 'beyond_earth:hammer')
+    e.add('forge:tools/saw', 'kubejs:tool_hand_saw')
+    e.add('forge:tools/file', 'kubejs:tool_hand_file')
 
     e.add('thermal:crafting/casts', 'tconstruct:ingot_cast')
     e.add('thermal:crafting/casts', 'tconstruct:nugget_cast')

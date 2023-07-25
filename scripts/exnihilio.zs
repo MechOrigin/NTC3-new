@@ -18,11 +18,11 @@ import mods.exnihilosequentia.ZenSieveRecipe;
 .addDrop(<item:secretly_complicated:gold_impure_dust>)
 .addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
 
-<recipetype:exnihilosequentia:sieve>
-.create("coal_chunk")
-.setInput(<item:minecraft:gravel>)
-.addDrop(<item:excompressum:uncompressed_coal>)
-.addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
+// <recipetype:exnihilosequentia:sieve>
+// .create("coal_chunk")
+// .setInput(<item:minecraft:gravel>)
+// .addDrop(<item:excompressum:uncompressed_coal>)
+// .addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
 
 <recipetype:exnihilosequentia:sieve>
 .create("amethyst_shard")
