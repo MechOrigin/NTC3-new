@@ -24,7 +24,7 @@
 				}
 			}
 			x: 0.0d
-			y: 1.5d
+			y: 3.75d
 			shape: "circle"
 			subtitle: "{ntc3.thebeginning.subtitle}"
 			description: [
@@ -242,7 +242,7 @@
 		{
 			title: "{ntc3.flint.title}"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 			subtitle: "{ntc3.flint.subtitle} {ntc3.emcable}"
 			description: [
 				"{ntc3.flint.desc0}"
@@ -278,8 +278,8 @@
 		}
 		{
 			title: "{ntc3.coal.title}"
-			x: 1.5d
-			y: -1.5d
+			x: 7.5d
+			y: -1.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.coal.desc0}"
@@ -299,8 +299,8 @@
 		}
 		{
 			title: "{ntc3.charcoal.title}"
-			x: 2.5d
-			y: -1.5d
+			x: 9.0d
+			y: -1.0d
 			description: [
 				"{ntc3.charcoal.desc0}"
 				""
@@ -597,8 +597,8 @@
 		}
 		{
 			title: "{ntc3.dyes.title}"
-			x: -1.5d
-			y: 0.0d
+			x: 6.5d
+			y: 1.0d
 			description: ["{ntc3.dyes.desc0}"]
 			hide_dependency_lines: true
 			dependencies: ["09F2B5FA40391B2F"]
@@ -770,7 +770,7 @@
 					Icon: "ftbquests:textures/gui/alert.png"
 				}
 			}
-			x: -3.0d
+			x: -4.5d
 			y: -1.5d
 			shape: "circle"
 			dependencies: ["0C9E3CDD16DB4122"]
@@ -794,7 +794,7 @@
 		}
 		{
 			title: "{ntc3.tinkerslvl0.prereq.title}"
-			x: -1.5d
+			x: -2.0d
 			y: -1.5d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.tinkerslvl0.prereq.desc0}"]
@@ -1562,12 +1562,14 @@
 		{
 			title: "{ntc3.ironblock.title}"
 			x: -4.5d
-			y: -1.5d
+			y: -2.5d
 			description: [
 				"{ntc3.ironblock.desc0}"
 				""
 				"{ntc3.ironblock.desc1}"
 			]
+			dependencies: ["4DE8BF1FDB13D4E4"]
+			size: 0.5d
 			id: "7AB00416D2F5166D"
 			tasks: [{
 				id: "6CCA14F59E6ED0F5"
@@ -1599,8 +1601,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
+			x: 6.5d
+			y: 2.0d
 			hide: true
 			id: "20AA7D88BF97AFD9"
 			tasks: [{
@@ -1666,8 +1668,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 0.0d
+			x: 8.5d
+			y: 1.0d
 			subtitle: "&nGet ready to build platforms!&r"
 			hide: true
 			id: "2C9BF519033B5D8F"
@@ -1696,8 +1698,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 0.0d
+			x: 9.5d
+			y: 1.0d
 			subtitle: "&nScan for Ores!&r"
 			description: ["Kinda useless in The Void, use it for when you have access to other Dimensions."]
 			hide: true
@@ -1723,8 +1725,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 1.0d
+			x: 9.0d
+			y: 2.0d
 			subtitle: "&nA way to charge all the things!&r"
 			hide: true
 			id: "42F29437401999A7"
@@ -1737,6 +1739,36 @@
 					tag: { }
 				}
 			}]
+		}
+		{
+			title: "More Efficient Planks"
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["681FC73882B0A7FC"]
+			id: "14BA33B24BC454E9"
+			tasks: [
+				{
+					id: "1FBFC1B29DECAF33"
+					type: "item"
+					item: "kubejs:tool_saw_handle"
+				}
+				{
+					id: "6B8A5A6EA846B86D"
+					type: "item"
+					item: "kubejs:tool_saw_blade"
+				}
+				{
+					id: "310C6B893A5BFF4D"
+					type: "item"
+					item: {
+						id: "kubejs:tool_hand_saw"
+						Count: 1
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 	quest_links: [ ]

@@ -216,7 +216,7 @@
 				id: "ftbquests:custom_icon"
 				Count: 1
 				tag: {
-					Icon: "ftbquests:textures/gui/alert.png"
+					Icon: "ntc3:textures/purple_mark.png"
 				}
 			}
 			x: 0.0d

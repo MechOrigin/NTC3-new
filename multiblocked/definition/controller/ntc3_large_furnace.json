@@ -1,0 +1,124 @@
+{
+  "version": 3,
+  "location": "ntc3:large_furnace",
+  "traits": {},
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": true,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 1.5,
+    "explosionResistance": 6.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 0,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "minecraft:furnace",
+          "meta": 5
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      }
+    },
+    "idle": {
+      "parent": "unformed"
+    },
+    "working": {
+      "parent": "idle"
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "empty",
+  "basePattern": {
+    "structureDir": [
+      "LEFT",
+      "UP",
+      "BACK"
+    ],
+    "pattern": [
+      [
+        "A@B",
+        "BBB",
+        "BBB"
+      ],
+      [
+        "BBB",
+        "BBB",
+        "BBB"
+      ],
+      [
+        "CBB",
+        "BBB",
+        "BBB"
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "mbd:item_bus_out"
+          }
+        ],
+        "type": "blocks"
+      },
+      "controller": {
+        "location": "ntc3:large_furnace",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "minecraft:furnace"
+          }
+        ],
+        "type": "blocks"
+      },
+      "C": {
+        "blocks": [
+          {
+            "id": "mbd:item_bus_in"
+          }
+        ],
+        "type": "blocks"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "C": [
+        "C"
+      ]
+    }
+  }
+}

@@ -1,7 +1,52 @@
 {
   "version": 3,
   "location": "ntc3:coke_oven",
-  "traits": {},
+  "traits": {
+    "recipe_progress": {
+      "cIO": 2,
+      "gIO": 2,
+      "mbdIO": 2,
+      "slotName": "",
+      "x": 59,
+      "y": 145,
+      "width": 60,
+      "height": 18,
+      "texture": "multiblocked:textures/gui/energy_bar.png",
+      "fillDirection": "LEFT_TO_RIGHT"
+    },
+    "item": [
+      {
+        "cIO": 0,
+        "gIO": 0,
+        "mIO": 0,
+        "x": 30,
+        "y": 82,
+        "autoIO": false
+      },
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "x": 131,
+        "y": 83,
+        "autoIO": false
+      }
+    ],
+    "fluid": [
+      {
+        "cIO": 1,
+        "gIO": 1,
+        "mIO": 1,
+        "x": 78,
+        "y": 82,
+        "autoIO": false,
+        "tC": 1000,
+        "w": 18,
+        "h": 18,
+        "fillDir": "ALWAYS_FULL"
+      }
+    ]
+  },
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
