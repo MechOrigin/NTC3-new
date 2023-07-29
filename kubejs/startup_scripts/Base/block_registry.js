@@ -10,6 +10,19 @@
 //     });
   
 //   });
+
+onEvent('block.registry', (event) => {
+    
+    const blocks = [{ 
+      name: 'treated_wood', material: 'wood', hardness: 1, harvestTool: ('axe', 1),
+      name: 'oven_bricks', material: 'rock', hardness: 1, harvestTool: ('pickaxe', 1)
+    }];
+  
+    blocks.forEach((block) => {
+        event.create(block.name).material(block.material).hardness(block.hardness).harvestTool(block.harvestTool);
+    });
+  
+  });
   
   /*
   air

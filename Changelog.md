@@ -102,3 +102,7 @@
     - water, sawdust x4, clayball = pulp
 - Cool concepts Foraging, Panning (sluicing), Evaporation
     - Clay, Kaolinite, Halloysite, Fire Clay
+
+- Some more additions and changes:
+    - added treated wood (creosote soaked wood)
+    - added oven bricks for coke oven
