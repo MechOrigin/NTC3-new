@@ -66,4 +66,8 @@ onEvent('recipes', (event) => {
       B: '#forge:plates/copper',
       C: 'pipez:energy_pipe'
       })
+
+
+      // Coke Oven Bricks
+      event.custom({"type":"minecraft:crafting_shaped","pattern":["GGG","GBG","GGG"],"key":{"G":{"item":"minecraft:light_gray_concrete_powder"},"B":{"item":"minecraft:clay"}},"result":{"item":"kubejs:oven_bricks","count":1}})
 });

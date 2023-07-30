@@ -1,6 +1,10 @@
 onEvent('item.registry', event => {
     // Register new items here
     // event.create('example_item').displayName('Example Item')
+    event.create('purple_mark').displayName('NTC3 Quest')
+
+
+
     event.create('tool_saw_handle').displayName('Saw Handle')
     event.create('tool_saw_blade').displayName('Saw Blade')
     event.create('tool_hand_saw').maxDamage(250).displayName('Hand Saw')

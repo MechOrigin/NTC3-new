@@ -1,114 +1,65 @@
 {
   "version": 3,
   "location": "ntc3:coke_oven",
-  "traits": {
-    "recipe_progress": {
-      "cIO": 2,
-      "gIO": 2,
-      "mbdIO": 2,
-      "slotName": "",
-      "x": 59,
-      "y": 145,
-      "width": 60,
-      "height": 18,
-      "texture": "multiblocked:textures/gui/energy_bar.png",
-      "fillDirection": "LEFT_TO_RIGHT"
-    },
-    "item": [
-      {
-        "cIO": 0,
-        "gIO": 0,
-        "mIO": 0,
-        "x": 30,
-        "y": 82,
-        "autoIO": false
-      },
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "mIO": 1,
-        "x": 131,
-        "y": 83,
-        "autoIO": false
-      }
-    ],
-    "fluid": [
-      {
-        "cIO": 1,
-        "gIO": 1,
-        "mIO": 1,
-        "x": 78,
-        "y": 82,
-        "autoIO": false,
-        "tC": 1000,
-        "w": 18,
-        "h": 18,
-        "fillDir": "ALWAYS_FULL"
-      }
-    ]
-  },
+  "traits": {},
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
     "isOpaque": true,
     "hasDynamicShape": false,
     "hasCollision": true,
-    "destroyTime": 5.0,
+    "destroyTime": 1.5,
     "explosionResistance": 6.0,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "friction": 0.6,
-    "harvestLevel": 1,
+    "harvestLevel": 0,
     "stackSize": 64,
     "tabGroup": "multiblocked.all"
   },
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/bricks",
-        "frontTexture": "multiblocked:blocks/overlay/overlay_front",
-        "type": "gregtech",
-        "postRenderer": false
+        "state": {
+          "id": "minecraft:bricks",
+          "meta": 0
+        },
+        "type": "blockstate",
+        "postRenderer": true
       }
     },
     "idle": {
       "parent": "unformed"
     },
     "working": {
-      "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/bricks",
-        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
-        "type": "gregtech",
-        "postRenderer": false
-      },
       "parent": "idle"
     },
     "suspend": {
       "parent": "working"
     }
   },
-  "recipeMap": "coke_oven",
+  "recipeMap": "empty",
   "basePattern": {
     "structureDir": [
-      "FRONT",
       "LEFT",
-      "UP"
+      "FRONT",
+      "DOWN"
     ],
     "pattern": [
-      [
-        "AAA",
-        "AA@",
-        "AAA"
-      ],
       [
         "BBB",
         "BBB",
         "BBB"
       ],
       [
-        "AAA",
-        "AAA",
-        "AAA"
+        "CCC",
+        "CCC",
+        "C@C"
+      ],
+      [
+        "EBB",
+        "DBB",
+        "ABB"
       ]
     ],
     "aisleRepetitions": [
@@ -126,18 +77,10 @@
       ]
     ],
     "predicates": {
-      "casing": {
+      "A": {
         "blocks": [
           {
-            "id": "minecraft:bricks"
-          }
-        ],
-        "type": "blocks"
-      },
-      "coil": {
-        "blocks": [
-          {
-            "id": "minecraft:terracotta"
+            "id": "mbd:item_bus_out"
           }
         ],
         "type": "blocks"
@@ -146,26 +89,37 @@
         "location": "ntc3:coke_oven",
         "type": "component"
       },
-      "item_in": {
-        "location": "mbd:item_bus_in",
-        "type": "component",
-        "minCount": 1,
-        "maxCount": 2,
-        "previewCount": 1
+      "B": {
+        "blocks": [
+          {
+            "id": "kubejs:oven_bricks"
+          }
+        ],
+        "type": "blocks"
       },
-      "item_out": {
-        "location": "mbd:item_bus_out",
-        "type": "component",
-        "minCount": 1,
-        "maxCount": 2,
-        "previewCount": 1
+      "C": {
+        "blocks": [
+          {
+            "id": "minecraft:bricks"
+          }
+        ],
+        "type": "blocks"
       },
-      "fluid_out": {
-        "location": "mbd:fluid_hatch_out",
-        "type": "component",
-        "minCount": 1,
-        "maxCount": 1,
-        "previewCount": 1
+      "D": {
+        "blocks": [
+          {
+            "id": "mbd:fluid_hatch_out"
+          }
+        ],
+        "type": "blocks"
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "mbd:item_bus_in"
+          }
+        ],
+        "type": "blocks"
       }
     },
     "symbolMap": {
@@ -173,13 +127,19 @@
         "controller"
       ],
       "A": [
-        "casing",
-        "item_in",
-        "item_out",
-        "fluid_out"
+        "A"
       ],
       "B": [
-        "coil"
+        "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
       ]
     }
   }
