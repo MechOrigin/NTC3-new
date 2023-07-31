@@ -22,22 +22,13 @@ onEvent('recipes', function (event) {
                     fluid: recipe.fluidOutput,
                     amount: recipe.amount
                 },
-                items: [
-                    {
-                        item: {
-                            item: recipe.output,
-                            count: recipe.count
-                        }
-                    },
-                    {
-                        item: recipe.output2,
-                        chance: recipe.chance
-                    }
-                ]
+                item: {
+                    item: recipe.output,
+                    count: recipe.count
+                }
             },
             duration: recipe.duration
         });
-
     });
 
 });

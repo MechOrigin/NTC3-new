@@ -1,0 +1,21 @@
+{
+  "type": "integrateddynamics:mechanical_squeezer",
+  "item": {
+    "item": "minecraft:acacia_log"
+  },
+  "result": {
+    "fluid": {
+      "fluid": "thermal:latex",
+      "amount": 10
+    },
+    "items": [
+      {
+        "item": {
+          "item": "minecraft:stripped_acacia_log",
+          "count": 1
+        }
+      }
+    ]
+  },
+  "duration": 30
+}
