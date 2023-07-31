@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "location": "ntc3:blast_furnace",
+  "location": "ntc3:large_sifter",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -20,12 +20,11 @@
   "status": {
     "unformed": {
       "renderer": {
-        "state": {
-          "id": "ntc3:blast_furnace",
-          "meta": 0
-        },
-        "type": "blockstate",
-        "postRenderer": true
+        "baseTexture": "multiblocked:blocks/casing/base",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
       }
     },
     "idle": {
@@ -33,7 +32,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/nether_bricks",
+        "baseTexture": "multiblocked:blocks/casing/base",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech",
         "postRenderer": false
@@ -44,7 +43,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "blast_furnace",
+  "recipeMap": "large_sifter",
   "basePattern": {
     "structureDir": [
       "BACK",
@@ -53,19 +52,19 @@
     ],
     "pattern": [
       [
-        "AAA",
-        "AAA",
-        "AAA"
-      ],
-      [
         "BBB",
-        "@BB",
+        "BBB",
         "BBB"
       ],
       [
-        "AAA",
-        "AAA",
-        "AAA"
+        "CCC",
+        "@CC",
+        "CCC"
+      ],
+      [
+        "BBB",
+        "BBB",
+        "BBB"
       ]
     ],
     "aisleRepetitions": [
@@ -86,19 +85,19 @@
       "A": {
         "blocks": [
           {
-            "id": "minecraft:nether_bricks"
+            "id": "mbd:item_bus_out"
           }
         ],
         "type": "blocks"
       },
       "controller": {
-        "location": "ntc3:blast_furnace",
+        "location": "ntc3:large_sifter",
         "type": "component"
       },
       "B": {
         "blocks": [
           {
-            "id": "minecraft:red_nether_bricks"
+            "id": "secretly_complicated:brass_block"
           }
         ],
         "type": "blocks"
@@ -106,7 +105,7 @@
       "C": {
         "blocks": [
           {
-            "id": "mbd:item_bus_out"
+            "id": "minecraft:hopper"
           }
         ],
         "type": "blocks"
@@ -114,7 +113,7 @@
       "D": {
         "blocks": [
           {
-            "id": "mbd:fluid_hatch_out"
+            "id": "mbd:energy_input"
           }
         ],
         "type": "blocks"
@@ -133,13 +132,13 @@
         "controller"
       ],
       "A": [
-        "A",
-        "C",
-        "D",
-        "E"
+        "A"
       ],
       "B": [
-        "B"
+        "B",
+        "E",
+        "D",
+        "A"
       ],
       "C": [
         "C"

@@ -20,7 +20,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "baseTexture": "multiblocked:blocks/casing/base",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "formedAsController": true,
         "type": "gregtech",
@@ -32,13 +32,19 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/gregtech_base",
+        "baseTexture": "multiblocked:blocks/casing/base",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
-        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       },
-      "parent": "idle"
+      "parent": "idle",
+      "sound": {
+        "sound": "mekanism:tile.machine.chemical_crystallizer",
+        "loop": true,
+        "delay": 0,
+        "volume": 1.0,
+        "pitch": 1.0
+      }
     },
     "suspend": {
       "parent": "working"
@@ -47,23 +53,23 @@
   "recipeMap": "steam_boiler",
   "basePattern": {
     "structureDir": [
+      "BACK",
       "LEFT",
-      "UP",
-      "BACK"
+      "DOWN"
     ],
     "pattern": [
       [
-        "A@B",
+        "BBB",
         "BBB",
         "BBB"
       ],
       [
-        "CBB",
-        "B B",
+        "BBB",
+        "@BB",
         "BBB"
       ],
       [
-        "DBB",
+        "BBB",
         "BBB",
         "BBB"
       ]
@@ -106,7 +112,7 @@
       "C": {
         "blocks": [
           {
-            "id": "mbd:fluid_hatch_in"
+            "id": "mbd:energy_input"
           }
         ],
         "type": "blocks"
@@ -114,39 +120,30 @@
       "D": {
         "blocks": [
           {
-            "id": "mbd:energy_input"
+            "id": "mbd:fluid_hatch_in"
           }
         ],
         "type": "blocks"
-      },
-      "air": {
-        "type": "air"
-      },
-      "any": {
-        "type": "any"
       }
     },
     "symbolMap": {
       "@": [
         "controller"
       ],
-      " ": [
-        "any"
-      ],
       "A": [
         "A"
       ],
       "B": [
-        "B"
+        "B",
+        "A",
+        "C",
+        "D"
       ],
       "C": [
         "C"
       ],
       "D": [
         "D"
-      ],
-      "-": [
-        "air"
       ]
     }
   }

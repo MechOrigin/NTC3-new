@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "location": "ntc3:blast_furnace",
+  "location": "ntc3:large_fluid_mixer",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -20,12 +20,11 @@
   "status": {
     "unformed": {
       "renderer": {
-        "state": {
-          "id": "ntc3:blast_furnace",
-          "meta": 0
-        },
-        "type": "blockstate",
-        "postRenderer": true
+        "baseTexture": "multiblocked:blocks/casing/base_block",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
       }
     },
     "idle": {
@@ -33,8 +32,9 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/nether_bricks",
+        "baseTexture": "multiblocked:blocks/casing/base_block",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       },
@@ -44,7 +44,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "blast_furnace",
+  "recipeMap": "large_fluid_mixer",
   "basePattern": {
     "structureDir": [
       "BACK",
@@ -58,7 +58,7 @@
         "AAA"
       ],
       [
-        "BBB",
+        "BAB",
         "@BB",
         "BBB"
       ],
@@ -86,46 +86,43 @@
       "A": {
         "blocks": [
           {
-            "id": "minecraft:nether_bricks"
+            "id": "secretly_complicated:aluminium_block"
           }
         ],
         "type": "blocks"
       },
       "controller": {
-        "location": "ntc3:blast_furnace",
+        "location": "ntc3:large_fluid_mixer",
         "type": "component"
       },
       "B": {
         "blocks": [
           {
-            "id": "minecraft:red_nether_bricks"
+            "id": "mekanism:dynamic_tank"
           }
         ],
         "type": "blocks"
       },
-      "C": {
-        "blocks": [
-          {
-            "id": "mbd:item_bus_out"
-          }
-        ],
-        "type": "blocks"
+      "fluid_in": {
+        "location": "mbd:fluid_hatch_in",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 4,
+        "previewCount": 1
       },
-      "D": {
-        "blocks": [
-          {
-            "id": "mbd:fluid_hatch_out"
-          }
-        ],
-        "type": "blocks"
+      "fluid_out": {
+        "location": "mbd:fluid_hatch_out",
+        "type": "component",
+        "minCount": 0,
+        "maxCount": 4,
+        "previewCount": 1
       },
-      "E": {
-        "blocks": [
-          {
-            "id": "mbd:item_bus_in"
-          }
-        ],
-        "type": "blocks"
+      "energy_in": {
+        "location": "mbd:energy_input",
+        "type": "component",
+        "minCount": 1,
+        "maxCount": 1,
+        "previewCount": 1
       }
     },
     "symbolMap": {
@@ -134,21 +131,12 @@
       ],
       "A": [
         "A",
-        "C",
-        "D",
-        "E"
+        "fluid_in",
+        "fluid_out",
+        "energy_in"
       ],
       "B": [
         "B"
-      ],
-      "C": [
-        "C"
-      ],
-      "D": [
-        "D"
-      ],
-      "E": [
-        "E"
       ]
     }
   }

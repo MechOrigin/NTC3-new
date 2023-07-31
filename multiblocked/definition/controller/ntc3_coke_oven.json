@@ -20,25 +20,30 @@
   "status": {
     "unformed": {
       "renderer": {
-        "state": {
-          "id": "minecraft:bricks",
-          "meta": 0
-        },
-        "type": "blockstate",
-        "postRenderer": true
+        "baseTexture": "multiblocked:blocks/casing/oven_bricks",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
       }
     },
     "idle": {
       "parent": "unformed"
     },
     "working": {
+      "renderer": {
+        "baseTexture": "multiblocked:blocks/casing/oven_bricks",
+        "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "type": "gregtech",
+        "postRenderer": false
+      },
       "parent": "idle"
     },
     "suspend": {
       "parent": "working"
     }
   },
-  "recipeMap": "empty",
+  "recipeMap": "coke_oven",
   "basePattern": {
     "structureDir": [
       "LEFT",
@@ -57,9 +62,9 @@
         "C@C"
       ],
       [
-        "EBB",
-        "DBB",
-        "ABB"
+        "BBB",
+        "BBB",
+        "BBB"
       ]
     ],
     "aisleRepetitions": [
@@ -130,7 +135,10 @@
         "A"
       ],
       "B": [
-        "B"
+        "B",
+        "A",
+        "D",
+        "E"
       ],
       "C": [
         "C"

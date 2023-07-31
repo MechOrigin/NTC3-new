@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "location": "ntc3:blast_furnace",
+  "location": "ntc3:metal_fabrication_unit",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -20,12 +20,10 @@
   "status": {
     "unformed": {
       "renderer": {
-        "state": {
-          "id": "ntc3:blast_furnace",
-          "meta": 0
-        },
-        "type": "blockstate",
-        "postRenderer": true
+        "baseTexture": "multiblocked:blocks/casing/base_block",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "type": "gregtech",
+        "postRenderer": false
       }
     },
     "idle": {
@@ -33,7 +31,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/nether_bricks",
+        "baseTexture": "multiblocked:blocks/casing/base_block",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "type": "gregtech",
         "postRenderer": false
@@ -44,7 +42,7 @@
       "parent": "working"
     }
   },
-  "recipeMap": "blast_furnace",
+  "recipeMap": "metal_fabrication_unit",
   "basePattern": {
     "structureDir": [
       "BACK",
@@ -86,19 +84,19 @@
       "A": {
         "blocks": [
           {
-            "id": "minecraft:nether_bricks"
+            "id": "secretly_complicated:invar_block"
           }
         ],
         "type": "blocks"
       },
       "controller": {
-        "location": "ntc3:blast_furnace",
+        "location": "ntc3:metal_fabrication_unit",
         "type": "component"
       },
       "B": {
         "blocks": [
           {
-            "id": "minecraft:red_nether_bricks"
+            "id": "secretly_complicated:red_alloy_block"
           }
         ],
         "type": "blocks"
@@ -114,7 +112,7 @@
       "D": {
         "blocks": [
           {
-            "id": "mbd:fluid_hatch_out"
+            "id": "mbd:energy_input"
           }
         ],
         "type": "blocks"
