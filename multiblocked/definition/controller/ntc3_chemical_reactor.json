@@ -20,7 +20,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/ebf_casing",
+        "baseTexture": "multiblocked:blocks/casing/nichrome_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front",
         "formedAsController": true,
         "type": "gregtech",
@@ -32,7 +32,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/ebf_casing",
+        "baseTexture": "multiblocked:blocks/casing/nichrome_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "formedAsController": true,
         "type": "gregtech",

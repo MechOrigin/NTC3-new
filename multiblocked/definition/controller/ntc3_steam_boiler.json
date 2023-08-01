@@ -20,7 +20,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/base",
+        "baseTexture": "multiblocked:blocks/casing/bronze_casing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "formedAsController": true,
         "type": "gregtech",
@@ -32,19 +32,13 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/base",
+        "baseTexture": "multiblocked:blocks/casing/bronze_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       },
-      "parent": "idle",
-      "sound": {
-        "sound": "mekanism:tile.machine.chemical_crystallizer",
-        "loop": true,
-        "delay": 0,
-        "volume": 1.0,
-        "pitch": 1.0
-      }
+      "parent": "idle"
     },
     "suspend": {
       "parent": "working"

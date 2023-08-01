@@ -20,7 +20,7 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/base_block",
+        "baseTexture": "multiblocked:blocks/casing/aluminium_casing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
         "formedAsController": true,
         "type": "gregtech",
@@ -32,7 +32,7 @@
     },
     "working": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/casing/base_block",
+        "baseTexture": "multiblocked:blocks/casing/aluminium_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
         "formedAsController": true,
         "type": "gregtech",
@@ -103,26 +103,29 @@
         ],
         "type": "blocks"
       },
-      "fluid_in": {
-        "location": "mbd:fluid_hatch_in",
-        "type": "component",
-        "minCount": 1,
-        "maxCount": 4,
-        "previewCount": 1
+      "C": {
+        "blocks": [
+          {
+            "id": "mbd:fluid_hatch_in"
+          }
+        ],
+        "type": "blocks"
       },
-      "fluid_out": {
-        "location": "mbd:fluid_hatch_out",
-        "type": "component",
-        "minCount": 0,
-        "maxCount": 4,
-        "previewCount": 1
+      "D": {
+        "blocks": [
+          {
+            "id": "mbd:fluid_hatch_out"
+          }
+        ],
+        "type": "blocks"
       },
-      "energy_in": {
-        "location": "mbd:energy_input",
-        "type": "component",
-        "minCount": 1,
-        "maxCount": 1,
-        "previewCount": 1
+      "E": {
+        "blocks": [
+          {
+            "id": "mbd:energy_input"
+          }
+        ],
+        "type": "blocks"
       }
     },
     "symbolMap": {
@@ -131,12 +134,21 @@
       ],
       "A": [
         "A",
-        "fluid_in",
-        "fluid_out",
-        "energy_in"
+        "C",
+        "D",
+        "E"
       ],
       "B": [
         "B"
+      ],
+      "C": [
+        "C"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
       ]
     }
   }

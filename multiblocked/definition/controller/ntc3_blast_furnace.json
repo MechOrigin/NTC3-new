@@ -20,12 +20,11 @@
   "status": {
     "unformed": {
       "renderer": {
-        "state": {
-          "id": "ntc3:blast_furnace",
-          "meta": 0
-        },
-        "type": "blockstate",
-        "postRenderer": true
+        "baseTexture": "multiblocked:blocks/casing/nether_bricks",
+        "frontTexture": "multiblocked:blocks/gregtech_front",
+        "formedAsController": true,
+        "type": "gregtech",
+        "postRenderer": false
       }
     },
     "idle": {
