@@ -25,46 +25,46 @@ onEvent('recipes', (event) => {
     modifyShaped(event, 'mbd:item_bus_out', 1, ['ABA', 'BCB', 'ABA'], {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
-      C: 'pipez:item_pipe'
+      C: 'mekanism:basic_logistical_transporter'
       })
 
     modifyShaped(event, 'mbd:item_bus_in', 1, ['BAB', 'ACA', 'BAB'], {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
-      C: 'pipez:item_pipe'
+      C: 'mekanism:basic_logistical_transporter'
       })
 
     modifyShaped(event, 'mbd:fluid_hatch_out', 1, ['ABA', 'BCB', 'ABA'], {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
-      C: 'pipez:fluid_pipe'
+      C: 'mekanism:basic_mechanical_pipe'
       })
     modifyShaped(event, 'mbd:fluid_hatch_in', 1, ['BAB', 'ACA', 'BAB'], {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
-      C: 'pipez:fluid_pipe'
+      C: 'mekanism:basic_mechanical_pipe'
       })
 
     modifyShaped(event, 'mbd:mek_gas_hatch_out', 1, ['ABA', 'BCB', 'ABA'], {
       A: '#forge:plates/steel',
       B: '#forge:plates/rubber',
-      C: 'pipez:gas_pipe'
+      C: 'mekanism:basic_pressurized_tube'
       })
     modifyShaped(event, 'mbd:mek_gas_hatch_in', 1, ['BAB', 'ACA', 'BAB'], {
       A: '#forge:plates/steel',
       B: '#forge:plates/rubber',
-      C: 'pipez:gas_pipe'
+      C: 'mekanism:basic_pressurized_tube'
       })
 
     modifyShaped(event, 'mbd:energy_output', 1, ['ABA', 'BCB', 'ABA'], {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
-      C: 'pipez:energy_pipe'
+      C: 'mekanism:basic_universal_cable'
       })
     modifyShaped(event, 'mbd:energy_input', 1, ['BAB', 'ACA', 'BAB'], {
       A: '#forge:plates/iron',
       B: '#forge:plates/copper',
-      C: 'pipez:energy_pipe'
+      C: 'mekanism:basic_universal_cable'
       })
 
 

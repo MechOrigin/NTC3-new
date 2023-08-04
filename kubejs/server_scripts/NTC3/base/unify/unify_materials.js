@@ -1895,7 +1895,7 @@ onEvent('recipes', event => {
 		event.recipes.multiblocked.multiblock("large_fluid_mixer")
 		.inputItem(Ingredient.of(`#forge:impure_dust/${material}`))
 		.inputFluid(Fluid.of('minecraft:water', 20))
-		.outputItem(Ingredient.of(`#forge:impure_dust/${material}`).withCount(2))
+		.outputItem(Ingredient.of(`#forge:pure_dust/${material}`).withCount(2))
 		.setPerTick(true)
 		.inputFE(30)
 		.duration(80)
