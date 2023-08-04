@@ -1,0 +1,24 @@
+{
+  "type": "integrateddynamics:mechanical_squeezer",
+  "item": {
+    "item": "minecraft:cactus"
+  },
+  "result": {
+    "items": [
+      {
+        "item": {
+          "item": "secretly_complicated:shredded_biomass_chunk",
+          "count": 4
+        }
+      },
+      {
+        "item": {
+          "item": "secretly_complicated:shredded_biomass_chunk",
+          "count": 2
+        },
+        "chance": 0.5
+      }
+    ]
+  },
+  "duration": 20
+}

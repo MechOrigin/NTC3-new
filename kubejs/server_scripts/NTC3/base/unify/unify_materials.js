@@ -61,6 +61,9 @@ onEvent('recipes', event => {
 
 		minecraft_dust_to_ingot_smelting_alloys(event, material, ingot, dust);
 
+		multiblocked_impure_dust_to_pure_dust(event, material, dust_impure, dust_pure);
+		multiblocked_gravel_to_impure_dust(event, material, dust_impure);
+
 	});
 
 	// materialsToUnify.forEach((material) => {
@@ -1872,6 +1875,59 @@ onEvent('recipes', event => {
 		event.shapeless(output, [input]).id(`ntc3:base/${material}_blocks_from_gems`);
 		//expert mode remove block recipes?
 
+	}
+	
+	function multiblocked_impure_dust_to_pure_dust(event, material, dust_impure, dust_pure) {
+        if (material == air || dust_impure == air || dust_pure == air) {
+            return;
+        }
+
+        var blacklistedMaterials = [
+
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+		event.recipes.multiblocked.multiblock("large_fluid_mixer")
+		.inputItem(Ingredient.of(`#forge:impure_dust/${material}`))
+		.inputFluid(Fluid.of('minecraft:water', 20))
+		.outputItem(Ingredient.of(`#forge:impure_dust/${material}`).withCount(2))
+		.setPerTick(true)
+		.inputFE(30)
+		.duration(80)
+    }
+
+	function multiblocked_gravel_to_impure_dust(event, material, dust_impure) {
+        if (material == air) {
+            return;
+        }
+
+        var blacklistedMaterials = [
+
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+		event.recipes.multiblocked.multiblock("large_sifter")
+        .inputItem(Item.of('minecraft:gravel', 1))
+		.setChance(0.25)
+        .outputItem(Item.of('secretly_complicated:iron_impure_dust').withCount(2))
+        .setChance(0.25)
+        .outputItem(Item.of('secretly_complicated:copper_impure_dust').withCount(2))
+        .setChance(0.25)
+        .outputItem(Item.of('secretly_complicated:gold_impure_dust').withCount(2))
+		.setChance(1)
+        .setPerTick(true)
+        .inputFE(30)
+        .duration(80)
 	}
 
 })

@@ -3,6 +3,95 @@
   "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
   "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
-
+    {
+      "uid": "9261a661-1bea-4d3f-8076-06faf38679b3",
+      "duration": 1200,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:fermented_biomass_fluid_still",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "secretly_complicated:organic_waste_chunk"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:methanol_fluid_still",
+              "amount": 100
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "fluid": "secretly_complicated:bio_diesel_fluid_still",
+              "amount": 300
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "fluid": "secretly_complicated:acetic_acid_fluid_still",
+              "amount": 150
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 100
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:ammonia_gas",
+              "amount": 150
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "secretly_complicated:methane_gas",
+              "amount": 100
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "secretly_complicated:carbon_dioxide_gas",
+              "amount": 100
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    }
   ]
 }

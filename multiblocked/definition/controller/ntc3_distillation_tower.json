@@ -53,12 +53,12 @@
     "pattern": [
       [
         "AAA",
-        "AA@",
+        "AAA",
         "AAA"
       ],
       [
         "CCC",
-        "CDC",
+        "CD@",
         "CCC"
       ],
       [

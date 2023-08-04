@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "location": "ntc3:large_fluid_mixer",
+  "location": "ntc3:fermenting_tank",
   "traits": {},
   "properties": {
     "rotationState": "ALL",
@@ -22,7 +22,6 @@
       "renderer": {
         "baseTexture": "multiblocked:blocks/casing/aluminium_casing",
         "frontTexture": "multiblocked:blocks/gregtech_front",
-        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       }
@@ -34,7 +33,6 @@
       "renderer": {
         "baseTexture": "multiblocked:blocks/casing/aluminium_casing",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
-        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       },
@@ -44,28 +42,28 @@
       "parent": "working"
     }
   },
-  "recipeMap": "large_fluid_mixer",
+  "recipeMap": "fermenting_tank",
   "basePattern": {
     "structureDir": [
-      "BACK",
-      "LEFT",
-      "DOWN"
+      "RIGHT",
+      "UP",
+      "FRONT"
     ],
     "pattern": [
       [
-        "AAA",
-        "AAA",
-        "AAA"
+        "AAAAB",
+        "AAAAC",
+        "AAAAA"
       ],
       [
-        "BAB",
-        "@BB",
-        "BBB"
+        "AAAAA",
+        "AAAAA",
+        "AAAAA"
       ],
       [
-        "AAA",
-        "AAA",
-        "AAA"
+        "AAAAD",
+        "AA@AE",
+        "AAAAA"
       ]
     ],
     "aisleRepetitions": [
@@ -92,13 +90,13 @@
         "type": "blocks"
       },
       "controller": {
-        "location": "ntc3:large_fluid_mixer",
+        "location": "ntc3:fermenting_tank",
         "type": "component"
       },
       "B": {
         "blocks": [
           {
-            "id": "mekanism:dynamic_tank"
+            "id": "mbd:fluid_hatch_in"
           }
         ],
         "type": "blocks"
@@ -106,7 +104,7 @@
       "C": {
         "blocks": [
           {
-            "id": "mbd:fluid_hatch_in"
+            "id": "mbd:item_bus_in"
           }
         ],
         "type": "blocks"
@@ -122,30 +120,27 @@
       "E": {
         "blocks": [
           {
-            "id": "mbd:energy_input"
+            "id": "mbd:item_bus_out"
           }
         ],
         "type": "blocks"
       },
-      "F": {
-        "blocks": [
-          {
-            "id": "mbd:item_bus_in"
-          }
-        ],
-        "type": "blocks"
+      "air": {
+        "type": "air"
+      },
+      "any": {
+        "type": "any"
       }
     },
     "symbolMap": {
       "@": [
         "controller"
       ],
+      " ": [
+        "any"
+      ],
       "A": [
-        "A",
-        "C",
-        "D",
-        "E",
-        "F"
+        "A"
       ],
       "B": [
         "B"
@@ -159,8 +154,8 @@
       "E": [
         "E"
       ],
-      "F": [
-        "F"
+      "-": [
+        "air"
       ]
     }
   }

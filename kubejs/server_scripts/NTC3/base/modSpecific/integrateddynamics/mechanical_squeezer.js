@@ -19,6 +19,24 @@ onEvent('recipes', function (event) {
                 output: 'minecraft:quartz',
                 count: 2,
                 duration: 10
+            },
+            {
+                input: 'minecraft:kelp',
+                output: 'secretly_complicated:shredded_biomass_chunk',
+                count: 1,
+                duration: 10
+            },
+            {
+                input: 'minecraft:vine',
+                output: 'secretly_complicated:shredded_biomass_chunk',
+                count: 1,
+                duration: 10
+            },
+            {
+                input: '#forge:crops',
+                output: 'secretly_complicated:shredded_biomass_chunk',
+                count: 2,
+                duration: 30
             }
         ]
     };

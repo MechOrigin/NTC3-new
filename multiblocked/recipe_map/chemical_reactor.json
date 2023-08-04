@@ -3,5 +3,74 @@
   "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
   "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
+    {
+      "uid": "e21f9d79-15e6-45c4-9b4b-f69150069524",
+      "duration": 1200,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "secretly_complicated:platinum_catalyst_chunk"
+              }
+            },
+            "chance": 0.08
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:ammonia_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "secretly_complicated:oxygen_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:nitric_acid_fluid_still",
+              "amount": 40
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    }
   ]
 }

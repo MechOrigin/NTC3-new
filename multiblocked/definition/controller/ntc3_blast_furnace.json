@@ -37,7 +37,14 @@
         "type": "gregtech",
         "postRenderer": false
       },
-      "parent": "idle"
+      "parent": "idle",
+      "sound": {
+        "sound": "thermal:block.machine_furnace",
+        "loop": true,
+        "delay": 0,
+        "volume": 1.0,
+        "pitch": 1.0
+      }
     },
     "suspend": {
       "parent": "working"
