@@ -45,7 +45,9 @@ onEvent('recipes', event => {
 		fix_ingot_from_block(event, material, ingot, block);
 		fix_block_from_ingot(event, material, ingot, block);
 		small_dust_to_dust_crafting(event, material, small_dust, dust);
+		small_dust_from_dust_crafting(event, material, small_dust, dust);
 		tiny_dust_to_small_dust_crafting(event, material, tiny_dust, small_dust);
+		tiny_dust_from_small_dust_crafting(event, material, tiny_dust, small_dust);
 
 		removeAllById(event, material);
 
@@ -592,6 +594,54 @@ onEvent('recipes', event => {
         input = Item.of(`#forge:tiny_dusts/${material}`, 9);
 
 		event.shapeless(output, [input]).id(`ntc3:base/${material}_tiny_dust_to_small_dust`);
+	}
+
+	
+	function small_dust_from_dust_crafting(event, material, small_dust, dust) {
+		if (material == air || small_dust == air) {
+            return;
+        }
+
+		var blacklistedMaterials = [
+			// 'iron',
+			// 'gold',
+			// 'copper'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+		
+        let output = Item.of(`#forge:small_dusts/${material}`, 9),
+        input = Item.of(`#forge:dusts/${material}`, 1);
+
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_small_dust_from_dust`);
+	}
+
+	
+	function tiny_dust_from_small_dust_crafting(event, material, tiny_dust, small_dust) {
+		if (material == air || tiny_dust == air) {
+            return;
+        }
+
+		var blacklistedMaterials = [
+			// 'iron',
+			// 'gold',
+			// 'copper'
+		];
+
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+		
+        let output = Item.of(`#forge:tiny_dusts/${material}`, 9),
+        input = Item.of(`#forge:small_dusts/${material}`, 1);
+
+		event.shapeless(output, [input]).id(`ntc3:base/${material}_tiny_dust_from_small_dust`);
 	}
 
 	function removeAllById(event, material) {

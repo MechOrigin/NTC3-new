@@ -4,6 +4,116 @@
   "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
     {
+      "uid": "83b255f4-b45e-4fa1-8156-275ffb9c3dab",
+      "duration": 360,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:titaniumtetrachloride_fluid_still",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:ethene_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "secretly_complicated:polyethylene_dust"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:titaniumtetrachloride_fluid_still",
+              "amount": 10
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "e943e178-4a52-4694-a3f8-383d6fdc0800",
+      "duration": 360,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "secretly_complicated:titanium_small_dust"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:hydrochloric_acid_fluid_still",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:titaniumtetrachloride_fluid_still",
+              "amount": 10
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:hydrogen_gas",
+              "amount": 10
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
       "uid": "e21f9d79-15e6-45c4-9b4b-f69150069524",
       "duration": 1200,
       "inputs": {
@@ -58,6 +168,102 @@
             "content": {
               "fluid": "minecraft:water",
               "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "a63989ea-df5c-43d4-ae38-5f5e0ce4eb40",
+      "duration": 360,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:sulfur_dioxide_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:sulfuric_acid_fluid_still",
+              "amount": 40
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "18b18b1d-030d-4b1a-89ae-5e8d8f4fbaa2",
+      "duration": 360,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "secretly_complicated:sulfur_dust"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:oxygen_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:sulfur_dioxide_gas",
+              "amount": 40
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "secretly_complicated:sulfur_trioxide_gas",
+              "amount": 2
             },
             "chance": 1.0
           }

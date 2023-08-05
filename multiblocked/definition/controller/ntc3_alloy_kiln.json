@@ -3,7 +3,7 @@
   "location": "ntc3:alloy_kiln",
   "traits": {},
   "properties": {
-    "rotationState": "ALL",
+    "rotationState": "NON_Y_AXIS",
     "showInJei": true,
     "isOpaque": true,
     "hasDynamicShape": false,
@@ -22,6 +22,7 @@
       "renderer": {
         "baseTexture": "multiblocked:blocks/casing/nether_bricks",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front",
+        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       }
@@ -33,6 +34,7 @@
       "renderer": {
         "baseTexture": "multiblocked:blocks/casing/nether_bricks",
         "frontTexture": "multiblocked:blocks/overlay/overlay_front_active",
+        "formedAsController": true,
         "type": "gregtech",
         "postRenderer": false
       },

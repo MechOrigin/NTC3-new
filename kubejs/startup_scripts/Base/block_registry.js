@@ -14,7 +14,7 @@
 onEvent('block.registry', (event) => {
     
     const blocks = [{ 
-      name: 'treated_wood', material: 'wood', hardness: 1, harvestTool: ('axe', 1),
+      name: 'treated_planks', material: 'wood', hardness: 1, harvestTool: ('axe', 1),
       name: 'oven_bricks', material: 'rock', hardness: 1, harvestTool: ('pickaxe', 1)
     }];
   
