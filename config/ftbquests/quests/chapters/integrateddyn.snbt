@@ -7,6 +7,7 @@
 	icon: "integratedterminals:part_terminal_storage"
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "{ntc2.stringetc.title}"

@@ -7,6 +7,7 @@
 	icon: "ntc3:blast_furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "{ntc3.chapter.multiblockslvl0.title}"

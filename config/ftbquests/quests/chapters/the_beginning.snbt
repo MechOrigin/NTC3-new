@@ -13,6 +13,7 @@
 	}
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			title: "{ntc3.thebeginning.title}"
@@ -24,7 +25,7 @@
 				}
 			}
 			x: 0.0d
-			y: 3.75d
+			y: 7.0d
 			shape: "circle"
 			subtitle: "{ntc3.thebeginning.subtitle}"
 			description: [
@@ -61,7 +62,7 @@
 		{
 			title: "{ntc3.craftingtable.title}"
 			x: 0.0d
-			y: -1.5d
+			y: 1.75d
 			subtitle: "{ntc3.craftingtable.subtitle}"
 			description: [
 				"{ntc3.craftingtable.desc0}"
@@ -69,6 +70,7 @@
 				"{ntc3.craftingtable.desc1}"
 			]
 			dependencies: ["681FC73882B0A7FC"]
+			hide: true
 			id: "09F2B5FA40391B2F"
 			tasks: [{
 				id: "09644F1429530D95"
@@ -138,13 +140,14 @@
 		{
 			title: "{ntc3.furnace.title}"
 			x: 0.0d
-			y: -4.5d
+			y: -5.5d
 			subtitle: "{ntc3.furnace.subtitle}"
 			description: ["{ntc3.furnace.desc0}"]
 			dependencies: [
 				"0DC758E7DE901E3C"
 				"28EA84F9F2D51D48"
 			]
+			hide: true
 			id: "120222ECE1D830E3"
 			tasks: [{
 				id: "4541D4AB20DB9A39"
@@ -180,7 +183,7 @@
 		{
 			title: "{ntc3.ironingot.title}"
 			x: 0.0d
-			y: -6.0d
+			y: -8.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.ironingot.desc0}"
@@ -190,6 +193,7 @@
 				"{ntc3.ironingot.desc2}"
 			]
 			dependencies: ["120222ECE1D830E3"]
+			hide: true
 			id: "09DFC42D6647423B"
 			tasks: [{
 				id: "7BFB40FC57E2F04F"
@@ -217,12 +221,22 @@
 					ignore_reward_blocking: true
 					stage: "nameless_trinkets_unlock"
 				}
+				{
+					id: "389550107EDD44FA"
+					type: "item"
+					item: {
+						id: "numismaticoverhaul:bronze_coin"
+						Count: 1
+						tag: { }
+					}
+					count: 4
+				}
 			]
 		}
 		{
 			title: "{ntc3.copperingot.title}"
-			x: -1.5d
-			y: -3.0d
+			x: 2.75d
+			y: -7.5d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.copperingot.desc0}"
@@ -232,17 +246,28 @@
 				"{ntc3.copperingot.desc2}"
 			]
 			dependencies: ["120222ECE1D830E3"]
+			hide: true
 			id: "621585A1B47F04E8"
 			tasks: [{
 				id: "1E85281B5566C8BE"
 				type: "item"
 				item: "minecraft:copper_ingot"
 			}]
+			rewards: [{
+				id: "4A191EEE5276D714"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.flint.title}"
 			x: 0.0d
-			y: 2.0d
+			y: 5.25d
 			subtitle: "{ntc3.flint.subtitle} {ntc3.emcable}"
 			description: [
 				"{ntc3.flint.desc0}"
@@ -274,12 +299,17 @@
 					item: "minecraft:kelp"
 					count: 32
 				}
+				{
+					id: "3371AAF5CEBFA32B"
+					type: "item"
+					item: "miniutilities:experience_pearl"
+				}
 			]
 		}
 		{
 			title: "{ntc3.coal.title}"
-			x: 7.5d
-			y: -1.0d
+			x: -2.75d
+			y: -8.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.coal.desc0}"
@@ -288,37 +318,59 @@
 				""
 				"{ntc3.coal.desc2}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["09F2B5FA40391B2F"]
+			hide_dependency_lines: false
+			dependencies: ["52E3BB9E5DD7BEEE"]
+			hide: true
 			id: "5FEC15CFBAE54665"
 			tasks: [{
 				id: "64562665A68AAED6"
 				type: "item"
 				item: "minecraft:coal"
 			}]
+			rewards: [{
+				id: "1F4586AE953613C3"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.charcoal.title}"
-			x: 9.0d
-			y: -1.0d
+			x: -1.5d
+			y: -8.0d
 			description: [
 				"{ntc3.charcoal.desc0}"
 				""
 				"{ntc3.charcoal.desc2}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["09F2B5FA40391B2F"]
+			hide_dependency_lines: false
+			dependencies: ["120222ECE1D830E3"]
+			hide: true
 			id: "52E3BB9E5DD7BEEE"
 			tasks: [{
 				id: "1BE3B02B3F13CF65"
 				type: "item"
 				item: "minecraft:charcoal"
 			}]
+			rewards: [{
+				id: "5782482B73C83B19"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.diamond.title}"
-			x: 12.0d
-			y: -3.5d
+			x: -4.0d
+			y: -4.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.diamond.desc0}"
@@ -331,37 +383,49 @@
 				""
 				"{ntc3.diamond.desc4}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "527F7E55E9752525"
 			tasks: [{
 				id: "6C8035BA557321AC"
 				type: "item"
 				item: "minecraft:diamond"
 			}]
-			rewards: [{
-				id: "2F266D1CA49F9161"
-				type: "item"
-				item: {
-					id: "buildinggadgets:gadget_building"
-					Count: 1
-					tag: {
-						state: {
-							serializer: "buildinggadgets:dummy_serializer"
+			rewards: [
+				{
+					id: "2F266D1CA49F9161"
+					type: "item"
+					item: {
+						id: "buildinggadgets:gadget_building"
+						Count: 1
+						tag: {
 							state: {
-								Name: "minecraft:air"
+								serializer: "buildinggadgets:dummy_serializer"
+								state: {
+									Name: "minecraft:air"
+								}
+								data: { }
 							}
-							data: { }
+							energy: 500000.0d
 						}
-						energy: 500000.0d
 					}
 				}
-			}]
+				{
+					id: "26FED892809C66F6"
+					type: "item"
+					item: {
+						id: "numismaticoverhaul:bronze_coin"
+						Count: 1
+						tag: { }
+					}
+					count: 4
+				}
+			]
 		}
 		{
 			title: "{ntc3.emerald.title}"
-			x: 13.0d
-			y: -3.5d
+			x: -2.0d
+			y: -4.5d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.emerald.desc0}"
@@ -374,72 +438,112 @@
 				""
 				"{ntc3.emerald.desc4}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "39A7D597927066D6"
 			tasks: [{
 				id: "742EA21E907A7582"
 				type: "item"
 				item: "minecraft:emerald"
 			}]
+			rewards: [{
+				id: "2A086D7A2033CC8E"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.lapis.title}"
-			x: 12.0d
-			y: -2.5d
+			x: -6.0d
+			y: -1.75d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.lapis.desc0}"
 				""
 				"{ntc3.lapis.desc1}"
 			]
-			hide_dependency_lines: true
 			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "4CF679AD2CD9D8F4"
 			tasks: [{
 				id: "4E669237E8D6D267"
 				type: "item"
 				item: "minecraft:lapis_lazuli"
 			}]
+			rewards: [{
+				id: "2B290BA1464260CF"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.redstone.title}"
-			x: 13.0d
-			y: -2.5d
+			x: -2.0d
+			y: 0.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.redstone.desc0}"
 				""
 				"{ntc3.redstone.desc1}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "336251529422401D"
 			tasks: [{
 				id: "30E746DD4BB46215"
 				type: "item"
 				item: "minecraft:redstone"
 			}]
+			rewards: [{
+				id: "5D049627EFA31849"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.amethyst.title}"
-			x: 13.0d
-			y: -1.5d
+			x: -3.0d
+			y: -4.25d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.amethyst.desc0}"]
-			hide_dependency_lines: true
 			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "1319590CCDB4D753"
 			tasks: [{
 				id: "31CF47ECDC7AFD31"
 				type: "item"
 				item: "minecraft:amethyst_shard"
 			}]
+			rewards: [{
+				id: "6D294C797CF4FECF"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.goldingot.title}"
-			x: 12.0d
-			y: -1.5d
+			x: 3.25d
+			y: -6.5d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.goldingot.desc0}"
@@ -450,23 +554,34 @@
 				""
 				"{ntc3.goldingot.desc3}"
 			]
-			hide_dependency_lines: true
 			dependencies: ["120222ECE1D830E3"]
+			hide: true
 			id: "1CC354EE2FB08517"
 			tasks: [{
 				id: "5D96945D2E6BC327"
 				type: "item"
 				item: "minecraft:gold_ingot"
 			}]
+			rewards: [{
+				id: "5A46944960629EE0"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.foodstuff.title}"
-			x: -1.5d
-			y: -6.0d
+			x: 1.75d
+			y: 4.25d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.foodstuff.desc0}"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			dependencies: ["09F2B5FA40391B2F"]
+			hide: true
 			id: "078B724F02396D0B"
 			tasks: [
 				{
@@ -525,82 +640,108 @@
 					item: "minecraft:beetroot"
 				}
 			]
-			rewards: [
-				{
-					id: "2A3DF64CE38688A6"
-					type: "item"
-					item: "solcarrot:food_book"
-				}
-				{
-					id: "66508D7D7DCF67D4"
-					type: "item"
-					item: "collectibles:iron_coin"
-					count: 3
-				}
-			]
+			rewards: [{
+				id: "2A3DF64CE38688A6"
+				type: "item"
+				item: "solcarrot:food_book"
+			}]
 		}
 		{
 			title: "{ntc3.clay.title}"
-			x: -3.0d
-			y: -4.5d
+			x: -1.0d
+			y: -4.75d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.clay.desc0}"
 				""
 				"{ntc3.clay.desc1}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["09F2B5FA40391B2F"]
+			hide_dependency_lines: false
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "1DEA200EC08A3C8C"
 			tasks: [{
 				id: "0E18D17DAFBFD21C"
 				type: "item"
 				item: "minecraft:clay_ball"
 			}]
-			rewards: [{
-				id: "4FC9E1463C6A6A21"
-				type: "gamestage"
-				auto: "invisible"
-				ignore_reward_blocking: true
-				stage: "tier0_multiblocks_lvl0"
-			}]
+			rewards: [
+				{
+					id: "4FC9E1463C6A6A21"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "tier0_multiblocks_lvl0"
+				}
+				{
+					id: "799E9C43AFB4C210"
+					type: "item"
+					item: {
+						id: "numismaticoverhaul:bronze_coin"
+						Count: 1
+						tag: { }
+					}
+					count: 4
+				}
+			]
 		}
 		{
 			title: "{ntc3.brick.title}"
-			x: -1.5d
-			y: -4.5d
+			x: -1.75d
+			y: -6.5d
 			description: ["{ntc3.brick.subtitle}"]
 			dependencies: [
 				"1DEA200EC08A3C8C"
 				"120222ECE1D830E3"
 			]
+			hide: true
 			id: "7C9466B32D83F216"
 			tasks: [{
 				id: "0F3E2F15BFC71A1A"
 				type: "item"
 				item: "minecraft:brick"
 			}]
+			rewards: [{
+				id: "2F70D506C8AA5618"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.cauldron.title}"
-			x: 3.0d
-			y: -3.0d
+			x: 5.75d
+			y: -2.25d
 			subtitle: "{ntc3.cauldron.subtitle}"
 			description: ["{ntc3.cauldron.desc0}"]
 			dependencies: ["4D9E0E04A0DF00DC"]
+			hide: true
 			id: "1FDABEC238EB4195"
 			tasks: [{
 				id: "2C0F5D863C139498"
 				type: "item"
 				item: "minecraft:cauldron"
 			}]
+			rewards: [{
+				id: "183C703C274F4B77"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.dyes.title}"
-			x: 6.5d
-			y: 1.0d
+			x: -1.5d
+			y: 3.25d
 			description: ["{ntc3.dyes.desc0}"]
-			hide_dependency_lines: true
 			dependencies: ["09F2B5FA40391B2F"]
 			hide: true
 			id: "3CF864785B23D39F"
@@ -687,25 +828,24 @@
 				}
 			]
 			rewards: [{
-				id: "3FEBD9803E65A65E"
+				id: "24D361BBAE0D1763"
 				type: "item"
-				item: "collectibles:iron_coin"
-				count: 6
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 95
 			}]
 		}
 		{
 			title: "{ntc3.unlock.integrateddyn}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1
-				tag: {
-					Icon: "ftbquests:textures/gui/alert.png"
-				}
-			}
+			icon: "kubejs:purple_mark"
 			x: 0.0d
-			y: -7.5d
+			y: -9.75d
 			shape: "circle"
 			dependencies: ["09DFC42D6647423B"]
+			hide: true
 			size: 1.5d
 			id: "0D85C8AD81845270"
 			tasks: [{
@@ -714,22 +854,22 @@
 				stage: "tier0_integrated_dynamics"
 			}]
 			rewards: [{
-				id: "65242E81A0036BFD"
+				id: "4B307518697DB409"
 				type: "item"
-				item: "collectibles:stone_coin"
-				count: 3
+				item: "miniutilities:experience_pearl"
 			}]
 		}
 		{
 			title: "{ntc3.impuredust.title}"
-			x: 1.5d
-			y: -3.0d
+			x: 3.25d
+			y: -2.25d
 			description: [
 				"{ntc3.impuredust.desc0}"
 				""
 				"{ntc3.impuredust.desc3}"
 			]
 			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "4D9E0E04A0DF00DC"
 			tasks: [{
 				id: "14DDE15809F4583B"
@@ -763,15 +903,9 @@
 		}
 		{
 			title: "{ntc3.unlock.tinkerslvl0}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1
-				tag: {
-					Icon: "ftbquests:textures/gui/alert.png"
-				}
-			}
+			icon: "kubejs:purple_mark"
 			x: -4.5d
-			y: -1.5d
+			y: 1.75d
 			shape: "circle"
 			dependencies: ["0C9E3CDD16DB4122"]
 			size: 1.5d
@@ -782,23 +916,19 @@
 				stage: "tier0_tinkers_lvl0"
 			}]
 			rewards: [{
-				id: "61C7E873910628C3"
+				id: "59EDEAC6E7530BF7"
 				type: "item"
-				item: {
-					id: "collectibles:stone_coin"
-					Count: 1
-					tag: { }
-				}
-				count: 3
+				item: "miniutilities:experience_pearl"
 			}]
 		}
 		{
 			title: "{ntc3.tinkerslvl0.prereq.title}"
 			x: -2.0d
-			y: -1.5d
+			y: 1.75d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.tinkerslvl0.prereq.desc0}"]
 			dependencies: ["09F2B5FA40391B2F"]
+			hide: true
 			id: "0C9E3CDD16DB4122"
 			tasks: [
 				{
@@ -812,6 +942,7 @@
 							value: "minecraft:planks"
 						}
 					}
+					count: 64L
 				}
 				{
 					id: "4353E398FF463C16"
@@ -824,19 +955,32 @@
 							value: "forge:rods/wooden"
 						}
 					}
+					count: 64L
 				}
 			]
-			rewards: [{
-				id: "23EFBC68A947CEB6"
-				type: "gamestage"
-				auto: "invisible"
-				stage: "tier0_tinkers_lvl0"
-			}]
+			rewards: [
+				{
+					id: "23EFBC68A947CEB6"
+					type: "gamestage"
+					auto: "invisible"
+					stage: "tier0_tinkers_lvl0"
+				}
+				{
+					id: "347C0DBD604434BB"
+					type: "item"
+					item: {
+						id: "numismaticoverhaul:bronze_coin"
+						Count: 1
+						tag: { }
+					}
+					count: 4
+				}
+			]
 		}
 		{
 			title: "{ntc3.blastfurnace.title}"
-			x: -4.5d
-			y: -4.5d
+			x: 1.0d
+			y: -3.75d
 			description: ["{ntc3.blastfurnace.desc0}"]
 			dependencies: ["120222ECE1D830E3"]
 			id: "446694102110FBBE"
@@ -845,28 +989,51 @@
 				type: "item"
 				item: "minecraft:blast_furnace"
 			}]
+			rewards: [{
+				id: "430F5BF5FA9F3F26"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 95
+			}]
 		}
 		{
 			title: "{ntc3.piston.title}"
 			x: -4.5d
-			y: -9.0d
+			y: -11.5d
 			description: [
 				"{ntc3.piston.desc0}"
 				""
 				"{ntc3.piston.desc1}"
 			]
-			dependencies: ["2FE9444965885654"]
+			dependencies: [
+				"2FE9444965885654"
+				"288283E080C2E75E"
+			]
 			id: "3B66520D328CE290"
 			tasks: [{
 				id: "4200FFDECDF0975C"
 				type: "item"
 				item: "minecraft:piston"
 			}]
+			rewards: [{
+				id: "0A8B5B079E575DCD"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 95
+			}]
 		}
 		{
 			title: "{ntc3.flintandsteel.title}"
 			x: -6.0d
-			y: -9.0d
+			y: -11.5d
 			description: [
 				"{ntc3.flintandsteel.desc0}"
 				""
@@ -886,11 +1053,21 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "0C74DE62292298D6"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.enderpearl.title}"
-			x: 12.0d
-			y: -4.5d
+			x: 1.5d
+			y: -8.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.enderpearl.desc0}"
@@ -899,34 +1076,55 @@
 				""
 				"{ntc3.enderpearl.desc2}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["09DFC42D6647423B"]
+			hide: true
 			id: "2C6314FC12F3EBCF"
 			tasks: [{
 				id: "0A273AD63F12CCF3"
 				type: "item"
 				item: "minecraft:ender_pearl"
 			}]
+			rewards: [{
+				id: "38F9B032040328DC"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.ghasttear.title}"
-			x: 13.0d
-			y: -6.5d
+			x: 5.25d
+			y: 3.0d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.ghasttear.desc0}"]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			dependencies: ["704E7711D5E1B133"]
+			hide: true
 			id: "34A9E956891E8F4A"
 			tasks: [{
 				id: "1174B7B2191FDD5B"
 				type: "item"
 				item: "minecraft:ghast_tear"
 			}]
+			rewards: [{
+				id: "77CA34B4C45A6F4B"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.netherwart.title}"
-			x: 13.0d
-			y: -5.5d
+			x: 4.25d
+			y: 2.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.netherwart.desc0}"
@@ -935,19 +1133,29 @@
 				""
 				"{ntc3.netherwart.desc2}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["704E7711D5E1B133"]
+			hide: true
 			id: "395B89BBDE511162"
 			tasks: [{
 				id: "60C45699957473B1"
 				type: "item"
 				item: "minecraft:nether_wart"
 			}]
+			rewards: [{
+				id: "425DBF987C4EE5F0"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.magmacream.title}"
 			x: 0.0d
-			y: -10.0d
+			y: -12.5d
 			description: ["{ntc3.magmacream.desc0}"]
 			dependencies: ["4B44C0D44291ECFB"]
 			id: "6D1DC3D0274EDBEA"
@@ -956,11 +1164,21 @@
 				type: "item"
 				item: "minecraft:magma_cream"
 			}]
+			rewards: [{
+				id: "0D34A644EC651358"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.netherbrick.title}"
 			x: -3.0d
-			y: -9.0d
+			y: -11.5d
 			description: ["{ntc3.netherbrick.desc0}"]
 			dependencies: ["3E6656C0639E904E"]
 			id: "2FE9444965885654"
@@ -969,37 +1187,68 @@
 				type: "item"
 				item: "minecraft:nether_brick"
 			}]
+			rewards: [{
+				id: "6216373C6A7B55D0"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
-			x: 13.0d
+			x: -4.0d
 			y: -0.5d
 			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "5AE309E4BB8DB799"
 			tasks: [{
 				id: "4EFFBCFBD24798A0"
 				type: "item"
 				item: "minecraft:prismarine_shard"
 			}]
+			rewards: [{
+				id: "3B2E0A519753C2B5"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
-			x: 12.0d
-			y: -0.5d
+			x: -6.0d
+			y: -2.75d
 			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "5597AA7369BD20A3"
 			tasks: [{
 				id: "1357C3094801DC88"
 				type: "item"
 				item: "minecraft:prismarine_crystals"
 			}]
+			rewards: [{
+				id: "01B7534BC7120E74"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.magmablock.title}"
 			x: 0.0d
-			y: -9.0d
+			y: -11.5d
 			description: [
 				"{ntc3.magmablock.desc0}"
 				""
@@ -1039,45 +1288,67 @@
 		}
 		{
 			title: "{ntc3.glowstonedust.title}"
-			x: 13.0d
-			y: -4.5d
+			x: -3.0d
+			y: -0.25d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.glowstonedust.desc0}"]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "16854C8AA2F41157"
 			tasks: [{
 				id: "237744C408328B51"
 				type: "item"
 				item: "minecraft:glowstone_dust"
 			}]
+			rewards: [{
+				id: "2EEF99CD57D59B63"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.netherquartz.title}"
-			x: 12.0d
-			y: -5.5d
+			x: 3.25d
+			y: 1.0d
 			subtitle: "{ntc3.emcable}"
 			description: [
 				"{ntc3.netherquartz.desc0}"
 				""
 				"{ntc3.netherquartz.desc1}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["704E7711D5E1B133"]
+			hide: true
 			id: "0CF8056507AAB376"
 			tasks: [{
 				id: "3019E4E2652ADAA0"
 				type: "item"
 				item: "minecraft:quartz"
 			}]
+			rewards: [{
+				id: "53EDF001F176C9E0"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.paper.title}"
-			x: 12.0d
-			y: -6.5d
+			x: 2.75d
+			y: 4.0d
 			description: ["{ntc3.paper.desc0}"]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			dependencies: ["09F2B5FA40391B2F"]
+			hide: true
 			id: "427C588CA60F7435"
 			tasks: [{
 				id: "408AAED9BBA1F366"
@@ -1087,16 +1358,16 @@
 		}
 		{
 			title: "{ntc3.leather.title}"
-			x: 13.0d
-			y: -7.5d
+			x: 3.25d
+			y: -9.75d
 			subtitle: "{ntc3.leather.subtitle}"
 			description: [
 				"{ntc3.leather.desc0}"
 				""
 				"{ntc3.leather.desc1}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			hide: true
 			id: "1EC705E5874DCA9D"
 			tasks: [{
 				id: "633815D2D76B0543"
@@ -1106,12 +1377,12 @@
 		}
 		{
 			title: "{ntc3.book.title}"
-			x: 12.0d
-			y: -7.5d
+			x: 4.5d
+			y: -9.75d
 			subtitle: "{ntc3.book.subtitle}"
 			description: ["{ntc3.book.desc0}"]
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			hide: true
 			id: "4DEA424A3CF25070"
 			tasks: [{
 				id: "1EE67828E7511EDA"
@@ -1121,16 +1392,16 @@
 		}
 		{
 			title: "{ntc3.growingstuff.title}"
-			x: -3.0d
-			y: -6.0d
+			x: 2.0d
+			y: -1.25d
 			subtitle: "{ntc3.growingstuff.subtitle}"
 			description: [
 				"{ntc3.growingstuff.desc0}"
 				""
 				"{ntc3.growingstuff.desc1}"
 			]
-			hide_dependency_lines: true
-			dependencies: ["09F2B5FA40391B2F"]
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "23982A7FDF70EED5"
 			tasks: [
 				{
@@ -1191,23 +1462,21 @@
 				}
 			]
 			rewards: [{
-				id: "1AD5A48508F3B8B1"
+				id: "4182F3FA98C3D3AF"
 				type: "item"
-				item: "collectibles:iron_coin"
-				count: 3
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 95
 			}]
 		}
 		{
 			title: "{ntc3.unlock.neuralnetworks}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1
-				tag: {
-					Icon: "ftbquests:textures/gui/alert.png"
-				}
-			}
+			icon: "kubejs:purple_mark"
 			x: 2.25d
-			y: -7.5d
+			y: -11.625d
 			shape: "circle"
 			dependencies: ["0D85C8AD81845270"]
 			size: 1.5d
@@ -1217,18 +1486,25 @@
 				type: "gamestage"
 				stage: "tier0_multiblocks_lvl0"
 			}]
-			rewards: [{
-				id: "31EFBB38C0AD3008"
-				type: "gamestage"
-				auto: "invisible"
-				ignore_reward_blocking: true
-				stage: "hostilenetworks_unlock"
-			}]
+			rewards: [
+				{
+					id: "31EFBB38C0AD3008"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "hostilenetworks_unlock"
+				}
+				{
+					id: "0A9C18F9CF0B2480"
+					type: "item"
+					item: "miniutilities:experience_pearl"
+				}
+			]
 		}
 		{
 			title: "{ntc3.netherrack.title}"
 			x: -1.5d
-			y: -9.0d
+			y: -11.5d
 			description: [
 				"{ntc3.netherack.desc0}"
 				""
@@ -1241,20 +1517,25 @@
 				type: "item"
 				item: "minecraft:netherrack"
 			}]
+			rewards: [{
+				id: "7702B672E796E862"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.unlock.multiblocks}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1
-				tag: {
-					Icon: "ftbquests:textures/gui/alert.png"
-				}
-			}
-			x: -6.0d
-			y: -4.5d
+			icon: "kubejs:purple_mark"
+			x: -4.5d
+			y: -6.75d
 			shape: "circle"
 			dependencies: ["1DEA200EC08A3C8C"]
+			hide: true
 			size: 1.5d
 			id: "288283E080C2E75E"
 			tasks: [{
@@ -1263,16 +1544,15 @@
 				stage: "tier0_multiblocks_lvl0"
 			}]
 			rewards: [{
-				id: "4F2D52274AE0BB50"
+				id: "10841EA8EC8B6A3D"
 				type: "item"
-				item: "collectibles:stone_coin"
-				count: 3
+				item: "miniutilities:experience_pearl"
 			}]
 		}
 		{
 			title: "{ntc3.dimension.thenether.title}"
 			x: -6.0d
-			y: -12.0d
+			y: -14.5d
 			description: [
 				"{ntc3.dimension.thenether.desc0}"
 				""
@@ -1300,11 +1580,11 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -6.0d
+			x: 2.0d
+			y: -4.5d
 			description: ["Fishing can actually yeild Tin Can which can be smelted into Iron Nuggets"]
-			hide_dependency_lines: true
-			dependencies: ["09F2B5FA40391B2F"]
+			dependencies: ["120222ECE1D830E3"]
+			hide: true
 			id: "0436BD4432222334"
 			tasks: [
 				{
@@ -1333,40 +1613,66 @@
 				}
 			]
 			rewards: [{
-				id: "0063D76F2E3A93FE"
+				id: "2C8DB2B8B06F8CC9"
 				type: "item"
-				item: "excompressum:squid_bait"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
 			}]
 		}
 		{
-			x: 12.0d
-			y: 0.5d
+			x: -5.0d
+			y: -3.5d
 			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "5E48066B74E1F10A"
 			tasks: [{
 				id: "0D8690918937FAF6"
 				type: "item"
 				item: "minecraft:gunpowder"
 			}]
+			rewards: [{
+				id: "1836734A023FC105"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
-			x: 13.0d
-			y: 0.5d
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			x: -5.0d
+			y: -1.0d
+			hide_dependency_lines: false
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "6173D265C2D6EAF1"
 			tasks: [{
 				id: "15BE747A5BB7F0C3"
 				type: "item"
 				item: "minecraft:blaze_powder"
 			}]
+			rewards: [{
+				id: "1E5FD26516A12A97"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.netherpainting.title}"
 			x: -6.0d
-			y: -10.5d
+			y: -13.0d
 			description: ["{ntc3.netherpainting.desc0}"]
 			dependencies: ["17D4B2616E251D91"]
 			id: "55A6835E3605A66E"
@@ -1386,7 +1692,7 @@
 		{
 			title: "{ntc3.dimension.overworld.title}"
 			x: -3.0d
-			y: -12.0d
+			y: -14.5d
 			description: ["{ntc3.dimension.overworld.desc0}"]
 			dependencies: ["216BB6462EB91D81"]
 			id: "5F954B511F712A70"
@@ -1397,9 +1703,10 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -3.0d
+			x: 7.5d
+			y: -2.25d
 			dependencies: ["1FDABEC238EB4195"]
+			hide: true
 			id: "5E41B110C086D186"
 			tasks: [{
 				id: "7B57B617DF01553F"
@@ -1413,18 +1720,22 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "5677909BB6CFFBCA"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "{ntc3.unlock.exnihilio}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1
-				tag: {
-					Icon: "ftbquests:textures/gui/alert.png"
-				}
-			}
+			icon: "kubejs:purple_mark"
 			x: 0.0d
-			y: -3.0d
+			y: -2.25d
 			shape: "circle"
 			dependencies: ["09F2B5FA40391B2F"]
 			size: 1.5d
@@ -1435,16 +1746,15 @@
 				stage: "exnihilo_lvl0"
 			}]
 			rewards: [{
-				id: "558662300F498DAD"
+				id: "0499C4A7FBE73660"
 				type: "item"
-				item: "collectibles:stone_coin"
-				count: 3
+				item: "miniutilities:experience_pearl"
 			}]
 		}
 		{
 			title: "{ntc3.netherstar.title}"
 			x: -4.5d
-			y: -12.0d
+			y: -14.5d
 			description: [
 				"{ntc3.netherstar.desc0}"
 				""
@@ -1461,8 +1771,8 @@
 		}
 		{
 			title: "{ntc3.netheriteingot.title}"
-			x: 13.0d
-			y: -8.5d
+			x: -8.0d
+			y: -13.25d
 			description: ["{ntc3.netheriteingot.desc0}"]
 			hide_dependency_lines: true
 			dependencies: ["7E05F724102A8CFE"]
@@ -1475,8 +1785,8 @@
 		}
 		{
 			title: "{ntc3.netheritescrap.title}"
-			x: 12.0d
-			y: -8.5d
+			x: -9.0d
+			y: -13.25d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.netheritescrap.desc0}"]
 			hide_dependency_lines: true
@@ -1490,10 +1800,11 @@
 		}
 		{
 			title: "{ntc3.blazerod.title}"
-			x: 13.0d
-			y: -9.5d
+			x: -7.5d
+			y: -14.5d
 			description: ["{ntc3.blazerod.desc0}"]
-			hide_dependency_lines: true
+			dependencies: ["7E05F724102A8CFE"]
+			hide: true
 			dependency_requirement: "all_started"
 			id: "414D9F3E8D30EEDD"
 			tasks: [{
@@ -1503,22 +1814,33 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -4.5d
+			x: 3.25d
+			y: -5.5d
 			dependencies: ["4D9E0E04A0DF00DC"]
+			hide: true
 			id: "28EA84F9F2D51D48"
 			tasks: [{
 				id: "26469FD364D9171B"
 				type: "item"
 				item: "quark:sturdy_stone"
 			}]
+			rewards: [{
+				id: "671017082FD81804"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
-			x: 13.0d
-			y: 1.5d
+			x: 7.25d
+			y: -6.0d
 			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			hide: true
 			id: "674A8FACEB7A9A15"
 			tasks: [{
 				id: "21BEE1A62123DC79"
@@ -1527,11 +1849,11 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 1.5d
+			x: 6.25d
+			y: -6.0d
 			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: true
-			dependencies: ["120222ECE1D830E3"]
+			hide_dependency_lines: false
+			hide: true
 			id: "309EE8A5A3F65FB9"
 			tasks: [{
 				id: "3899C4952F4C0EA2"
@@ -1547,11 +1869,12 @@
 		}
 		{
 			title: "{ntc3.string.title}"
-			x: 12.0d
-			y: -9.5d
+			x: 3.0d
+			y: 3.0d
 			subtitle: "{ntc3.emcable}"
 			description: ["{ntc3.string.desc0}"]
-			dependencies: ["5C220062C23C3EB1"]
+			dependencies: ["09F2B5FA40391B2F"]
+			hide: true
 			id: "1DF969D7F62C0F43"
 			tasks: [{
 				id: "2B160EFAD5CFB4F1"
@@ -1561,8 +1884,8 @@
 		}
 		{
 			title: "{ntc3.ironblock.title}"
-			x: -4.5d
-			y: -2.5d
+			x: -5.5d
+			y: 1.75d
 			description: [
 				"{ntc3.ironblock.desc0}"
 				""
@@ -1577,33 +1900,53 @@
 				item: "minecraft:iron_block"
 			}]
 			rewards: [{
-				id: "3A1091C2CB2DC598"
+				id: "2B35285FC0714010"
 				type: "item"
-				item: "collectibles:iron_coin"
-				count: 3
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
 			}]
 		}
 		{
-			x: 12.0d
-			y: -10.5d
+			x: 2.0d
+			y: -0.25d
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "704E7711D5E1B133"
 			tasks: [{
 				id: "2E969E2473F9FE6C"
 				type: "item"
 				item: "minecraft:soul_sand"
 			}]
-			rewards: [{
-				id: "207454CEDC1BEED2"
-				type: "gamestage"
-				auto: "invisible"
-				ignore_reward_blocking: true
-				stage: "spirit_unlock"
-			}]
+			rewards: [
+				{
+					id: "207454CEDC1BEED2"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "spirit_unlock"
+				}
+				{
+					id: "6086EA39D5077C7C"
+					type: "item"
+					item: {
+						id: "numismaticoverhaul:bronze_coin"
+						Count: 1
+						tag: { }
+					}
+					count: 4
+				}
+			]
 		}
 		{
-			x: 6.5d
-			y: 2.0d
+			x: -1.0d
+			y: 5.25d
+			dependencies: ["681FC73882B0A7FC"]
 			hide: true
+			size: 0.5d
 			id: "20AA7D88BF97AFD9"
 			tasks: [{
 				id: "3B32FE067F75C9CA"
@@ -1612,8 +1955,10 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: -10.5d
+			x: 1.0d
+			y: -0.25d
+			dependencies: ["0DC758E7DE901E3C"]
+			hide: true
 			id: "2453D70DA16C29E8"
 			tasks: [{
 				id: "0D923F0D3BC96DD4"
@@ -1624,7 +1969,7 @@
 		{
 			title: "{ntc3.beacon.title}"
 			x: -4.5d
-			y: -13.5d
+			y: -16.0d
 			description: ["{ntc3.beacon.desc0}"]
 			dependencies: ["216BB6462EB91D81"]
 			id: "07D5DA0EF7164CD4"
@@ -1635,21 +1980,34 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 2.5d
+			x: 1.0d
+			y: 5.25d
 			subtitle: "{ntc3.emcable}"
 			description: ["Kelp has an additional use as fertilizer"]
+			dependencies: ["681FC73882B0A7FC"]
+			hide: true
+			size: 0.5d
 			id: "3D1A419C1B8F70C3"
 			tasks: [{
 				id: "692729286C22216C"
 				type: "item"
 				item: "minecraft:kelp"
 			}]
+			rewards: [{
+				id: "5E62176F2B500A3B"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			icon: "sophisticatedbackpacks:backpack"
 			x: -4.5d
-			y: -10.5d
+			y: -13.0d
 			subtitle: "Make a bag or something"
 			description: ["You're going to want a place to store all those ores and loot."]
 			dependencies: ["17D4B2616E251D91"]
@@ -1668,10 +2026,12 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 1.0d
+			x: -4.0d
+			y: -4.875d
 			subtitle: "&nGet ready to build platforms!&r"
+			dependencies: ["527F7E55E9752525"]
 			hide: true
+			size: 0.5d
 			id: "2C9BF519033B5D8F"
 			tasks: [{
 				id: "38F77F765F34BDB9"
@@ -1698,11 +2058,13 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: 1.0d
+			x: 1.0d
+			y: 1.75d
 			subtitle: "&nScan for Ores!&r"
 			description: ["Kinda useless in The Void, use it for when you have access to other Dimensions."]
+			dependencies: ["09F2B5FA40391B2F"]
 			hide: true
+			size: 0.5d
 			id: "5F82349714EE16EE"
 			tasks: [{
 				id: "34188EB38B8E9F12"
@@ -1723,12 +2085,24 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "19B2FFA9C7C1DA30"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
-			x: 9.0d
-			y: 2.0d
+			x: 3.5d
+			y: -1.375d
 			subtitle: "&nA way to charge all the things!&r"
+			dependencies: ["4D9E0E04A0DF00DC"]
 			hide: true
+			size: 0.5d
 			id: "42F29437401999A7"
 			tasks: [{
 				id: "46C650D3845566B1"
@@ -1739,12 +2113,23 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "605EA512C3215747"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 		{
 			title: "More Efficient Planks"
 			x: 0.0d
-			y: 1.0d
+			y: 4.25d
 			dependencies: ["681FC73882B0A7FC"]
+			hide: true
 			id: "14BA33B24BC454E9"
 			tasks: [
 				{
@@ -1769,6 +2154,39 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "6F9A980936FCBE0F"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.375d
+			dependencies: ["4D9E0E04A0DF00DC"]
+			hide: true
+			size: 0.5d
+			id: "084EF431B01779DB"
+			tasks: [{
+				id: "7DF8BFF0450B6703"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+			rewards: [{
+				id: "59F73B0BBC160AEE"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
+			}]
 		}
 	]
 	quest_links: [ ]

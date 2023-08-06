@@ -7,6 +7,7 @@
 	icon: "tconstruct:crafting_station"
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			x: -1.0d
@@ -17,12 +18,6 @@
 				id: "0EA7603014557DE7"
 				type: "item"
 				item: "tconstruct:crafting_station"
-			}]
-			rewards: [{
-				id: "119CE218C209FD31"
-				type: "item"
-				item: "thermal:flax_seeds"
-				count: 2
 			}]
 		}
 		{
@@ -60,12 +55,6 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "33038EE71730D783"
-				type: "item"
-				item: "thermal:flax_seeds"
-				count: 2
-			}]
 		}
 		{
 			x: 1.0d
@@ -82,12 +71,6 @@
 						texture: "minecraft:oak_planks"
 					}
 				}
-			}]
-			rewards: [{
-				id: "667CCD4C194EC3DD"
-				type: "item"
-				item: "thermal:flax_seeds"
-				count: 2
 			}]
 		}
 		{

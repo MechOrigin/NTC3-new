@@ -3,7 +3,7 @@
   "location": "ntc3:alloy_kiln",
   "traits": {},
   "properties": {
-    "rotationState": "NON_Y_AXIS",
+    "rotationState": "ALL",
     "showInJei": true,
     "isOpaque": true,
     "hasDynamicShape": false,

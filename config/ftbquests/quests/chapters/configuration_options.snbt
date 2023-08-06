@@ -1,0 +1,46 @@
+{
+	id: "2A5EDB91811583E9"
+	group: ""
+	order_index: 1
+	filename: "configuration_options"
+	title: "Configuration Options"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Disable Phantoms"
+			x: 0.0d
+			y: 0.0d
+			can_repeat: true
+			id: "61F5A40903ADC155"
+			tasks: [{
+				id: "3D1C1E47EC0DBC65"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "19CF85D74433A7DB"
+				type: "command"
+				command: "/gamerule doInsomnia false"
+				player_command: false
+			}]
+		}
+		{
+			title: "Enable Phantoms"
+			x: 0.0d
+			y: 1.5d
+			can_repeat: true
+			id: "44EFB10AC197FD61"
+			tasks: [{
+				id: "13991F2D53DD78FC"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "3B0EF1E9887B20EF"
+				type: "command"
+				command: "/gamerule doInsomnia true"
+				player_command: false
+			}]
+		}
+	]
+	quest_links: [ ]
+}

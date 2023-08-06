@@ -41,16 +41,27 @@
 				id: "51C89EA50962439D"
 				type: "checkmark"
 			}]
-			rewards: [{
-				id: "7F0F58B824DA3028"
-				type: "item"
-				item: {
-					id: "minecraft:dirt"
-					Count: 1
-					tag: { }
+			rewards: [
+				{
+					id: "7F0F58B824DA3028"
+					type: "item"
+					item: {
+						id: "minecraft:dirt"
+						Count: 1
+						tag: { }
+					}
+					count: 64
 				}
-				count: 64
-			}]
+				{
+					id: "1997A9B00A62A8BE"
+					type: "command"
+					icon: "minecraft:feather"
+					auto: "no_toast"
+					exclude_from_claim_all: true
+					command: "/effect give @p minecraft:slow_falling 60"
+					player_command: false
+				}
+			]
 		}
 		{
 			title: "{ntc3.allisoneandoneisall.dirt.title}"
@@ -212,13 +223,7 @@
 		}
 		{
 			title: "Go To Echelon 0"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1
-				tag: {
-					Icon: "ntc3:textures/purple_mark.png"
-				}
-			}
+			icon: "kubejs:purple_mark"
 			x: 0.0d
 			y: 7.5d
 			shape: "circle"
@@ -233,9 +238,14 @@
 				elapsedTime: 1L
 			}]
 			rewards: [{
-				id: "0055F51C95E7347C"
+				id: "67B67B8ACBD696E7"
 				type: "item"
-				item: "miniutilities:experience_pearl"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
 			}]
 		}
 	]

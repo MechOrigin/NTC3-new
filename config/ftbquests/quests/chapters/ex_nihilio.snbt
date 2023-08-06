@@ -7,6 +7,7 @@
 	icon: "exnihilosequentia:crimson_sieve"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	hide_quest_details_until_startable: true
 	quests: [
 		{
 			x: 0.0d
