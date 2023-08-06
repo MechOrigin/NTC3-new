@@ -11,18 +11,43 @@
   
 //   });
 
+//priority: 900
 onEvent('block.registry', (event) => {
-    
-    const blocks = [{ 
-      name: 'treated_planks', material: 'wood', hardness: 1, harvestTool: ('axe', 1),
-      name: 'oven_bricks', material: 'rock', hardness: 1, harvestTool: ('pickaxe', 1)
-    }];
-  
-    blocks.forEach((block) => {
-        event.create(block.name).material(block.material).hardness(block.hardness).harvestTool(block.harvestTool);
-    });
-  
+  const blocks = [
+      {
+          name: 'oven_bricks',
+          material: 'rock',
+          hardness: 2.0
+      },
+      {
+          name: 'treated_planks',
+          material: 'wood',
+          hardness: 2.0
+      }
+  ];
+
+  blocks.forEach((block) => {
+      const block_event = event
+          .create(block.name)
+          .material(block.material)
+          .hardness(block.hardness)
+          .textureAll(`kubejs:block/${block.name}`)
+          .model(`kubejs:block/${block.name}`);
+
+      if (block.leaves) {
+          block_event
+              .renderType('cutout')
+              .notSolid()
+              .noValidSpawns(true)
+              .suffocating(false)
+              .viewBlocking(false)
+              .redstoneConductor(false)
+              .transparent(false);
+      }
   });
+});
+
+
   
   /*
   air

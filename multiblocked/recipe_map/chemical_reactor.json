@@ -183,6 +183,95 @@
       }
     },
     {
+      "uid": "e7384acc-9c9d-4b5b-835c-0cbe836f3cb3",
+      "duration": 360,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "mekanism:hydrogen_chloride",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "secretly_complicated:hydrochloric_acid_fluid_still",
+              "amount": 40
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "1bff5922-f925-4689-9e1d-7e69406c8d87",
+      "duration": 360,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "mekanism:salt"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "minecraft:water",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "mekanism:brine",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
       "uid": "a63989ea-df5c-43d4-ae38-5f5e0ce4eb40",
       "duration": 360,
       "inputs": {
@@ -264,6 +353,47 @@
             "content": {
               "type": "secretly_complicated:sulfur_trioxide_gas",
               "amount": 2
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 30,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "21c515ae-46fc-4e40-8aea-fcf41f361de0",
+      "duration": 360,
+      "inputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:chlorine_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "secretly_complicated:hydrogen_gas",
+              "amount": 20
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "mek_gas": [
+          {
+            "content": {
+              "type": "mekanism:hydrogen_chloride",
+              "amount": 40
             },
             "chance": 1.0
           }

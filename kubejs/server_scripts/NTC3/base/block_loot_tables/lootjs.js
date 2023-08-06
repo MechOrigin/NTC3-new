@@ -811,7 +811,7 @@ onEvent("lootjs", (event) => {
         Item.of("secretly_complicated:aluminium_crushed"),
     ]);
 
-    //KCl
+    //KCl & NaCl
     event
     .addBlockLootModifier("secretly_complicated:rock_salt_netherrack_ore")
     .addWeightedLoot([1, 3], [
@@ -822,7 +822,11 @@ onEvent("lootjs", (event) => {
     ])
     .addWeightedLoot([1, 8], [
         Item.of("secretly_complicated:rock_salt_chunk"),
+    ])
+    .addWeightedLoot([1, 4], [
+        Item.of("mekanism:salt"),
     ]);
+    
 
     //KLi3Al4F2O10
     event

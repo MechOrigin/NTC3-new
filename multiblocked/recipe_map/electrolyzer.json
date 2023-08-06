@@ -4,21 +4,55 @@
   "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
   "recipes": [
     {
-      "uid": "aa748e0a-b08a-41d4-81e3-6e44085cb88f",
-      "duration": 20,
+      "uid": "ed418bf3-2126-4696-b1dc-f9a3af692d2b",
+      "duration": 80,
       "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "mekanism:brine",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
         "item": [
           {
             "content": {
               "type": "multiblocked:sized",
               "count": 1,
               "ingredient": {
-                "item": "ae2:logic_processor"
+                "item": "secretly_complicated:sodium_dust"
               }
             },
-            "chance": 0.0
+            "chance": 1.0
           }
         ],
+        "mek_gas": [
+          {
+            "content": {
+              "type": "secretly_complicated:chlorine_gas",
+              "amount": 500
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 500,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "aa748e0a-b08a-41d4-81e3-6e44085cb88f",
+      "duration": 80,
+      "inputs": {
         "fluid": [
           {
             "content": {

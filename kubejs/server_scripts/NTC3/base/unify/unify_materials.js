@@ -436,7 +436,8 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-			'sulfur'
+			'sulfur',
+			'silicon'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
@@ -464,7 +465,8 @@ onEvent('recipes', event => {
         }
 
 		var blacklistedMaterials = [
-			'sulfur'
+			'sulfur',
+			'silicon'
 		];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {

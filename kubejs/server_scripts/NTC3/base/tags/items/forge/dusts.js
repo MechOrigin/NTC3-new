@@ -225,4 +225,6 @@ onEvent('tags.items', event => {
     event.removeAllTagsFrom('tconstruct:soulsteel_nugget');
     event.remove('forge:nuggets', 'tconstruct:soulsteel_nugget');
     event.remove('forge:nuggets/soulsteel', 'tconstruct:soulsteel_nugget');
+
+    event.removeAllTagsFrom('ae2:silicon');
   })

@@ -18,7 +18,7 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:nickel_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:garnierite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:pentlandite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
-    e.add(`secretly_complicated:cooperite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
+    //e.add(`secretly_complicated:cooperite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:nickel_solid`, [`Nickel can be found in Garnierite/Pentlandite/Cooperite Veins in the Nether.`, `(Y 1-255)`])
     
     e.add(`secretly_complicated:zinc_netherrack_ore`, [`Zinc can be found in the Nether.`, `(Y 1-255)`])
@@ -38,6 +38,15 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:tantalite_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:manganese_solid`, [`Tin can be found in Spessartine/Pyrolusite/Tantalite Veins in the Nether.`, `(Y 1-255)`])
     
+    e.add(`secretly_complicated:cooperite_netherrack_ore`, [`Platinum/Nickel/Palladium can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:platinum_solid`, [`Platinum can be found in Cooperite Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:palladium_solid`, [`Palladium can be found in Cooperite Veins in the Nether.`, `(Y 1-255)`])
+
+    
+    e.add(`secretly_complicated:rock_salt_netherrack_ore`, [`Salt and Potassium can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:potassium_solid`, [`Platinum can be found in Rock Salt Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`mekanism:salt`, [`Salt can be found in Rock Salt Veins in the Nether.`, `(Y 1-255)`])
+
   })
 
 onEvent(`jei.hide.items`, e => {

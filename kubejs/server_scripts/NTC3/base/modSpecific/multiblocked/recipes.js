@@ -75,7 +75,7 @@ onEvent('recipes', (event) => {
       event.custom({"type":"minecraft:crafting_shaped","pattern":["GGG","MMM","GGG"],"key":{"M":{"item":"secretly_complicated:platinum_small_dust"},"G":{"item":"secretly_complicated:silicon_dust"}},"result":{"item":"secretly_complicated:platinum_catalyst_chunk","count":1}})
 	
       modifyShaped(event, 'kubejs:treated_planks', 1, ['AAA', 'ABA', 'AAA'], {
-        A: '#forge:planks',
+        A: '#minecraft:planks',
         B: 'secretly_complicated:creosote_fluid_bucket'
         })
 

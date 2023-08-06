@@ -29,6 +29,9 @@ onEvent('tags.items', e => {
     e.add('forge:blocks', 'minecraft:netherite_block');
 
     e.add('forge:silicon', 'secretly_complicated:silicon_nugget');
+    e.add('forge:gems', 'secretly_complicated:silicon_nugget');
+    e.add('forge:gems/silicon', 'secretly_complicated:silicon_nugget');
+
     e.add('forge:gems/niter', 'secretly_complicated:potassium_nitrate_gem');
     e.add('forge:dusts/niter', 'secretly_complicated:potassium_nitrate_dust');
     e.add('mysticalagriculture:material/saltpeter', 'secretly_complicated:potassium_nitrate_dust');
