@@ -41,6 +41,102 @@
 				player_command: false
 			}]
 		}
+		{
+			title: "Enable Keep Inventory"
+			x: 1.25d
+			y: 0.0d
+			id: "735A1254C90ABA3A"
+			tasks: [{
+				id: "5E11DD55BC57137D"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "61E976FF3F0E1C73"
+				type: "command"
+				command: "/gamerule keepInventory true"
+				player_command: false
+			}]
+		}
+		{
+			title: "Disable Keep Inventory"
+			x: 1.25d
+			y: 1.5d
+			id: "49E5B85D188DBC87"
+			tasks: [{
+				id: "4CF01CB45154CFE6"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "23FA7672EC154061"
+				type: "command"
+				command: "/gamerule keepInventory false"
+				player_command: false
+			}]
+		}
+		{
+			title: "Peaceful"
+			x: 3.5d
+			y: 0.0d
+			id: "1C5A843E5022063A"
+			tasks: [{
+				id: "7E1099CFCD0280C1"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "661125E7B2A318FA"
+				type: "command"
+				command: "/difficulty peaceful"
+				player_command: false
+			}]
+		}
+		{
+			title: "Normal"
+			x: 3.5d
+			y: 2.0d
+			id: "7091B2F34ACAB03C"
+			tasks: [{
+				id: "053AAE45250F14DC"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "2DB68FBB0C853AE4"
+				type: "command"
+				command: "/difficulty normal"
+				player_command: false
+			}]
+		}
+		{
+			title: "Easy"
+			x: 3.5d
+			y: 1.0d
+			id: "4AEDA88A8A95A891"
+			tasks: [{
+				id: "0ED77CF3FD72325B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "74284DB75A4C48A0"
+				type: "command"
+				command: "/difficulty easy"
+				player_command: false
+			}]
+		}
+		{
+			title: "Hard"
+			x: 3.5d
+			y: 3.0d
+			id: "7E1423DA0C32BD3A"
+			tasks: [{
+				id: "28C0B459A0DC4F0B"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "001F16DA427447B0"
+				type: "command"
+				command: "/difficulty hard"
+				player_command: false
+			}]
+		}
 	]
 	quest_links: [ ]
 }

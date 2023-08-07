@@ -3,3 +3,6 @@ type = customizablemenus
 net.minecraft.client.gui.screens.ChatScreen {
 }
 
+net.minecraft.client.gui.screens.PauseScreen {
+}
+

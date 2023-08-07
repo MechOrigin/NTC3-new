@@ -40,7 +40,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -2.25d
 			y: -2.5d
 			subtitle: "{ntc2.intbook.subtitle}"
 			description: [
@@ -62,7 +62,7 @@
 		{
 			title: "{ntc2.menrilchunk.title}"
 			icon: "integrateddynamics:menril_sapling"
-			x: -2.5d
+			x: -2.25d
 			y: -1.0d
 			subtitle: "{ntc2.menrilchunk.subtitle}"
 			description: [
@@ -100,7 +100,7 @@
 		}
 		{
 			title: "{ntc2.idsqueezer.title}"
-			x: -2.5d
+			x: -2.25d
 			y: -3.5d
 			subtitle: "{ntc2.idsqueezer.subtitle}"
 			description: [
@@ -132,7 +132,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -1.25d
 			y: -3.5d
 			subtitle: "{ntc2.mechanicalsqueezer.subtitle}"
 			description: [
@@ -1004,8 +1004,9 @@
 		}
 		{
 			title: "{ntc3.chapter.integrateddyn.title}"
-			x: -2.5d
-			y: 0.5d
+			icon: "kubejs:purple_mark"
+			x: -2.25d
+			y: 0.75d
 			shape: "circle"
 			description: [
 				"{ntc2.intbook.desc1}"
@@ -1015,6 +1016,7 @@
 				"{ntc2.intbook.desc3}"
 			]
 			dependencies: ["0D85C8AD81845270"]
+			size: 1.5d
 			id: "67D34813D72D2150"
 			tasks: [{
 				id: "6244702B753628BC"

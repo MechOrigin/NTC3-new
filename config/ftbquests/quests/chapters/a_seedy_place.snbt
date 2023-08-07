@@ -8,34 +8,6 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			id: "5C220062C23C3EB1"
-			tasks: [{
-				id: "53FAF396E1EBB23D"
-				type: "item"
-				item: "thermal:flax_seeds"
-			}]
-		}
-		{
-			x: 0.0d
-			y: -1.0d
-			dependencies: ["5C220062C23C3EB1"]
-			id: "19593DA911D80507"
-			tasks: [{
-				id: "68D89B14C2865E90"
-				type: "item"
-				item: "thermal:flax"
-			}]
-			rewards: [{
-				id: "265BD9E0EE4E1BD1"
-				type: "gamestage"
-				auto: "invisible"
-				ignore_reward_blocking: true
-				stage: "croptopia"
-			}]
-		}
-		{
 			x: 2.0d
 			y: 0.0d
 			id: "58A477477D92A07F"
@@ -76,16 +48,6 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.0d
-			id: "2E50DE04538B7E97"
-			tasks: [{
-				id: "77267DD05002DBB8"
-				type: "item"
-				item: "thermal:bell_pepper_seeds"
-			}]
-		}
-		{
 			x: 1.0d
 			y: 0.0d
 			id: "1384AEE0AAF9B8E6"
@@ -93,136 +55,6 @@
 				id: "063A1E48318A4A76"
 				type: "item"
 				item: "alcocraft:hop_seeds"
-			}]
-		}
-		{
-			x: -3.0d
-			y: 0.0d
-			id: "263E977D5EA2E8F8"
-			tasks: [{
-				id: "292CBBF4B212194E"
-				type: "item"
-				item: "thermal:tomato_seeds"
-			}]
-		}
-		{
-			x: -4.0d
-			y: 0.0d
-			id: "5B675BD770BD885B"
-			tasks: [{
-				id: "7A9AFC2A61251CAD"
-				type: "item"
-				item: "thermal:peanut_seeds"
-			}]
-		}
-		{
-			x: -1.0d
-			y: 0.0d
-			id: "194DE8362A3E7110"
-			tasks: [{
-				id: "26056A87CACB9556"
-				type: "item"
-				item: "thermal:sadiroot_seeds"
-			}]
-		}
-		{
-			x: -5.0d
-			y: 0.0d
-			id: "3B0E4AC24E57FE2B"
-			tasks: [{
-				id: "69EC5D17E04AF5EC"
-				type: "item"
-				item: "thermal:green_bean_seeds"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 0.0d
-			id: "54249935CBF7D7E0"
-			tasks: [{
-				id: "4117B85BC8D18092"
-				type: "item"
-				item: "thermal:barley_seeds"
-			}]
-		}
-		{
-			x: -7.0d
-			y: 0.0d
-			id: "4189C83524ACF8BB"
-			tasks: [{
-				id: "06E9571374FE4302"
-				type: "item"
-				item: "thermal:radish_seeds"
-			}]
-		}
-		{
-			x: -8.0d
-			y: 0.0d
-			id: "4B5129B0F2E10AF3"
-			tasks: [{
-				id: "645C21B505744439"
-				type: "item"
-				item: "thermal:eggplant_seeds"
-			}]
-		}
-		{
-			x: -9.0d
-			y: 0.0d
-			id: "6413D2D853CD83BF"
-			tasks: [{
-				id: "02BD6C027D9B8E13"
-				type: "item"
-				item: "thermal:onion_seeds"
-			}]
-		}
-		{
-			x: -10.0d
-			y: 0.0d
-			id: "0405F9671DE70BD0"
-			tasks: [{
-				id: "2AA3F3EFC516E130"
-				type: "item"
-				item: "thermal:strawberry_seeds"
-			}]
-		}
-		{
-			x: -11.0d
-			y: 0.0d
-			id: "766F1842D77765A4"
-			tasks: [{
-				id: "1F2A174348E06EF4"
-				type: "item"
-				item: "thermal:corn_seeds"
-			}]
-		}
-		{
-			x: -12.0d
-			y: 0.0d
-			id: "5D008F11458CA0AA"
-			tasks: [{
-				id: "12111F34886838E7"
-				type: "item"
-				item: "thermal:spinach_seeds"
-			}]
-		}
-		{
-			x: -13.0d
-			y: 0.0d
-			id: "41617E89C44E1DA3"
-			tasks: [{
-				id: "33C5AA27DF7FF7B4"
-				type: "item"
-				item: "thermal:rice_seeds"
-			}]
-		}
-		{
-			x: -14.0d
-			y: 0.0d
-			id: "6B6EF06FAB5DF97E"
-			tasks: [{
-				id: "43387380CF88B624"
-				type: "item"
-				item: "thermal:amaranth_seeds"
 			}]
 		}
 		{
@@ -247,13 +79,133 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 2.0d
-			id: "7F733F97F986628D"
+			x: -1.0d
+			y: 0.0d
+			id: "12603BBFAAF81079"
 			tasks: [{
-				id: "2793049CA62A5B00"
+				id: "06518036BEC53775"
 				type: "item"
-				item: "exnihilosequentia:mycelium_spores"
+				item: "finallyfarmabledyes:yellow"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			id: "558F857802D7A269"
+			tasks: [{
+				id: "46A665D691E2FF5A"
+				type: "item"
+				item: "finallyfarmabledyes:orange"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			id: "4846669DA68D91D0"
+			tasks: [{
+				id: "55E2B751A6DD87B4"
+				type: "item"
+				item: "finallyfarmabledyes:blue"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			id: "00A8E09CD3838610"
+			tasks: [{
+				id: "4BAC90C0CE2C7BFC"
+				type: "item"
+				item: "finallyfarmabledyes:light_blue"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			id: "5BC35C0493FD92A9"
+			tasks: [{
+				id: "66B7203CC64B6B23"
+				type: "item"
+				item: "finallyfarmabledyes:red_tulip"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			id: "04EE70A3F6D5D398"
+			tasks: [{
+				id: "61C57B854AE5888B"
+				type: "item"
+				item: "finallyfarmabledyes:magenta"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.0d
+			id: "094F19E76565EE3E"
+			tasks: [{
+				id: "52282CFDF33C1C22"
+				type: "item"
+				item: "finallyfarmabledyes:pink"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			id: "1142E2E37F75C702"
+			tasks: [{
+				id: "4686A2F4B58D5F02"
+				type: "item"
+				item: "finallyfarmabledyes:light_gray"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			id: "2CC1B533CFCB192B"
+			tasks: [{
+				id: "3DB6FF24E3548CB7"
+				type: "item"
+				item: "finallyfarmabledyes:oxeye_daisy"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 0.0d
+			id: "3351B7B31941906E"
+			tasks: [{
+				id: "4A9497745253B22C"
+				type: "item"
+				item: "finallyfarmabledyes:red"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 0.0d
+			id: "082F4205BA4D194B"
+			tasks: [{
+				id: "3961D415A85A872A"
+				type: "item"
+				item: "finallyfarmabledyes:azure_bluet"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 0.0d
+			id: "32471ECE6C687F6B"
+			tasks: [{
+				id: "15430D9813EA741E"
+				type: "item"
+				item: "finallyfarmabledyes:black"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 0.0d
+			id: "4BC083EB7A6CB216"
+			tasks: [{
+				id: "61FA51302A71D5CB"
+				type: "item"
+				item: "finallyfarmabledyes:white"
 			}]
 		}
 	]

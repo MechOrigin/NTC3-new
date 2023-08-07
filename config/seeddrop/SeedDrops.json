@@ -1,0 +1,20 @@
+{
+  "dropConfig": [
+    {
+      "item": "minecraft:wheat_seeds",
+      "chance": 3.125
+    },
+    {
+      "item": "minecraft:melon_seeds",
+      "chance": 3.125
+    },
+    {
+      "item": "minecraft:pumpkin_seeds",
+      "chance": 3.125
+    },
+    {
+      "item": "minecraft:beetroot_seeds",
+      "chance": 3.125
+    }
+  ]
+}

@@ -19,12 +19,6 @@
 				type: "item"
 				item: "thermal:wrench"
 			}]
-			rewards: [{
-				id: "1500AE59A19CB1E4"
-				type: "item"
-				item: "minecraft:iron_block"
-				count: 8
-			}]
 		}
 		{
 			x: 0.0d

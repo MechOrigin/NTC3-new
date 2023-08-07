@@ -1013,6 +1013,7 @@
 				"2FE9444965885654"
 				"288283E080C2E75E"
 			]
+			hide: true
 			id: "3B66520D328CE290"
 			tasks: [{
 				id: "4200FFDECDF0975C"
@@ -1041,6 +1042,7 @@
 				"{ntc3.flintandsteel.desc2}"
 			]
 			dependencies: ["2FE9444965885654"]
+			hide: true
 			id: "17D4B2616E251D91"
 			tasks: [{
 				id: "0F7117ECF59C7447"
@@ -1158,6 +1160,7 @@
 			y: -12.5d
 			description: ["{ntc3.magmacream.desc0}"]
 			dependencies: ["4B44C0D44291ECFB"]
+			hide: true
 			id: "6D1DC3D0274EDBEA"
 			tasks: [{
 				id: "0FC6E69A0F887B3C"
@@ -1181,6 +1184,7 @@
 			y: -11.5d
 			description: ["{ntc3.netherbrick.desc0}"]
 			dependencies: ["3E6656C0639E904E"]
+			hide: true
 			id: "2FE9444965885654"
 			tasks: [{
 				id: "369FAFBD6FB523BE"
@@ -1257,6 +1261,7 @@
 				"{ntc3.magmablock.desc2}"
 			]
 			dependencies: ["0D85C8AD81845270"]
+			hide: true
 			id: "4B44C0D44291ECFB"
 			tasks: [{
 				id: "230212C67B02102D"
@@ -1358,7 +1363,7 @@
 		}
 		{
 			title: "{ntc3.leather.title}"
-			x: 3.25d
+			x: -1.5d
 			y: -9.75d
 			subtitle: "{ntc3.leather.subtitle}"
 			description: [
@@ -1377,7 +1382,7 @@
 		}
 		{
 			title: "{ntc3.book.title}"
-			x: 4.5d
+			x: -2.75d
 			y: -9.75d
 			subtitle: "{ntc3.book.subtitle}"
 			description: ["{ntc3.book.desc0}"]
@@ -1475,10 +1480,11 @@
 		{
 			title: "{ntc3.unlock.neuralnetworks}"
 			icon: "kubejs:purple_mark"
-			x: 2.25d
-			y: -11.625d
+			x: 1.875d
+			y: -9.75d
 			shape: "circle"
-			dependencies: ["0D85C8AD81845270"]
+			dependencies: ["09DFC42D6647423B"]
+			hide: true
 			size: 1.5d
 			id: "3171BA03635A71CB"
 			tasks: [{
@@ -1511,6 +1517,7 @@
 				"{ntc3.netherack.desc1}"
 			]
 			dependencies: ["4B44C0D44291ECFB"]
+			hide: true
 			id: "3E6656C0639E904E"
 			tasks: [{
 				id: "7202805B9E9948D3"
@@ -1561,6 +1568,7 @@
 				"{ntc3.dimension.thenether.desc2}"
 			]
 			dependencies: ["55A6835E3605A66E"]
+			hide: true
 			id: "7E05F724102A8CFE"
 			tasks: [{
 				id: "6DFD8043C681CB0A"
@@ -1675,6 +1683,7 @@
 			y: -13.0d
 			description: ["{ntc3.netherpainting.desc0}"]
 			dependencies: ["17D4B2616E251D91"]
+			hide: true
 			id: "55A6835E3605A66E"
 			tasks: [{
 				id: "55487BA0759EBC39"
@@ -1695,6 +1704,7 @@
 			y: -14.5d
 			description: ["{ntc3.dimension.overworld.desc0}"]
 			dependencies: ["216BB6462EB91D81"]
+			hide: true
 			id: "5F954B511F712A70"
 			tasks: [{
 				id: "2CBF60473A33B95E"
@@ -1762,6 +1772,7 @@
 			]
 			hide_dependency_lines: false
 			dependencies: ["7E05F724102A8CFE"]
+			hide: true
 			id: "216BB6462EB91D81"
 			tasks: [{
 				id: "7A54FCEE03EE5020"
@@ -1776,6 +1787,7 @@
 			description: ["{ntc3.netheriteingot.desc0}"]
 			hide_dependency_lines: true
 			dependencies: ["7E05F724102A8CFE"]
+			hide: true
 			id: "659DC30C7929A90E"
 			tasks: [{
 				id: "233C45E201329EDE"
@@ -1791,6 +1803,7 @@
 			description: ["{ntc3.netheritescrap.desc0}"]
 			hide_dependency_lines: true
 			dependencies: ["7E05F724102A8CFE"]
+			hide: true
 			id: "282BBBF0EC9F71D6"
 			tasks: [{
 				id: "41662109D4B37B73"
@@ -1865,21 +1878,6 @@
 				type: "item"
 				item: "thermal:blizz_powder"
 				count: 16
-			}]
-		}
-		{
-			title: "{ntc3.string.title}"
-			x: 3.0d
-			y: 3.0d
-			subtitle: "{ntc3.emcable}"
-			description: ["{ntc3.string.desc0}"]
-			dependencies: ["09F2B5FA40391B2F"]
-			hide: true
-			id: "1DF969D7F62C0F43"
-			tasks: [{
-				id: "2B160EFAD5CFB4F1"
-				type: "item"
-				item: "minecraft:string"
 			}]
 		}
 		{
@@ -1972,6 +1970,7 @@
 			y: -16.0d
 			description: ["{ntc3.beacon.desc0}"]
 			dependencies: ["216BB6462EB91D81"]
+			hide: true
 			id: "07D5DA0EF7164CD4"
 			tasks: [{
 				id: "71EDBE7F8FFC8C08"
@@ -2011,6 +2010,7 @@
 			subtitle: "Make a bag or something"
 			description: ["You're going to want a place to store all those ores and loot."]
 			dependencies: ["17D4B2616E251D91"]
+			hide: true
 			optional: true
 			id: "356F5F84E376DAB8"
 			tasks: [{
