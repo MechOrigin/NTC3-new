@@ -448,29 +448,15 @@
 			description: [
 				"Heat Sources can be seen from pressing U while hovering your mouse over a crucible."
 				""
-				"Due to some display problem, the x4 source won't display. So I will say it here, that it's fire."
+				"Campfire and Fire share 4x rate vs. other sources"
 			]
 			dependencies: ["5C106B6E6409EF22"]
 			hide: true
 			id: "7F58FDC48A15959F"
-			tasks: [
-				{
-					id: "6BC1EAC25E4E1035"
-					type: "item"
-					item: {
-						id: "minecraft:flint_and_steel"
-						Count: 1
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "47D38223666E7F04"
-					type: "item"
-					item: "minecraft:netherrack"
-				}
-			]
+			tasks: [{
+				id: "7EA698E1795B2E49"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "Blocks for Lava?"
