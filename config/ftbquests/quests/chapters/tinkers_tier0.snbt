@@ -1,9 +1,9 @@
 {
 	id: "5359A1F469C66352"
 	group: "442FD72D1627F87A"
-	order_index: 3
+	order_index: 2
 	filename: "tinkers_tier0"
-	title: "{ntc3.chapter.tinkerslvl0.title}"
+	title: "ε0 {ntc3.chapter.tinkerslvl0.title}"
 	icon: "tconstruct:crafting_station"
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false

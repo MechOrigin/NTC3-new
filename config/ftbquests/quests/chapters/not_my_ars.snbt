@@ -1,9 +1,9 @@
 {
 	id: "5F28B0415A5C81C2"
 	group: "442FD72D1627F87A"
-	order_index: 7
+	order_index: 6
 	filename: "not_my_ars"
-	title: "{ntc3.chapter.notmyarselvl0.title}"
+	title: "ε0 {ntc3.chapter.notmyarselvl0.title}"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	hide_quest_details_until_startable: true

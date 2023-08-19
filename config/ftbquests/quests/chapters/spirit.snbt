@@ -1,9 +1,9 @@
 {
 	id: "14F6E001335D9C75"
 	group: "442FD72D1627F87A"
-	order_index: 9
+	order_index: 8
 	filename: "spirit"
-	title: "Spirit"
+	title: "ε0 Spirit"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	hide_quest_details_until_startable: true

@@ -1,9 +1,9 @@
 {
 	id: "6C99EC6E1599B728"
 	group: "442FD72D1627F87A"
-	order_index: 2
+	order_index: 1
 	filename: "ex_nihilio_atm6"
-	title: "Ex Nihilo"
+	title: "ε0 Ex Nihilo"
 	icon: "exnihilosequentia:crimson_sieve"
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false

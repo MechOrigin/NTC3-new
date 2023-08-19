@@ -222,7 +222,7 @@
 			}]
 		}
 		{
-			title: "Go To Echelon 0"
+			title: "Go To Echelon 0 - The Beginning"
 			icon: "kubejs:purple_mark"
 			x: 0.0d
 			y: 7.5d

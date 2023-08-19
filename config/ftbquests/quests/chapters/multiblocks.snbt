@@ -1,9 +1,9 @@
 {
 	id: "00BC6D98D7824817"
 	group: "442FD72D1627F87A"
-	order_index: 6
+	order_index: 5
 	filename: "multiblocks"
-	title: "{ntc3.chapter.multiblockslvl0.title}"
+	title: "ε0 {ntc3.chapter.multiblockslvl0.title}"
 	icon: "ntc3:blast_furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

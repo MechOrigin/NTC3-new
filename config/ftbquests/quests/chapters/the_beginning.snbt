@@ -3,7 +3,7 @@
 	group: "442FD72D1627F87A"
 	order_index: 0
 	filename: "the_beginning"
-	title: "{ntc3.chapter.thebeginning.title}"
+	title: "ε0 {ntc3.chapter.thebeginning.title}"
 	icon: {
 		id: "ftbquests:custom_icon"
 		Count: 1
@@ -983,6 +983,7 @@
 			y: -3.75d
 			description: ["{ntc3.blastfurnace.desc0}"]
 			dependencies: ["120222ECE1D830E3"]
+			optional: true
 			id: "446694102110FBBE"
 			tasks: [{
 				id: "3938CFD7C4E3389C"
@@ -1480,10 +1481,9 @@
 		{
 			title: "{ntc3.unlock.neuralnetworks}"
 			icon: "kubejs:purple_mark"
-			x: 1.875d
-			y: -9.75d
+			x: -6.0d
+			y: -6.75d
 			shape: "circle"
-			dependencies: ["09DFC42D6647423B"]
 			hide: true
 			size: 1.5d
 			id: "3171BA03635A71CB"
@@ -1593,6 +1593,7 @@
 			description: ["Fishing can actually yeild Tin Can which can be smelted into Iron Nuggets"]
 			dependencies: ["120222ECE1D830E3"]
 			hide: true
+			optional: true
 			id: "0436BD4432222334"
 			tasks: [
 				{
@@ -2186,6 +2187,149 @@
 					tag: { }
 				}
 				count: 4
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1
+				tag: {
+					Icon: "projecte:textures/item/philosophers_stone.png"
+				}
+			}
+			x: -1.5d
+			y: 7.0d
+			dependencies: ["7D3C5DCE539B0CB9"]
+			id: "330CC7FB7E20939F"
+			tasks: [{
+				id: "37900EACBC132AB2"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "546B57FE73CDA40B"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "projecte_lvl0"
+			}]
+		}
+		{
+			title: "Look at your Transmution Table"
+			icon: "projecte:transmutation_table"
+			x: 1.5d
+			y: 7.0d
+			dependencies: ["7D3C5DCE539B0CB9"]
+			id: "5EB98258D1169AAF"
+			tasks: [{
+				id: "44C537116B34BA32"
+				type: "observation"
+				timer: 0L
+				observe_type: 0
+				to_observe: "projecte:transmutation_table"
+			}]
+		}
+		{
+			title: "Hostile Mobs List"
+			icon: "minecraft:spider_spawn_egg"
+			x: 2.375d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"zombie"
+				"skeleton"
+				"creeper"
+				"spider"
+				"enderman"
+				"silverfish"
+				"zombified_piglin"
+				"piglin"
+				"piglin_brute"
+				"hoglin"
+				"zoglin"
+				"ghast"
+				"blaze"
+				"slime"
+				"witch"
+				"rabbit"
+				"endermite"
+				"stray"
+				"wither_skeleton"
+				"skeleton_horse"
+				"zombie_horse"
+				"zombie_villager"
+				"husk"
+				"guardian"
+				"evoker"
+				"vex"
+				"vindicator"
+				"shulker"
+				"drowned"
+				"phantom"
+				"pillager"
+			]
+			hide_dependency_lines: true
+			dependencies: ["5EB98258D1169AAF"]
+			size: 0.5d
+			optional: true
+			id: "33C63F4C8108FCE5"
+			tasks: [{
+				id: "2816B708B3E4EE34"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Passive Mobs List"
+			icon: "minecraft:turtle_egg"
+			x: -2.375d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"sheep"
+				"pig"
+				"cow"
+				"mooshroom"
+				"chicken"
+				"bat"
+				"villager"
+				"squid"
+				"ocelot"
+				"wolf"
+				"horse"
+				"rabbit"
+				"donkey"
+				"mule"
+				"polar_bear"
+				"llama"
+				"parrot"
+				"dolphin"
+				"cod"
+				"salmon"
+				"pufferfish"
+				"tropical_fish"
+				"turtle"
+				"cat"
+				"fox"
+				"panda"
+				"trader_llama"
+				"wandering_trader"
+				"strider"
+			]
+			hide_dependency_lines: true
+			dependencies: ["330CC7FB7E20939F"]
+			size: 0.5d
+			optional: true
+			id: "7C607F351A87E5D2"
+			tasks: [{
+				id: "281006108037EDB0"
+				type: "checkmark"
 			}]
 		}
 	]

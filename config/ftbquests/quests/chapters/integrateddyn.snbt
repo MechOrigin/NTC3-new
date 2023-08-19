@@ -1,9 +1,9 @@
 {
 	id: "4BD850656FB0F5B9"
 	group: "442FD72D1627F87A"
-	order_index: 4
+	order_index: 3
 	filename: "integrateddyn"
-	title: "{ntc3.chapter.integrateddyn.title}"
+	title: "ε0 {ntc3.chapter.integrateddyn.title}"
 	icon: "integratedterminals:part_terminal_storage"
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false

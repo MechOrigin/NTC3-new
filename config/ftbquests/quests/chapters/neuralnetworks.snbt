@@ -1,9 +1,9 @@
 {
 	id: "1DC46E8F8753C9C1"
 	group: "442FD72D1627F87A"
-	order_index: 5
+	order_index: 4
 	filename: "neuralnetworks"
-	title: "{ntc3.chapter.neuralnetworks.title}"
+	title: "ε0 {ntc3.chapter.neuralnetworks.title}"
 	icon: "hostilenetworks:sim_chamber"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false

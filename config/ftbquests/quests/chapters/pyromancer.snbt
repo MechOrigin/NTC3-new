@@ -1,9 +1,9 @@
 {
 	id: "3A2D04B149AA65DA"
 	group: "442FD72D1627F87A"
-	order_index: 8
+	order_index: 7
 	filename: "pyromancer"
-	title: "Pyromancer"
+	title: "ε0 Pyromancer"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	hide_quest_details_until_startable: true
