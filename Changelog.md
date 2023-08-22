@@ -106,3 +106,26 @@
 - Some more additions and changes:
     - added treated wood (creosote soaked wood)
     - added oven bricks for coke oven
+
+
+- Some notes on mob farming ideas
+    - Sieve blessed earth for small chance of sheep, cow, pig, chicken, villager egg
+    - Sieve cursed earth for small chance of zombies, husks, drowned, skeleton, creeper, witch, and an even smaller chance of enderman eggs
+    - Eggs can spawn mobs which can be either spawned and killed or put into a machine
+        - Spawn and Kill:   neural networks leveling
+                            industrial foregoing pokeball
+                            Optional:
+                                Spirit (soulstone leveling) and spawners
+                                Gateways (portals for mobs to spawn in waves)
+                                Mystical Agri chunks
+                                Bees
+        - Process in machine:   Thermal pulverizer
+                                Mechanical Squeezer
+                                
+    - One cool idea I had was to make a compact crafting recipe with colored wool and a mob head to create a high tier mob model
+    - Another idea was to make a compact crafting recipe with iron fences to make spirit spawner blocks
+    - Sieve netherrack dust for small chance of piglin, hoglin, wither, blaze and ghast egg
+    - Pour liquid exp over snowball, niter, obsidian, sulfur to get blizz, blitz, basalz and blaze dusts -> pack dusts to get rods -> pour soulsteel over rods to get respective eggs
+    - Sieve endstone dust for small chance of enderman, shulker eggs
+    - Remove beekeeping mod even though its cool
+

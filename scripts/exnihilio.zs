@@ -121,3 +121,178 @@ import mods.exnihilosequentia.ZenSieveRecipe;
 .setInput(<item:minecraft:dirt>)
 .addDrop(<item:finallyfarmabledyes:oxeye_daisy>)
 .addRoll("string", 0.35);
+
+
+// Mob Farm Stuff
+
+// Cursed Earth stuff
+<recipetype:exnihilosequentia:sieve>
+.create("zombie_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:zombie_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("husk_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:husk_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("drowned_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:drowned_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("skeleton_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:skeleton_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("creeper_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:creeper_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("witch_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:witch_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("spider_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:spider_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("stray_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:stray_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("enderman_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:enderman_spawn_egg>)
+.addRoll("diamond", 0.05);
+
+<recipetype:exnihilosequentia:sieve>
+.create("zombie_villager_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:zombie_villager_spawn_egg>)
+.addRoll("diamond", 0.10);
+
+<recipetype:exnihilosequentia:sieve>
+.create("slime_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:slime_spawn_egg>)
+.addRoll("diamond", 0.10);
+
+<recipetype:exnihilosequentia:sieve>
+.create("guardian_spawn_egg")
+.setInput(<item:miniutilities:cursed_earth>)
+.addDrop(<item:minecraft:guardian_spawn_egg>)
+.addRoll("diamond", 0.05);
+
+
+
+// Blessed Earth stuff
+<recipetype:exnihilosequentia:sieve>
+.create("pig_spawn_egg")
+.setInput(<item:miniutilities:blessed_earth>)
+.addDrop(<item:minecraft:pig_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("cow_spawn_egg")
+.setInput(<item:miniutilities:blessed_earth>)
+.addDrop(<item:minecraft:cow_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("sheep_spawn_egg")
+.setInput(<item:miniutilities:blessed_earth>)
+.addDrop(<item:minecraft:sheep_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("chicken_spawn_egg")
+.setInput(<item:miniutilities:blessed_earth>)
+.addDrop(<item:minecraft:chicken_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("bee_spawn_egg")
+.setInput(<item:miniutilities:blessed_earth>)
+.addDrop(<item:minecraft:bee_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("villager_spawn_egg")
+.setInput(<item:miniutilities:blessed_earth>)
+.addDrop(<item:minecraft:villager_spawn_egg>)
+.addRoll("diamond", 0.05);
+
+
+// Crushed Netherrack stuff
+
+<recipetype:exnihilosequentia:sieve>
+.create("piglin_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:piglin_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("zombified_piglin_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:zombified_piglin_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("hoglin_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:hoglin_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("zoglin_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:zoglin_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("blaze_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:blaze_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("ghast_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:ghast_spawn_egg>)
+.addRoll("diamond", 0.10);
+
+<recipetype:exnihilosequentia:sieve>
+.create("magma_cube_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:magma_cube_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+
+// Crushed Endstone stuff
+
+<recipetype:exnihilosequentia:sieve>
+.create("shulker_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_end_stone>)
+.addDrop(<item:minecraft:shulker_spawn_egg>)
+.addRoll("diamond", 0.15);
+
+<recipetype:exnihilosequentia:sieve>
+.create("enderman_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_end_stone>)
+.addDrop(<item:minecraft:enderman_spawn_egg>)
+.addRoll("diamond", 0.15);

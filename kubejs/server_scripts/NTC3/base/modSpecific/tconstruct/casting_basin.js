@@ -46,6 +46,13 @@ onEvent('recipes', event => {
     casting_table('minecraft:blaze_powder', 'sophisticatedcore:xp_still', 80).cast('#forge:dusts/sulfur').coolingTime(60).consumeCast().switchSlots()
 
     casting_basin('minecraft:end_stone', 'tconstruct:molten_ender', 250).cast('#forge:sandstone').coolingTime(100).consumeCast().switchSlots()
+
+
+
+    casting_table('thermal:blizz_spawn_egg', 'tconstruct:molten_soulsteel', 270).cast('thermal:blizz_rod').coolingTime(60).consumeCast().switchSlots()
+    casting_table('thermal:blitz_spawn_egg', 'tconstruct:molten_soulsteel', 270).cast('thermal:blitz_rod').coolingTime(60).consumeCast().switchSlots()
+    casting_table('thermal:basalz_spawn_egg', 'tconstruct:molten_soulsteel', 270).cast('thermal:basalz_rod').coolingTime(60).consumeCast().switchSlots()
+    casting_table('minecraft:blaze_spawn_egg', 'tconstruct:molten_soulsteel', 270).cast('minecraft:blaze_rod').coolingTime(60).consumeCast().switchSlots()
   
 
   })
