@@ -30,6 +30,11 @@ import mods.exnihilosequentia.ZenSieveRecipe;
 .addDrop(<item:minecraft:amethyst_shard>)
 .addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
 
+<recipetype:exnihilosequentia:sieve>
+.create("certus_quartz_crystal")
+.setInput(<item:minecraft:soul_sand>)
+.addDrop(<item:ae2:certus_quartz_crystal>)
+.addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
 
 //seeds
 

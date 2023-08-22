@@ -13,6 +13,8 @@ onEvent('tags.items', e => {
     e.add('thermal:crafting/casts', 'tconstruct:gear_cast')
     e.add('thermal:crafting/casts', 'tconstruct:wire_cast')
 
+    e.add('minecraft:planks', 'kubejs:treated_planks')
+
     // e.add('forge:nuggets/slimesteel', 'tconstruct:slimesteel_nugget');
     // e.add('forge:ingots/slimesteel', 'tconstruct:slimesteel_ingot');
     // e.add('forge:storage_blocks/slimesteel', 'tconstruct:slimesteel_block');
@@ -331,6 +333,8 @@ onEvent('tags.items', e => {
                                               'antimatter_shared:blue_schist',
                                               'antimatter_shared:kimberlite',
                                               'antimatter_shared:quartzite'*/])
+
+      e.add('minecraft:planks', 'kubejs:treated_planks')
 
       oresToUnify.forEach((material) => {
 

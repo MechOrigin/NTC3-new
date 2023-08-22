@@ -37,4 +37,12 @@ onEvent('recipes', (event) => {
       E: '#thermal:glass/hardened'
     })
 
+    modifyShaped(event, 'thermal:device_tree_extractor', 1, ['ABA', 'DCD', 'AEA'], {
+      A: 'kubejs:treated_planks',
+      B: '#forge:gears/iron',
+      C: 'minecraft:bucket',
+      D: '#forge:glass',
+      E: 'thermal:redstone_servo'
+    })
+
 });
