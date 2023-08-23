@@ -36,6 +36,12 @@ import mods.exnihilosequentia.ZenSieveRecipe;
 .addDrop(<item:ae2:certus_quartz_crystal>)
 .addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
 
+<recipetype:exnihilosequentia:sieve>
+.create("chorus_fruit")
+.setInput(<item:exnihilosequentia:crushed_end_stone>)
+.addDrop(<item:minecraft:chorus_fruit>)
+.addRoll("diamond", 0.15).addRoll("iron", 0.075).addRoll("flint", 0.05);
+
 //seeds
 
 <recipetype:exnihilosequentia:sieve>
@@ -292,7 +298,7 @@ import mods.exnihilosequentia.ZenSieveRecipe;
 .addRoll("diamond", 0.15);
 
 <recipetype:exnihilosequentia:sieve>
-.create("enderman_spawn_egg")
+.create("enderman_spawn_egg_end")
 .setInput(<item:exnihilosequentia:crushed_end_stone>)
 .addDrop(<item:minecraft:enderman_spawn_egg>)
 .addRoll("diamond", 0.15);
