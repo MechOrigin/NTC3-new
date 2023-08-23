@@ -10,8 +10,8 @@
 	hide_quest_details_until_startable: true
 	quests: [
 		{
-			x: -1.0d
-			y: -1.5d
+			x: 2.0d
+			y: -3.75d
 			dependencies: ["4F2BB93A626346B3"]
 			id: "41DA7A4A64286067"
 			tasks: [{
@@ -22,9 +22,12 @@
 		}
 		{
 			title: "{ntc3.chapter.tinkerslvl0.title}"
-			x: 0.0d
-			y: 0.0d
+			icon: "kubejs:purple_mark"
+			x: 3.25d
+			y: -2.25d
+			shape: "circle"
 			dependencies: ["4DE8BF1FDB13D4E4"]
+			size: 1.5d
 			id: "4F2BB93A626346B3"
 			tasks: [{
 				id: "06B839EF0675017F"
@@ -40,8 +43,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.5d
+			x: 5.25d
+			y: -2.75d
 			dependencies: ["4F2BB93A626346B3"]
 			id: "03D32D84452B0A89"
 			tasks: [{
@@ -57,8 +60,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -1.5d
+			x: 1.25d
+			y: -2.75d
 			dependencies: ["4F2BB93A626346B3"]
 			id: "61E8C585589849F5"
 			tasks: [{
@@ -74,7 +77,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 2.75d
 			y: 0.0d
 			hide_dependency_lines: true
 			dependencies: ["4F2BB93A626346B3"]
@@ -103,7 +106,7 @@
 			]
 		}
 		{
-			x: 2.5d
+			x: 2.75d
 			y: -1.0d
 			hide_dependency_lines: true
 			dependencies: ["4F2BB93A626346B3"]
@@ -130,7 +133,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 3.75d
 			y: -1.0d
 			hide_dependency_lines: true
 			dependencies: ["4F2BB93A626346B3"]
@@ -142,7 +145,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 3.75d
 			y: 0.0d
 			hide_dependency_lines: true
 			dependencies: ["4F2BB93A626346B3"]
@@ -154,8 +157,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 0.0d
+			x: 3.25d
+			y: -4.0d
 			dependencies: ["4F2BB93A626346B3"]
 			id: "4806DC3F04C23172"
 			tasks: [{
@@ -169,8 +172,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 0.0d
+			x: 4.75d
+			y: 2.25d
 			hide_dependency_lines: true
 			dependencies: ["11CAC5C2702EC8DD"]
 			id: "355E61F6690905C6"
@@ -187,8 +190,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: -1.0d
+			x: 4.75d
+			y: 1.0d
 			hide_dependency_lines: true
 			dependencies: ["11CAC5C2702EC8DD"]
 			id: "56B1FD777A8E0140"
@@ -196,6 +199,153 @@
 				id: "7B56DD949B334A04"
 				type: "item"
 				item: "tconstruct:seared_drain"
+			}]
+		}
+		{
+			x: -2.75d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["11CAC5C2702EC8DD"]
+			id: "7CD55AA5D660A1A1"
+			tasks: [{
+				id: "58EDCC7AFD89FC06"
+				type: "item"
+				item: "secretly_complicated:sulfur_dust"
+			}]
+		}
+		{
+			x: -2.75d
+			y: 2.25d
+			dependencies: ["7CD55AA5D660A1A1"]
+			id: "73C61C26E835895D"
+			tasks: [{
+				id: "3B3A56182C81FDB5"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			x: -1.25d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["11CAC5C2702EC8DD"]
+			id: "5A39002783A2F506"
+			tasks: [{
+				id: "07E501133EB55448"
+				type: "item"
+				item: "minecraft:snowball"
+			}]
+		}
+		{
+			x: -1.25d
+			y: 2.25d
+			dependencies: ["5A39002783A2F506"]
+			id: "5CA5C417FBCFCF75"
+			tasks: [{
+				id: "5E6EE185DC545990"
+				type: "item"
+				item: "thermal:blizz_powder"
+			}]
+		}
+		{
+			x: 0.25d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["11CAC5C2702EC8DD"]
+			id: "3B0BAF4B0C42FF28"
+			tasks: [{
+				id: "0EB00AC499161CFF"
+				type: "item"
+				item: "thermal:slag"
+			}]
+		}
+		{
+			x: 0.25d
+			y: 2.25d
+			dependencies: ["3B0BAF4B0C42FF28"]
+			id: "723F88B15401FED6"
+			tasks: [{
+				id: "7D72032C021A7687"
+				type: "item"
+				item: "thermal:basalz_powder"
+			}]
+		}
+		{
+			x: 1.75d
+			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["11CAC5C2702EC8DD"]
+			id: "655FF4EDE57F5B18"
+			tasks: [{
+				id: "4A9E8789B0B51137"
+				type: "item"
+				item: "secretly_complicated:potassium_nitrate_dust"
+			}]
+		}
+		{
+			x: 1.75d
+			y: 2.25d
+			dependencies: ["655FF4EDE57F5B18"]
+			id: "1D8912C297FD2828"
+			tasks: [{
+				id: "0EBE9D0B2754C076"
+				type: "item"
+				item: "thermal:blitz_powder"
+			}]
+		}
+		{
+			x: -2.75d
+			y: 3.75d
+			dependencies: ["73C61C26E835895D"]
+			id: "456291101F4CF26D"
+			tasks: [{
+				id: "21C28E0D69941368"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			x: -1.25d
+			y: 3.75d
+			dependencies: ["5CA5C417FBCFCF75"]
+			id: "76784D308866A3A8"
+			tasks: [{
+				id: "61B671DFF18DB280"
+				type: "item"
+				item: "thermal:blizz_rod"
+			}]
+		}
+		{
+			x: 1.75d
+			y: 3.75d
+			dependencies: ["1D8912C297FD2828"]
+			id: "1C6A2805850A5E81"
+			tasks: [{
+				id: "46FD5F02C884EAC3"
+				type: "item"
+				item: "thermal:blitz_rod"
+			}]
+		}
+		{
+			x: 0.25d
+			y: 3.75d
+			dependencies: ["723F88B15401FED6"]
+			id: "4D37C95EFE8D1DA7"
+			tasks: [{
+				id: "199E2C49FC769DDF"
+				type: "item"
+				item: "thermal:basalz_rod"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.75d
+			dependencies: ["4F2BB93A626346B3"]
+			id: "34371BA0AFB22BD5"
+			tasks: [{
+				id: "717C828BB873A5ED"
+				type: "item"
+				item: "tconstruct:part_chest"
 			}]
 		}
 	]

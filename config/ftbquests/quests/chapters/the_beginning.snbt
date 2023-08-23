@@ -35,6 +35,7 @@
 				""
 				"{ntc3.thebeginning.desc2}"
 			]
+			dependencies: ["37AD88739F300D2D"]
 			size: 1.5d
 			id: "7D3C5DCE539B0CB9"
 			tasks: [{
@@ -1364,8 +1365,8 @@
 		}
 		{
 			title: "{ntc3.leather.title}"
-			x: -1.5d
-			y: -9.75d
+			x: 2.0d
+			y: -3.25d
 			subtitle: "{ntc3.leather.subtitle}"
 			description: [
 				"{ntc3.leather.desc0}"
@@ -1373,6 +1374,7 @@
 				"{ntc3.leather.desc1}"
 			]
 			hide_dependency_lines: false
+			dependencies: ["0DC758E7DE901E3C"]
 			hide: true
 			id: "1EC705E5874DCA9D"
 			tasks: [{
@@ -1383,17 +1385,28 @@
 		}
 		{
 			title: "{ntc3.book.title}"
-			x: -2.75d
-			y: -9.75d
+			x: -3.25d
+			y: 4.5d
 			subtitle: "{ntc3.book.subtitle}"
 			description: ["{ntc3.book.desc0}"]
 			hide_dependency_lines: false
+			dependencies: ["13211B2F4D37949D"]
 			hide: true
 			id: "4DEA424A3CF25070"
 			tasks: [{
 				id: "1EE67828E7511EDA"
 				type: "item"
 				item: "minecraft:book"
+			}]
+			rewards: [{
+				id: "15C1D4A78B354A6B"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
 			}]
 		}
 		{
@@ -1484,6 +1497,7 @@
 			x: -6.0d
 			y: -6.75d
 			shape: "circle"
+			dependencies: ["288283E080C2E75E"]
 			hide: true
 			size: 1.5d
 			id: "3171BA03635A71CB"
@@ -1847,38 +1861,6 @@
 					tag: { }
 				}
 				count: 4
-			}]
-		}
-		{
-			x: 7.25d
-			y: -6.0d
-			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: false
-			hide: true
-			id: "674A8FACEB7A9A15"
-			tasks: [{
-				id: "21BEE1A62123DC79"
-				type: "item"
-				item: "minecraft:snowball"
-			}]
-		}
-		{
-			x: 6.25d
-			y: -6.0d
-			subtitle: "{ntc3.emcable}"
-			hide_dependency_lines: false
-			hide: true
-			id: "309EE8A5A3F65FB9"
-			tasks: [{
-				id: "3899C4952F4C0EA2"
-				type: "item"
-				item: "minecraft:ice"
-			}]
-			rewards: [{
-				id: "5ACE894D5CD38048"
-				type: "item"
-				item: "thermal:blizz_powder"
-				count: 16
 			}]
 		}
 		{
@@ -2330,6 +2312,34 @@
 			tasks: [{
 				id: "281006108037EDB0"
 				type: "checkmark"
+			}]
+		}
+		{
+			x: -2.25d
+			y: 5.5d
+			dependencies: ["7D3C5DCE539B0CB9"]
+			hide: true
+			id: "13211B2F4D37949D"
+			tasks: [{
+				id: "09B202D5BDB83B67"
+				type: "item"
+				item: {
+					id: "farmersdelight:flint_knife"
+					Count: 1
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7AB6543D2D26EF30"
+				type: "item"
+				item: {
+					id: "numismaticoverhaul:bronze_coin"
+					Count: 1
+					tag: { }
+				}
+				count: 4
 			}]
 		}
 	]

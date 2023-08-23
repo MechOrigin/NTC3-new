@@ -1,0 +1,425 @@
+{
+  "name": "integrated_processor",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "0d4a81db-537d-4d46-a41b-b880df60009b",
+      "duration": 60,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "minecraft:glass"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:liquid_chorus",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "integratedterminals:chorus_glass"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "b9a87986-1354-46f5-ad5f-bcbffe0d4681",
+      "duration": 60,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "integrateddynamics:proto_chorus"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_chorus_chunk"
+              }
+            },
+            "chance": 0.5
+          },
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_chorus_chunk"
+              }
+            },
+            "chance": 0.5
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:liquid_chorus",
+              "amount": 250
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "02499817-10a6-429a-9944-2aeffb064694",
+      "duration": 60,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "minecraft:glass"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:menril_resin",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "integratedterminals:menril_glass"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "ceb9c3a6-c061-42bf-bc1e-07133806c4d6",
+      "duration": 60,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "integrateddynamics:menril_planks"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_menril_chunk"
+              }
+            },
+            "chance": 1.0
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:menril_resin",
+              "amount": 500
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "2468a8f9-1c6d-480c-a618-59dc4e2753bf",
+      "duration": 60,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:menril_resin",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_menril_block"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "4ef3fccf-84fe-44b3-8be1-61e414636769",
+      "duration": 60,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:liquid_chorus",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_chorus_block"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "cf05810c-0ff6-4152-a6dd-387480e46351",
+      "duration": 60,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "integrateddynamics:menril_log"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 4,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_menril_chunk"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_menril_chunk"
+              }
+            },
+            "chance": 0.5
+          },
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_menril_chunk"
+              }
+            },
+            "chance": 0.5
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:menril_resin",
+              "amount": 2000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "uid": "8153901c-892f-4cc9-875f-e48e9be5dab4",
+      "duration": 60,
+      "inputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 1,
+              "ingredient": {
+                "item": "minecraft:popped_chorus_fruit"
+              }
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "item": [
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 4,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_chorus_chunk"
+              }
+            },
+            "chance": 1.0
+          },
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_chorus_chunk"
+              }
+            },
+            "chance": 0.5
+          },
+          {
+            "content": {
+              "type": "multiblocked:sized",
+              "count": 2,
+              "ingredient": {
+                "item": "integrateddynamics:crystalized_chorus_chunk"
+              }
+            },
+            "chance": 0.5
+          }
+        ],
+        "fluid": [
+          {
+            "content": {
+              "fluid": "integrateddynamics:liquid_chorus",
+              "amount": 250
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "tickInputs": {
+        "forge_energy": [
+          {
+            "content": 25,
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

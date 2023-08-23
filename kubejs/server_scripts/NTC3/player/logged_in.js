@@ -2,6 +2,7 @@ onEvent('player.logged_in', event => {
     if (!event.hasGameStage('starting_items')) {
         event.server.scheduleInTicks(0, event.server, function (callback) {
             callback.data.runCommand('/clear')
+            callback.data.runCommand('/execute in javd:void run fill 4 68 2 0 68 -2 minecraft:bedrock replace minecraft:air')
         })
 
         event.addGameStage('philosophers_stone_unlock');

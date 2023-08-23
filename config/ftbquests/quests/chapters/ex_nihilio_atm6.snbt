@@ -602,6 +602,7 @@
 			x: 0.0d
 			y: -13.125d
 			shape: "circle"
+			dependencies: ["0DC758E7DE901E3C"]
 			size: 1.5d
 			id: "265E13291DAE7955"
 			tasks: [{
@@ -687,6 +688,50 @@
 					item: "exnihilosequentia:yellow_coral_larvae"
 				}
 			]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			dependencies: ["42387D579F777B5E"]
+			id: "5D844FDCD5BB757B"
+			tasks: [{
+				id: "7D7766508F433A21"
+				type: "item"
+				item: "miniutilities:cursed_earth"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.5d
+			dependencies: ["42387D579F777B5E"]
+			id: "313C19DE38B4FBCD"
+			tasks: [{
+				id: "1BDDEE4078B460AB"
+				type: "item"
+				item: "miniutilities:blessed_earth"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.0d
+			dependencies: ["42387D579F777B5E"]
+			id: "091EDDCED0142079"
+			tasks: [{
+				id: "1422C8A11A730A89"
+				type: "item"
+				item: "exnihilosequentia:crushed_netherrack"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.0d
+			dependencies: ["42387D579F777B5E"]
+			id: "76E0C38F1996ACAB"
+			tasks: [{
+				id: "3115D2F8644C850E"
+				type: "item"
+				item: "exnihilosequentia:crushed_end_stone"
+			}]
 		}
 	]
 	quest_links: [ ]

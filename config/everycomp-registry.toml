@@ -70,12 +70,6 @@
 		sky_slime = true
 		ender_slime = true
 
-	[leaves_type.ars_nouveau]
-		blue_archwood = true
-		red_archwood = true
-		green_archwood = true
-		purple_archwood = true
-
 	[leaves_type.quark]
 		blue_blossom = true
 		lavender_blossom = true
@@ -83,9 +77,6 @@
 		pink_blossom = true
 		yellow_blossom = true
 		red_blossom = true
-
-	[leaves_type.ars_elemental]
-		yellow_archwood = true
 
 	[leaves_type.culturaldelights]
 		avocado = true

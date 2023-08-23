@@ -1,0 +1,61 @@
+{
+	id: "446812991FDC06F9"
+	group: ""
+	order_index: 2
+	filename: "hidden_quests"
+	title: "Hidden Quests"
+	disable_toast: true
+	always_invisible: true
+	default_quest_shape: "square"
+	default_hide_dependency_lines: true
+	hide_quest_details_until_startable: true
+	quests: [
+		{
+			x: 0.0d
+			y: -2.25d
+			min_required_dependencies: 1
+			dependencies: [
+				"084B7C0EA1EC3195"
+				"0A74F9E6AC251BE9"
+			]
+			dependency_requirement: "one_started"
+			can_repeat: true
+			invisible: true
+			progression_mode: "flexible"
+			secret: true
+			id: "5E423A941972966A"
+			tasks: [{
+				id: "26798F7662B99BFD"
+				type: "gamestage"
+				disable_toast: true
+				secret: true
+				stage: "choice_made"
+			}]
+		}
+		{
+			x: 1.75d
+			y: -2.25d
+			id: "43E2511E0753305C"
+			tasks: [{
+				id: "55998FF40840FEBC"
+				type: "gamestage"
+				disable_toast: true
+				secret: true
+				stage: "skyblock_create"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.25d
+			id: "3BAB92E81EEEE126"
+			tasks: [{
+				id: "4C029317EA099DB9"
+				type: "gamestage"
+				disable_toast: true
+				secret: true
+				stage: "skyblock_dont_create"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

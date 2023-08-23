@@ -1,7 +1,7 @@
 {
 	id: "5F28B0415A5C81C2"
-	group: "442FD72D1627F87A"
-	order_index: 6
+	group: "7B753B74DC83DB37"
+	order_index: 9
 	filename: "not_my_ars"
 	title: "ε0 {ntc3.chapter.notmyarselvl0.title}"
 	default_quest_shape: ""
@@ -13,11 +13,17 @@
 			y: -0.5d
 			shape: "circle"
 			id: "11865C9A91B2A59C"
-			tasks: [{
-				id: "6CA7B4162EB3EAF3"
-				type: "questsadditions:time"
-				elapsedTime: 1L
-			}]
+			tasks: [
+				{
+					id: "6CA7B4162EB3EAF3"
+					type: "questsadditions:time"
+					elapsedTime: 1L
+				}
+				{
+					id: "79E7D56C01004A02"
+					type: "checkmark"
+				}
+			]
 			rewards: [
 				{
 					id: "6B68FCABA910E9E0"

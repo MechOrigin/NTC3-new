@@ -1,7 +1,7 @@
 {
 	id: "7418E941CC3F6389"
 	group: ""
-	order_index: 0
+	order_index: 1
 	filename: "all_is_one_one_is_all"
 	title: "{ntc3.chapter.allisoneandoneisall.title}"
 	icon: {
@@ -35,11 +35,18 @@
 				""
 				"{ntc3.allisoneandoneisall.desc2}"
 			]
+			dependencies: [
+				"5E423A941972966A"
+				"43E2511E0753305C"
+			]
+			hide: true
 			size: 1.5d
 			id: "1377E15BE179084D"
 			tasks: [{
-				id: "51C89EA50962439D"
-				type: "checkmark"
+				id: "77CC4959FD85C96D"
+				type: "gamestage"
+				disable_toast: true
+				stage: "choice_made"
 			}]
 			rewards: [
 				{
@@ -56,10 +63,41 @@
 					id: "1997A9B00A62A8BE"
 					type: "command"
 					icon: "minecraft:feather"
+					team_reward: true
 					auto: "no_toast"
 					exclude_from_claim_all: true
 					command: "/effect give @p minecraft:slow_falling 60"
 					player_command: false
+				}
+				{
+					id: "4ECBB531B1FF8CAA"
+					type: "command"
+					auto: "no_toast"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/execute in javd:void run tp @p 0 70 0"
+					player_command: false
+				}
+				{
+					id: "1A14C408A646D3A3"
+					type: "item"
+					item: {
+						id: "projecte:philosophers_stone"
+						Count: 1
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+				{
+					id: "76BCD0CADC933D0A"
+					type: "item"
+					item: {
+						id: "tiab:time_in_a_bottle"
+						Count: 1
+						tag: { }
+					}
 				}
 			]
 		}
@@ -222,13 +260,17 @@
 			}]
 		}
 		{
-			title: "Go To Echelon 0 - The Beginning"
+			title: "Unlocks Echelon 0 - The Beginning"
 			icon: "kubejs:purple_mark"
 			x: 0.0d
-			y: 7.5d
+			y: 8.625d
 			shape: "circle"
-			dependencies: ["4B957CE10B1B21AB"]
+			dependencies: [
+				"602FCF9B3B076AB9"
+				"4B957CE10B1B21AB"
+			]
 			hide: true
+			dependency_requirement: "one_completed"
 			size: 1.5d
 			id: "37AD88739F300D2D"
 			tasks: [{
@@ -247,6 +289,84 @@
 				}
 				count: 4
 			}]
+		}
+		{
+			title: "Your Choice Was Made"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1
+				tag: {
+					Icon: "projecte:textures/item/philosophers_stone.png"
+				}
+			}
+			x: 0.0d
+			y: 11.625d
+			shape: "circle"
+			dependencies: [
+				"5E423A941972966A"
+				"3BAB92E81EEEE126"
+			]
+			hide: true
+			size: 1.5d
+			id: "602FCF9B3B076AB9"
+			tasks: [{
+				id: "073DE329DA4ED54E"
+				type: "gamestage"
+				disable_toast: true
+				secret: true
+				stage: "choice_made"
+			}]
+			rewards: [
+				{
+					id: "1E71C2AE578B1755"
+					type: "command"
+					icon: "minecraft:feather"
+					auto: "no_toast"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/effect give @p minecraft:slow_falling 60"
+					player_command: false
+				}
+				{
+					id: "2A8734A83D81C897"
+					type: "command"
+					auto: "no_toast"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					command: "/execute in minecraft:overworld run tp @p 0 120 0"
+					player_command: false
+				}
+				{
+					id: "1ABB475A9E5F5F9F"
+					type: "item"
+					auto: "no_toast"
+					exclude_from_claim_all: true
+					ignore_reward_blocking: true
+					item: "projecte:transmutation_table"
+					only_one: true
+				}
+				{
+					id: "654DC9DFDEFE7954"
+					type: "item"
+					item: {
+						id: "tiab:time_in_a_bottle"
+						Count: 1
+						tag: { }
+					}
+				}
+				{
+					id: "505D816B13A3A8CF"
+					type: "item"
+					item: {
+						id: "projecte:philosophers_stone"
+						Count: 1
+						tag: { }
+						ForgeCaps: {
+							Parent: { }
+						}
+					}
+				}
+			]
 		}
 	]
 	quest_links: [ ]

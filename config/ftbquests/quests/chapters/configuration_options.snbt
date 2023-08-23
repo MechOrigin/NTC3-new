@@ -1,7 +1,7 @@
 {
 	id: "2A5EDB91811583E9"
 	group: ""
-	order_index: 1
+	order_index: 0
 	filename: "configuration_options"
 	title: "Configuration Options"
 	default_quest_shape: ""
@@ -20,6 +20,9 @@
 			rewards: [{
 				id: "19CF85D74433A7DB"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/gamerule doInsomnia false"
 				player_command: false
 			}]
@@ -37,6 +40,9 @@
 			rewards: [{
 				id: "3B0EF1E9887B20EF"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/gamerule doInsomnia true"
 				player_command: false
 			}]
@@ -45,6 +51,7 @@
 			title: "Enable Keep Inventory"
 			x: 1.25d
 			y: 0.0d
+			can_repeat: true
 			id: "735A1254C90ABA3A"
 			tasks: [{
 				id: "5E11DD55BC57137D"
@@ -53,6 +60,9 @@
 			rewards: [{
 				id: "61E976FF3F0E1C73"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/gamerule keepInventory true"
 				player_command: false
 			}]
@@ -61,6 +71,7 @@
 			title: "Disable Keep Inventory"
 			x: 1.25d
 			y: 1.5d
+			can_repeat: true
 			id: "49E5B85D188DBC87"
 			tasks: [{
 				id: "4CF01CB45154CFE6"
@@ -69,6 +80,9 @@
 			rewards: [{
 				id: "23FA7672EC154061"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/gamerule keepInventory false"
 				player_command: false
 			}]
@@ -77,6 +91,7 @@
 			title: "Peaceful"
 			x: 3.5d
 			y: 0.0d
+			can_repeat: true
 			id: "1C5A843E5022063A"
 			tasks: [{
 				id: "7E1099CFCD0280C1"
@@ -85,6 +100,9 @@
 			rewards: [{
 				id: "661125E7B2A318FA"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/difficulty peaceful"
 				player_command: false
 			}]
@@ -93,6 +111,7 @@
 			title: "Normal"
 			x: 3.5d
 			y: 2.0d
+			can_repeat: true
 			id: "7091B2F34ACAB03C"
 			tasks: [{
 				id: "053AAE45250F14DC"
@@ -101,6 +120,9 @@
 			rewards: [{
 				id: "2DB68FBB0C853AE4"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/difficulty normal"
 				player_command: false
 			}]
@@ -109,6 +131,7 @@
 			title: "Easy"
 			x: 3.5d
 			y: 1.0d
+			can_repeat: true
 			id: "4AEDA88A8A95A891"
 			tasks: [{
 				id: "0ED77CF3FD72325B"
@@ -117,6 +140,9 @@
 			rewards: [{
 				id: "74284DB75A4C48A0"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/difficulty easy"
 				player_command: false
 			}]
@@ -125,6 +151,7 @@
 			title: "Hard"
 			x: 3.5d
 			y: 3.0d
+			can_repeat: true
 			id: "7E1423DA0C32BD3A"
 			tasks: [{
 				id: "28C0B459A0DC4F0B"
@@ -133,9 +160,104 @@
 			rewards: [{
 				id: "001F16DA427447B0"
 				type: "command"
+				auto: "no_toast"
+				exclude_from_claim_all: true
+				ignore_reward_blocking: true
 				command: "/difficulty hard"
 				player_command: false
 			}]
+		}
+		{
+			title: "Start in Skyblock"
+			icon: "nameless_trinkets:fragile_cloud"
+			x: 1.0d
+			y: -3.25d
+			subtitle: "Only Click One!"
+			incompatible: ["0A74F9E6AC251BE9"]
+			id: "084B7C0EA1EC3195"
+			tasks: [{
+				id: "68F7005C6EBB92EF"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "792B1EC6A636E566"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "skyblock_create"
+				}
+				{
+					id: "304E1B7B0FEFAB54"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "skyblock_dont_create"
+					remove: true
+				}
+				{
+					id: "240A28A79C237AF3"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "choice_made"
+				}
+			]
+		}
+		{
+			title: "Start in Overworld"
+			icon: "minecraft:grass_block"
+			x: 2.5d
+			y: -3.25d
+			subtitle: "Only Click One!"
+			progression_mode: "flexible"
+			incompatible: ["084B7C0EA1EC3195"]
+			id: "0A74F9E6AC251BE9"
+			tasks: [{
+				id: "4F5AF2A6A32A1594"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "1FF793A85745CE5A"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "skyblock_dont_create"
+				}
+				{
+					id: "3120A9EAEFD90735"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "skyblock_create"
+					remove: true
+				}
+				{
+					id: "0304C0C13444146F"
+					type: "gamestage"
+					auto: "invisible"
+					ignore_reward_blocking: true
+					stage: "choice_made"
+				}
+				{
+					id: "32B6BF8259255909"
+					type: "item"
+					auto: "enabled"
+					ignore_reward_blocking: true
+					item: "minecraft:nether_star"
+					only_one: true
+				}
+				{
+					id: "56B31DB52DFB4D9E"
+					type: "command"
+					team_reward: false
+					auto: "no_toast"
+					ignore_reward_blocking: true
+					command: "/clear @p minecraft:nether_star"
+					player_command: false
+				}
+			]
 		}
 	]
 	quest_links: [ ]
