@@ -108,5 +108,8 @@ onEvent('recipes', (event) => {
     event.shapeless('2x minecraft:acacia_planks', ['#minecraft:acacia_logs', '#forge:tools/saw'])
     event.shapeless('2x minecraft:dark_oak_planks', ['#minecraft:dark_oak_logs', '#forge:tools/saw'])
     
+    //morpho tool
+    event.custom({"type":"minecraft:crafting_shapeless","ingredients":[{"item":"morphtool:tool"},{"item":"morphtool:tool"}],"result":{"item":"morphtool:tool","count":1,"type":"forge:nbt","nbt":"{\"morphtool:data\":{ae2:{Count:1,id:\"ae2:certus_quartz_wrench\"},fluxnetworks:{Count:1,id:\"fluxnetworks:flux_configurator\"},integratedtunnels:{Count:1,id:\"integrateddynamics:wrench\"},laserio:{Count:1,id:\"laserio:laser_wrench\"},mekanism:{Count:1,id:\"mekanism:configurator\"},thermal:{Count:1,id:\"thermal:wrench\"}}}"}})
+
 
 });

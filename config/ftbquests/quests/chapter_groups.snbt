@@ -3,5 +3,6 @@
 		{ id: "442FD72D1627F87A", title: "Echelon 0" }
 		{ id: "5BCA4C8804B27813", title: "{ntc3.chaptergroup.neutral}" }
 		{ id: "7B753B74DC83DB37", title: "{ntc3.chaptergroup.tier1}" }
+		{ id: "621289646EE3DDE0", title: "Optional" }
 	]
 }

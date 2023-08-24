@@ -1,6 +1,7 @@
 onEvent('recipes', (event) => {
 
     removeRecipeByOutput(event, [
+      'mekanism:dynamic_valve'
     ])
 
     removeRecipeByID(event, [
@@ -22,4 +23,5 @@ onEvent('recipes', (event) => {
       event.custom({"type":"minecraft:crafting_shaped","pattern":["MBM"],"key":{"M":{"item":"minecraft:iron_ingot"},"B":{"item":"minecraft:bucket"}},"result":{"item":"mekanism:basic_mechanical_pipe","count":8}})
       event.custom({"type":"minecraft:crafting_shaped","pattern":["MBM"],"key":{"M":{"item":"minecraft:iron_ingot"},"B":{"item":"minecraft:redstone"}},"result":{"item":"mekanism:basic_universal_cable","count":8}})
 
+      event.custom({"type":"minecraft:crafting_shaped","pattern":[" E ","EBE"," E "],"key":{"B":{"item":"minecraft:piston"},"E":{"item":"mekanism:dynamic_tank"}},"result":{"item":"mekanism:dynamic_valve","count":2}})
 });

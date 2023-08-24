@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
     modifyShaped(event, 'thermal:device_tree_extractor', 1, ['ABA', 'DCD', 'AEA'], {
       A: 'kubejs:treated_planks',
       B: '#forge:gears/iron',
-      C: 'minecraft:bucket',
+      C: 'industrialforegoing:machine_frame_pity',
       D: '#forge:glass',
       E: 'thermal:redstone_servo'
     })

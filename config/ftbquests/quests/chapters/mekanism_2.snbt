@@ -1,0 +1,404 @@
+{
+	id: "3A61B717DA213DA8"
+	group: "442FD72D1627F87A"
+	order_index: 6
+	filename: "mekanism_2"
+	title: "ε0 Mekanism"
+	icon: "mekanism:basic_control_circuit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "mekanism:basic_universal_cable"
+			x: -1.0d
+			y: -4.25d
+			subtitle: "{ntc2.universalcables.subtitle}"
+			description: [
+				"{ntc2.universalcables.desc1}"
+				""
+				"{ntc2.universalcables.desc2}"
+				""
+				"{ntc2.universalcables.desc3}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2505888CF4CFB725"]
+			min_width: 250
+			id: "423D766C2795C260"
+			tasks: [{
+				id: "0BB62B59CA79521A"
+				type: "item"
+				title: "{ntc2.universalcables.task}"
+				item: {
+					id: "itemfilters:or"
+					Count: 1
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_universal_cable"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_universal_cable"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "39A4C0F1826CE583"
+				type: "item"
+				item: "mekanism:advanced_universal_cable"
+				count: 16
+			}]
+		}
+		{
+			title: "{ntc2.logisticaltransporter.title}"
+			icon: "mekanism:basic_logistical_transporter"
+			x: 0.0d
+			y: -4.25d
+			subtitle: "{ntc2.logisticaltransporter.subtitle}"
+			description: [
+				"{ntc2.logisticaltransporter.desc1}"
+				""
+				"{ntc2.logisticaltransporter.desc2}"
+				""
+				"{ntc2.logisticaltransporter.desc3}"
+				""
+				"{ntc2.logisticaltransporter.desc4}"
+				""
+				"{ntc2.logisticaltransporter.desc5}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2505888CF4CFB725"]
+			min_width: 325
+			id: "5D06472EF5EC1773"
+			tasks: [{
+				id: "6B0C61D5859557C9"
+				type: "item"
+				title: "{ntc2.logisticaltransporter.task}"
+				item: {
+					id: "itemfilters:or"
+					Count: 1
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_logistical_transporter"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "7608A7CFB3AC4630"
+				type: "item"
+				item: "mekanism:advanced_logistical_transporter"
+				count: 32
+			}]
+		}
+		{
+			title: "{ntc2.mekspecialtransporters.title}"
+			icon: "mekanism:diversion_transporter"
+			x: 1.0d
+			y: -4.25d
+			subtitle: "{ntc2.mekspecialtransporters.subtitle}"
+			description: [
+				"{ntc2.mekspecialtransporters.desc1}"
+				""
+				"{ntc2.mekspecialtransporters.desc2}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["2505888CF4CFB725"]
+			id: "0615234EB587406C"
+			tasks: [
+				{
+					id: "28EF3C9AF3C67004"
+					type: "item"
+					item: "mekanism:restrictive_transporter"
+				}
+				{
+					id: "5788764E37A7C9E8"
+					type: "item"
+					item: "mekanism:diversion_transporter"
+				}
+			]
+		}
+		{
+			title: "{ntc2.thermoconduct.title}"
+			icon: "mekanism:advanced_thermodynamic_conductor"
+			x: 1.0d
+			y: -3.25d
+			subtitle: "{ntc2.thermoconduct.subtitle}"
+			description: [
+				"{ntc2.thermoconduct.desc1}"
+				""
+				"{ntc2.thermoconduct.desc2}"
+				""
+				"{ntc2.thermoconduct.desc3}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["2505888CF4CFB725"]
+			id: "194ED4BA8B50B237"
+			tasks: [{
+				id: "2D8EF8527333C796"
+				type: "item"
+				title: "{ntc2.thermoconduct.task}"
+				item: {
+					id: "itemfilters:or"
+					Count: 1
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_thermodynamic_conductor"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_thermodynamic_conductor"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_thermodynamic_conductor"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_thermodynamic_conductor"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "561A5C88B0B76A59"
+				type: "item"
+				item: "mekanism:elite_thermodynamic_conductor"
+				count: 32
+			}]
+		}
+		{
+			title: "{ntc2.pressurizedtube.title}"
+			icon: "mekanism:ultimate_pressurized_tube"
+			x: 0.0d
+			y: -3.25d
+			subtitle: "{ntc2.pressurizedtube.subtitle}"
+			description: [
+				"{ntc2.pressurizedtube.desc1}"
+				""
+				"{ntc2.pressurizedtube.desc2}"
+				""
+				"{ntc2.pressurizedtube.desc3}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["2505888CF4CFB725"]
+			id: "2B9BA1053DF0C002"
+			tasks: [{
+				id: "4353E69C92EBBA6D"
+				type: "item"
+				title: "{ntc2.pressurizedtube.task}"
+				item: {
+					id: "itemfilters:or"
+					Count: 1
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_pressurized_tube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_pressurized_tube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_pressurized_tube"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_pressurized_tube"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "543BA01A8CA91D7A"
+				type: "item"
+				item: "mekanism:advanced_pressurized_tube"
+				count: 32
+			}]
+		}
+		{
+			title: "{ntc3.mechanicalpipes.title}"
+			icon: "mekanism:elite_mechanical_pipe"
+			x: -1.0d
+			y: -3.25d
+			subtitle: "{ntc2.mechanicalpipes.subtitle}"
+			description: [
+				"{ntc2.mechanicalpipes.desc1}"
+				""
+				"{ntc2.mechanicalpipes.desc2}"
+				""
+				"{ntc2.mechanicalpipes.desc3}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["2505888CF4CFB725"]
+			id: "1469B36ECC18C9A1"
+			tasks: [{
+				id: "6736AA8F8FE3B2A7"
+				type: "item"
+				title: "{ntc2.mechanicalpipes.task}"
+				item: {
+					id: "itemfilters:or"
+					Count: 1
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_mechanical_pipe"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_mechanical_pipe"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5A75621B86D976E2"
+				type: "item"
+				item: "mekanism:advanced_mechanical_pipe"
+				count: 32
+			}]
+		}
+		{
+			title: "{ntc2.mektanks.title}"
+			icon: "mekanism:basic_fluid_tank"
+			x: -0.5d
+			y: 0.5d
+			subtitle: "{ntc2.mektanks.subtitle}"
+			description: [
+				"{ntc2.mektanks.desc1}"
+				""
+				"{ntc2.mektanks.desc2}"
+				""
+				"{ntc2.mektanks.desc3}"
+				""
+				"Tiers after basic don't have a crafting recipe but can be upgraded via Tier Installers"
+			]
+			dependencies: ["2505888CF4CFB725"]
+			id: "77E9AE09E64F3B26"
+			tasks: [{
+				id: "47F2BE0E56BD97C7"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_fluid_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_fluid_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_fluid_tank"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_fluid_tank"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			icon: "mekanism:dynamic_tank"
+			x: 0.5d
+			y: 0.5d
+			subtitle: "{ntc2.dynamictank.subtitle}"
+			description: [
+				"{ntc2.dynamictank.desc1}"
+				""
+				"{ntc2.dynamictank.desc2}"
+				""
+				"{ntc2.dynamictank.desc3}"
+				""
+				"{ntc2.dynamictank.desc4}"
+				""
+				"{ntc2.dynamictank.desc5}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["2505888CF4CFB725"]
+			min_width: 300
+			id: "09B18B2AB7C34C53"
+			tasks: [
+				{
+					id: "7949C437B19F0407"
+					type: "item"
+					item: "mekanism:dynamic_tank"
+				}
+				{
+					id: "4CEDE604D77F4B4C"
+					type: "item"
+					item: "mekanism:dynamic_valve"
+				}
+			]
+			rewards: [{
+				id: "25477A77E6598EF9"
+				type: "item"
+				item: "mekanism:dynamic_tank"
+				count: 16
+			}]
+		}
+		{
+			title: "Unlocked ε0 Mekanism"
+			icon: "mekanism:basic_control_circuit"
+			x: 0.0d
+			y: -1.5d
+			shape: "circle"
+			id: "2505888CF4CFB725"
+			tasks: [{
+				id: "3A8B0278F1952D0F"
+				type: "questsadditions:time"
+				disable_toast: true
+				elapsedTime: 1L
+			}]
+		}
+	]
+	quest_links: [ ]
+}

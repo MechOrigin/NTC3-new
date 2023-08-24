@@ -66,16 +66,6 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 0.5d
-			id: "0B2DB6BFA0263C9D"
-			tasks: [{
-				id: "6C463000771011F6"
-				type: "item"
-				item: "minecraft:chorus_fruit"
-			}]
-		}
-		{
 			x: -2.0d
 			y: 0.5d
 			id: "33B8E5A427ED45E4"

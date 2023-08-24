@@ -1,0 +1,11 @@
+{
+	id: "4A6DC3E38CEE9980"
+	group: "442FD72D1627F87A"
+	order_index: 8
+	filename: "industrial_foregoing"
+	title: "ε0 Industrial Foregoing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

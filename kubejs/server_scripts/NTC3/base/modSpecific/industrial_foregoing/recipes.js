@@ -1,7 +1,8 @@
 onEvent('recipes', (event) => {
 
     removeRecipeByID(event, [
-
+      'industrialforegoing:fluid_extractor',
+      'industrialforegoing:latex_processing_unit'
       ])
 
     modifyShaped(event, 'industrialforegoing:machine_frame_pity', 1, ['BAB', 'ACA', 'BAB'], {

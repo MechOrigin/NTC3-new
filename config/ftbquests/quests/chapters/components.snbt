@@ -135,6 +135,26 @@
 				item: "secretly_complicated:black_steel_dense_plate"
 			}]
 		}
+		{
+			x: -2.0d
+			y: 0.0d
+			id: "26C5F9670CE3E277"
+			tasks: [{
+				id: "5C888A85C538997B"
+				type: "item"
+				item: "secretly_complicated:rubber_solid"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			id: "243143CC85944598"
+			tasks: [{
+				id: "0B9686E670EE67F6"
+				type: "item"
+				item: "secretly_complicated:rubber_plate"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

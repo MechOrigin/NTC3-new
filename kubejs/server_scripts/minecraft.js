@@ -3,8 +3,7 @@ onEvent('recipes', event => {
     // REMOVED-RECIPES-START
     // ADDED-RECIPES-START
 	// crafting-recipes
-	event.custom({"type":"minecraft:crafting_shaped","pattern":[" E","MB"," E"],"key":{"E":{"item":"integrateddynamics:variable"},"B":{"item":"minecraft:hopper"},"M":{"item":"integrateddynamics:crystalized_menril_chunk"}},"result":{"item":"integrateddynamics:variable_transformer_output","count":1}})
-	event.custom({"type":"minecraft:crafting_shaped","pattern":["E ","BD","E "],"key":{"E":{"item":"integrateddynamics:variable"},"B":{"item":"minecraft:hopper"},"D":{"item":"integrateddynamics:crystalized_menril_chunk"}},"result":{"item":"integrateddynamics:variable_transformer_input","count":1}})
+
 
 	
 })

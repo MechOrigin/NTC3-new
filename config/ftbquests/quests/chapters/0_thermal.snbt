@@ -1,0 +1,122 @@
+{
+	id: "01590758B97F26DB"
+	group: "442FD72D1627F87A"
+	order_index: 7
+	filename: "0_thermal"
+	title: "ε0 Thermal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 7.0d
+			y: -0.5d
+			id: "6592BA85ACAC594B"
+			tasks: [{
+				id: "7F2A50BFF19BA101"
+				type: "item"
+				item: "thermal:charge_bench"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			id: "3973D730DB0DF1EF"
+			tasks: [{
+				id: "2860096F50398746"
+				type: "item"
+				item: "thermal:device_potion_diffuser"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			id: "055F5EEFC244DC19"
+			tasks: [{
+				id: "106A58D12674F113"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			id: "705985F2627DF639"
+			tasks: [{
+				id: "7D8052A23E7521FE"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			id: "07A4205BFB88D66D"
+			tasks: [{
+				id: "6889592459C52183"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			id: "0F5257E3EB7707FE"
+			tasks: [{
+				id: "1A81D6AA44EC800A"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			id: "7AC4EDBD0859F711"
+			tasks: [{
+				id: "4E1C7DE32935B32D"
+				type: "item"
+				item: "thermal:device_soil_infuser"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "437E1057FA4BB9EE"
+			tasks: [{
+				id: "6AD3E8354AD2167A"
+				type: "item"
+				item: "thermal:device_composter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			id: "716D684D70C33CDC"
+			tasks: [{
+				id: "62716D8D00DEDA57"
+				type: "item"
+				item: "thermal:device_fisher"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			id: "6B95B7F2FD74D2C9"
+			tasks: [{
+				id: "5DA1B50A59FE659A"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			id: "078BE9AB0A825DDD"
+			tasks: [{
+				id: "2347E61C6FBFD855"
+				type: "item"
+				item: "thermal:device_hive_extractor"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

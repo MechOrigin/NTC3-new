@@ -1,0 +1,11 @@
+{
+  "type": "integrateddynamics:mechanical_drying_basin",
+  "fluid": {
+    "fluid": "thermal:latex",
+    "amount": 90
+  },
+  "duration": 30,
+  "result": {
+    "item": "secretly_complicated:rubber_solid"
+  }
+}

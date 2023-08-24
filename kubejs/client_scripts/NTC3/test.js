@@ -18,16 +18,22 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:nickel_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:garnierite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:pentlandite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Pentlandite Veins in the Nether.`, `(Y 1-255)`])
     //e.add(`secretly_complicated:cooperite_netherrack_ore`, [`Nickel can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:nickel_solid`, [`Nickel can be found in Garnierite/Pentlandite/Cooperite Veins in the Nether.`, `(Y 1-255)`])
     
     e.add(`secretly_complicated:zinc_netherrack_ore`, [`Zinc can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:sphalerite_netherrack_ore`, [`Zinc can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:zinc_solid`, [`Zinc can be found in Sphalerite Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Sphalerite Veins in the Nether.`, `(Y 1-255)`])
+
     
     e.add(`secretly_complicated:silver_netherrack_ore`, [`Silver can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:galena_netherrack_ore`, [`Silver can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:silver_solid`, [`Silver can be found in Galena Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:lead_solid`, [`Lead can be found in Galena Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Galena Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:massicot_chunk`, [`Massicot can be found in Galena Veins in the Nether.`, `(Y 1-255)`])
         
     e.add(`secretly_complicated:tin_netherrack_ore`, [`Tin can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:cassiterite_netherrack_ore`, [`Tin can be found in the Nether.`, `(Y 1-255)`])
@@ -41,11 +47,42 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:cooperite_netherrack_ore`, [`Platinum/Nickel/Palladium can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:platinum_solid`, [`Platinum can be found in Cooperite Veins in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:palladium_solid`, [`Palladium can be found in Cooperite Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Cooperite Veins in the Nether.`, `(Y 1-255)`])
 
     
     e.add(`secretly_complicated:rock_salt_netherrack_ore`, [`Salt and Potassium can be found in the Nether.`, `(Y 1-255)`])
-    e.add(`secretly_complicated:potassium_solid`, [`Platinum can be found in Rock Salt Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:potassium_nitrate_gem`, [`Potassium Nitrate can be found in Rock Salt Veins in the Nether.`, `(Y 1-255)`])
     e.add(`mekanism:salt`, [`Salt can be found in Rock Salt Veins in the Nether.`, `(Y 1-255)`])
+    
+    e.add(`secretly_complicated:tetrahedrite_netherrack_ore`, [`Copper, Antimony, Iron and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:antimony_solid`, [`Antimony can be found in Tetrahedrite Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Tetrahedrite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:stibnite_netherrack_ore`, [`Antimony and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Stibnite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:chalcopyrite_netherrack_ore`, [`Copper, Iron and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Chalcopyrite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:cinnabar_netherrack_ore`, [`Cinnabar, Mercury and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Cinnabar Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:cobaltite_netherrack_ore`, [`Cobalt, Arsenic and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Cobaltite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:molybdenite_netherrack_ore`, [`Cobalt, Arsenic and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:molybdenum_solid`, [`Molybdenum can be found in Molybdenite Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Molybdenite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:pyrite_netherrack_ore`, [`Iron and Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Pyrite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:sulfur_netherrack_ore`, [`Sulfur can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Sulfur Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:barite_netherrack_ore`, [`Barite can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:barium_solid`, [`Barium can be found in Barite Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Barite Veins in the Nether.`, `(Y 1-255)`])
 
   })
 

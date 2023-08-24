@@ -1589,17 +1589,6 @@
 				type: "dimension"
 				dimension: "minecraft:the_nether"
 			}]
-			rewards: [{
-				id: "70E289255E0336DE"
-				type: "item"
-				item: {
-					id: "alexsmobs:dimensional_carver"
-					Count: 1
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
 		}
 		{
 			x: 2.0d
@@ -1990,6 +1979,7 @@
 			icon: "sophisticatedbackpacks:backpack"
 			x: -4.5d
 			y: -13.0d
+			shape: "rsquare"
 			subtitle: "Make a bag or something"
 			description: ["You're going to want a place to store all those ores and loot."]
 			dependencies: ["17D4B2616E251D91"]
@@ -2011,10 +2001,12 @@
 		{
 			x: -4.0d
 			y: -4.875d
+			shape: "rsquare"
 			subtitle: "&nGet ready to build platforms!&r"
 			dependencies: ["527F7E55E9752525"]
 			hide: true
 			size: 0.5d
+			optional: true
 			id: "2C9BF519033B5D8F"
 			tasks: [{
 				id: "38F77F765F34BDB9"
@@ -2043,11 +2035,13 @@
 		{
 			x: 1.0d
 			y: 1.75d
+			shape: "rsquare"
 			subtitle: "&nScan for Ores!&r"
 			description: ["Kinda useless in The Void, use it for when you have access to other Dimensions."]
 			dependencies: ["09F2B5FA40391B2F"]
 			hide: true
 			size: 0.5d
+			optional: true
 			id: "5F82349714EE16EE"
 			tasks: [{
 				id: "34188EB38B8E9F12"
@@ -2082,10 +2076,12 @@
 		{
 			x: 3.5d
 			y: -1.375d
+			shape: "rsquare"
 			subtitle: "&nA way to charge all the things!&r"
 			dependencies: ["4D9E0E04A0DF00DC"]
 			hide: true
 			size: 0.5d
+			optional: true
 			id: "42F29437401999A7"
 			tasks: [{
 				id: "46C650D3845566B1"
@@ -2223,7 +2219,7 @@
 			icon: "minecraft:spider_spawn_egg"
 			x: 2.375d
 			y: 7.0d
-			shape: "square"
+			shape: "rsquare"
 			description: [
 				"zombie"
 				"skeleton"
@@ -2272,7 +2268,7 @@
 			icon: "minecraft:turtle_egg"
 			x: -2.375d
 			y: 7.0d
-			shape: "square"
+			shape: "rsquare"
 			description: [
 				"sheep"
 				"pig"
@@ -2340,6 +2336,27 @@
 					tag: { }
 				}
 				count: 4
+			}]
+		}
+		{
+			title: "Before you go!"
+			icon: "tempad:he_who_remains_tempad"
+			x: -7.5d
+			y: -10.25d
+			shape: "rsquare"
+			subtitle: "Here's a Tempad!"
+			dependencies: ["17D4B2616E251D91"]
+			optional: true
+			id: "7E37D97CCA57504C"
+			tasks: [{
+				id: "15EF46077EAEE472"
+				type: "questsadditions:time"
+				elapsedTime: 1L
+			}]
+			rewards: [{
+				id: "32FC079088CE76F4"
+				type: "item"
+				item: "tempad:he_who_remains_tempad"
 			}]
 		}
 	]

@@ -3,7 +3,7 @@
     "animation": true,
     "water": true,
     "lava": true,
-    "fire": true,
+    "fire": false,
     "portal": true,
     "block_animations": true,
     "sculk_sensor": true
@@ -28,7 +28,8 @@
     "fog_start": 100,
     "multi_dimension_fog_control": false,
     "dimensionFogDistance": {
-      "minecraft:overworld": 0
+      "minecraft:overworld": 0,
+      "minecraft:the_nether": 0
     },
     "use_linear_flat_color_blender": false,
     "light_updates": true,
@@ -54,7 +55,7 @@
     "advancement_toast": true,
     "recipe_toast": true,
     "system_toast": true,
-    "tutorial_toast": true,
+    "tutorial_toast": false,
     "instant_sneak": false,
     "prevent_shaders": false,
     "use_fast_random": true

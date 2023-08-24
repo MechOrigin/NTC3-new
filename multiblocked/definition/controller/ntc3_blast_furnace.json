@@ -120,14 +120,6 @@
       "D": {
         "blocks": [
           {
-            "id": "mbd:fluid_hatch_out"
-          }
-        ],
-        "type": "blocks"
-      },
-      "E": {
-        "blocks": [
-          {
             "id": "mbd:item_bus_in"
           }
         ],
@@ -141,20 +133,12 @@
       "A": [
         "A",
         "C",
-        "D",
-        "E"
-      ],
-      "B": [
-        "B"
-      ],
-      "C": [
-        "C"
-      ],
-      "D": [
         "D"
       ],
-      "E": [
-        "E"
+      "B": [
+        "B",
+        "C",
+        "D"
       ]
     }
   }

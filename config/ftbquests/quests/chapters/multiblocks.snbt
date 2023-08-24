@@ -13,6 +13,7 @@
 			title: "{ntc3.chapter.multiblockslvl0.title}"
 			x: 0.0d
 			y: 0.0d
+			shape: "circle"
 			dependencies: ["288283E080C2E75E"]
 			id: "218745DD82D46B9A"
 			tasks: [{

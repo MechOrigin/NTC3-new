@@ -169,6 +169,21 @@
 				item: "secretly_complicated:stainless_steel_solid"
 			}]
 		}
+		{
+			title: "Unlock ε0 Mekanism"
+			icon: "mekanism:basic_control_circuit"
+			x: 0.0d
+			y: -4.0d
+			shape: "circle"
+			dependencies: ["3F1145BE6A8C4769"]
+			id: "2D0E3C61C7480915"
+			tasks: [{
+				id: "49276472493A9F67"
+				type: "questsadditions:time"
+				disable_toast: true
+				elapsedTime: 1L
+			}]
+		}
 	]
 	quest_links: [ ]
 }

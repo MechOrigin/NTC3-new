@@ -815,10 +815,10 @@ onEvent("lootjs", (event) => {
     event
     .addBlockLootModifier("secretly_complicated:rock_salt_netherrack_ore")
     .addWeightedLoot([1, 3], [
-        Item.of("secretly_complicated:potassium_impure_dust"),
+        Item.of("secretly_complicated:potassium_nitrate_gem"),
     ])
     .addWeightedLoot([0, 1], [
-        Item.of("secretly_complicated:potassium_crushed"),
+        Item.of("secretly_complicated:potassium_nitrate_dust"),
     ])
     .addWeightedLoot([1, 8], [
         Item.of("secretly_complicated:rock_salt_chunk"),
