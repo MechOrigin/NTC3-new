@@ -82,4 +82,7 @@ onEvent('recipes', (event) => {
         
     // });
 
+    event.custom({"type":"minecraft:crafting_shaped","pattern":["GGG","GGG","GGG"],"key":{"G":{"item":"exnihilosequentia:stone_pebble"}},"result":{"item":"minecraft:stone","count":1}})
+
+
 });
