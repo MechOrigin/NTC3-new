@@ -38,6 +38,19 @@
       "backupName": "automated",
       "backupFormat": "ZIP",
       "complete": true
+    },
+    {
+      "worldName": "New World (1)",
+      "createTime": 1692846002416,
+      "backupLocation": "C:\\Users\\mathe\\Twitch\\Minecraft\\Instances\\NTC3 new\\backups\\2023-8-23_20-0-0.zip",
+      "size": 0,
+      "ratio": 0.33332002,
+      "sha1": "d82aedcd21fec80659d63b49f496cacb2d0fc519",
+      "preview": "",
+      "snapshot": false,
+      "backupName": "automated",
+      "backupFormat": "ZIP",
+      "complete": true
     }
   ]
 }

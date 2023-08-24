@@ -366,9 +366,6 @@ farmersdelight:patch_wild_rice
 farmersdelight:patch_brown_mushroom_colonies
 farmersdelight:patch_red_mushroom_colonies
 farmersdelight:patch_sandy_shrub
-delightful:patch_wild_salmonberries
-delightful:patch_mini_melon
-delightful:patch_cantaloupe
 quark:deferred_feature_raw_generation
 quark:deferred_feature_lakes
 quark:deferred_feature_local_modifications
@@ -385,6 +382,7 @@ croptopia:disk_salt
 apotheosis:boss_dungeon
 apotheosis:boss_dungeon_2
 apotheosis:rogue_spawner
+nethersdelight:patch_propelplant_cane
 minecraft:avocado
 minecraft:avocado_spawn
 minecraft:avocado_pit
@@ -392,4 +390,3 @@ minecraft:wild_corn
 minecraft:wild_eggplants
 minecraft:wild_cucumbers
 alexsmobs:leafcutter_anthill
-nethersdelight:patch_propelplant_cane
