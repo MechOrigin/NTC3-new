@@ -11,7 +11,7 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:chromium_solid`, [`Chromium can be found in Ruby/Cinnabar Veins in the Nether.`, `(Y 5-40)`])
     e.add(`secretly_complicated:chromium_dust`, [`Chromium can be found in Ruby/Cinnabar Veins in the Nether.`, `(Y 5-40)`])
 
-    e.add(`secretly_complicated:bentonite_netherrack_ore`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
+    e.add(`secretly_complicated:bentonite_netherrack_ore`, [`Sodium, Magnesium, Silicon, Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
     e.add(`secretly_complicated:zeolite_gem`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
     e.add(`secretly_complicated:zeolite_dust`, [`Zeolite can be found in Bentonite Veins in the Nether.`, `(Y 8-118)`])
     
@@ -39,7 +39,7 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:cassiterite_netherrack_ore`, [`Tin can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:tin_solid`, [`Tin can be found in Cassiterite Veins in the Nether.`, `(Y 1-255)`])
             
-    e.add(`secretly_complicated:spessartine_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:spessartine_netherrack_ore`, [`Aluminium, Manganese, Silicon, Red Garnet can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:pyrolusite_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:tantalite_netherrack_ore`, [`Manganese can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:manganese_solid`, [`Tin can be found in Spessartine/Pyrolusite/Tantalite Veins in the Nether.`, `(Y 1-255)`])
@@ -83,6 +83,15 @@ onEvent(`jei.information`, e => {
     e.add(`secretly_complicated:barite_netherrack_ore`, [`Barite can be found in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:barium_solid`, [`Barium can be found in Barite Veins in the Nether.`, `(Y 1-255)`])
     e.add(`secretly_complicated:sulfur_dust`, [`Sulfur can be found in Barite Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:bauxite_netherrack_ore`, [`Aluminium, Titanium, Calcium, Silicon, Yellow Garnet can be found in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:silicon_nugget`, [`Silicon can be found in Bauxite, Spessartine, Bentonite, Grossular, Olivine Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:silicon_solid`, [`Silicon can be found in Bauxite, Spessartine, Bentonite, Grossular, Olivine Veins in the Nether.`, `(Y 1-255)`])
+    e.add(`secretly_complicated:silicon_dust`, [`Silicon can be found in Bauxite, Spessartine, Bentonite, Grossular, Olivine Veins in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:grossular_netherrack_ore`, [`Aluminium, Calcium, Silicon, Yellow Garnet can be found in the Nether.`, `(Y 1-255)`])
+
+    e.add(`secretly_complicated:olivine_netherrack_ore`, [`Magnsium, Iron, Silicon, Olivine can be found in the Nether.`, `(Y 1-255)`])
 
   })
 

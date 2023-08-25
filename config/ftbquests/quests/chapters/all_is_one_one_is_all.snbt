@@ -78,27 +78,6 @@
 					command: "/execute in javd:void run tp @p 0 70 0"
 					player_command: false
 				}
-				{
-					id: "1A14C408A646D3A3"
-					type: "item"
-					item: {
-						id: "projecte:philosophers_stone"
-						Count: 1
-						tag: { }
-						ForgeCaps: {
-							Parent: { }
-						}
-					}
-				}
-				{
-					id: "76BCD0CADC933D0A"
-					type: "item"
-					item: {
-						id: "tiab:time_in_a_bottle"
-						Count: 1
-						tag: { }
-					}
-				}
 			]
 		}
 		{
@@ -344,27 +323,6 @@
 					ignore_reward_blocking: true
 					item: "projecte:transmutation_table"
 					only_one: true
-				}
-				{
-					id: "654DC9DFDEFE7954"
-					type: "item"
-					item: {
-						id: "tiab:time_in_a_bottle"
-						Count: 1
-						tag: { }
-					}
-				}
-				{
-					id: "505D816B13A3A8CF"
-					type: "item"
-					item: {
-						id: "projecte:philosophers_stone"
-						Count: 1
-						tag: { }
-						ForgeCaps: {
-							Parent: { }
-						}
-					}
 				}
 			]
 		}
