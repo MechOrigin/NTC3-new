@@ -11,6 +11,7 @@
 	quests: [
 		{
 			title: "{ntc3.chaper.neuralnetworks.title}"
+			icon: "hostilenetworks:blank_data_model"
 			x: 0.0d
 			y: 0.0d
 			dependencies: ["3171BA03635A71CB"]

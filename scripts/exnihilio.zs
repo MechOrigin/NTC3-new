@@ -288,6 +288,11 @@ import mods.exnihilosequentia.ZenSieveRecipe;
 .addDrop(<item:minecraft:magma_cube_spawn_egg>)
 .addRoll("diamond", 0.15);
 
+<recipetype:exnihilosequentia:sieve>
+.create("wither_skeleton_spawn_egg")
+.setInput(<item:exnihilosequentia:crushed_netherrack>)
+.addDrop(<item:minecraft:wither_skeleton_spawn_egg>)
+.addRoll("diamond", 0.15);
 
 // Crushed Endstone stuff
 

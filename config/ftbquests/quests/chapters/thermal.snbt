@@ -265,26 +265,6 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -2.0d
-			id: "5FB42FFC5A22EC4C"
-			tasks: [{
-				id: "0468AEB0677F2A92"
-				type: "item"
-				item: "thermal:dynamo_stirling"
-			}]
-		}
-		{
-			x: 5.0d
-			y: -2.0d
-			id: "164AC09ABF5DB2E8"
-			tasks: [{
-				id: "0A19496E79966FDF"
-				type: "item"
-				item: "thermal:dynamo_compression"
-			}]
-		}
-		{
 			x: 6.0d
 			y: -2.0d
 			id: "78D7DF4C7B2BF264"

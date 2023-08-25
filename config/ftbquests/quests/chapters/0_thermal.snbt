@@ -117,6 +117,26 @@
 				item: "thermal:device_hive_extractor"
 			}]
 		}
+		{
+			x: 1.5d
+			y: -2.0d
+			id: "5FB42FFC5A22EC4C"
+			tasks: [{
+				id: "0468AEB0677F2A92"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			id: "164AC09ABF5DB2E8"
+			tasks: [{
+				id: "0A19496E79966FDF"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
