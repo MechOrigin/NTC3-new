@@ -11,7 +11,7 @@ const modPriorities = [
     'kubejs',
     'quark',
     'tconstruct',
-    'appliedenergistics2',
+    'ae2',
     'immersiveengineering',
     'thermal',
     'mekanism',

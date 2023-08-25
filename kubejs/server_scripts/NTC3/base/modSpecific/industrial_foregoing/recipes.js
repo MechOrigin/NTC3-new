@@ -11,4 +11,14 @@ onEvent('recipes', (event) => {
     C: '#forge:storage_blocks/redstone'
     })
 
+//
+//-----REPLACE OUTPUTS-----
+//
+
+//PLASTIC
+	event.replaceOutput({}, 'industrialforegoing:plastic', '#forge:ingots/rubber')
+  event.replaceInput({}, 'industrialforegoing:plastic', '#forge:ingots/rubber');
+//LATEX
+  event.replaceInput({}, 'industrialforegoing:latex', 'thermal:latex');
+
     });

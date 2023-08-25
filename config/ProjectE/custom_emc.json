@@ -187,6 +187,10 @@
     {
       "item": "#minecraft:planks",
       "emc": 0
+    },
+    {
+      "item": "mysticalagriculture:prosperity_shard",
+      "emc": 864
     }
   ]
 }

@@ -205,6 +205,13 @@ onEvent('recipes', event => {
         .inputItem(Item.of('secretly_complicated:zinc_solid', 1))
         .outputItem(Item.of('secretly_complicated:brass_solid').withCount(4))
         .duration(120)
+    //constantan
+    event.recipes.multiblocked.multiblock("alloy_kiln")
+        .inputItem(Item.of('minecraft:copper_ingot', 1))
+        .inputItem(Item.of('secretly_complicated:nickel_solid', 1))
+        .outputItem(Item.of('secretly_complicated:constantan_solid').withCount(2))
+        .duration(120)
+
 
 // Blast Furnace
     event.recipes.multiblocked.multiblock("blast_furnace")

@@ -14,5 +14,8 @@ onEvent('recipes', (event) => {
     //     C: 'tconstruct:necrotic_bone'
     //   })
 
+//SILICON
+event.replaceOutput({}, 'ae2:silicon', '#forge:nuggets/silicon')
+event.replaceInput({}, 'ae2:silicon', '#forge:nuggets/silicon');
 
 });

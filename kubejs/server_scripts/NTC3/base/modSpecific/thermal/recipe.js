@@ -45,8 +45,8 @@ onEvent('recipes', (event) => {
       E: 'thermal:redstone_servo'
     })
 
-    event.custom({"type":"minecraft:crafting_shapeless","ingredients":[{"item":"thermal:basalz_powder"},{"item":"thermal:basalz_powder"},{"item":"thermal:basalz_powder"},{"item":"thermal:basalz_rod"}],"result":{"item":"thermal:basalz_rod","count":1}})
-    event.custom({"type":"minecraft:crafting_shapeless","ingredients":[{"item":"thermal:blizz_powder"},{"item":"thermal:blizz_powder"},{"item":"thermal:blizz_powder"},{"item":"thermal:blizz_rod"}],"result":{"item":"thermal:blizz_rod","count":1}})
+    event.custom({"type":"minecraft:crafting_shaped","pattern":["  X"," X ","X  "],"key":{"X":{"item":"thermal:basalz_powder"}},"result":{"item":"thermal:basalz_rod","count":1}})
+    event.custom({"type":"minecraft:crafting_shaped","pattern":["  X"," X ","X  "],"key":{"X":{"item":"thermal:blizz_powder"}},"result":{"item":"thermal:blizz_rod","count":1}})
     event.custom({"type":"minecraft:crafting_shaped","pattern":["  X"," X ","X  "],"key":{"X":{"item":"minecraft:blaze_powder"}},"result":{"item":"minecraft:blaze_rod","count":1}})
     event.custom({"type":"minecraft:crafting_shaped","pattern":["  X"," X ","X  "],"key":{"X":{"item":"thermal:blitz_powder"}},"result":{"item":"thermal:blitz_rod","count":1}})
   
