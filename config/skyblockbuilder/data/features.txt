@@ -366,9 +366,6 @@ farmersdelight:patch_wild_rice
 farmersdelight:patch_brown_mushroom_colonies
 farmersdelight:patch_red_mushroom_colonies
 farmersdelight:patch_sandy_shrub
-delightful:patch_wild_salmonberries
-delightful:patch_mini_melon
-delightful:patch_cantaloupe
 quark:deferred_feature_raw_generation
 quark:deferred_feature_lakes
 quark:deferred_feature_local_modifications
@@ -382,7 +379,6 @@ quark:deferred_feature_vegetal_decoration
 quark:deferred_feature_top_layer_modification
 croptopia:random_crop
 croptopia:disk_salt
-nethersdelight:patch_propelplant_cane
 apotheosis:boss_dungeon
 apotheosis:boss_dungeon_2
 apotheosis:rogue_spawner
@@ -408,10 +404,11 @@ minecraft:ore_nether_quartz_ore_netherrack_10_116_16.0_14_0.0_uniform_configured
 minecraft:ore_nether_quartz_ore_netherrack_10_116_32.0_14_0.0_uniform_configured_feature
 minecraft:ore_soul_sand_netherrack_0_31_12.0_12_0.0_uniform_configured_feature
 minecraft:ore_tuff_base_stone_overworld_-64_0_2.0_32_0.0_uniform_configured_feature
-alexsmobs:leafcutter_anthill
 minecraft:avocado
 minecraft:avocado_spawn
 minecraft:avocado_pit
 minecraft:wild_corn
 minecraft:wild_eggplants
 minecraft:wild_cucumbers
+alexsmobs:leafcutter_anthill
+nethersdelight:patch_propelplant_cane

@@ -253,10 +253,8 @@
 			size: 1.5d
 			id: "37AD88739F300D2D"
 			tasks: [{
-				id: "616323BFBF4F4A0E"
-				type: "questsadditions:time"
-				disable_toast: true
-				elapsedTime: 1L
+				id: "5D6DEB9AF1C9FE60"
+				type: "checkmark"
 			}]
 			rewards: [{
 				id: "67B67B8ACBD696E7"
