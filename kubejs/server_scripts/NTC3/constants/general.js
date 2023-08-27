@@ -82,7 +82,6 @@ const materialsToUnify = [
     //'osmium',
     'tin',
     'lead',
-    'uranium',
     'bronze',
     'refined_glowstone',
     'refined_obsidian',
