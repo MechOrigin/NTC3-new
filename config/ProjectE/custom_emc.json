@@ -191,6 +191,18 @@
     {
       "item": "mysticalagriculture:prosperity_shard",
       "emc": 864
+    },
+    {
+      "item": "minecraft:soul_sand",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:soul_soil",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:magma_block",
+      "emc": 0
     }
   ]
 }
