@@ -25,6 +25,11 @@ onEvent('recipes', (event) => {
     // casting_table('minecraft:carrot', 'minecraft:water').singleUseCast('nugget')
   
     // casting_basin('minecraft:coal_block', 'minecraft:lava')
+
+    casting_table('tconstruct:ingot_cast', '#forge:molten_gold', 90).cast('#forge:ingots').coolingTime(60).consumeCast().switchSlots()
+    casting_table('tconstruct:gear_cast', '#forge:molten_gold', 90).cast('#forge:gears').coolingTime(60).consumeCast().switchSlots()
+    casting_table('tconstruct:plate_cast', '#forge:molten_gold', 90).cast('#forge:plates').coolingTime(60).consumeCast().switchSlots()
+    casting_table('tconstruct:nugget_cast', '#forge:molten_gold', 90).cast('#forge:nuggets').coolingTime(60).consumeCast().switchSlots()
   
     casting_basin('tconstruct:smeltery_controller', 'tconstruct:molten_copper', 360).cast('#tconstruct:seared_bricks').coolingTime(100).consumeCast().switchSlots()
   

@@ -13,7 +13,6 @@ const modPriorities = [
     'ae2',
     'mekanism',
     'mysticalagriculture',
-    'biomesoplenty',
     'integrateddynamics',
     'beyond_earth',
     'aquaculture',

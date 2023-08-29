@@ -25,12 +25,19 @@ onEvent('recipes', (event) => {
             outputs: [Item.of('minecraft:gravel', 2)],
             id: 'ntc3:machine/pulverizer/cobble_to_gravel'
         },
-        // {
-        //     input: 'biomesoplenty:white_sandstone',
-        //     experience: 0.2,
-        //     outputs: [Item.of('biomesoplenty:white_sand', 2), Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)],
-        //     id: 'thermal:machine/pulverizer/pulverizer_white_sandstone'
-        // }
+        {
+            input: 'minecraft:gravel',
+            experience: 0.2,
+            outputs: [Item.of('minecraft:sand', 2), Item.of('minecraft:flint', 1).withChance(0.50)],
+            id: 'ntc3:machine/pulverizer/gravel_to_sand'
+        },
+        {
+            input: 'minecraft:sandstone',
+            experience: 0.2,
+            outputs: [Item.of('minecraft:sand', 1), Item.of('minecraft:sand', 1).withChance(0.50), Item.of('secretly_complicated:potassium_nitrate_gem', 1).withChance(0.15)],
+            id: 'ntc3:machine/pulverizer/sandstone_to_sand'
+        }
+
     ];
     recipes.forEach((recipe) => {
         event.recipes.thermal.pulverizer(recipe.outputs, recipe.input).experience(recipe.experience).id(recipe.id);

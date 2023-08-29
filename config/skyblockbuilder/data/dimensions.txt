@@ -1,0 +1,17 @@
+minecraft:overworld
+beyond_earth:mercury_orbit
+beyond_earth:glacio_orbit
+ae2:spatial_storage
+beyond_earth:mercury
+javd:void
+compactmachines:compact_world
+minecraft:the_nether
+beyond_earth:mars_orbit
+minecraft:the_end
+beyond_earth:glacio
+beyond_earth:moon
+beyond_earth:moon_orbit
+beyond_earth:earth_orbit
+beyond_earth:venus_orbit
+beyond_earth:mars
+beyond_earth:venus

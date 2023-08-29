@@ -179,6 +179,11 @@
 					ignore_reward_blocking: true
 					stage: "buildinggadgets_unlock"
 				}
+				{
+					id: "3DF52601FC050D84"
+					type: "item"
+					item: "scannable:rare_ores_module"
+				}
 			]
 		}
 		{
@@ -1014,6 +1019,7 @@
 			dependencies: [
 				"2FE9444965885654"
 				"288283E080C2E75E"
+				"0A28530C64C93A23"
 			]
 			hide: true
 			id: "3B66520D328CE290"
@@ -2357,6 +2363,28 @@
 				id: "32FC079088CE76F4"
 				type: "item"
 				item: "tempad:he_who_remains_tempad"
+			}]
+		}
+		{
+			title: "Unlock Metal Dude Chapter"
+			icon: "kubejs:purple_mark"
+			x: -3.0d
+			y: -10.0d
+			shape: "circle"
+			subtitle: "Neutral Quests"
+			dependencies: ["2FE9444965885654"]
+			hide: true
+			id: "3249B007F58FA0E3"
+			tasks: [{
+				id: "7391958887AC4421"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "0A051C15AAA8B08A"
+				type: "gamestage"
+				auto: "invisible"
+				ignore_reward_blocking: true
+				stage: "metal_dude"
 			}]
 		}
 	]

@@ -51,26 +51,12 @@
 					tag: { }
 				}
 			}]
-		}
-		{
-			title: "{ntc3.unlock.metaldude}"
-			x: 0.0d
-			y: -3.75d
-			shape: "circle"
-			dependencies: ["7B4E800D9FA67E4D"]
-			size: 1.5d
-			id: "21D17D2F3DCC10FA"
-			tasks: [{
-				id: "10F4A841FE661219"
-				type: "questsadditions:time"
-				elapsedTime: 1L
-			}]
 			rewards: [{
-				id: "4DA94E752CC19B13"
+				id: "103F4B8FE25259C2"
 				type: "gamestage"
 				auto: "invisible"
 				ignore_reward_blocking: true
-				stage: "metal_dude"
+				stage: "thermal_lvl0"
 			}]
 		}
 		{

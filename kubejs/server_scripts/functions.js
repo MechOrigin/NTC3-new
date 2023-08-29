@@ -11,6 +11,7 @@ function shapelessRecipe(result, ingredients, id) {
 const modifyShaped = (e, result, count, pattern, ingredients) => {
     e.remove({ output: result, type: 'minecraft:crafting_shaped' })
     e.shaped(Item.of(result, count), pattern, ingredients).id(`kubejs:shaped/${result.replace(':', '/')}`)
+    //console.log(`${result}` + " " + `${ingredients}`);
 }
 const modifyShapeless = (e, result, count, ingredients) => {
     e.remove({ output: result, type: 'minecraft:crafting_shapeless' })

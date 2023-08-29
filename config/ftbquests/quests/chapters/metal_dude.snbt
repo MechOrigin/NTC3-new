@@ -24,8 +24,10 @@
 			}]
 		}
 		{
+			icon: "kubejs:purple_mark"
 			x: 0.0d
 			y: 0.0d
+			shape: "circle"
 			id: "76081533F2E6D38E"
 			tasks: [{
 				id: "1D3CA4128434E4F2"
@@ -112,6 +114,8 @@
 		{
 			x: 8.0d
 			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
 			id: "2AC9B7B509549393"
 			tasks: [{
 				id: "4AAE78BEA5379116"
@@ -122,6 +126,8 @@
 		{
 			x: 9.0d
 			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
 			id: "72EAD7E3B4EB1B92"
 			tasks: [{
 				id: "4EF2909BAC3DAC85"
@@ -132,6 +138,8 @@
 		{
 			x: -2.0d
 			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
 			id: "014A6AA99AD7A30C"
 			tasks: [{
 				id: "3B39CDC2913B4DFF"
@@ -142,6 +150,8 @@
 		{
 			x: 3.0d
 			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
 			id: "037493626CCD476D"
 			tasks: [{
 				id: "00E488A7EB2B355F"
@@ -152,6 +162,8 @@
 		{
 			x: 4.0d
 			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
 			id: "3298F13194BF91BC"
 			tasks: [{
 				id: "446FEF5C86B5188A"
@@ -162,6 +174,8 @@
 		{
 			x: 5.0d
 			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["76081533F2E6D38E"]
 			id: "18AE61ECB5330DBF"
 			tasks: [{
 				id: "4C3EE53B6E0EDED3"

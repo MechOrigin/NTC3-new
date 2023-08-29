@@ -1,9 +1,9 @@
 {
 	id: "0AAB32021601D4A4"
-	group: "7B753B74DC83DB37"
-	order_index: 1
+	group: "5E5316934402DF80"
+	order_index: 0
 	filename: "compact_crafting"
-	title: "Compact Crafting"
+	title: "ε1 Compact Crafting"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

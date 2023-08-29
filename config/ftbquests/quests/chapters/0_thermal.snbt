@@ -117,6 +117,59 @@
 				item: "thermal:dynamo_compression"
 			}]
 		}
+		{
+			x: 1.0d
+			y: 1.75d
+			description: ["Requires an Iron Rod, which requires Tinkers Casting and being able to melt Iron (Blazing Blood @ 1538 degrees C)"]
+			hide_dependency_lines: true
+			id: "192F645228E68C8F"
+			tasks: [{
+				id: "047576189159652B"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+			rewards: [{
+				id: "3C5DFE6A5D73FD0E"
+				type: "item"
+				item: "thermal:redstone_servo"
+				count: 6
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.75d
+			hide_dependency_lines: true
+			id: "2F2AB33F39B15105"
+			tasks: [{
+				id: "01961FA11B69C9BA"
+				type: "item"
+				item: "thermal:rf_coil"
+			}]
+			rewards: [{
+				id: "6C5BD6786D96B597"
+				type: "item"
+				item: "thermal:rf_coil"
+				count: 6
+			}]
+		}
+		{
+			icon: "kubejs:purple_mark"
+			disable_toast: true
+			x: 3.0d
+			y: 1.0d
+			shape: "circle"
+			dependencies: [
+				"2F2AB33F39B15105"
+				"192F645228E68C8F"
+			]
+			id: "1D04C710C091335A"
+			tasks: [{
+				id: "5D9E39D37AB4BB10"
+				type: "gamestage"
+				disable_toast: true
+				stage: "thermal_lvl0"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -1,7 +1,7 @@
 {
 	id: "7A4E65030CC12EAB"
 	group: "7B753B74DC83DB37"
-	order_index: 8
+	order_index: 7
 	filename: "thermals"
 	title: "{ntc2.thermal.chapter}"
 	icon: "thermal:machine_frame"
@@ -9,91 +9,9 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			subtitle: "{ntc2.thermalwrench.subtitle}"
-			hide_dependency_lines: false
-			id: "4A04231883E4197C"
-			tasks: [{
-				id: "63E52EF259B20E40"
-				type: "item"
-				item: "thermal:wrench"
-			}]
-		}
-		{
-			x: 0.0d
-			y: -1.0d
-			subtitle: "{ntc2.thermalpedia.subtitle}"
-			id: "0CA5B6537B498DE0"
-			tasks: [{
-				id: "5B91173F84ECED1B"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1
-					tag: {
-						"patchouli:book": "thermal:guidebook"
-					}
-				}
-				match_nbt: true
-			}]
-		}
-		{
-			x: 0.0d
-			y: -3.0d
-			description: ["Requires an Iron Rod, which requires Tinkers Casting and being able to melt Iron (Blazing Blood @ 1538 degrees C)"]
-			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
-			id: "192F645228E68C8F"
-			tasks: [{
-				id: "047576189159652B"
-				type: "item"
-				item: "thermal:redstone_servo"
-			}]
-			rewards: [{
-				id: "3C5DFE6A5D73FD0E"
-				type: "item"
-				item: "thermal:redstone_servo"
-				count: 6
-			}]
-		}
-		{
-			x: 0.0d
-			y: -4.0d
-			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
-			id: "2F2AB33F39B15105"
-			tasks: [{
-				id: "01961FA11B69C9BA"
-				type: "item"
-				item: "thermal:rf_coil"
-			}]
-			rewards: [
-				{
-					id: "23FA8060F6120E40"
-					type: "item"
-					item: "emendatusenigmatica:nickel_chunk"
-					count: 6
-				}
-				{
-					id: "04305FEA30C6E539"
-					type: "item"
-					item: "emendatusenigmatica:silver_chunk"
-					count: 6
-				}
-				{
-					id: "73F5CAF475BA6916"
-					type: "item"
-					item: "emendatusenigmatica:zinc_chunk"
-					count: 6
-				}
-			]
-		}
-		{
 			x: 3.0d
 			y: -3.0d
 			subtitle: "{ntc2.thermalarboreal.subtitle}"
-			dependencies: ["192F645228E68C8F"]
 			id: "340DD6CDB02C5462"
 			tasks: [{
 				id: "2D57FFC4B1D260D7"
@@ -212,7 +130,6 @@
 			x: -2.0d
 			y: -3.0d
 			hide_dependency_lines: false
-			dependencies: ["192F645228E68C8F"]
 			optional: true
 			id: "350D7BFE6A595D96"
 			tasks: [{
@@ -340,7 +257,6 @@
 			x: -7.0d
 			y: -5.0d
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			optional: true
 			id: "2B2D029749740E31"
 			tasks: [{
@@ -569,7 +485,6 @@
 			y: -5.0d
 			description: ["Requires Potassium Nitrate which can be Pulverized from Sandstone, or get the powder directly from Blitz"]
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			id: "070567E71521E446"
 			tasks: [{
 				id: "26ED5467DF554220"
@@ -621,7 +536,6 @@
 			x: -2.0d
 			y: -1.0d
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			optional: true
 			id: "335EDC2632CDCD09"
 			tasks: [
@@ -717,7 +631,6 @@
 			x: -2.0d
 			y: -5.0d
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			optional: true
 			id: "139A87ECA8C3FD9A"
 			tasks: [{
@@ -730,7 +643,6 @@
 			x: -3.0d
 			y: -5.0d
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			optional: true
 			id: "6ED5A87A2016E258"
 			tasks: [{
@@ -743,7 +655,6 @@
 			x: -4.0d
 			y: -4.0d
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			optional: true
 			id: "788FC6959A637B54"
 			tasks: [
@@ -766,7 +677,6 @@
 			x: -4.0d
 			y: -3.0d
 			hide_dependency_lines: true
-			dependencies: ["0CA5B6537B498DE0"]
 			optional: true
 			id: "29CA4E99671EBD72"
 			tasks: [{

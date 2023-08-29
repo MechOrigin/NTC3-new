@@ -116,6 +116,7 @@ onEvent('recipes', (event) => {
 
     /* packaged ex crafting
     */
+   /*
     modifyShaped(event, 'packagedexcrafting:basic_crafter', 1, ['BAB', 'DED', 'BCB'], {
       A: 'packagedauto:me_package_component',
       B: '#forge:ingots/black_steel',
@@ -156,5 +157,5 @@ onEvent('recipes', (event) => {
       E: 'extendedcrafting:enhanced_ender_component',
       F: 'extendedcrafting:crafting_core'
     })
-     
+     */
 });

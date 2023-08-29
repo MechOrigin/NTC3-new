@@ -39,16 +39,10 @@
 			size: 1.5d
 			id: "4F2BB93A626346B3"
 			tasks: [{
-				id: "06B839EF0675017F"
-				type: "questsadditions:time"
-				elapsedTime: 1L
-			}]
-			rewards: [{
-				id: "1586DB3F02998275"
+				id: "62233016BC11EBC4"
 				type: "gamestage"
-				auto: "invisible"
-				ignore_reward_blocking: true
-				stage: "thermal_lvl0"
+				disable_toast: true
+				stage: "tier0_tinkers_lvl0"
 			}]
 		}
 		{
