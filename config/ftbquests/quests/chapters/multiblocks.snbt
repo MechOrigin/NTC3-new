@@ -88,6 +88,28 @@
 				}
 			}]
 		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["218745DD82D46B9A"]
+			id: "48DC36154DFDEE87"
+			tasks: [{
+				id: "6D3FB8C730209A56"
+				type: "item"
+				item: "ntc3:integrated_processor"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["218745DD82D46B9A"]
+			id: "3B67A5001689E672"
+			tasks: [{
+				id: "45D2883835D0D829"
+				type: "item"
+				item: "ntc3:large_sifter"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

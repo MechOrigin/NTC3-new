@@ -68,16 +68,6 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -0.5d
-			id: "7AC4EDBD0859F711"
-			tasks: [{
-				id: "4E1C7DE32935B32D"
-				type: "item"
-				item: "thermal:device_soil_infuser"
-			}]
-		}
-		{
 			x: 0.0d
 			y: -0.5d
 			id: "437E1057FA4BB9EE"
@@ -105,16 +95,6 @@
 				id: "5DA1B50A59FE659A"
 				type: "item"
 				item: "thermal:device_tree_extractor"
-			}]
-		}
-		{
-			x: -3.0d
-			y: -0.5d
-			id: "078BE9AB0A825DDD"
-			tasks: [{
-				id: "2347E61C6FBFD855"
-				type: "item"
-				item: "thermal:device_hive_extractor"
 			}]
 		}
 		{

@@ -410,5 +410,5 @@ minecraft:avocado_pit
 minecraft:wild_corn
 minecraft:wild_eggplants
 minecraft:wild_cucumbers
-nethersdelight:patch_propelplant_cane
 alexsmobs:leafcutter_anthill
+nethersdelight:patch_propelplant_cane

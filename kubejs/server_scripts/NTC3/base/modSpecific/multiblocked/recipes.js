@@ -79,4 +79,16 @@ onEvent('recipes', (event) => {
         B: 'secretly_complicated:creosote_fluid_bucket'
         })
 
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"B":{"item":"minecraft:piston"},"G":{"item":"secretly_complicated:invar_plate"},"E":{"item":"secretly_complicated:red_alloy_plate"}},"result":{"item":"ntc3:metal_fabrication_unit","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"E":{"item":"secretly_complicated:stainless_steel_plate"},"B":{"item":"mekanism:dynamic_tank"},"G":{"item":"secretly_complicated:platinum_plate"}},"result":{"item":"ntc3:electrolyzer","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GGG","MBD","WWW"],"key":{"W":{"item":"integrateddynamics:crystalized_chorus_block"},"D":{"item":"integrateddynamics:mechanical_drying_basin"},"G":{"item":"integrateddynamics:crystalized_menril_block"},"M":{"item":"integrateddynamics:mechanical_squeezer"},"B":{"item":"integrateddynamics:coal_generator"}},"result":{"item":"ntc3:integrated_processor","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"G":{"item":"mekanism:dynamic_tank"},"B":{"item":"minecraft:sticky_piston"},"E":{"item":"secretly_complicated:nichrome_plate"}},"result":{"item":"ntc3:distillation_tower","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"B":{"item":"minecraft:piston"},"E":{"item":"secretly_complicated:nichrome_rod"},"G":{"item":"secretly_complicated:nichrome_plate"}},"result":{"item":"ntc3:chemical_reactor","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"G":{"item":"secretly_complicated:aluminium_plate"},"E":{"item":"mekanism:dynamic_tank"},"B":{"item":"minecraft:bucket"}},"result":{"item":"ntc3:large_fluid_mixer","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GGG","GBG","GGG"],"key":{"G":{"item":"secretly_complicated:aluminium_plate"},"B":{"item":"minecraft:bucket"}},"result":{"item":"ntc3:fermenting_tank","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"B":{"item":"minecraft:piston"},"G":{"item":"secretly_complicated:stainless_steel_plate"},"E":{"item":"secretly_complicated:nichrome_plate"}},"result":{"item":"ntc3:oil_cracking_unit","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"E":{"item":"secretly_complicated:iron_plate"},"G":{"item":"secretly_complicated:brass_plate"},"B":{"item":"exnihilosequentia:iron_mesh"}},"result":{"item":"ntc3:large_sifter","count":1}})
+        event.custom({"type":"minecraft:crafting_shaped","pattern":["GEG","EBE","GEG"],"key":{"G":{"item":"secretly_complicated:bronze_plate"},"E":{"item":"minecraft:bricks"},"B":{"item":"minecraft:furnace"}},"result":{"item":"ntc3:steam_boiler","count":1}})
+      
+
     });

@@ -94,8 +94,9 @@
 				""
 				"You could also made it into lava... but compared to cobblestone, dust gives 1/5 the amount of lava. So not a wise choice."
 			]
-			dependencies: ["0BF9B63E286A7C1B"]
+			dependencies: ["0B87D8D5CC3AF30D"]
 			hide: true
+			dependency_requirement: "one_started"
 			id: "276560C7054D7131"
 			tasks: [{
 				id: "3500358743E5638B"
@@ -152,6 +153,7 @@
 			title: "Time to Grind"
 			x: -3.0d
 			y: -8.5d
+			shape: "rsquare"
 			description: [
 				"To get the next 3 sieving materials, you have to hammer them."
 				""
@@ -163,7 +165,9 @@
 			]
 			dependencies: ["0B87D8D5CC3AF30D"]
 			hide: true
+			dependency_requirement: "one_started"
 			optional: true
+			progression_mode: "flexible"
 			id: "0BF9B63E286A7C1B"
 			tasks: [{
 				id: "63E8222A6B3A7F9B"
@@ -446,10 +450,13 @@
 			title: "Simply Cobble"
 			x: -3.0d
 			y: -10.0d
+			shape: "rsquare"
 			description: ["Cobblestone, the most basic, and useful block for skyblock since it's beginning."]
 			dependencies: ["6712F8255BE22C00"]
 			hide: true
+			dependency_requirement: "one_started"
 			optional: true
+			progression_mode: "flexible"
 			id: "0B87D8D5CC3AF30D"
 			tasks: [{
 				id: "387C9E265EF2BFE0"
@@ -787,8 +794,10 @@
 		{
 			x: 5.0d
 			y: -7.0d
+			shape: "rsquare"
 			dependencies: ["306142D49E3C8EBC"]
 			hide: true
+			optional: true
 			id: "72B48EEF54CD695A"
 			tasks: [
 				{

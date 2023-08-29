@@ -731,7 +731,7 @@ onEvent('recipes', event => {
 		// event.remove({ type: 'thermal:pulverizer' });
 
 		//tconstruct_metal_casting
-		event.remove({ id: /tconstruct:smeltery\/casting/ })
+		//event.remove({ id: /tconstruct:smeltery\/casting/ })
 
 		//thermal_metal_induction_smelter
 		event.remove({ id: /thermal:machines\/smelter/ })
@@ -1970,13 +1970,15 @@ onEvent('recipes', event => {
 
 		event.recipes.multiblocked.multiblock("large_sifter")
         .inputItem(Item.of('minecraft:gravel', 1))
+		.setChance(0.0)
+		.inputItem(Item.of('exnihilosequentia:flint_mesh', 1))
 		.setChance(0.25)
         .outputItem(Item.of('secretly_complicated:iron_impure_dust').withCount(2))
         .setChance(0.25)
         .outputItem(Item.of('secretly_complicated:copper_impure_dust').withCount(2))
         .setChance(0.25)
         .outputItem(Item.of('secretly_complicated:gold_impure_dust').withCount(2))
-		.setChance(1)
+		.setChance(1.0)
         .setPerTick(true)
         .inputFE(30)
         .duration(80)

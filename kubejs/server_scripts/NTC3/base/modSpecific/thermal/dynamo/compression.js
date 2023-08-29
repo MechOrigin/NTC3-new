@@ -3,6 +3,7 @@ onEvent('recipes', (event) => {
     var multiplier = 1;
     var data = {
         recipes: [
+            { input: 'secretly_complicated:steam_fluid_still', energy: 100000 },
             { input: 'thermal:tree_oil', energy: 100000 },
             { input: 'secretly_complicated:creosote_fluid_still', energy: 20000 },
             { input: 'secretly_complicated:sulfuric_naphtha_fluid_still', energy: 1500000 },
